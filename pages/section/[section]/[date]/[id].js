@@ -2,6 +2,7 @@ import { useRouter } from 'next/router'
 import Link from 'next/link';
 import fetch from 'isomorphic-unfetch';
 import Layout from '../../../../components/MyLayout';
+import redirect from 'next-redirect';
 
 // url ===> http://localhost:3000/section/world-middleeast/2020-01-11/iraq-iran-us-troops-4c50e545-539e-4893-b505-1edc2de3c977
 

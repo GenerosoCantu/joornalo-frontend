@@ -1,0 +1,53 @@
+{
+  "devFiles": [],
+  "pages": {
+    "/": [
+      "static/runtime/webpack-08f7b238829422e3b9b2.js",
+      "static/chunks/commons.046f4d8bf49f931545c4.js",
+      "static/runtime/main-c2bbcc7f310dfc3423dd.js"
+    ],
+    "/_app": [
+      "static/runtime/webpack-08f7b238829422e3b9b2.js",
+      "static/chunks/commons.046f4d8bf49f931545c4.js",
+      "static/runtime/main-c2bbcc7f310dfc3423dd.js"
+    ],
+    "/_error": [
+      "static/runtime/webpack-08f7b238829422e3b9b2.js",
+      "static/chunks/commons.046f4d8bf49f931545c4.js",
+      "static/runtime/main-c2bbcc7f310dfc3423dd.js"
+    ],
+    "/_polyfills": [
+      "static/runtime/polyfills-a591b2980a0968e30eae.js"
+    ],
+    "/about": [
+      "static/runtime/webpack-08f7b238829422e3b9b2.js",
+      "static/chunks/commons.046f4d8bf49f931545c4.js",
+      "static/runtime/main-c2bbcc7f310dfc3423dd.js"
+    ],
+    "/index": [
+      "static/runtime/webpack-08f7b238829422e3b9b2.js",
+      "static/chunks/commons.046f4d8bf49f931545c4.js",
+      "static/runtime/main-c2bbcc7f310dfc3423dd.js"
+    ],
+    "/news/[news]": [
+      "static/runtime/webpack-08f7b238829422e3b9b2.js",
+      "static/chunks/commons.046f4d8bf49f931545c4.js",
+      "static/runtime/main-c2bbcc7f310dfc3423dd.js"
+    ],
+    "/p/[id]": [
+      "static/runtime/webpack-08f7b238829422e3b9b2.js",
+      "static/chunks/commons.046f4d8bf49f931545c4.js",
+      "static/runtime/main-c2bbcc7f310dfc3423dd.js"
+    ],
+    "/section/[section]/[date]/[id]": [
+      "static/runtime/webpack-08f7b238829422e3b9b2.js",
+      "static/chunks/commons.046f4d8bf49f931545c4.js",
+      "static/runtime/main-c2bbcc7f310dfc3423dd.js"
+    ],
+    "/section/[section]/[date]/idOLD": [
+      "static/runtime/webpack-08f7b238829422e3b9b2.js",
+      "static/chunks/commons.046f4d8bf49f931545c4.js",
+      "static/runtime/main-c2bbcc7f310dfc3423dd.js"
+    ]
+  }
+}

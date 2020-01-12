@@ -1,5 +1,4 @@
 import Layout from '../../components/MyLayout';
-
 import redirect from 'next-redirect';
 
 const Post = props => {
