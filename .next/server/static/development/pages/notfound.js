@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 4);
+/******/ 	return __webpack_require__(__webpack_require__.s = 3);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -2051,7 +2051,7 @@ function NotFound() {
     __self: this
   }, "Page not Found"), __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
     href: "/section/[section]/[date]/[id]",
-    as: "/section/world/2020-01-11/iraq-iran-us-troops-4c50e545-539e-4893-b505-1edc2de3c988",
+    as: "/section/world-middleeast/2020-01-11/iraq-iran-us-troops-4c50e545-539e-4893-b505-1edc2de3c999",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 8
@@ -2068,7 +2068,7 @@ function NotFound() {
 
 /***/ }),
 
-/***/ 4:
+/***/ 3:
 /*!*********************************!*\
   !*** multi ./pages/notfound.js ***!
   \*********************************/

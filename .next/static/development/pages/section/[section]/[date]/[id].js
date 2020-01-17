@@ -1,5 +1,125 @@
 (window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static\\development\\pages\\section\\[section]\\[date]\\[id].js"],{
 
+/***/ "./components/Bar.js":
+/*!***************************!*\
+  !*** ./components/Bar.js ***!
+  \***************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+var _jsxFileName = "C:\\Projects\\DEVELOPMENT\\joornalo-frontend\\test\\components\\Bar.js";
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
+/* harmony default export */ __webpack_exports__["default"] = (function (props) {
+  return __jsx("div", {
+    className: "bar",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 4
+    },
+    __self: this
+  }, __jsx("hr", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 5
+    },
+    __self: this
+  }), __jsx("h2", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 6
+    },
+    __self: this
+  }, "BAR: ", props.block.text));
+});
+
+/***/ }),
+
+/***/ "./components/Boo.js":
+/*!***************************!*\
+  !*** ./components/Boo.js ***!
+  \***************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+var _jsxFileName = "C:\\Projects\\DEVELOPMENT\\joornalo-frontend\\test\\components\\Boo.js";
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
+
+var Boo = function Boo(props) {
+  return __jsx("div", {
+    className: "foo",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 5
+    },
+    __self: this
+  }, __jsx("hr", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 6
+    },
+    __self: this
+  }), __jsx("h2", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 7
+    },
+    __self: this
+  }, "BOO: ", props.block.text));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (Boo);
+
+/***/ }),
+
+/***/ "./components/Foo.js":
+/*!***************************!*\
+  !*** ./components/Foo.js ***!
+  \***************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+var _jsxFileName = "C:\\Projects\\DEVELOPMENT\\joornalo-frontend\\test\\components\\Foo.js";
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
+/* harmony default export */ __webpack_exports__["default"] = (function (props) {
+  return __jsx("div", {
+    className: "foo",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 4
+    },
+    __self: this
+  }, __jsx("hr", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 5
+    },
+    __self: this
+  }), __jsx("h2", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 6
+    },
+    __self: this
+  }, "FOO: ", props.data.title));
+});
+
+/***/ }),
+
 /***/ "./components/Header.js":
 /*!******************************!*\
   !*** ./components/Header.js ***!
@@ -99,6 +219,48 @@ function Layout(props) {
     __self: this
   }), props.children);
 }
+
+/***/ }),
+
+/***/ "./components/components.js":
+/*!**********************************!*\
+  !*** ./components/components.js ***!
+  \**********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _Foo__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Foo */ "./components/Foo.js");
+/* harmony import */ var _Bar__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Bar */ "./components/Bar.js");
+/* harmony import */ var _Boo__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Boo */ "./components/Boo.js");
+// https://www.storyblok.com/tp/react-dynamic-component-from-json
+
+
+
+
+var ComponentsList = {
+  foo: _Foo__WEBPACK_IMPORTED_MODULE_1__["default"],
+  bar: _Bar__WEBPACK_IMPORTED_MODULE_2__["default"],
+  boo: _Boo__WEBPACK_IMPORTED_MODULE_3__["default"]
+};
+
+var Components = function Components(props) {
+  var block = props.block;
+  var key = Math.floor(Math.random() * 100000); //if (typeof ComponentsList[block.component] !== "undefined") {
+
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(ComponentsList[block.component], {
+    key: key,
+    block: block,
+    data: props.data
+  }); // } else {
+  //   console.log("+++++++++++++++")
+  // }
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (Components);
 
 /***/ }),
 
@@ -8500,6 +8662,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_MyLayout__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../../../components/MyLayout */ "./components/MyLayout.js");
 /* harmony import */ var next_redirect__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! next-redirect */ "./node_modules/next-redirect/index.js");
 /* harmony import */ var next_redirect__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(next_redirect__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var _components_components_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../../../components/components.js */ "./components/components.js");
 
 var _jsxFileName = "C:\\Projects\\DEVELOPMENT\\joornalo-frontend\\test\\pages\\section\\[section]\\[date]\\[id].js";
 
@@ -8511,9 +8674,41 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
 
  // url ===> http://localhost:3000/section/world/2020-01-11/iraq-iran-us-troops-4c50e545-539e-4893-b505-1edc2de3c977
 
-var News = function News(props) {
-  console.log('---------------------------------------------1');
+var Template = function Template(_ref) {
+  var grid = _ref.grid,
+      data = _ref.data;
+  return grid.rows.map(function (row, index) {
+    return __jsx("div", {
+      className: "row",
+      key: "row-".concat(index),
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 15
+      },
+      __self: this
+    }, row.column.map(function (col, index) {
+      return __jsx("div", {
+        className: "col-".concat(col.width),
+        key: "col-".concat(index),
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 18
+        },
+        __self: this
+      }, __jsx(_components_components_js__WEBPACK_IMPORTED_MODULE_7__["default"], {
+        block: col.block,
+        data: data,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 19
+        },
+        __self: this
+      }));
+    }));
+  });
+};
 
+var News = function News(props) {
   if (props.notFound) {
     var router = Object(next_router__WEBPACK_IMPORTED_MODULE_2__["useRouter"])();
     router.replace('/notfound');
@@ -8523,37 +8718,37 @@ var News = function News(props) {
   return __jsx(_components_MyLayout__WEBPACK_IMPORTED_MODULE_5__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 20
+      lineNumber: 38
     },
     __self: this
   }, __jsx("h1", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 21
+      lineNumber: 39
     },
     __self: this
   }, "News story"), __jsx("h1", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 22
+      lineNumber: 40
     },
     __self: this
   }, "uuid:: ", props.uuid), __jsx("h1", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 23
+      lineNumber: 41
     },
     __self: this
   }, "title:: ", props.data.title), __jsx("ul", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 25
+      lineNumber: 43
     },
     __self: this
   }, __jsx("li", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 26
+      lineNumber: 44
     },
     __self: this
   }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_3___default.a, {
@@ -8561,19 +8756,19 @@ var News = function News(props) {
     as: "/section/world/2020-01-11/iraq-iran-us-troops-4c50e545-539e-4893-b505-1edc2de3c9ZZ",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 27
+      lineNumber: 45
     },
     __self: this
   }, __jsx("a", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 28
+      lineNumber: 46
     },
     __self: this
   }, "Bad link"))), __jsx("li", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 31
+      lineNumber: 49
     },
     __self: this
   }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_3___default.a, {
@@ -8581,19 +8776,19 @@ var News = function News(props) {
     as: "/section/world/2020-01-11/iraq-iran-us-troops-4c50e545-539e-4893-b505-1edc2de3c977",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 32
+      lineNumber: 50
     },
     __self: this
   }, __jsx("a", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 33
+      lineNumber: 51
     },
     __self: this
   }, "Good link"))), __jsx("li", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 36
+      lineNumber: 54
     },
     __self: this
   }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_3___default.a, {
@@ -8601,20 +8796,48 @@ var News = function News(props) {
     as: "/section/world/2020-01-11/iraq-iran-us-troops-4c50e545-539e-4893-b505-1edc2de3c988",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 37
+      lineNumber: 55
     },
     __self: this
   }, __jsx("a", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 38
+      lineNumber: 56
     },
     __self: this
-  }, "Good link")))));
+  }, "Good link"))), __jsx("li", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 59
+    },
+    __self: this
+  }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_3___default.a, {
+    href: "/section/[section]/[date]/[id]",
+    as: "/section/world-middleeast/2020-01-11/iraq-iran-us-troops-4c50e545-539e-4893-b505-1edc2de3c999",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 60
+    },
+    __self: this
+  }, __jsx("a", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 61
+    },
+    __self: this
+  }, "Good link")))), __jsx(Template, {
+    grid: props.template,
+    data: props.data,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 66
+    },
+    __self: this
+  }));
 };
 
 News.getInitialProps = function _callee(context) {
-  var _context$query, section, date, id, uuid, titleUrl, url, path, res, data;
+  var _context$query, section, date, id, uuid, url, path, res, data, templateUrl, res2, template;
 
   return _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.async(function _callee$(_context) {
     while (1) {
@@ -8622,53 +8845,66 @@ News.getInitialProps = function _callee(context) {
         case 0:
           _context$query = context.query, section = _context$query.section, date = _context$query.date, id = _context$query.id;
           uuid = id.slice(-36);
-          titleUrl = id.slice(0, id.length - 36);
-          url = '/section/' + section + '/' + date + '/' + id;
-          path = 'https://data.joornalo.com/' + uuid.charAt(0) + '/' + uuid.charAt(1) + '/' + uuid + '.json';
+          url = "/section/".concat(section, "/").concat(date, "/").concat(id);
+          path = "https://data.joornalo.com/news/".concat(uuid.charAt(0), "/").concat(uuid.charAt(1), "/").concat(uuid, ".json");
           console.log(uuid);
-          _context.prev = 6;
-          _context.next = 9;
+          _context.prev = 5;
+          _context.next = 8;
           return _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.awrap(isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_4___default()(path));
 
-        case 9:
+        case 8:
           res = _context.sent;
-          _context.next = 12;
+          _context.next = 11;
           return _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.awrap(res.json());
 
-        case 12:
+        case 11:
           data = _context.sent;
 
-          if (!(url !== data['page-url'])) {
+          if (!(url !== data['url'])) {
             _context.next = 15;
             break;
           }
 
-          return _context.abrupt("return", next_redirect__WEBPACK_IMPORTED_MODULE_6___default()(context, data['page-url'], 308));
+          console.log("Bad URL...redirected");
+          return _context.abrupt("return", next_redirect__WEBPACK_IMPORTED_MODULE_6___default()(context, data['url'], 308));
 
         case 15:
-          return _context.abrupt("return", {
-            uuid: uuid,
-            data: data
-          });
+          templateUrl = "https://data.joornalo.com/templates/news/".concat(data['template'], ".json");
+          _context.next = 18;
+          return _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.awrap(isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_4___default()(templateUrl));
 
         case 18:
-          _context.prev = 18;
-          _context.t0 = _context["catch"](6);
-          return _context.abrupt("return", next_redirect__WEBPACK_IMPORTED_MODULE_6___default()(context, '/notfound', 302));
+          res2 = _context.sent;
+          _context.next = 21;
+          return _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.awrap(res2.json());
 
         case 21:
+          template = _context.sent;
+          return _context.abrupt("return", {
+            uuid: uuid,
+            data: data,
+            template: template
+          });
+
+        case 25:
+          _context.prev = 25;
+          _context.t0 = _context["catch"](5);
+          console.log("Page not found");
+          return _context.abrupt("return", next_redirect__WEBPACK_IMPORTED_MODULE_6___default()(context, '/notfound', 302));
+
+        case 29:
         case "end":
           return _context.stop();
       }
     }
-  }, null, null, [[6, 18]]);
+  }, null, null, [[5, 25]]);
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (News);
 
 /***/ }),
 
-/***/ 2:
+/***/ 1:
 /*!*************************************************************************************************************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2Fsection%2F%5Bsection%5D%2F%5Bdate%5D%2F%5Bid%5D&absolutePagePath=C%3A%5CProjects%5CDEVELOPMENT%5Cjoornalo-frontend%5Ctest%5Cpages%5Csection%5C%5Bsection%5D%5C%5Bdate%5D%5C%5Bid%5D.js ***!
   \*************************************************************************************************************************************************************************************************************************************/
@@ -8691,5 +8927,5 @@ module.exports = dll_5f137288facb1107b491;
 
 /***/ })
 
-},[[2,"static/runtime/webpack.js"]]]);
+},[[1,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=[id].js.map

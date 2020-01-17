@@ -58,6 +58,11 @@
       "static/runtime/webpack-08f7b238829422e3b9b2.js",
       "static/chunks/commons.046f4d8bf49f931545c4.js",
       "static/runtime/main-c2bbcc7f310dfc3423dd.js"
+    ],
+    "/section/[section]/[date]/[id]OLD": [
+      "static/runtime/webpack-08f7b238829422e3b9b2.js",
+      "static/chunks/commons.046f4d8bf49f931545c4.js",
+      "static/runtime/main-c2bbcc7f310dfc3423dd.js"
     ]
   }
 }

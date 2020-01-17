@@ -39,7 +39,7 @@ Post.getInitialProps = async function (context) {
   const uuid = news.slice(-36);
   const titleUrl = uuid.slice(0, news.length - 36);
   const url = '/news/' + news;
-  const path = 'https://data.joornalo.com/' + uuid.charAt(0) + '/' + uuid.charAt(1) + '/' + uuid + '.json';
+  const path = 'https://data.joornalo.com/news' + uuid.charAt(0) + '/' + uuid.charAt(1) + '/' + uuid + '.json';
 
   console.log('---------------------------');
   console.log(uuid);

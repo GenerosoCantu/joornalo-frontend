@@ -1,0 +1,1 @@
+{"ast":null,"code":"var __jsx = React.createElement;\nimport React from \"react\";\nexport default (props => __jsx(\"div\", {\n  className: \"foo\"\n}, __jsx(\"hr\", null), __jsx(\"h2\", null, \"FOO: \", props.data.title)));","map":null,"metadata":{},"sourceType":"module"}
