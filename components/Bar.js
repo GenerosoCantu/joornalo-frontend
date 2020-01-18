@@ -1,8 +1,8 @@
 import React from "react";
 
-export default props => (
+export default ({ data, text }) => (
   <div className="bar">
     <hr />
-    <h2>BAR: {props.block.text}</h2>
+    <h2>BAR: {text}</h2>
   </div>
 );

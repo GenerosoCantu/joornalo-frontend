@@ -1,18 +1,17 @@
 {
   "modules": {
     "byIdentifier": {
-      "multi private-next-pages/about.js": 0,
-      "multi private-next-pages/index.js": 1,
-      "multi private-next-pages/news/[news].js": 2,
-      "multi private-next-pages/notfound.js": 3,
-      "multi private-next-pages/p/[id].js": 4,
-      "multi private-next-pages/section/[section]/[date]/[id].js": 5,
-      "multi private-next-pages/section/[section]/[date]/[id]OLD.js": 6,
+      "multi private-next-pages/_app.js": 0,
+      "multi private-next-pages/about.js": 1,
+      "multi private-next-pages/index.js": 2,
+      "multi private-next-pages/news/[news].js": 3,
+      "multi private-next-pages/notfound.js": 4,
+      "multi private-next-pages/p/[id].js": 5,
+      "multi private-next-pages/section/[section]/[date]/[id].js": 6,
       "multi private-next-pages/section/[section]/[date]/index.js": 7,
       "multi private-next-pages/section/[section]/index.js": 8,
-      "multi next/dist/pages/_app": 9,
-      "multi next/dist/pages/_error": 10,
-      "multi next/dist/pages/_document": 11
+      "multi next/dist/pages/_error": 9,
+      "multi next/dist/pages/_document": 10
     },
     "usedIds": {
       "0": 0,
@@ -25,26 +24,24 @@
       "7": 7,
       "8": 8,
       "9": 9,
-      "10": 10,
-      "11": 11
+      "10": 10
     }
   },
   "chunks": {
     "byName": {
       "init-server.js": 0,
       "on-error-server.js": 1,
-      "static\\44MVx1t-hvg4m1KIhtufS\\pages\\_app.js": 2,
-      "static\\44MVx1t-hvg4m1KIhtufS\\pages\\_document.js": 3,
-      "static\\44MVx1t-hvg4m1KIhtufS\\pages\\_error.js": 4,
-      "static\\44MVx1t-hvg4m1KIhtufS\\pages\\about.js": 5,
-      "static\\44MVx1t-hvg4m1KIhtufS\\pages\\index.js": 6,
-      "static\\44MVx1t-hvg4m1KIhtufS\\pages\\news\\[news].js": 7,
-      "static\\44MVx1t-hvg4m1KIhtufS\\pages\\notfound.js": 8,
-      "static\\44MVx1t-hvg4m1KIhtufS\\pages\\p\\[id].js": 9,
-      "static\\44MVx1t-hvg4m1KIhtufS\\pages\\section\\[section].js": 10,
-      "static\\44MVx1t-hvg4m1KIhtufS\\pages\\section\\[section]\\[date].js": 11,
-      "static\\44MVx1t-hvg4m1KIhtufS\\pages\\section\\[section]\\[date]\\[id].js": 12,
-      "static\\44MVx1t-hvg4m1KIhtufS\\pages\\section\\[section]\\[date]\\[id]OLD.js": 13
+      "static\\VDfoDhqghXTU5ef4xuy9B\\pages\\_app.js": 2,
+      "static\\VDfoDhqghXTU5ef4xuy9B\\pages\\_document.js": 3,
+      "static\\VDfoDhqghXTU5ef4xuy9B\\pages\\_error.js": 4,
+      "static\\VDfoDhqghXTU5ef4xuy9B\\pages\\about.js": 5,
+      "static\\VDfoDhqghXTU5ef4xuy9B\\pages\\index.js": 6,
+      "static\\VDfoDhqghXTU5ef4xuy9B\\pages\\news\\[news].js": 7,
+      "static\\VDfoDhqghXTU5ef4xuy9B\\pages\\notfound.js": 8,
+      "static\\VDfoDhqghXTU5ef4xuy9B\\pages\\p\\[id].js": 9,
+      "static\\VDfoDhqghXTU5ef4xuy9B\\pages\\section\\[section].js": 10,
+      "static\\VDfoDhqghXTU5ef4xuy9B\\pages\\section\\[section]\\[date].js": 11,
+      "static\\VDfoDhqghXTU5ef4xuy9B\\pages\\section\\[section]\\[date]\\[id].js": 12
     },
     "bySource": {},
     "usedIds": [
@@ -53,7 +50,6 @@
       10,
       11,
       12,
-      13,
       2,
       3,
       4,

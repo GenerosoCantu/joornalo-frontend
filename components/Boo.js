@@ -1,10 +1,10 @@
 import React from "react";
 
-const Boo = (props) => {
+const Boo = ({ data, text }) => {
   return (
-    <div className="foo">
+    <div className="boo">
       <hr />
-      <h2>BOO: {props.block.text}</h2>
+      <h2>BOO: {text}</h2>
     </div>
   )
 }

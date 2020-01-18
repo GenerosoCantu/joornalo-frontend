@@ -1,0 +1,52 @@
+{
+  "rows": [
+    {
+      "column": [
+        {
+          "component": "foo",
+          "width": "8",
+          "block": {
+            "component": "foo",
+            "text": "Foo"
+          }
+        },
+        {
+          "component": "bar",
+          "width": "4",
+          "block": {
+            "component": "bar",
+            "text": "Bar1"
+          }
+        }
+      ]
+    },
+    {
+      "column": [
+        {
+          "component": "boo",
+          "width": "4",
+          "block": {
+            "component": "boo",
+            "text": "Boo"
+          }
+        },
+        {
+          "component": "bar",
+          "width": "4",
+          "block": {
+            "component": "bar",
+            "text": "Bar2"
+          }
+        },
+        {
+          "component": "boo",
+          "width": "4",
+          "block": {
+            "component": "boo",
+            "text": "Boo"
+          }
+        }
+      ]
+    }
+  ]
+}

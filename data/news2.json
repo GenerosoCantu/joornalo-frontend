@@ -1,0 +1,42 @@
+{
+  "rows": [
+    {
+      "column": [
+        {
+          "component": "foo",
+          "width": "8",
+          "block": {
+            "component": "foo",
+            "text": "Foo"
+          }
+        },
+        {
+          "component": "bar",
+          "width": "4",
+          "rows": [
+            {
+              "column": [
+                {
+                  "component": "boo",
+                  "width": "8",
+                  "block": {
+                    "component": "boo",
+                    "text": "Boo"
+                  }
+                },
+                {
+                  "component": "bar",
+                  "width": "4",
+                  "block": {
+                    "component": "bar",
+                    "text": "Bar1"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

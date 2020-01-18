@@ -1,0 +1,225 @@
+{
+  "section-clave": {
+    "cartones": "Cartones",
+    "deportes": "Deportes",
+    "espectaculos": "Espectaculos",
+    "estatal": "Estatal",
+    "home": "Home",
+    "internacional": "Internacional",
+    "local": "Local",
+    "misantla": "Misantla",
+    "nacional": "Nacional",
+    "opinion": "Opinion",
+    "policiaca": "Policiaca",
+    "reportaje": "Reportaje",
+    "san-rafael": "San Rafael",
+    "sexo-y-gadgets": "Sexo y Gadgets",
+    "sociedad": "Sociedad",
+    "tlapacoyan": "Tlapacoyan"
+  },
+  "menu-header": [
+    {
+      "text": "Portada",
+      "link": "front/home/",
+      "sub": [
+        {
+          "text": "Martínez de la Torre",
+          "link": "front/local/"
+        },
+        {
+          "text": "Misantla",
+          "link": "front/misantla/"
+        },
+        {
+          "text": "San Rafael",
+          "link": "front/san-rafael/"
+        },
+        {
+          "text": "Tlapacoyan",
+          "link": "front/tlapacoyan/"
+        },
+        {
+          "text": "Estatal",
+          "link": "front/estatal/"
+        },
+        {
+          "text": "Nacional",
+          "link": "front/nacional/"
+        },
+        {
+          "text": "Internacional",
+          "link": "front/internacional/"
+        },
+        {
+          "text": "Espectáculos",
+          "link": "front/espectaculos/"
+        },
+        {
+          "text": "Policíaca",
+          "link": "front/policiaca/"
+        },
+        {
+          "text": "Deportes",
+          "link": "front/deportes/"
+        }
+      ]
+    },
+    {
+      "text": "Opinión",
+      "link": "front/opinion/8",
+      "sub": [
+        {
+          "text": "Editorial",
+          "link": "front/opinion/8"
+        },
+        {
+          "text": "Politicomics",
+          "link": "front/opinion/10"
+        }
+      ]
+    },
+    {
+      "text": "Multimedia",
+      "link": "multimedia/",
+      "sub": [
+        {
+          "text": "Videos",
+          "link": "multimedia/"
+        },
+        {
+          "text": "Galerías",
+          "link": "galleries/"
+        }
+      ]
+    },
+    {
+      "text": "Suplementos",
+      "link": "",
+      "sub": [
+        {
+          "text": "Sociedad",
+          "link": "front/sociedad/"
+        },
+        {
+          "text": "Reportaje",
+          "link": "front/reportaje/"
+        },
+        {
+          "text": "Sexo y Gadgets",
+          "link": "front/sexo-y-gadgets/"
+        }
+      ]
+    },
+    {
+      "text": "Buscar",
+      "link": "search/"
+    }
+  ],
+  "menu-footer": [
+    {
+      "text": "Nosotros",
+      "link": ""
+    },
+    {
+      "text": "Directorio",
+      "link": ""
+    },
+    {
+      "text": "Aviso Legal",
+      "link": ""
+    },
+    {
+      "text": "Contacto",
+      "link": ""
+    }
+  ],
+  "section-id": {
+    "0": "home",
+    "1": "local",
+    "2": "nacional",
+    "3": "estatal",
+    "4": "deportes",
+    "5": "sexo-y-gadgets",
+    "6": "opinion",
+    "7": "sociedad",
+    "8": "blogs",
+    "9": "cartones",
+    "10": "misantla",
+    "11": "san-rafael",
+    "12": "tlapacoyan",
+    "13": "reportaje",
+    "15": "policiaca",
+    "17": "internacional",
+    "18": "espectaculos"
+  },
+  "sections": [
+    {
+      "value": 0,
+      "desc": "Portada"
+    },
+    {
+      "value": 15,
+      "desc": "Policíaca"
+    },
+    {
+      "value": 1,
+      "desc": "Martínez de la Torre"
+    },
+    {
+      "value": 10,
+      "desc": "Misantla"
+    },
+    {
+      "value": 12,
+      "desc": "Tlapacoyan"
+    },
+    {
+      "value": 11,
+      "desc": "San Rafael"
+    },
+    {
+      "value": 3,
+      "desc": "Estatal"
+    },
+    {
+      "value": 2,
+      "desc": "Nacional"
+    },
+    {
+      "value": 18,
+      "desc": "Espectáculos"
+    },
+    {
+      "value": 4,
+      "desc": "Deportes"
+    },
+    {
+      "value": 17,
+      "desc": "Internacional"
+    },
+    {
+      "value": 5,
+      "desc": "Sexo y gadgets"
+    },
+    {
+      "value": 6,
+      "desc": "Opinión"
+    },
+    {
+      "value": 7,
+      "desc": "Sociedad"
+    },
+    {
+      "value": 8,
+      "desc": "Blogs"
+    },
+    {
+      "value": 13,
+      "desc": "Reportaje"
+    },
+    {
+      "value": 9,
+      "desc": "Cartones"
+    }
+  ]
+}

@@ -104,10 +104,13 @@ module.exports =
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-var _jsxFileName = "C:\\Projects\\DEVELOPMENT\\joornalo-frontend\\test\\components\\Bar.js";
+var _jsxFileName = "C:\\Projects\\DEVELOPMENT\\joornalo-frontend\\front.joornalo\\components\\Bar.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
-/* harmony default export */ __webpack_exports__["default"] = (props => __jsx("div", {
+/* harmony default export */ __webpack_exports__["default"] = (({
+  data,
+  text
+}) => __jsx("div", {
   className: "bar",
   __source: {
     fileName: _jsxFileName,
@@ -126,7 +129,7 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
     lineNumber: 6
   },
   __self: undefined
-}, "BAR: ", props.block.text)));
+}, "BAR: ", text)));
 
 /***/ }),
 
@@ -141,13 +144,16 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-var _jsxFileName = "C:\\Projects\\DEVELOPMENT\\joornalo-frontend\\test\\components\\Boo.js";
+var _jsxFileName = "C:\\Projects\\DEVELOPMENT\\joornalo-frontend\\front.joornalo\\components\\Boo.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
-const Boo = props => {
+const Boo = ({
+  data,
+  text
+}) => {
   return __jsx("div", {
-    className: "foo",
+    className: "boo",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 5
@@ -165,47 +171,10 @@ const Boo = props => {
       lineNumber: 7
     },
     __self: undefined
-  }, "BOO: ", props.block.text));
+  }, "BOO: ", text));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Boo);
-
-/***/ }),
-
-/***/ "./components/Foo.js":
-/*!***************************!*\
-  !*** ./components/Foo.js ***!
-  \***************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-var _jsxFileName = "C:\\Projects\\DEVELOPMENT\\joornalo-frontend\\test\\components\\Foo.js";
-var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
-
-/* harmony default export */ __webpack_exports__["default"] = (props => __jsx("div", {
-  className: "foo",
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 4
-  },
-  __self: undefined
-}, __jsx("hr", {
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 5
-  },
-  __self: undefined
-}), __jsx("h2", {
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 6
-  },
-  __self: undefined
-}, "FOO: ", props.data.title)));
 
 /***/ }),
 
@@ -223,46 +192,50 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_1__);
-var _jsxFileName = "C:\\Projects\\DEVELOPMENT\\joornalo-frontend\\test\\components\\Header.js";
+var _jsxFileName = "C:\\Projects\\DEVELOPMENT\\joornalo-frontend\\front.joornalo\\components\\Header.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
+const headerStyle = {
+  background: '#f01818'
+};
 const linkStyle = {
   marginRight: 15
 };
 function Header() {
   return __jsx("div", {
+    style: headerStyle,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 9
+      lineNumber: 13
     },
     __self: this
   }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
     href: "/",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 10
+      lineNumber: 14
     },
     __self: this
   }, __jsx("a", {
     style: linkStyle,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 11
+      lineNumber: 15
     },
     __self: this
   }, "Home")), __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
     href: "/about",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 13
+      lineNumber: 17
     },
     __self: this
   }, __jsx("a", {
     style: linkStyle,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 14
+      lineNumber: 18
     },
     __self: this
   }, "About")));
@@ -283,17 +256,17 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _Header__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Header */ "./components/Header.js");
-var _jsxFileName = "C:\\Projects\\DEVELOPMENT\\joornalo-frontend\\test\\components\\MyLayout.js";
+var _jsxFileName = "C:\\Projects\\DEVELOPMENT\\joornalo-frontend\\front.joornalo\\components\\MyLayout.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
-const layoutStyle = {
-  margin: 20,
-  padding: 20,
-  border: '1px solid #DDD'
+const layoutStyle = {// margin: 20,
+  // padding: 20,
+  // border: '1px solid #DDD'
 };
 function Layout(props) {
   return __jsx("div", {
+    className: "container-fluid",
     style: layoutStyle,
     __source: {
       fileName: _jsxFileName,
@@ -311,6 +284,58 @@ function Layout(props) {
 
 /***/ }),
 
+/***/ "./components/News1.js":
+/*!*****************************!*\
+  !*** ./components/News1.js ***!
+  \*****************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var html_react_parser__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! html-react-parser */ "html-react-parser");
+/* harmony import */ var html_react_parser__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(html_react_parser__WEBPACK_IMPORTED_MODULE_1__);
+var _jsxFileName = "C:\\Projects\\DEVELOPMENT\\joornalo-frontend\\front.joornalo\\components\\News1.js";
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
+
+/* harmony default export */ __webpack_exports__["default"] = (({
+  data,
+  text
+}) => {
+  // console.log(props.data.media)
+  return __jsx("div", {
+    className: "news1",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 7
+    },
+    __self: undefined
+  }, __jsx("hr", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 8
+    },
+    __self: undefined
+  }), __jsx("h1", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 9
+    },
+    __self: undefined
+  }, data.title, " "), __jsx("div", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 10
+    },
+    __self: undefined
+  }, html_react_parser__WEBPACK_IMPORTED_MODULE_1___default()(data.text)));
+});
+
+/***/ }),
+
 /***/ "./components/components.js":
 /*!**********************************!*\
   !*** ./components/components.js ***!
@@ -322,7 +347,7 @@ function Layout(props) {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _Foo__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Foo */ "./components/Foo.js");
+/* harmony import */ var _News1__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./News1 */ "./components/News1.js");
 /* harmony import */ var _Bar__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Bar */ "./components/Bar.js");
 /* harmony import */ var _Boo__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Boo */ "./components/Boo.js");
 // https://www.storyblok.com/tp/react-dynamic-component-from-json
@@ -331,19 +356,24 @@ __webpack_require__.r(__webpack_exports__);
 
 
 const ComponentsList = {
-  foo: _Foo__WEBPACK_IMPORTED_MODULE_1__["default"],
+  news1: _News1__WEBPACK_IMPORTED_MODULE_1__["default"],
   bar: _Bar__WEBPACK_IMPORTED_MODULE_2__["default"],
   boo: _Boo__WEBPACK_IMPORTED_MODULE_3__["default"]
 };
 
-const Components = props => {
-  const block = props.block;
+const Components = ({
+  component,
+  data,
+  text
+}) => {
   const key = Math.floor(Math.random() * 100000); //if (typeof ComponentsList[block.component] !== "undefined") {
+  // return (<div>x</div>)
 
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(ComponentsList[block.component], {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(ComponentsList[component], {
     key,
-    block: block,
-    data: props.data
+    component,
+    data,
+    text
   }); // } else {
   //   console.log("+++++++++++++++")
   // }
@@ -2195,7 +2225,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var next_redirect__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! next-redirect */ "next-redirect");
 /* harmony import */ var next_redirect__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(next_redirect__WEBPACK_IMPORTED_MODULE_5__);
 /* harmony import */ var _components_components_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../../../components/components.js */ "./components/components.js");
-var _jsxFileName = "C:\\Projects\\DEVELOPMENT\\joornalo-frontend\\test\\pages\\section\\[section]\\[date]\\[id].js";
+var _jsxFileName = "C:\\Projects\\DEVELOPMENT\\joornalo-frontend\\front.joornalo\\pages\\section\\[section]\\[date]\\[id].js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
@@ -2209,33 +2239,60 @@ const Template = ({
   grid,
   data
 }) => {
+  // console.log("++++++++++++++++++++++++++++")
+  // console.log(grid)
   return grid.rows.map((row, index) => {
     return __jsx("div", {
       className: "row",
       key: `row-${index}`,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 15
+        lineNumber: 17
       },
       __self: undefined
     }, row.column.map((col, index) => {
-      return __jsx("div", {
-        className: `col-${col.width}`,
-        key: `col-${index}`,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 18
-        },
-        __self: undefined
-      }, __jsx(_components_components_js__WEBPACK_IMPORTED_MODULE_6__["default"], {
-        block: col.block,
-        data: data,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 19
-        },
-        __self: undefined
-      }));
+      if (col.component) {
+        return __jsx("div", {
+          className: `col-${col.width}`,
+          key: `col-${index}`,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 21
+          },
+          __self: undefined
+        }, __jsx(_components_components_js__WEBPACK_IMPORTED_MODULE_6__["default"], {
+          component: col.component,
+          data: data,
+          text: col.text,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 22
+          },
+          __self: undefined
+        }));
+      } else {
+        if (col.rows) {
+          // console.log("=====================")
+          // console.log(col)
+          return __jsx("div", {
+            className: `col-${col.width}`,
+            key: `col-${index}`,
+            __source: {
+              fileName: _jsxFileName,
+              lineNumber: 30
+            },
+            __self: undefined
+          }, __jsx(Template, {
+            grid: col,
+            data: data,
+            __source: {
+              fileName: _jsxFileName,
+              lineNumber: 31
+            },
+            __self: undefined
+          }));
+        }
+      }
     }));
   });
 };
@@ -2250,37 +2307,37 @@ const News = props => {
   return __jsx(_components_MyLayout__WEBPACK_IMPORTED_MODULE_4__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 38
+      lineNumber: 52
     },
     __self: undefined
   }, __jsx("h1", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 39
+      lineNumber: 53
     },
     __self: undefined
   }, "News story"), __jsx("h1", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 40
+      lineNumber: 54
     },
     __self: undefined
   }, "uuid:: ", props.uuid), __jsx("h1", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 41
+      lineNumber: 55
     },
     __self: undefined
   }, "title:: ", props.data.title), __jsx("ul", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 43
+      lineNumber: 57
     },
     __self: undefined
   }, __jsx("li", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 44
+      lineNumber: 58
     },
     __self: undefined
   }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
@@ -2288,19 +2345,19 @@ const News = props => {
     as: "/section/world/2020-01-11/iraq-iran-us-troops-4c50e545-539e-4893-b505-1edc2de3c9ZZ",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 45
+      lineNumber: 59
     },
     __self: undefined
   }, __jsx("a", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 46
+      lineNumber: 60
     },
     __self: undefined
   }, "Bad link"))), __jsx("li", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 49
+      lineNumber: 63
     },
     __self: undefined
   }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
@@ -2308,19 +2365,19 @@ const News = props => {
     as: "/section/world/2020-01-11/iraq-iran-us-troops-4c50e545-539e-4893-b505-1edc2de3c977",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 50
+      lineNumber: 64
     },
     __self: undefined
   }, __jsx("a", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 51
+      lineNumber: 65
     },
     __self: undefined
   }, "Good link"))), __jsx("li", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 54
+      lineNumber: 68
     },
     __self: undefined
   }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
@@ -2328,19 +2385,19 @@ const News = props => {
     as: "/section/world/2020-01-11/iraq-iran-us-troops-4c50e545-539e-4893-b505-1edc2de3c988",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 55
+      lineNumber: 69
     },
     __self: undefined
   }, __jsx("a", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 56
+      lineNumber: 70
     },
     __self: undefined
   }, "Good link"))), __jsx("li", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 59
+      lineNumber: 73
     },
     __self: undefined
   }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
@@ -2348,13 +2405,13 @@ const News = props => {
     as: "/section/world-middleeast/2020-01-11/iraq-iran-us-troops-4c50e545-539e-4893-b505-1edc2de3c999",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 60
+      lineNumber: 74
     },
     __self: undefined
   }, __jsx("a", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 61
+      lineNumber: 75
     },
     __self: undefined
   }, "Good link")))), __jsx(Template, {
@@ -2362,7 +2419,7 @@ const News = props => {
     data: props.data,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 66
+      lineNumber: 80
     },
     __self: undefined
   }));
@@ -2413,7 +2470,7 @@ News.getInitialProps = async function (context) {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! C:\Projects\DEVELOPMENT\joornalo-frontend\test\pages\section\[section]\[date]\[id].js */"./pages/section/[section]/[date]/[id].js");
+module.exports = __webpack_require__(/*! C:\Projects\DEVELOPMENT\joornalo-frontend\front.joornalo\pages\section\[section]\[date]\[id].js */"./pages/section/[section]/[date]/[id].js");
 
 
 /***/ }),
@@ -2525,6 +2582,17 @@ module.exports = require("core-js/library/fn/symbol/iterator");
 /***/ (function(module, exports) {
 
 module.exports = require("core-js/library/fn/weak-map");
+
+/***/ }),
+
+/***/ "html-react-parser":
+/*!************************************!*\
+  !*** external "html-react-parser" ***!
+  \************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("html-react-parser");
 
 /***/ }),
 
