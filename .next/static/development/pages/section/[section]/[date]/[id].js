@@ -10875,7 +10875,7 @@ var News = function News(props) {
 };
 
 News.getInitialProps = function _callee(context) {
-  var _context$query, section, date, id, uuid, url, path, res, data, templateUrl, res2, template;
+  var _context$query, section, date, id, uuid, url, path, userAgent, mobilex, android, iPad, mobile, tablet, desktop, res, data, tmpl, templateUrl, res2, template;
 
   return _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.async(function _callee$(_context) {
     while (1) {
@@ -10886,37 +10886,56 @@ News.getInitialProps = function _callee(context) {
           url = "/section/".concat(section, "/").concat(date, "/").concat(id);
           path = "https://data.joornalo.com/news/".concat(uuid.charAt(0), "/").concat(uuid.charAt(1), "/").concat(uuid, ".json");
           console.log(uuid);
-          _context.prev = 5;
-          _context.next = 8;
+
+          if (true) {
+            userAgent = navigator.userAgent;
+          } else {}
+
+          mobilex = userAgent.match(/(Mobile)/g);
+          android = userAgent.match(/(Android)/g);
+          iPad = userAgent.match(/(iPad)/g);
+          mobile = Boolean(mobilex) && !iPad;
+          tablet = !mobilex && Boolean(android) || Boolean(iPad);
+          desktop = !mobile && !tablet; // console.log(userAgent);
+          // console.log("mobile:", mobile);
+          // console.log("tablet:", tablet);
+          // console.log("desktop:", desktop);
+
+          _context.prev = 12;
+          _context.next = 15;
           return _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.awrap(isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_4___default()(path));
 
-        case 8:
+        case 15:
           res = _context.sent;
-          _context.next = 11;
+          _context.next = 18;
           return _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.awrap(res.json());
 
-        case 11:
+        case 18:
           data = _context.sent;
 
           if (!(url !== data['url'])) {
-            _context.next = 15;
+            _context.next = 22;
             break;
           }
 
           console.log("Bad URL...redirected");
           return _context.abrupt("return", next_redirect__WEBPACK_IMPORTED_MODULE_6___default()(context, data['url'], 308));
 
-        case 15:
-          templateUrl = "https://data.joornalo.com/templates/news/".concat(data['template'], ".json");
-          _context.next = 18;
+        case 22:
+          if (desktop || tablet) {}
+
+          tmpl = (desktop || tablet ? 'desktop-' : 'mobile-') + data['template']; //console.log("tmpl:", tmpl);
+
+          templateUrl = "https://data.joornalo.com/templates/news/".concat(tmpl, ".json");
+          _context.next = 27;
           return _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.awrap(isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_4___default()(templateUrl));
 
-        case 18:
+        case 27:
           res2 = _context.sent;
-          _context.next = 21;
+          _context.next = 30;
           return _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.awrap(res2.json());
 
-        case 21:
+        case 30:
           template = _context.sent;
           return _context.abrupt("return", {
             uuid: uuid,
@@ -10924,25 +10943,25 @@ News.getInitialProps = function _callee(context) {
             template: template
           });
 
-        case 25:
-          _context.prev = 25;
-          _context.t0 = _context["catch"](5);
+        case 34:
+          _context.prev = 34;
+          _context.t0 = _context["catch"](12);
           console.log("Page not found");
           return _context.abrupt("return", next_redirect__WEBPACK_IMPORTED_MODULE_6___default()(context, '/notfound', 302));
 
-        case 29:
+        case 38:
         case "end":
           return _context.stop();
       }
     }
-  }, null, null, [[5, 25]]);
+  }, null, null, [[12, 34]]);
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (News);
 
 /***/ }),
 
-/***/ 4:
+/***/ 1:
 /*!***********************************************************************************************************************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2Fsection%2F%5Bsection%5D%2F%5Bdate%5D%2F%5Bid%5D&absolutePagePath=C%3A%5CProjects%5CDEVELOPMENT%5Cjoornalo-frontend%5Cfront.joornalo%5Cpages%5Csection%5C%5Bsection%5D%5C%5Bdate%5D%5C%5Bid%5D.js ***!
   \***********************************************************************************************************************************************************************************************************************************************/
@@ -10965,5 +10984,5 @@ module.exports = dll_5f137288facb1107b491;
 
 /***/ })
 
-},[[4,"static/runtime/webpack.js"]]]);
+},[[1,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=[id].js.map

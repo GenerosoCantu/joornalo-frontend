@@ -60,6 +60,26 @@ News.getInitialProps = async function (context) {
 
   console.log(uuid);
 
+  let userAgent
+  if (process.browser) {
+    userAgent = navigator.userAgent
+  } else {
+    userAgent = context.req.headers['user-agent']
+  }
+
+  const mobilex = userAgent.match(/(Mobile)/g);
+  const android = userAgent.match(/(Android)/g);
+  const iPad = userAgent.match(/(iPad)/g);
+
+  const mobile = Boolean(mobilex) && !iPad;
+  const tablet = (!mobilex && Boolean(android)) || Boolean(iPad);
+  const desktop = !mobile && !tablet;
+
+  // console.log(userAgent);
+  // console.log("mobile:", mobile);
+  // console.log("tablet:", tablet);
+  // console.log("desktop:", desktop);
+
   try {
     const res = await fetch(path);
     const data = await res.json();
@@ -69,7 +89,12 @@ News.getInitialProps = async function (context) {
       return redirect(context, data['url'], 308);
     }
 
-    const templateUrl = `https://data.joornalo.com/templates/news/${data['template']}.json`;
+    if (desktop || tablet) { }
+
+    const tmpl = ((desktop || tablet) ? 'desktop-' : 'mobile-') + data['template'];
+    //console.log("tmpl:", tmpl);
+
+    const templateUrl = `https://data.joornalo.com/templates/news/${tmpl}.json`;
     const res2 = await fetch(templateUrl);
     const template = await res2.json();
 

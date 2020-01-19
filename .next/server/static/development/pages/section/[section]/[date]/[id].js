@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 6);
+/******/ 	return __webpack_require__(__webpack_require__.s = 3);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -2499,6 +2499,21 @@ News.getInitialProps = async function (context) {
   const url = `/section/${section}/${date}/${id}`;
   const path = `https://data.joornalo.com/news/${uuid.charAt(0)}/${uuid.charAt(1)}/${uuid}.json`;
   console.log(uuid);
+  let userAgent;
+
+  if (false) {} else {
+    userAgent = context.req.headers['user-agent'];
+  }
+
+  const mobilex = userAgent.match(/(Mobile)/g);
+  const android = userAgent.match(/(Android)/g);
+  const iPad = userAgent.match(/(iPad)/g);
+  const mobile = Boolean(mobilex) && !iPad;
+  const tablet = !mobilex && Boolean(android) || Boolean(iPad);
+  const desktop = !mobile && !tablet; // console.log(userAgent);
+  // console.log("mobile:", mobile);
+  // console.log("tablet:", tablet);
+  // console.log("desktop:", desktop);
 
   try {
     const res = await isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_3___default()(path);
@@ -2509,7 +2524,11 @@ News.getInitialProps = async function (context) {
       return next_redirect__WEBPACK_IMPORTED_MODULE_5___default()(context, data['url'], 308);
     }
 
-    const templateUrl = `https://data.joornalo.com/templates/news/${data['template']}.json`;
+    if (desktop || tablet) {}
+
+    const tmpl = (desktop || tablet ? 'desktop-' : 'mobile-') + data['template']; //console.log("tmpl:", tmpl);
+
+    const templateUrl = `https://data.joornalo.com/templates/news/${tmpl}.json`;
     const res2 = await isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_3___default()(templateUrl);
     const template = await res2.json();
     return {
@@ -2527,7 +2546,7 @@ News.getInitialProps = async function (context) {
 
 /***/ }),
 
-/***/ 6:
+/***/ 3:
 /*!******************************************************!*\
   !*** multi ./pages/section/[section]/[date]/[id].js ***!
   \******************************************************/

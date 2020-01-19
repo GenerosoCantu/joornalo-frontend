@@ -31,17 +31,17 @@
     "byName": {
       "init-server.js": 0,
       "on-error-server.js": 1,
-      "static\\jX7UXszQatgJeXKGlHWhv\\pages\\_app.js": 2,
-      "static\\jX7UXszQatgJeXKGlHWhv\\pages\\_document.js": 3,
-      "static\\jX7UXszQatgJeXKGlHWhv\\pages\\_error.js": 4,
-      "static\\jX7UXszQatgJeXKGlHWhv\\pages\\about.js": 5,
-      "static\\jX7UXszQatgJeXKGlHWhv\\pages\\index.js": 6,
-      "static\\jX7UXszQatgJeXKGlHWhv\\pages\\news\\[news].js": 7,
-      "static\\jX7UXszQatgJeXKGlHWhv\\pages\\notfound.js": 8,
-      "static\\jX7UXszQatgJeXKGlHWhv\\pages\\p\\[id].js": 9,
-      "static\\jX7UXszQatgJeXKGlHWhv\\pages\\section\\[section].js": 10,
-      "static\\jX7UXszQatgJeXKGlHWhv\\pages\\section\\[section]\\[date].js": 11,
-      "static\\jX7UXszQatgJeXKGlHWhv\\pages\\section\\[section]\\[date]\\[id].js": 12
+      "static\\xO4YtK2a3RbWNh1JNyEpr\\pages\\_app.js": 2,
+      "static\\xO4YtK2a3RbWNh1JNyEpr\\pages\\_document.js": 3,
+      "static\\xO4YtK2a3RbWNh1JNyEpr\\pages\\_error.js": 4,
+      "static\\xO4YtK2a3RbWNh1JNyEpr\\pages\\about.js": 5,
+      "static\\xO4YtK2a3RbWNh1JNyEpr\\pages\\index.js": 6,
+      "static\\xO4YtK2a3RbWNh1JNyEpr\\pages\\news\\[news].js": 7,
+      "static\\xO4YtK2a3RbWNh1JNyEpr\\pages\\notfound.js": 8,
+      "static\\xO4YtK2a3RbWNh1JNyEpr\\pages\\p\\[id].js": 9,
+      "static\\xO4YtK2a3RbWNh1JNyEpr\\pages\\section\\[section].js": 10,
+      "static\\xO4YtK2a3RbWNh1JNyEpr\\pages\\section\\[section]\\[date].js": 11,
+      "static\\xO4YtK2a3RbWNh1JNyEpr\\pages\\section\\[section]\\[date]\\[id].js": 12
     },
     "bySource": {},
     "usedIds": [
