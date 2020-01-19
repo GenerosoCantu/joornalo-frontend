@@ -40,25 +40,35 @@
       "static\\gWUNNHwTQIc8w3UY3m5Hw\\pages\\section\\[section].js": 11,
       "static\\gWUNNHwTQIc8w3UY3m5Hw\\pages\\section\\[section]\\[date].js": 12,
       "static\\gWUNNHwTQIc8w3UY3m5Hw\\pages\\section\\[section]\\[date]\\[id].js": 13,
-      "styles": 14
+      "styles": 14,
+      "static\\SGrRF9igsKREpMNmO0mrS\\pages\\_app.js": 15,
+      "static\\SGrRF9igsKREpMNmO0mrS\\pages\\_error.js": 16,
+      "static\\SGrRF9igsKREpMNmO0mrS\\pages\\about.js": 17,
+      "static\\SGrRF9igsKREpMNmO0mrS\\pages\\index.js": 18,
+      "static\\SGrRF9igsKREpMNmO0mrS\\pages\\news\\[news].js": 19,
+      "static\\SGrRF9igsKREpMNmO0mrS\\pages\\notfound.js": 20,
+      "static\\SGrRF9igsKREpMNmO0mrS\\pages\\p\\[id].js": 21,
+      "static\\SGrRF9igsKREpMNmO0mrS\\pages\\section\\[section].js": 22,
+      "static\\SGrRF9igsKREpMNmO0mrS\\pages\\section\\[section]\\[date].js": 23,
+      "static\\SGrRF9igsKREpMNmO0mrS\\pages\\section\\[section]\\[date]\\[id].js": 24
     },
     "bySource": {},
     "usedIds": [
       0,
       1,
-      10,
-      11,
-      12,
-      13,
       14,
+      15,
+      16,
+      17,
+      18,
+      19,
       2,
-      3,
-      4,
-      5,
-      6,
-      7,
-      8,
-      9
+      20,
+      21,
+      22,
+      23,
+      24,
+      3
     ]
   }
 }

@@ -1,4 +1,4 @@
-import Components from "./Components.js";
+import Components from "./components.js";
 
 const Template = ({ grid, data }) => {
   return grid.rows.map((row, index) => {
