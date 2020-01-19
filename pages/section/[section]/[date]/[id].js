@@ -3,41 +3,9 @@ import Link from 'next/link';
 import fetch from 'isomorphic-unfetch';
 import Layout from '../../../../components/MyLayout';
 import redirect from 'next-redirect';
-import Components from "../../../../components/components.js";
+import Template from "../../../../components/Template.js";
 
 // url ===> http://localhost:3000/section/world/2020-01-11/iraq-iran-us-troops-4c50e545-539e-4893-b505-1edc2de3c977
-
-
-
-const Template = ({ grid, data }) => {
-  // console.log("++++++++++++++++++++++++++++")
-  // console.log(grid)
-  return grid.rows.map((row, index) => {
-    return (
-      <div className="row" key={`row-${index}`}>
-        {row.column.map((col, index) => {
-          if (col.component) {
-            return (
-              <div className={`col-${col.width}`} key={`col-${index}`}>
-                <Components component={col.component} data={data} text={col.text} />
-              </div>
-            );
-          } else {
-            if (col.rows) {
-              // console.log("=====================")
-              // console.log(col)
-              return (
-                <div className={`col-${col.width}`} key={`col-${index}`}>
-                  <Template grid={col} data={data} />
-                </div>
-              );
-            }
-          }
-        })}
-      </div>
-    );
-  });
-};
 
 
 const News = (props) => {
@@ -66,7 +34,7 @@ const News = (props) => {
           </Link>
         </li>
         <li>
-          <Link href="/section/[section]/[date]/[id]" as="/section/world/2020-01-11/iraq-iran-us-troops-4c50e545-539e-4893-b505-1edc2de3c988">
+          <Link href="/section/[section]/[date]/[id]" as="/section/world-europe/2020-01-11/harry-meghan-drop-royal-duties-4c50e545-539e-4893-b505-1edc2de3c988">
             <a>Good link</a>
           </Link>
         </li>

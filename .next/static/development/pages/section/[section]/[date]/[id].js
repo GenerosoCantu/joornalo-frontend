@@ -1,9 +1,9 @@
 (window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static\\development\\pages\\section\\[section]\\[date]\\[id].js"],{
 
-/***/ "./components/Bar.js":
-/*!***************************!*\
-  !*** ./components/Bar.js ***!
-  \***************************/
+/***/ "./components/Components.js":
+/*!**********************************!*\
+  !*** ./components/Components.js ***!
+  \**********************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -11,77 +11,41 @@
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-var _jsxFileName = "C:\\Projects\\DEVELOPMENT\\joornalo-frontend\\front.joornalo\\components\\Bar.js";
-var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+/* harmony import */ var _news1__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./news1 */ "./components/news1.js");
+/* harmony import */ var _bar__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./bar */ "./components/bar.js");
+/* harmony import */ var _boo__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./boo */ "./components/boo.js");
+// https://www.storyblok.com/tp/react-dynamic-component-from-json
 
-/* harmony default export */ __webpack_exports__["default"] = (function (_ref) {
-  var data = _ref.data,
+
+
+
+var ComponentsList = {
+  news1: _news1__WEBPACK_IMPORTED_MODULE_1__["default"],
+  bar: _bar__WEBPACK_IMPORTED_MODULE_2__["default"],
+  boo: _boo__WEBPACK_IMPORTED_MODULE_3__["default"]
+}; // https://nextjs.org/docs/advanced-features/dynamic-import
+// import dynamic from 'next/dynamic'
+// const DynamicComponent = dynamic(() => import('../components/hello'))
+// search for dynamic imports
+
+var Components = function Components(_ref) {
+  var component = _ref.component,
+      data = _ref.data,
       text = _ref.text;
-  return __jsx("div", {
-    className: "bar",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 4
-    },
-    __self: this
-  }, __jsx("hr", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 5
-    },
-    __self: this
-  }), __jsx("h2", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 6
-    },
-    __self: this
-  }, "BAR: ", text));
-});
+  var key = Math.floor(Math.random() * 100000); //if (typeof ComponentsList[block.component] !== "undefined") {
+  // return (<div>x</div>)
 
-/***/ }),
-
-/***/ "./components/Boo.js":
-/*!***************************!*\
-  !*** ./components/Boo.js ***!
-  \***************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-var _jsxFileName = "C:\\Projects\\DEVELOPMENT\\joornalo-frontend\\front.joornalo\\components\\Boo.js";
-var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
-
-
-var Boo = function Boo(_ref) {
-  var data = _ref.data,
-      text = _ref.text;
-  return __jsx("div", {
-    className: "boo",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 5
-    },
-    __self: this
-  }, __jsx("hr", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 6
-    },
-    __self: this
-  }), __jsx("h2", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 7
-    },
-    __self: this
-  }, "BOO: ", text));
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(ComponentsList[component], {
+    key: key,
+    component: component,
+    data: data,
+    text: text
+  }); // } else {
+  //   console.log("+++++++++++++++")
+  // }
 };
 
-/* harmony default export */ __webpack_exports__["default"] = (Boo);
+/* harmony default export */ __webpack_exports__["default"] = (Components);
 
 /***/ }),
 
@@ -191,100 +155,250 @@ function Layout(props) {
 
 /***/ }),
 
-/***/ "./components/News1.js":
+/***/ "./components/Template.js":
+/*!********************************!*\
+  !*** ./components/Template.js ***!
+  \********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _Components_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Components.js */ "./components/Components.js");
+var _jsxFileName = "C:\\Projects\\DEVELOPMENT\\joornalo-frontend\\front.joornalo\\components\\Template.js";
+
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
+
+var Template = function Template(_ref) {
+  var grid = _ref.grid,
+      data = _ref.data;
+  return grid.rows.map(function (row, index) {
+    return __jsx("div", {
+      className: "row",
+      key: "row-".concat(index),
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 6
+      },
+      __self: this
+    }, row.column.map(function (col, index) {
+      if (col.component) {
+        return __jsx("div", {
+          className: "col-".concat(col.width),
+          key: "col-".concat(index),
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 10
+          },
+          __self: this
+        }, __jsx(_Components_js__WEBPACK_IMPORTED_MODULE_1__["default"], {
+          component: col.component,
+          data: data,
+          text: col.text,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 11
+          },
+          __self: this
+        }));
+      } else {
+        if (col.rows) {
+          return __jsx("div", {
+            className: "col-".concat(col.width),
+            key: "col-".concat(index),
+            __source: {
+              fileName: _jsxFileName,
+              lineNumber: 17
+            },
+            __self: this
+          }, __jsx(Template, {
+            grid: col,
+            data: data,
+            __source: {
+              fileName: _jsxFileName,
+              lineNumber: 18
+            },
+            __self: this
+          }));
+        }
+      }
+    }));
+  });
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (Template);
+
+/***/ }),
+
+/***/ "./components/bar.js":
+/*!***************************!*\
+  !*** ./components/bar.js ***!
+  \***************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+var _jsxFileName = "C:\\Projects\\DEVELOPMENT\\joornalo-frontend\\front.joornalo\\components\\bar.js";
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
+/* harmony default export */ __webpack_exports__["default"] = (function (_ref) {
+  var data = _ref.data,
+      text = _ref.text;
+  return __jsx("div", {
+    className: "bar",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 4
+    },
+    __self: this
+  }, __jsx("hr", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 5
+    },
+    __self: this
+  }), __jsx("h2", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 6
+    },
+    __self: this
+  }, "BAR: ", text));
+});
+
+/***/ }),
+
+/***/ "./components/boo.js":
+/*!***************************!*\
+  !*** ./components/boo.js ***!
+  \***************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+var _jsxFileName = "C:\\Projects\\DEVELOPMENT\\joornalo-frontend\\front.joornalo\\components\\boo.js";
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
+
+var Boo = function Boo(_ref) {
+  var data = _ref.data,
+      text = _ref.text;
+  return __jsx("div", {
+    className: "boo",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 5
+    },
+    __self: this
+  }, __jsx("hr", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 6
+    },
+    __self: this
+  }), __jsx("h2", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 7
+    },
+    __self: this
+  }, "BOO: ", text));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (Boo);
+
+/***/ }),
+
+/***/ "./components/news1.js":
 /*!*****************************!*\
-  !*** ./components/News1.js ***!
+  !*** ./components/news1.js ***!
   \*****************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var html_react_parser__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! html-react-parser */ "./node_modules/html-react-parser/index.js");
-/* harmony import */ var html_react_parser__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(html_react_parser__WEBPACK_IMPORTED_MODULE_1__);
-var _jsxFileName = "C:\\Projects\\DEVELOPMENT\\joornalo-frontend\\front.joornalo\\components\\News1.js";
-var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+/* harmony import */ var _babel_runtime_corejs2_core_js_parse_int__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/core-js/parse-int */ "./node_modules/@babel/runtime-corejs2/core-js/parse-int.js");
+/* harmony import */ var _babel_runtime_corejs2_core_js_parse_int__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_corejs2_core_js_parse_int__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var html_react_parser__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! html-react-parser */ "./node_modules/html-react-parser/index.js");
+/* harmony import */ var html_react_parser__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(html_react_parser__WEBPACK_IMPORTED_MODULE_2__);
+
+var _jsxFileName = "C:\\Projects\\DEVELOPMENT\\joornalo-frontend\\front.joornalo\\components\\news1.js";
+var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
 
 
-/* harmony default export */ __webpack_exports__["default"] = (function (_ref) {
-  var data = _ref.data,
-      text = _ref.text;
-  // console.log(props.data.media)
+
+var news1 = function news1(_ref) {
+  var data = _ref.data;
+  // const modText = Parser(data.text, {
+  //   replace: (domNode) => {
+  //     if (domNode.name === 'embed') {
+  //       return <div className="embed">{Parser(data.media[domNode.attribs.id - 1].embed)}</div>;
+  //     }
+  //     if (domNode.name === 'image') {
+  //       return <img src={Parser('https://data.joornalo.com/news/4/c/' + data.images[domNode.attribs.id - 1].url)} />
+  //     }
+  //   }
+  // });
+  var tmp = unescape(data.text);
+  var find = tmp.split('<embed id="');
+
+  for (var i = find.length - 1; i--;) {
+    var mediaNum = _babel_runtime_corejs2_core_js_parse_int__WEBPACK_IMPORTED_MODULE_0___default()(find[i + 1].charAt(0));
+
+    find[i + 1] = '<div class="embed">' + data.media[mediaNum - 1].embed + '</div>' + find[i + 1].substring(5);
+  }
+
+  tmp = find.join();
+  find = tmp.split('<image id="');
+
+  for (var _i = find.length - 1; _i--;) {
+    var imageNum = _babel_runtime_corejs2_core_js_parse_int__WEBPACK_IMPORTED_MODULE_0___default()(find[_i + 1].charAt(0));
+
+    find[_i + 1] = '<img src="https://data.joornalo.com/news/4/c/' + data.images[imageNum - 1].url + '" />' + find[_i + 1].substring(5);
+  }
+
+  var modText = html_react_parser__WEBPACK_IMPORTED_MODULE_2___default()(find.join());
   return __jsx("div", {
-    className: "news1",
+    className: "news",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 7
+      lineNumber: 34
     },
     __self: this
   }, __jsx("hr", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 8
+      lineNumber: 35
     },
     __self: this
   }), __jsx("h1", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 9
+      lineNumber: 36
     },
     __self: this
-  }, data.title, " "), __jsx("div", {
+  }, data.title), __jsx("div", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 10
+      lineNumber: 37
     },
     __self: this
-  }, html_react_parser__WEBPACK_IMPORTED_MODULE_1___default()(data.text)));
-});
-
-/***/ }),
-
-/***/ "./components/components.js":
-/*!**********************************!*\
-  !*** ./components/components.js ***!
-  \**********************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _News1__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./News1 */ "./components/News1.js");
-/* harmony import */ var _Bar__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Bar */ "./components/Bar.js");
-/* harmony import */ var _Boo__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Boo */ "./components/Boo.js");
-// https://www.storyblok.com/tp/react-dynamic-component-from-json
-
-
-
-
-var ComponentsList = {
-  news1: _News1__WEBPACK_IMPORTED_MODULE_1__["default"],
-  bar: _Bar__WEBPACK_IMPORTED_MODULE_2__["default"],
-  boo: _Boo__WEBPACK_IMPORTED_MODULE_3__["default"]
+  }, modText));
 };
 
-var Components = function Components(_ref) {
-  var component = _ref.component,
-      data = _ref.data,
-      text = _ref.text;
-  var key = Math.floor(Math.random() * 100000); //if (typeof ComponentsList[block.component] !== "undefined") {
-  // return (<div>x</div>)
-
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(ComponentsList[component], {
-    key: key,
-    component: component,
-    data: data,
-    text: text
-  }); // } else {
-  //   console.log("+++++++++++++++")
-  // }
-};
-
-/* harmony default export */ __webpack_exports__["default"] = (Components);
+/* harmony default export */ __webpack_exports__["default"] = (news1);
 
 /***/ }),
 
@@ -406,6 +520,17 @@ module.exports = __webpack_require__(/*! core-js/library/fn/object/keys */ "./no
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__(/*! core-js/library/fn/object/set-prototype-of */ "./node_modules/core-js/library/fn/object/set-prototype-of.js");
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime-corejs2/core-js/parse-int.js":
+/*!******************************************************************!*\
+  !*** ./node_modules/@babel/runtime-corejs2/core-js/parse-int.js ***!
+  \******************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__(/*! core-js/library/fn/parse-int */ "./node_modules/core-js/library/fn/parse-int.js");
 
 /***/ }),
 
@@ -1088,6 +1213,19 @@ module.exports = __webpack_require__(/*! ../../modules/_core */ "./node_modules/
 
 __webpack_require__(/*! ../../modules/es6.object.set-prototype-of */ "./node_modules/core-js/library/modules/es6.object.set-prototype-of.js");
 module.exports = __webpack_require__(/*! ../../modules/_core */ "./node_modules/core-js/library/modules/_core.js").Object.setPrototypeOf;
+
+
+/***/ }),
+
+/***/ "./node_modules/core-js/library/fn/parse-int.js":
+/*!******************************************************!*\
+  !*** ./node_modules/core-js/library/fn/parse-int.js ***!
+  \******************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+__webpack_require__(/*! ../modules/es6.parse-int */ "./node_modules/core-js/library/modules/es6.parse-int.js");
+module.exports = __webpack_require__(/*! ../modules/_core */ "./node_modules/core-js/library/modules/_core.js").parseInt;
 
 
 /***/ }),
@@ -2960,6 +3098,26 @@ module.exports = function (KEY, exec) {
 
 /***/ }),
 
+/***/ "./node_modules/core-js/library/modules/_parse-int.js":
+/*!************************************************************!*\
+  !*** ./node_modules/core-js/library/modules/_parse-int.js ***!
+  \************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var $parseInt = __webpack_require__(/*! ./_global */ "./node_modules/core-js/library/modules/_global.js").parseInt;
+var $trim = __webpack_require__(/*! ./_string-trim */ "./node_modules/core-js/library/modules/_string-trim.js").trim;
+var ws = __webpack_require__(/*! ./_string-ws */ "./node_modules/core-js/library/modules/_string-ws.js");
+var hex = /^[-+]?0[xX]/;
+
+module.exports = $parseInt(ws + '08') !== 8 || $parseInt(ws + '0x16') !== 22 ? function parseInt(str, radix) {
+  var string = $trim(String(str), 3);
+  return $parseInt(string, (radix >>> 0) || (hex.test(string) ? 16 : 10));
+} : $parseInt;
+
+
+/***/ }),
+
 /***/ "./node_modules/core-js/library/modules/_perform.js":
 /*!**********************************************************!*\
   !*** ./node_modules/core-js/library/modules/_perform.js ***!
@@ -3277,6 +3435,60 @@ module.exports = function (TO_STRING) {
       : TO_STRING ? s.slice(i, i + 2) : (a - 0xd800 << 10) + (b - 0xdc00) + 0x10000;
   };
 };
+
+
+/***/ }),
+
+/***/ "./node_modules/core-js/library/modules/_string-trim.js":
+/*!**************************************************************!*\
+  !*** ./node_modules/core-js/library/modules/_string-trim.js ***!
+  \**************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var $export = __webpack_require__(/*! ./_export */ "./node_modules/core-js/library/modules/_export.js");
+var defined = __webpack_require__(/*! ./_defined */ "./node_modules/core-js/library/modules/_defined.js");
+var fails = __webpack_require__(/*! ./_fails */ "./node_modules/core-js/library/modules/_fails.js");
+var spaces = __webpack_require__(/*! ./_string-ws */ "./node_modules/core-js/library/modules/_string-ws.js");
+var space = '[' + spaces + ']';
+var non = '\u200b\u0085';
+var ltrim = RegExp('^' + space + space + '*');
+var rtrim = RegExp(space + space + '*$');
+
+var exporter = function (KEY, exec, ALIAS) {
+  var exp = {};
+  var FORCE = fails(function () {
+    return !!spaces[KEY]() || non[KEY]() != non;
+  });
+  var fn = exp[KEY] = FORCE ? exec(trim) : spaces[KEY];
+  if (ALIAS) exp[ALIAS] = fn;
+  $export($export.P + $export.F * FORCE, 'String', exp);
+};
+
+// 1 -> String#trimLeft
+// 2 -> String#trimRight
+// 3 -> String#trim
+var trim = exporter.trim = function (string, TYPE) {
+  string = String(defined(string));
+  if (TYPE & 1) string = string.replace(ltrim, '');
+  if (TYPE & 2) string = string.replace(rtrim, '');
+  return string;
+};
+
+module.exports = exporter;
+
+
+/***/ }),
+
+/***/ "./node_modules/core-js/library/modules/_string-ws.js":
+/*!************************************************************!*\
+  !*** ./node_modules/core-js/library/modules/_string-ws.js ***!
+  \************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = '\x09\x0A\x0B\x0C\x0D\x20\xA0\u1680\u180E\u2000\u2001\u2002\u2003' +
+  '\u2004\u2005\u2006\u2007\u2008\u2009\u200A\u202F\u205F\u3000\u2028\u2029\uFEFF';
 
 
 /***/ }),
@@ -3859,6 +4071,21 @@ $export($export.S, 'Object', { setPrototypeOf: __webpack_require__(/*! ./_set-pr
 /*! no static exports found */
 /***/ (function(module, exports) {
 
+
+
+/***/ }),
+
+/***/ "./node_modules/core-js/library/modules/es6.parse-int.js":
+/*!***************************************************************!*\
+  !*** ./node_modules/core-js/library/modules/es6.parse-int.js ***!
+  \***************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var $export = __webpack_require__(/*! ./_export */ "./node_modules/core-js/library/modules/_export.js");
+var $parseInt = __webpack_require__(/*! ./_parse-int */ "./node_modules/core-js/library/modules/_parse-int.js");
+// 18.2.5 parseInt(string, radix)
+$export($export.G + $export.F * (parseInt != $parseInt), { parseInt: $parseInt });
 
 
 /***/ }),
@@ -10507,7 +10734,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_MyLayout__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../../../components/MyLayout */ "./components/MyLayout.js");
 /* harmony import */ var next_redirect__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! next-redirect */ "./node_modules/next-redirect/index.js");
 /* harmony import */ var next_redirect__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(next_redirect__WEBPACK_IMPORTED_MODULE_6__);
-/* harmony import */ var _components_components_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../../../components/components.js */ "./components/components.js");
+/* harmony import */ var _components_Template_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../../../components/Template.js */ "./components/Template.js");
 
 var _jsxFileName = "C:\\Projects\\DEVELOPMENT\\joornalo-frontend\\front.joornalo\\pages\\section\\[section]\\[date]\\[id].js";
 
@@ -10519,67 +10746,6 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
 
  // url ===> http://localhost:3000/section/world/2020-01-11/iraq-iran-us-troops-4c50e545-539e-4893-b505-1edc2de3c977
 
-var Template = function Template(_ref) {
-  var grid = _ref.grid,
-      data = _ref.data;
-  // console.log("++++++++++++++++++++++++++++")
-  // console.log(grid)
-  return grid.rows.map(function (row, index) {
-    return __jsx("div", {
-      className: "row",
-      key: "row-".concat(index),
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 17
-      },
-      __self: this
-    }, row.column.map(function (col, index) {
-      if (col.component) {
-        return __jsx("div", {
-          className: "col-".concat(col.width),
-          key: "col-".concat(index),
-          __source: {
-            fileName: _jsxFileName,
-            lineNumber: 21
-          },
-          __self: this
-        }, __jsx(_components_components_js__WEBPACK_IMPORTED_MODULE_7__["default"], {
-          component: col.component,
-          data: data,
-          text: col.text,
-          __source: {
-            fileName: _jsxFileName,
-            lineNumber: 22
-          },
-          __self: this
-        }));
-      } else {
-        if (col.rows) {
-          // console.log("=====================")
-          // console.log(col)
-          return __jsx("div", {
-            className: "col-".concat(col.width),
-            key: "col-".concat(index),
-            __source: {
-              fileName: _jsxFileName,
-              lineNumber: 30
-            },
-            __self: this
-          }, __jsx(Template, {
-            grid: col,
-            data: data,
-            __source: {
-              fileName: _jsxFileName,
-              lineNumber: 31
-            },
-            __self: this
-          }));
-        }
-      }
-    }));
-  });
-};
-
 var News = function News(props) {
   if (props.notFound) {
     var router = Object(next_router__WEBPACK_IMPORTED_MODULE_2__["useRouter"])();
@@ -10590,37 +10756,37 @@ var News = function News(props) {
   return __jsx(_components_MyLayout__WEBPACK_IMPORTED_MODULE_5__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 52
+      lineNumber: 20
     },
     __self: this
   }, __jsx("h1", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 53
+      lineNumber: 21
     },
     __self: this
   }, "News story"), __jsx("h1", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 54
+      lineNumber: 22
     },
     __self: this
   }, "uuid:: ", props.uuid), __jsx("h1", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 55
+      lineNumber: 23
     },
     __self: this
   }, "title:: ", props.data.title), __jsx("ul", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 57
+      lineNumber: 25
     },
     __self: this
   }, __jsx("li", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 58
+      lineNumber: 26
     },
     __self: this
   }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_3___default.a, {
@@ -10628,19 +10794,19 @@ var News = function News(props) {
     as: "/section/world/2020-01-11/iraq-iran-us-troops-4c50e545-539e-4893-b505-1edc2de3c9ZZ",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 59
+      lineNumber: 27
     },
     __self: this
   }, __jsx("a", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 60
+      lineNumber: 28
     },
     __self: this
   }, "Bad link"))), __jsx("li", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 63
+      lineNumber: 31
     },
     __self: this
   }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_3___default.a, {
@@ -10648,39 +10814,39 @@ var News = function News(props) {
     as: "/section/world/2020-01-11/iraq-iran-us-troops-4c50e545-539e-4893-b505-1edc2de3c977",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 64
+      lineNumber: 32
     },
     __self: this
   }, __jsx("a", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 65
+      lineNumber: 33
     },
     __self: this
   }, "Good link"))), __jsx("li", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 68
+      lineNumber: 36
     },
     __self: this
   }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_3___default.a, {
     href: "/section/[section]/[date]/[id]",
-    as: "/section/world/2020-01-11/iraq-iran-us-troops-4c50e545-539e-4893-b505-1edc2de3c988",
+    as: "/section/world-europe/2020-01-11/harry-meghan-drop-royal-duties-4c50e545-539e-4893-b505-1edc2de3c988",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 69
+      lineNumber: 37
     },
     __self: this
   }, __jsx("a", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 70
+      lineNumber: 38
     },
     __self: this
   }, "Good link"))), __jsx("li", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 73
+      lineNumber: 41
     },
     __self: this
   }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_3___default.a, {
@@ -10688,21 +10854,21 @@ var News = function News(props) {
     as: "/section/world-middleeast/2020-01-11/iraq-iran-us-troops-4c50e545-539e-4893-b505-1edc2de3c999",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 74
+      lineNumber: 42
     },
     __self: this
   }, __jsx("a", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 75
+      lineNumber: 43
     },
     __self: this
-  }, "Good link")))), __jsx(Template, {
+  }, "Good link")))), __jsx(_components_Template_js__WEBPACK_IMPORTED_MODULE_7__["default"], {
     grid: props.template,
     data: props.data,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 80
+      lineNumber: 48
     },
     __self: this
   }));

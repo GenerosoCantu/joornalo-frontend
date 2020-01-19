@@ -1,15 +1,23 @@
 // https://www.storyblok.com/tp/react-dynamic-component-from-json
 
 import React from "react";
-import News1 from "./News1";
-import Bar from "./Bar";
-import Boo from "./Boo";
+import news1 from "./news1";
+import bar from "./bar";
+import boo from "./boo";
 
 const ComponentsList = {
-  news1: News1,
-  bar: Bar,
-  boo: Boo
+  news1: news1,
+  bar: bar,
+  boo: boo
 };
+
+// https://nextjs.org/docs/advanced-features/dynamic-import
+
+// import dynamic from 'next/dynamic'
+// const DynamicComponent = dynamic(() => import('../components/hello'))
+
+// search for dynamic imports
+
 
 
 const Components = ({ component, data, text }) => {

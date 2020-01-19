@@ -65,3 +65,18 @@ html{
         color: transparent;
         background: transparent;
       }
+
+
+
+.embed {
+  float: left;
+  margin: 0 16px 0 0;
+}
+
+blockquote.twitter-tweet {
+    background: #ccc;
+}
+
+.news img {
+    max-width: 100%;
+}

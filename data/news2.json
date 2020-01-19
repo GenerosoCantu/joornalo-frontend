@@ -3,38 +3,51 @@
     {
       "column": [
         {
-          "component": "foo",
-          "width": "8",
-          "block": {
-            "component": "foo",
-            "text": "Foo"
-          }
-        },
-        {
-          "component": "bar",
           "width": "4",
           "rows": [
             {
               "column": [
                 {
                   "component": "boo",
-                  "width": "8",
-                  "block": {
-                    "component": "boo",
-                    "text": "Boo"
-                  }
+                  "text": "Boo",
+                  "width": "12"
                 },
                 {
                   "component": "bar",
-                  "width": "4",
-                  "block": {
-                    "component": "bar",
-                    "text": "Bar1"
-                  }
+                  "text": "Bar1",
+                  "width": "12"
                 }
               ]
             }
           ]
+        },
+        {
+          "width": "8",
+          "rows": [
+            {
+              "column": [
+                {
+                  "component": "news1",
+                  "text": "news1",
+                  "width": "12"
+                },
+                {
+                  "component": "bar",
+                  "text": "Bar1",
+                  "width": "12"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "column": [
+        {
+          "component": "boo",
+          "width": "12",
+          "text": "Boo1"
         }
       ]
     }
