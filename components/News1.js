@@ -18,14 +18,22 @@ const news1 = ({ data }) => {
   let find = tmp.split('<embed id="');
   for (let i = find.length - 1; i--;) {
     let mediaNum = parseInt(find[i + 1].charAt(0));
-    find[i + 1] = '<div class="embed">' + data.media[mediaNum - 1].embed + '</div>' + find[i + 1].substring(5);
+    if (data.media[mediaNum - 1]) {
+      find[i + 1] = '<div class="embed">' + data.media[mediaNum - 1].embed + '</div>' + find[i + 1].substring(5);
+    } else {
+      find[i + 1] = find[i + 1].substring(5);
+    }
   }
 
   tmp = find.join();
   find = tmp.split('<image id="');
   for (let i = find.length - 1; i--;) {
     let imageNum = parseInt(find[i + 1].charAt(0));
-    find[i + 1] = '<img src="https://data.joornalo.com/news/4/c/' + data.images[imageNum - 1].url + '" />' + find[i + 1].substring(5);
+    if (data.images[imageNum - 1]) {
+      find[i + 1] = '<img src="https://data.joornalo.com/news/4/c/' + data.images[imageNum - 1].url + '" />' + find[i + 1].substring(5);
+    } else {
+      find[i + 1] = find[i + 1].substring(5);
+    }
   }
 
   const modText = Parser(find.join());

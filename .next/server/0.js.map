@@ -1,0 +1,1 @@
+{"version":3,"file":"0.js","sources":["webpack:///./components/dataContext.js"],"sourcesContent":["import { createContext } from 'react';\r\n\r\nconst DataContext = createContext();\r\n\r\nexport default DataContext;"],"mappings":";;;;;;;;;;;AAAA;AAAA;AAAA;AAAA;AAEA;AAEA;;;;A","sourceRoot":""}

@@ -155,22 +155,28 @@ __webpack_require__.r(__webpack_exports__);
 var _jsxFileName = "C:\\Projects\\DEVELOPMENT\\joornalo-frontend\\front.joornalo\\pages\\_app.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
+ // import DataContext from '../components/DataContext';
 
-
-function MyApp({
+const Joornalo = ({
   Component,
   pageProps
-}) {
-  return __jsx(Component, Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, pageProps, {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 4
-    },
-    __self: this
-  }));
-}
+}) => {
+  const state = {
+    templates: []
+  };
+  return (// <DataContext.Provider value={{ templates: this.state.templates }}>
+    __jsx(Component, Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, pageProps, {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 12
+      },
+      __self: undefined
+    })) // </DataContext.Provider>
 
-/* harmony default export */ __webpack_exports__["default"] = (MyApp);
+  );
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (Joornalo);
 
 /***/ }),
 

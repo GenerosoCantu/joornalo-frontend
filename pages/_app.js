@@ -1,7 +1,17 @@
 import '../styles/global.css'
+// import DataContext from '../components/DataContext';
 
-function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
+const Joornalo = ({ Component, pageProps }) => {
+
+  const state = {
+    templates: []
+  };
+
+  return (
+    // <DataContext.Provider value={{ templates: this.state.templates }}>
+    <Component {...pageProps} />
+    // </DataContext.Provider>
+  );
 }
 
-export default MyApp
+export default Joornalo
