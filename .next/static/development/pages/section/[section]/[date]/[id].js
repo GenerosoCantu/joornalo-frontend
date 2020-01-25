@@ -10461,10 +10461,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var next_error__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! next/error */ "./node_modules/next/error.js");
 /* harmony import */ var next_error__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(next_error__WEBPACK_IMPORTED_MODULE_7__);
 /* harmony import */ var _context_config_configContext__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../../../context/config/configContext */ "./context/config/configContext.js");
+/* harmony import */ var _services_configService__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../../../../services/configService */ "./services/configService.js");
 
 var _jsxFileName = "C:\\Projects\\DEVELOPMENT\\joornalo-frontend\\front.joornalo\\pages\\section\\[section]\\[date]\\[id].js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
 // import { useRouter } from 'next/router'
+
 
 
 
@@ -10491,7 +10493,7 @@ var News = function News(props) {
       statusCode: "404",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 28
+        lineNumber: 29
       },
       __self: this
     });
@@ -10500,37 +10502,37 @@ var News = function News(props) {
   return __jsx(_components_MyLayout__WEBPACK_IMPORTED_MODULE_4__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 32
+      lineNumber: 33
     },
     __self: this
   }, __jsx("h1", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 33
+      lineNumber: 34
     },
     __self: this
   }, "News story"), __jsx("h1", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 34
+      lineNumber: 35
     },
     __self: this
   }, "uuid:: ", props.uuid), __jsx("h1", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 35
+      lineNumber: 36
     },
     __self: this
   }, "title:: ", props.data.title), __jsx("ul", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 37
+      lineNumber: 38
     },
     __self: this
   }, __jsx("li", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 38
+      lineNumber: 39
     },
     __self: this
   }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
@@ -10538,19 +10540,19 @@ var News = function News(props) {
     as: "/section/world/2020-01-11/iraq-iran-us-troops-4c50e545-539e-4893-b505-1edc2de3c9ZZ",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 39
+      lineNumber: 40
     },
     __self: this
   }, __jsx("a", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 40
+      lineNumber: 41
     },
     __self: this
   }, "Bad link"))), __jsx("li", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 43
+      lineNumber: 44
     },
     __self: this
   }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
@@ -10558,19 +10560,19 @@ var News = function News(props) {
     as: "/section/world/2020-01-11/iraq-iran-us-troops-4c50e545-539e-4893-b505-1edc2de3c977",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 44
+      lineNumber: 45
     },
     __self: this
   }, __jsx("a", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 45
+      lineNumber: 46
     },
     __self: this
   }, "Good link"))), __jsx("li", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 48
+      lineNumber: 49
     },
     __self: this
   }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
@@ -10578,19 +10580,19 @@ var News = function News(props) {
     as: "/section/world-europe/2020-01-11/harry-meghan-drop-royal-duties-4c50e545-539e-4893-b505-1edc2de3c988",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 49
+      lineNumber: 50
     },
     __self: this
   }, __jsx("a", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 50
+      lineNumber: 51
     },
     __self: this
   }, "Good link"))), __jsx("li", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 53
+      lineNumber: 54
     },
     __self: this
   }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
@@ -10598,13 +10600,13 @@ var News = function News(props) {
     as: "/section/world-middleeast/2020-01-11/iraq-iran-us-troops-4c50e545-539e-4893-b505-1edc2de3c999",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 54
+      lineNumber: 55
     },
     __self: this
   }, __jsx("a", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 55
+      lineNumber: 56
     },
     __self: this
   }, "Good link")))), __jsx(_components_Template_js__WEBPACK_IMPORTED_MODULE_6__["default"], {
@@ -10612,14 +10614,14 @@ var News = function News(props) {
     data: props.data,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 60
+      lineNumber: 61
     },
     __self: this
   }));
 };
 
 News.getInitialProps = function _callee(context) {
-  var _context$query, section, date, id, uuid, url, path, initialAgent, res, data, agent, tmpl, templateUrl, res2, template;
+  var _context$query, section, date, id, uuid, url, path, res, data, agent, tmpl, templateUrl, res2, template;
 
   return _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.async(function _callee$(_context) {
     while (1) {
@@ -10630,56 +10632,39 @@ News.getInitialProps = function _callee(context) {
           url = "/section/".concat(section, "/").concat(date, "/").concat(id);
           path = "https://data.joornalo.com/news/".concat(uuid.charAt(0), "/").concat(uuid.charAt(1), "/").concat(uuid, ".json");
           console.log(uuid);
-
-          initialAgent = function initialAgent() {
-            var userAgent;
-
-            if (true) {
-              userAgent = navigator.userAgent;
-            } else {}
-
-            var mobilex = userAgent.match(/(Mobile)/g);
-            var android = userAgent.match(/(Android)/g);
-            var iPad = userAgent.match(/(iPad)/g);
-            var mobile = Boolean(mobilex) && !iPad;
-            var tablet = !mobilex && Boolean(android) || Boolean(iPad);
-            var desktop = !mobile && !tablet;
-            return desktop || tablet ? 'desktop' : 'mobile';
-          };
-
-          _context.prev = 6;
-          _context.next = 9;
+          _context.prev = 5;
+          _context.next = 8;
           return _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.awrap(isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_3___default()(path));
 
-        case 9:
+        case 8:
           res = _context.sent;
-          _context.next = 12;
+          _context.next = 11;
           return _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.awrap(res.json());
 
-        case 12:
+        case 11:
           data = _context.sent;
 
           if (!(url !== data['url'])) {
-            _context.next = 16;
+            _context.next = 15;
             break;
           }
 
           console.log("Bad URL...redirected");
           return _context.abrupt("return", next_redirect__WEBPACK_IMPORTED_MODULE_5___default()(context, data['url'], 308));
 
-        case 16:
-          agent = initialAgent();
+        case 15:
+          agent = Object(_services_configService__WEBPACK_IMPORTED_MODULE_9__["default"])(context);
           tmpl = agent + '-' + data['template'];
           templateUrl = "https://data.joornalo.com/templates/news/".concat(tmpl, ".json");
-          _context.next = 21;
+          _context.next = 20;
           return _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.awrap(isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_3___default()(templateUrl));
 
-        case 21:
+        case 20:
           res2 = _context.sent;
-          _context.next = 24;
+          _context.next = 23;
           return _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.awrap(res2.json());
 
-        case 24:
+        case 23:
           template = _context.sent;
           return _context.abrupt("return", {
             uuid: uuid,
@@ -10688,26 +10673,55 @@ News.getInitialProps = function _callee(context) {
             template: template
           });
 
-        case 28:
-          _context.prev = 28;
-          _context.t0 = _context["catch"](6);
+        case 27:
+          _context.prev = 27;
+          _context.t0 = _context["catch"](5);
           console.log("Page not found");
           console.log(_context.t0);
           return _context.abrupt("return", next_redirect__WEBPACK_IMPORTED_MODULE_5___default()(context, '/notfound', 302));
 
-        case 33:
+        case 32:
         case "end":
           return _context.stop();
       }
     }
-  }, null, null, [[6, 28]]);
+  }, null, null, [[5, 27]]);
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (News);
 
 /***/ }),
 
-/***/ 2:
+/***/ "./services/configService.js":
+/*!***********************************!*\
+  !*** ./services/configService.js ***!
+  \***********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+var initAgent = function initAgent(context) {
+  var userAgent;
+
+  if (true) {
+    userAgent = navigator.userAgent;
+  } else {}
+
+  var mobilex = userAgent.match(/(Mobile)/g);
+  var android = userAgent.match(/(Android)/g);
+  var iPad = userAgent.match(/(iPad)/g);
+  var mobile = Boolean(mobilex) && !iPad;
+  var tablet = !mobilex && Boolean(android) || Boolean(iPad);
+  var desktop = !mobile && !tablet;
+  return desktop || tablet ? 'desktop' : 'mobile';
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (initAgent);
+
+/***/ }),
+
+/***/ 1:
 /*!***********************************************************************************************************************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2Fsection%2F%5Bsection%5D%2F%5Bdate%5D%2F%5Bid%5D&absolutePagePath=C%3A%5CProjects%5CDEVELOPMENT%5Cjoornalo-frontend%5Cfront.joornalo%5Cpages%5Csection%5C%5Bsection%5D%5C%5Bdate%5D%5C%5Bid%5D.js ***!
   \***********************************************************************************************************************************************************************************************************************************************/
@@ -10730,5 +10744,5 @@ module.exports = dll_5f137288facb1107b491;
 
 /***/ })
 
-},[[2,"static/runtime/webpack.js"]]]);
+},[[1,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=[id].js.map

@@ -7,6 +7,7 @@ import redirect from 'next-redirect';
 import Template from "../../../../components/Template.js";
 import Error from 'next/error'
 import ConfigContext from '../../../../context/config/configContext';
+import initAgent from '../../../../services/configService';
 
 // url ===> http://localhost:3000/section/world/2020-01-11/iraq-iran-us-troops-4c50e545-539e-4893-b505-1edc2de3c977
 
@@ -72,28 +73,6 @@ News.getInitialProps = async function (context) {
 
   console.log(uuid);
 
-  const initialAgent = () => {
-
-    let userAgent
-    if (process.browser) {
-      userAgent = navigator.userAgent
-    } else {
-      userAgent = context.req.headers['user-agent']
-    }
-
-    const mobilex = userAgent.match(/(Mobile)/g);
-    const android = userAgent.match(/(Android)/g);
-    const iPad = userAgent.match(/(iPad)/g);
-
-    const mobile = Boolean(mobilex) && !iPad;
-    const tablet = (!mobilex && Boolean(android)) || Boolean(iPad);
-    const desktop = !mobile && !tablet;
-
-    return ((desktop || tablet) ? 'desktop' : 'mobile');
-
-  };
-
-
   try {
     const res = await fetch(path);
     const data = await res.json();
@@ -103,7 +82,7 @@ News.getInitialProps = async function (context) {
       return redirect(context, data['url'], 308);
     }
 
-    const agent = initialAgent();
+    const agent = initAgent(context);
     const tmpl = agent + '-' + data['template'];
 
     const templateUrl = `https://data.joornalo.com/templates/news/${tmpl}.json`;

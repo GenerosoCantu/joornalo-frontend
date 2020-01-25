@@ -121,7 +121,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 4);
+/******/ 	return __webpack_require__(__webpack_require__.s = 3);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -2857,9 +2857,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var next_error__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! next/error */ "./node_modules/next/error.js");
 /* harmony import */ var next_error__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(next_error__WEBPACK_IMPORTED_MODULE_6__);
 /* harmony import */ var _context_config_configContext__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../../../context/config/configContext */ "./context/config/configContext.js");
+/* harmony import */ var _services_configService__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../../../services/configService */ "./services/configService.js");
 var _jsxFileName = "C:\\Projects\\DEVELOPMENT\\joornalo-frontend\\front.joornalo\\pages\\section\\[section]\\[date]\\[id].js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 // import { useRouter } from 'next/router'
+
 
 
 
@@ -2888,7 +2890,7 @@ const News = props => {
       statusCode: "404",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 28
+        lineNumber: 29
       },
       __self: undefined
     });
@@ -2897,37 +2899,37 @@ const News = props => {
   return __jsx(_components_MyLayout__WEBPACK_IMPORTED_MODULE_3__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 32
+      lineNumber: 33
     },
     __self: undefined
   }, __jsx("h1", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 33
+      lineNumber: 34
     },
     __self: undefined
   }, "News story"), __jsx("h1", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 34
+      lineNumber: 35
     },
     __self: undefined
   }, "uuid:: ", props.uuid), __jsx("h1", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 35
+      lineNumber: 36
     },
     __self: undefined
   }, "title:: ", props.data.title), __jsx("ul", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 37
+      lineNumber: 38
     },
     __self: undefined
   }, __jsx("li", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 38
+      lineNumber: 39
     },
     __self: undefined
   }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
@@ -2935,19 +2937,19 @@ const News = props => {
     as: "/section/world/2020-01-11/iraq-iran-us-troops-4c50e545-539e-4893-b505-1edc2de3c9ZZ",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 39
+      lineNumber: 40
     },
     __self: undefined
   }, __jsx("a", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 40
+      lineNumber: 41
     },
     __self: undefined
   }, "Bad link"))), __jsx("li", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 43
+      lineNumber: 44
     },
     __self: undefined
   }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
@@ -2955,19 +2957,19 @@ const News = props => {
     as: "/section/world/2020-01-11/iraq-iran-us-troops-4c50e545-539e-4893-b505-1edc2de3c977",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 44
+      lineNumber: 45
     },
     __self: undefined
   }, __jsx("a", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 45
+      lineNumber: 46
     },
     __self: undefined
   }, "Good link"))), __jsx("li", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 48
+      lineNumber: 49
     },
     __self: undefined
   }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
@@ -2975,19 +2977,19 @@ const News = props => {
     as: "/section/world-europe/2020-01-11/harry-meghan-drop-royal-duties-4c50e545-539e-4893-b505-1edc2de3c988",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 49
+      lineNumber: 50
     },
     __self: undefined
   }, __jsx("a", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 50
+      lineNumber: 51
     },
     __self: undefined
   }, "Good link"))), __jsx("li", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 53
+      lineNumber: 54
     },
     __self: undefined
   }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
@@ -2995,13 +2997,13 @@ const News = props => {
     as: "/section/world-middleeast/2020-01-11/iraq-iran-us-troops-4c50e545-539e-4893-b505-1edc2de3c999",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 54
+      lineNumber: 55
     },
     __self: undefined
   }, __jsx("a", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 55
+      lineNumber: 56
     },
     __self: undefined
   }, "Good link")))), __jsx(_components_Template_js__WEBPACK_IMPORTED_MODULE_5__["default"], {
@@ -3009,7 +3011,7 @@ const News = props => {
     data: props.data,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 60
+      lineNumber: 61
     },
     __self: undefined
   }));
@@ -3026,22 +3028,6 @@ News.getInitialProps = async function (context) {
   const path = `https://data.joornalo.com/news/${uuid.charAt(0)}/${uuid.charAt(1)}/${uuid}.json`;
   console.log(uuid);
 
-  const initialAgent = () => {
-    let userAgent;
-
-    if (false) {} else {
-      userAgent = context.req.headers['user-agent'];
-    }
-
-    const mobilex = userAgent.match(/(Mobile)/g);
-    const android = userAgent.match(/(Android)/g);
-    const iPad = userAgent.match(/(iPad)/g);
-    const mobile = Boolean(mobilex) && !iPad;
-    const tablet = !mobilex && Boolean(android) || Boolean(iPad);
-    const desktop = !mobile && !tablet;
-    return desktop || tablet ? 'desktop' : 'mobile';
-  };
-
   try {
     const res = await isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_2___default()(path);
     const data = await res.json();
@@ -3051,7 +3037,7 @@ News.getInitialProps = async function (context) {
       return next_redirect__WEBPACK_IMPORTED_MODULE_4___default()(context, data['url'], 308);
     }
 
-    const agent = initialAgent();
+    const agent = Object(_services_configService__WEBPACK_IMPORTED_MODULE_8__["default"])(context);
     const tmpl = agent + '-' + data['template'];
     const templateUrl = `https://data.joornalo.com/templates/news/${tmpl}.json`;
     const res2 = await isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_2___default()(templateUrl);
@@ -3073,7 +3059,36 @@ News.getInitialProps = async function (context) {
 
 /***/ }),
 
-/***/ 4:
+/***/ "./services/configService.js":
+/*!***********************************!*\
+  !*** ./services/configService.js ***!
+  \***********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+const initAgent = context => {
+  let userAgent;
+
+  if (false) {} else {
+    userAgent = context.req.headers['user-agent'];
+  }
+
+  const mobilex = userAgent.match(/(Mobile)/g);
+  const android = userAgent.match(/(Android)/g);
+  const iPad = userAgent.match(/(iPad)/g);
+  const mobile = Boolean(mobilex) && !iPad;
+  const tablet = !mobilex && Boolean(android) || Boolean(iPad);
+  const desktop = !mobile && !tablet;
+  return desktop || tablet ? 'desktop' : 'mobile';
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (initAgent);
+
+/***/ }),
+
+/***/ 3:
 /*!******************************************************!*\
   !*** multi ./pages/section/[section]/[date]/[id].js ***!
   \******************************************************/
