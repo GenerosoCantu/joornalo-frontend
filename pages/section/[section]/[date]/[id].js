@@ -7,7 +7,7 @@ import redirect from 'next-redirect';
 import Template from "../../../../components/Template.js";
 import Error from 'next/error'
 import ConfigContext from '../../../../context/config/configContext';
-import initAgent from '../../../../services/configService';
+import { initAgent, test } from '../../../../services/configService';
 
 // url ===> http://localhost:3000/section/world/2020-01-11/iraq-iran-us-troops-4c50e545-539e-4893-b505-1edc2de3c977
 
@@ -72,6 +72,7 @@ News.getInitialProps = async function (context) {
   const path = `https://data.joornalo.com/news/${uuid.charAt(0)}/${uuid.charAt(1)}/${uuid}.json`;
 
   console.log(uuid);
+  console.log(test());
 
   try {
     const res = await fetch(path);

@@ -3027,6 +3027,7 @@ News.getInitialProps = async function (context) {
   const url = `/section/${section}/${date}/${id}`;
   const path = `https://data.joornalo.com/news/${uuid.charAt(0)}/${uuid.charAt(1)}/${uuid}.json`;
   console.log(uuid);
+  console.log(Object(_services_configService__WEBPACK_IMPORTED_MODULE_8__["test"])());
 
   try {
     const res = await isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_2___default()(path);
@@ -3037,7 +3038,7 @@ News.getInitialProps = async function (context) {
       return next_redirect__WEBPACK_IMPORTED_MODULE_4___default()(context, data['url'], 308);
     }
 
-    const agent = Object(_services_configService__WEBPACK_IMPORTED_MODULE_8__["default"])(context);
+    const agent = Object(_services_configService__WEBPACK_IMPORTED_MODULE_8__["initAgent"])(context);
     const tmpl = agent + '-' + data['template'];
     const templateUrl = `https://data.joornalo.com/templates/news/${tmpl}.json`;
     const res2 = await isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_2___default()(templateUrl);
@@ -3063,11 +3064,13 @@ News.getInitialProps = async function (context) {
 /*!***********************************!*\
   !*** ./services/configService.js ***!
   \***********************************/
-/*! exports provided: default */
+/*! exports provided: initAgent, test */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "initAgent", function() { return initAgent; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "test", function() { return test; });
 const initAgent = context => {
   let userAgent;
 
@@ -3083,8 +3086,9 @@ const initAgent = context => {
   const desktop = !mobile && !tablet;
   return desktop || tablet ? 'desktop' : 'mobile';
 };
-
-/* harmony default export */ __webpack_exports__["default"] = (initAgent);
+const test = () => {
+  return 'ok';
+}; // export default initAgent;
 
 /***/ }),
 

@@ -1,6 +1,6 @@
 
 
-const initAgent = (context) => {
+export const initAgent = (context) => {
 
   let userAgent
   if (process.browser) {
@@ -21,5 +21,8 @@ const initAgent = (context) => {
 
 };
 
+export const test = () => {
+  return 'ok'
+}
 
-export default initAgent;
+// export default initAgent;

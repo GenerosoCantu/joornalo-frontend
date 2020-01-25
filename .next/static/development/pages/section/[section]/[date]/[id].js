@@ -10632,39 +10632,40 @@ News.getInitialProps = function _callee(context) {
           url = "/section/".concat(section, "/").concat(date, "/").concat(id);
           path = "https://data.joornalo.com/news/".concat(uuid.charAt(0), "/").concat(uuid.charAt(1), "/").concat(uuid, ".json");
           console.log(uuid);
-          _context.prev = 5;
-          _context.next = 8;
+          console.log(Object(_services_configService__WEBPACK_IMPORTED_MODULE_9__["test"])());
+          _context.prev = 6;
+          _context.next = 9;
           return _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.awrap(isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_3___default()(path));
 
-        case 8:
+        case 9:
           res = _context.sent;
-          _context.next = 11;
+          _context.next = 12;
           return _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.awrap(res.json());
 
-        case 11:
+        case 12:
           data = _context.sent;
 
           if (!(url !== data['url'])) {
-            _context.next = 15;
+            _context.next = 16;
             break;
           }
 
           console.log("Bad URL...redirected");
           return _context.abrupt("return", next_redirect__WEBPACK_IMPORTED_MODULE_5___default()(context, data['url'], 308));
 
-        case 15:
-          agent = Object(_services_configService__WEBPACK_IMPORTED_MODULE_9__["default"])(context);
+        case 16:
+          agent = Object(_services_configService__WEBPACK_IMPORTED_MODULE_9__["initAgent"])(context);
           tmpl = agent + '-' + data['template'];
           templateUrl = "https://data.joornalo.com/templates/news/".concat(tmpl, ".json");
-          _context.next = 20;
+          _context.next = 21;
           return _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.awrap(isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_3___default()(templateUrl));
 
-        case 20:
+        case 21:
           res2 = _context.sent;
-          _context.next = 23;
+          _context.next = 24;
           return _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.awrap(res2.json());
 
-        case 23:
+        case 24:
           template = _context.sent;
           return _context.abrupt("return", {
             uuid: uuid,
@@ -10673,19 +10674,19 @@ News.getInitialProps = function _callee(context) {
             template: template
           });
 
-        case 27:
-          _context.prev = 27;
-          _context.t0 = _context["catch"](5);
+        case 28:
+          _context.prev = 28;
+          _context.t0 = _context["catch"](6);
           console.log("Page not found");
           console.log(_context.t0);
           return _context.abrupt("return", next_redirect__WEBPACK_IMPORTED_MODULE_5___default()(context, '/notfound', 302));
 
-        case 32:
+        case 33:
         case "end":
           return _context.stop();
       }
     }
-  }, null, null, [[5, 27]]);
+  }, null, null, [[6, 28]]);
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (News);
@@ -10696,11 +10697,13 @@ News.getInitialProps = function _callee(context) {
 /*!***********************************!*\
   !*** ./services/configService.js ***!
   \***********************************/
-/*! exports provided: default */
+/*! exports provided: initAgent, test */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "initAgent", function() { return initAgent; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "test", function() { return test; });
 var initAgent = function initAgent(context) {
   var userAgent;
 
@@ -10716,8 +10719,9 @@ var initAgent = function initAgent(context) {
   var desktop = !mobile && !tablet;
   return desktop || tablet ? 'desktop' : 'mobile';
 };
-
-/* harmony default export */ __webpack_exports__["default"] = (initAgent);
+var test = function test() {
+  return 'ok';
+}; // export default initAgent;
 
 /***/ }),
 
