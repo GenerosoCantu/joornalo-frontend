@@ -1,19 +1,31 @@
-import { useRouter } from 'next/router'
+// import { useRouter } from 'next/router'
+import React, { useEffect, useContext } from 'react';
 import Link from 'next/link';
 import fetch from 'isomorphic-unfetch';
 import Layout from '../../../../components/MyLayout';
 import redirect from 'next-redirect';
 import Template from "../../../../components/Template.js";
+import Error from 'next/error'
+import ConfigContext from '../../../../context/config/configContext';
 
 // url ===> http://localhost:3000/section/world/2020-01-11/iraq-iran-us-troops-4c50e545-539e-4893-b505-1edc2de3c977
 
 
 const News = (props) => {
 
+  const configContext = useContext(ConfigContext);
+  const { agent, setAgent } = configContext;
+
+  if (!agent && props.agent) {
+    console.log('Set Agent  ************************');
+    useEffect(() => {
+      setAgent(props.agent);
+      // eslint-disable-next-line
+    }, []);
+  }
+
   if (props.notFound) {
-    const router = useRouter();
-    router.replace('/notfound');
-    return;
+    return <Error statusCode='404' />
   }
 
   return (
@@ -60,25 +72,27 @@ News.getInitialProps = async function (context) {
 
   console.log(uuid);
 
-  let userAgent
-  if (process.browser) {
-    userAgent = navigator.userAgent
-  } else {
-    userAgent = context.req.headers['user-agent']
-  }
+  const initialAgent = () => {
 
-  const mobilex = userAgent.match(/(Mobile)/g);
-  const android = userAgent.match(/(Android)/g);
-  const iPad = userAgent.match(/(iPad)/g);
+    let userAgent
+    if (process.browser) {
+      userAgent = navigator.userAgent
+    } else {
+      userAgent = context.req.headers['user-agent']
+    }
 
-  const mobile = Boolean(mobilex) && !iPad;
-  const tablet = (!mobilex && Boolean(android)) || Boolean(iPad);
-  const desktop = !mobile && !tablet;
+    const mobilex = userAgent.match(/(Mobile)/g);
+    const android = userAgent.match(/(Android)/g);
+    const iPad = userAgent.match(/(iPad)/g);
 
-  // console.log(userAgent);
-  // console.log("mobile:", mobile);
-  // console.log("tablet:", tablet);
-  // console.log("desktop:", desktop);
+    const mobile = Boolean(mobilex) && !iPad;
+    const tablet = (!mobilex && Boolean(android)) || Boolean(iPad);
+    const desktop = !mobile && !tablet;
+
+    return ((desktop || tablet) ? 'desktop' : 'mobile');
+
+  };
+
 
   try {
     const res = await fetch(path);
@@ -89,10 +103,8 @@ News.getInitialProps = async function (context) {
       return redirect(context, data['url'], 308);
     }
 
-    if (desktop || tablet) { }
-
-    const tmpl = ((desktop || tablet) ? 'desktop-' : 'mobile-') + data['template'];
-    //console.log("tmpl:", tmpl);
+    const agent = initialAgent();
+    const tmpl = agent + '-' + data['template'];
 
     const templateUrl = `https://data.joornalo.com/templates/news/${tmpl}.json`;
     const res2 = await fetch(templateUrl);
@@ -101,11 +113,13 @@ News.getInitialProps = async function (context) {
     return {
       uuid,
       data,
+      agent,
       template
     };
 
   } catch (e) {
     console.log(`Page not found`);
+    console.log(e);
     return redirect(context, '/notfound', 302);
   }
 

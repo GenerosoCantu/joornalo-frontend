@@ -1,16 +1,12 @@
 import '../styles/global.css'
-// import DataContext from '../components/DataContext';
+import ConfigState from '../context/config/configState';
 
 const Joornalo = ({ Component, pageProps }) => {
 
-  const state = {
-    templates: []
-  };
-
   return (
-    // <DataContext.Provider value={{ templates: this.state.templates }}>
-    <Component {...pageProps} />
-    // </DataContext.Provider>
+    <ConfigState>
+      <Component {...pageProps} />
+    </ConfigState>
   );
 }
 
