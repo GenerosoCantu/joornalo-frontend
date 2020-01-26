@@ -1,5 +1,3 @@
-
-
 export const initAgent = (context) => {
 
   let userAgent

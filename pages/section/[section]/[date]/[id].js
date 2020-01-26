@@ -7,6 +7,7 @@ import redirect from 'next-redirect';
 import Template from "../../../../components/Template.js";
 import Error from 'next/error'
 import ConfigContext from '../../../../context/config/configContext';
+import DataContext from '../../../../context/data/dataContext';
 import { initAgent, test } from '../../../../services/configService';
 
 // url ===> http://localhost:3000/section/world/2020-01-11/iraq-iran-us-troops-4c50e545-539e-4893-b505-1edc2de3c977
@@ -16,11 +17,18 @@ const News = (props) => {
 
   const configContext = useContext(ConfigContext);
   const { agent, setAgent } = configContext;
+  const dataContext = useContext(DataContext);
+  const { news, getNews } = dataContext;
+
+  console.log('****************** news');
+  console.log(news);
+
 
   if (!agent && props.agent) {
     console.log('Set Agent  ************************');
     useEffect(() => {
       setAgent(props.agent);
+      getNews(props.section, props.date, props.uuid);
       // eslint-disable-next-line
     }, []);
   }
@@ -29,11 +37,13 @@ const News = (props) => {
     return <Error statusCode='404' />
   }
 
+  console.log("reder---------------------");
+
   return (
     <Layout>
       <h1>News story</h1>
       <h1>uuid:: {props.uuid}</h1>
-      <h1>title:: {props.data.title}</h1>
+      <h1>title:: {news.title}</h1>
 
       <ul>
         <li>
@@ -72,7 +82,6 @@ News.getInitialProps = async function (context) {
   const path = `https://data.joornalo.com/news/${uuid.charAt(0)}/${uuid.charAt(1)}/${uuid}.json`;
 
   console.log(uuid);
-  console.log(test());
 
   try {
     const res = await fetch(path);
@@ -91,6 +100,8 @@ News.getInitialProps = async function (context) {
     const template = await res2.json();
 
     return {
+      section,
+      date,
       uuid,
       data,
       agent,
