@@ -1,6 +1,7 @@
 import Components from "./components.js";
 
 const Template = ({ grid, data }) => {
+  if (!grid || !data) return (<div></div>);
   return grid.rows.map((row, index) => {
     return (
       <div className="row" key={`row-${index}`}>

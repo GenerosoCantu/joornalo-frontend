@@ -1,12 +1,10 @@
-export const initAgent = (context) => {
-
+export const initAgent = (req) => {
   let userAgent
   if (process.browser) {
     userAgent = navigator.userAgent
   } else {
-    userAgent = context.req.headers['user-agent']
+    userAgent = req.headers['user-agent']
   }
-
   const mobilex = userAgent.match(/(Mobile)/g);
   const android = userAgent.match(/(Android)/g);
   const iPad = userAgent.match(/(iPad)/g);
@@ -16,8 +14,8 @@ export const initAgent = (context) => {
   const desktop = !mobile && !tablet;
 
   return ((desktop || tablet) ? 'desktop' : 'mobile');
-
 };
+
 
 export const test = () => {
   return 'ok'
