@@ -169,9 +169,13 @@ const getNews = (section, date, uuid, url, req) => async dispatch => {
 
   try {
     setLoading();
-    const url = `/section/${section}/${date}/${uuid}`;
     const path = `https://data.joornalo.com/news/${uuid.charAt(0)}/${uuid.charAt(1)}/${uuid}.json`;
     const res = await axios__WEBPACK_IMPORTED_MODULE_2___default.a.get(path);
+
+    if (url !== res.data['url']) {
+      throw `Redirect: ${res.data['url']}`;
+    }
+
     const template = await getTemplate(req, res.data['template']);
     dispatch({
       type: _types__WEBPACK_IMPORTED_MODULE_0__["GET_NEWS"],
@@ -182,10 +186,10 @@ const getNews = (section, date, uuid, url, req) => async dispatch => {
     });
   } catch (err) {
     console.log('***********Error');
-    dispatch({
-      type: _types__WEBPACK_IMPORTED_MODULE_0__["NEWS_ERROR"],
-      payload: err.statusText
-    });
+    throw err; // dispatch({
+    //   type: NEWS_ERROR,
+    //   payload: err.statusText
+    // });
   }
 }; // Set loading to true
 
@@ -2996,12 +3000,6 @@ const News = ({
   }, "News story"), __jsx("h1", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 29
-    },
-    __self: undefined
-  }, "id:: ", id), __jsx("h1", {
-    __source: {
-      fileName: _jsxFileName,
       lineNumber: 30
     },
     __self: undefined
@@ -3118,23 +3116,28 @@ News.getInitialProps = async function (context) {
     id
   } = context.query;
   const uuid = id.slice(-36);
-  const url = `/section/${section}/${date}/${id}`;
-  await store.dispatch(Object(_actions_newsActions__WEBPACK_IMPORTED_MODULE_8__["getNews"])(section, date, uuid, url, context.req)); // try {
-  //   const res = await fetch(path);
-  //   const data = await res.json();
-  //   if (url !== data['url']) {
-  //     console.log(`Bad URL...redirected`);
-  //     //return redirect(context, data['url'], 308);
-  //   }
-  // } catch (e) {
-  //   console.log(`Page not found`);
-  //   console.log(e);
-  //   //return redirect(context, '/notfound', 302);
-  // }
+  const url = `/section/${section}/${date}/${id}`; //let notFound = false;
+
+  try {
+    await store.dispatch(Object(_actions_newsActions__WEBPACK_IMPORTED_MODULE_8__["getNews"])(section, date, uuid, url, context.req));
+  } catch (err) {
+    if (err && err.response && err.response.status) {
+      if (err.response.status = 404) {
+        //notFound = true;
+        return next_redirect__WEBPACK_IMPORTED_MODULE_5___default()(context, '/notfound', 302);
+      }
+    } else {
+      if (err.indexOf("Redirect: ") == 0) {
+        return next_redirect__WEBPACK_IMPORTED_MODULE_5___default()(context, err.slice(10), 308);
+      }
+    }
+  }
 
   return {
     id,
-    uuid
+    uuid,
+    url //notFound
+
   };
 };
 

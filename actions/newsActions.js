@@ -30,10 +30,13 @@ export const getNews = (section, date, uuid, url, req) => async dispatch => {
   try {
     setLoading();
 
-    const url = `/section/${section}/${date}/${uuid}`;
     const path = `https://data.joornalo.com/news/${uuid.charAt(0)}/${uuid.charAt(1)}/${uuid}.json`
 
     const res = await axios.get(path);
+
+    if (url !== res.data['url']) {
+      throw `Redirect: ${res.data['url']}`
+    }
 
     const template = await getTemplate(req, res.data['template']);
 
@@ -47,10 +50,11 @@ export const getNews = (section, date, uuid, url, req) => async dispatch => {
 
   } catch (err) {
     console.log('***********Error');
-    dispatch({
-      type: NEWS_ERROR,
-      payload: err.statusText
-    });
+    throw err
+    // dispatch({
+    //   type: NEWS_ERROR,
+    //   payload: err.statusText
+    // });
   }
 };
 

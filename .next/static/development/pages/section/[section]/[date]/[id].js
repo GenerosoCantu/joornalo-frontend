@@ -64,8 +64,7 @@ var getTemplate = function getTemplate(req, template) {
 
 var getNews = function getNews(section, date, uuid, url, req) {
   return function _callee(dispatch) {
-    var _url, path, res, template;
-
+    var path, res, template;
     return _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.async(function _callee$(_context2) {
       while (1) {
         switch (_context2.prev = _context2.next) {
@@ -73,17 +72,25 @@ var getNews = function getNews(section, date, uuid, url, req) {
             console.log('getNews ++++++++++++++++++++++++++++++');
             _context2.prev = 1;
             setLoading();
-            _url = "/section/".concat(section, "/").concat(date, "/").concat(uuid);
             path = "https://data.joornalo.com/news/".concat(uuid.charAt(0), "/").concat(uuid.charAt(1), "/").concat(uuid, ".json");
-            _context2.next = 7;
+            _context2.next = 6;
             return _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.awrap(axios__WEBPACK_IMPORTED_MODULE_3___default.a.get(path));
 
-          case 7:
+          case 6:
             res = _context2.sent;
-            _context2.next = 10;
+
+            if (!(url !== res.data['url'])) {
+              _context2.next = 9;
+              break;
+            }
+
+            throw "Redirect: ".concat(res.data['url']);
+
+          case 9:
+            _context2.next = 11;
             return _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.awrap(getTemplate(req, res.data['template']));
 
-          case 10:
+          case 11:
             template = _context2.sent;
             dispatch({
               type: _types__WEBPACK_IMPORTED_MODULE_1__["GET_NEWS"],
@@ -92,24 +99,21 @@ var getNews = function getNews(section, date, uuid, url, req) {
                 template: template
               }
             });
-            _context2.next = 18;
+            _context2.next = 19;
             break;
 
-          case 14:
-            _context2.prev = 14;
+          case 15:
+            _context2.prev = 15;
             _context2.t0 = _context2["catch"](1);
             console.log('***********Error');
-            dispatch({
-              type: _types__WEBPACK_IMPORTED_MODULE_1__["NEWS_ERROR"],
-              payload: _context2.t0.statusText
-            });
+            throw _context2.t0;
 
-          case 18:
+          case 19:
           case "end":
             return _context2.stop();
         }
       }
-    }, null, null, [[1, 14]]);
+    }, null, null, [[1, 15]]);
   };
 }; // Set loading to true
 
@@ -15379,12 +15383,6 @@ var News = function News(_ref) {
   }, "News story"), __jsx("h1", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 29
-    },
-    __self: this
-  }, "id:: ", id), __jsx("h1", {
-    __source: {
-      fileName: _jsxFileName,
       lineNumber: 30
     },
     __self: this
@@ -15501,22 +15499,58 @@ News.getInitialProps = function _callee(context) {
           store = context.store;
           _context$query = context.query, section = _context$query.section, date = _context$query.date, id = _context$query.id;
           uuid = id.slice(-36);
-          url = "/section/".concat(section, "/").concat(date, "/").concat(id);
-          _context.next = 6;
+          url = "/section/".concat(section, "/").concat(date, "/").concat(id); //let notFound = false;
+
+          _context.prev = 4;
+          _context.next = 7;
           return _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.awrap(store.dispatch(Object(_actions_newsActions__WEBPACK_IMPORTED_MODULE_9__["getNews"])(section, date, uuid, url, context.req)));
 
-        case 6:
+        case 7:
+          _context.next = 18;
+          break;
+
+        case 9:
+          _context.prev = 9;
+          _context.t0 = _context["catch"](4);
+
+          if (!(_context.t0 && _context.t0.response && _context.t0.response.status)) {
+            _context.next = 16;
+            break;
+          }
+
+          if (!(_context.t0.response.status = 404)) {
+            _context.next = 14;
+            break;
+          }
+
+          return _context.abrupt("return", next_redirect__WEBPACK_IMPORTED_MODULE_6___default()(context, '/notfound', 302));
+
+        case 14:
+          _context.next = 18;
+          break;
+
+        case 16:
+          if (!(_context.t0.indexOf("Redirect: ") == 0)) {
+            _context.next = 18;
+            break;
+          }
+
+          return _context.abrupt("return", next_redirect__WEBPACK_IMPORTED_MODULE_6___default()(context, _context.t0.slice(10), 308));
+
+        case 18:
           return _context.abrupt("return", {
             id: id,
-            uuid: uuid
+            uuid: uuid,
+            url: url //notFound
+
           });
 
-        case 7:
+        case 19:
         case "end":
           return _context.stop();
       }
     }
-  });
+  }, null, null, [[4, 9]]);
 };
 
 var mapStateToProps = function mapStateToProps(state) {

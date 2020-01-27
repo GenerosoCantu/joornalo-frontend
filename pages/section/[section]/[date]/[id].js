@@ -26,7 +26,7 @@ const News = ({ id, uuid, news, template, notFound }) => {
   return (
     <Layout>
       <h1>News story</h1>
-      <h1>id:: {id}</h1>
+      {/* <h1>id:: {id}</h1> */}
       <h1>uuid:: {uuid}</h1>
       <h1>title:: {getTitle(news)}</h1>
 
@@ -65,27 +65,29 @@ News.getInitialProps = async function (context) {
   const { section, date, id } = context.query;
   const uuid = id.slice(-36);
   const url = `/section/${section}/${date}/${id}`;
+  //let notFound = false;
 
-  await store.dispatch(getNews(section, date, uuid, url, context.req));
+  try {
+    await store.dispatch(getNews(section, date, uuid, url, context.req));
+  } catch (err) {
 
-  // try {
-  //   const res = await fetch(path);
-  //   const data = await res.json();
-
-  //   if (url !== data['url']) {
-  //     console.log(`Bad URL...redirected`);
-  //     //return redirect(context, data['url'], 308);
-  //   }
-
-  // } catch (e) {
-  //   console.log(`Page not found`);
-  //   console.log(e);
-  //   //return redirect(context, '/notfound', 302);
-  // }
+    if (err && err.response && err.response.status) {
+      if (err.response.status = 404) {
+        //notFound = true;
+        return redirect(context, '/notfound', 302);
+      }
+    } else {
+      if (err.indexOf("Redirect: ") == 0) {
+        return redirect(context, err.slice(10), 308);
+      }
+    }
+  }
 
   return {
     id,
-    uuid
+    uuid,
+    url,
+    //notFound
   };
 
 };
