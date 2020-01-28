@@ -60,34 +60,32 @@ const News = ({ id, uuid, news, template, notFound }) => {
 }
 
 News.getInitialProps = async function (context) {
-
   const { store } = context;
   const { section, date, id } = context.query;
   const uuid = id.slice(-36);
   const url = `/section/${section}/${date}/${id}`;
-  //let notFound = false;
+  let notFound = false;
 
   try {
     await store.dispatch(getNews(section, date, uuid, url, context.req));
-  } catch (err) {
+    const error = store.getState().news.error;
 
-    if (err && err.response && err.response.status) {
-      if (err.response.status = 404) {
-        //notFound = true;
-        return redirect(context, '/notfound', 302);
-      }
-    } else {
-      if (err.indexOf("Redirect: ") == 0) {
-        return redirect(context, err.slice(10), 308);
-      }
+    if (error && error.indexOf('Redirect: ') == 0) {
+      return redirect(context, error.slice(10), 308);
     }
+    if (error == 'NotFound') {
+      notFound = true;
+    }
+
+  } catch (err) {
+    console.log(err);
   }
 
   return {
     id,
     uuid,
     url,
-    //notFound
+    notFound
   };
 
 };

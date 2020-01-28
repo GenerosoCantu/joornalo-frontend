@@ -2080,7 +2080,8 @@ const initialState = {
   template: null,
   front: null,
   loading: false,
-  agent: null
+  agent: null,
+  error: null
 };
 /* harmony default export */ __webpack_exports__["default"] = ((state = initialState, action) => {
   switch (action.type) {
@@ -2088,6 +2089,7 @@ const initialState = {
       return _objectSpread({}, state, {
         news: action.payload.news,
         template: action.payload.template,
+        error: false,
         loading: false
       });
 

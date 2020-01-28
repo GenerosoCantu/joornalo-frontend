@@ -3,7 +3,6 @@ import { initAgent, test } from '../services/configService';
 import axios from 'axios';
 
 const getTemplate = async (req, template) => {
-  console.log('getTemplate ++++++++++++++++++++++++++++++');
   try {
     setLoading();
 
@@ -26,7 +25,6 @@ const getTemplate = async (req, template) => {
 }
 
 export const getNews = (section, date, uuid, url, req) => async dispatch => {
-  console.log('getNews ++++++++++++++++++++++++++++++');
   try {
     setLoading();
 
@@ -35,7 +33,10 @@ export const getNews = (section, date, uuid, url, req) => async dispatch => {
     const res = await axios.get(path);
 
     if (url !== res.data['url']) {
-      throw `Redirect: ${res.data['url']}`
+      dispatch({
+        type: NEWS_ERROR,
+        payload: `Redirect: ${res.data['url']}`
+      });
     }
 
     const template = await getTemplate(req, res.data['template']);
@@ -49,12 +50,10 @@ export const getNews = (section, date, uuid, url, req) => async dispatch => {
     });
 
   } catch (err) {
-    console.log('***********Error');
-    throw err
-    // dispatch({
-    //   type: NEWS_ERROR,
-    //   payload: err.statusText
-    // });
+    dispatch({
+      type: NEWS_ERROR,
+      payload: 'NotFound'
+    });
   }
 };
 

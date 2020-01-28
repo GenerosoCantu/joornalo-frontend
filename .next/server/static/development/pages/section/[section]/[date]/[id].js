@@ -146,8 +146,6 @@ __webpack_require__.r(__webpack_exports__);
 
 
 const getTemplate = async (req, template) => {
-  console.log('getTemplate ++++++++++++++++++++++++++++++');
-
   try {
     setLoading();
     const agent = await Object(_services_configService__WEBPACK_IMPORTED_MODULE_1__["initAgent"])(req);
@@ -165,15 +163,16 @@ const getTemplate = async (req, template) => {
 };
 
 const getNews = (section, date, uuid, url, req) => async dispatch => {
-  console.log('getNews ++++++++++++++++++++++++++++++');
-
   try {
     setLoading();
     const path = `https://data.joornalo.com/news/${uuid.charAt(0)}/${uuid.charAt(1)}/${uuid}.json`;
     const res = await axios__WEBPACK_IMPORTED_MODULE_2___default.a.get(path);
 
     if (url !== res.data['url']) {
-      throw `Redirect: ${res.data['url']}`;
+      dispatch({
+        type: _types__WEBPACK_IMPORTED_MODULE_0__["NEWS_ERROR"],
+        payload: `Redirect: ${res.data['url']}`
+      });
     }
 
     const template = await getTemplate(req, res.data['template']);
@@ -185,11 +184,10 @@ const getNews = (section, date, uuid, url, req) => async dispatch => {
       }
     });
   } catch (err) {
-    console.log('***********Error');
-    throw err; // dispatch({
-    //   type: NEWS_ERROR,
-    //   payload: err.statusText
-    // });
+    dispatch({
+      type: _types__WEBPACK_IMPORTED_MODULE_0__["NEWS_ERROR"],
+      payload: 'NotFound'
+    });
   }
 }; // Set loading to true
 
@@ -3116,28 +3114,29 @@ News.getInitialProps = async function (context) {
     id
   } = context.query;
   const uuid = id.slice(-36);
-  const url = `/section/${section}/${date}/${id}`; //let notFound = false;
+  const url = `/section/${section}/${date}/${id}`;
+  let notFound = false;
 
   try {
     await store.dispatch(Object(_actions_newsActions__WEBPACK_IMPORTED_MODULE_8__["getNews"])(section, date, uuid, url, context.req));
-  } catch (err) {
-    if (err && err.response && err.response.status) {
-      if (err.response.status = 404) {
-        //notFound = true;
-        return next_redirect__WEBPACK_IMPORTED_MODULE_5___default()(context, '/notfound', 302);
-      }
-    } else {
-      if (err.indexOf("Redirect: ") == 0) {
-        return next_redirect__WEBPACK_IMPORTED_MODULE_5___default()(context, err.slice(10), 308);
-      }
+    const error = store.getState().news.error;
+
+    if (error && error.indexOf('Redirect: ') == 0) {
+      return next_redirect__WEBPACK_IMPORTED_MODULE_5___default()(context, error.slice(10), 308);
     }
+
+    if (error == 'NotFound') {
+      notFound = true;
+    }
+  } catch (err) {
+    console.log(err);
   }
 
   return {
     id,
     uuid,
-    url //notFound
-
+    url,
+    notFound
   };
 };
 

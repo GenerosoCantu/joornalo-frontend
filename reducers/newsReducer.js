@@ -5,7 +5,8 @@ const initialState = {
   template: null,
   front: null,
   loading: false,
-  agent: null
+  agent: null,
+  error: null
 };
 
 export default (state = initialState, action) => {
@@ -15,6 +16,7 @@ export default (state = initialState, action) => {
         ...state,
         news: action.payload.news,
         template: action.payload.template,
+        error: false,
         loading: false
       };
     case NEWS_ERROR:

@@ -11568,7 +11568,8 @@ var initialState = {
   template: null,
   front: null,
   loading: false,
-  agent: null
+  agent: null,
+  error: null
 };
 /* harmony default export */ __webpack_exports__["default"] = (function () {
   var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : initialState;
@@ -11579,6 +11580,7 @@ var initialState = {
       return _objectSpread({}, state, {
         news: action.payload.news,
         template: action.payload.template,
+        error: false,
         loading: false
       });
 

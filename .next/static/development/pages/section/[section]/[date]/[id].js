@@ -28,38 +28,37 @@ var getTemplate = function getTemplate(req, template) {
     while (1) {
       switch (_context.prev = _context.next) {
         case 0:
-          console.log('getTemplate ++++++++++++++++++++++++++++++');
-          _context.prev = 1;
+          _context.prev = 0;
           setLoading();
-          _context.next = 5;
+          _context.next = 4;
           return _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.awrap(Object(_services_configService__WEBPACK_IMPORTED_MODULE_2__["initAgent"])(req));
 
-        case 5:
+        case 4:
           agent = _context.sent;
           tmpl = agent + '-' + template;
           templateUrl = "https://data.joornalo.com/templates/news/".concat(tmpl, ".json");
-          _context.next = 10;
+          _context.next = 9;
           return _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.awrap(axios__WEBPACK_IMPORTED_MODULE_3___default.a.get(templateUrl));
 
-        case 10:
+        case 9:
           res = _context.sent;
           return _context.abrupt("return", res.data);
 
-        case 14:
-          _context.prev = 14;
-          _context.t0 = _context["catch"](1);
+        case 13:
+          _context.prev = 13;
+          _context.t0 = _context["catch"](0);
           console.log('***********Template Error');
           dispatch({
             type: _types__WEBPACK_IMPORTED_MODULE_1__["NEWS_ERROR"],
             payload: _context.t0.statusText
           });
 
-        case 18:
+        case 17:
         case "end":
           return _context.stop();
       }
     }
-  }, null, null, [[1, 14]]);
+  }, null, null, [[0, 13]]);
 };
 
 var getNews = function getNews(section, date, uuid, url, req) {
@@ -69,28 +68,26 @@ var getNews = function getNews(section, date, uuid, url, req) {
       while (1) {
         switch (_context2.prev = _context2.next) {
           case 0:
-            console.log('getNews ++++++++++++++++++++++++++++++');
-            _context2.prev = 1;
+            _context2.prev = 0;
             setLoading();
             path = "https://data.joornalo.com/news/".concat(uuid.charAt(0), "/").concat(uuid.charAt(1), "/").concat(uuid, ".json");
-            _context2.next = 6;
+            _context2.next = 5;
             return _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.awrap(axios__WEBPACK_IMPORTED_MODULE_3___default.a.get(path));
 
-          case 6:
+          case 5:
             res = _context2.sent;
 
-            if (!(url !== res.data['url'])) {
-              _context2.next = 9;
-              break;
+            if (url !== res.data['url']) {
+              dispatch({
+                type: _types__WEBPACK_IMPORTED_MODULE_1__["NEWS_ERROR"],
+                payload: "Redirect: ".concat(res.data['url'])
+              });
             }
 
-            throw "Redirect: ".concat(res.data['url']);
-
-          case 9:
-            _context2.next = 11;
+            _context2.next = 9;
             return _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.awrap(getTemplate(req, res.data['template']));
 
-          case 11:
+          case 9:
             template = _context2.sent;
             dispatch({
               type: _types__WEBPACK_IMPORTED_MODULE_1__["GET_NEWS"],
@@ -99,21 +96,23 @@ var getNews = function getNews(section, date, uuid, url, req) {
                 template: template
               }
             });
-            _context2.next = 19;
+            _context2.next = 16;
             break;
 
-          case 15:
-            _context2.prev = 15;
-            _context2.t0 = _context2["catch"](1);
-            console.log('***********Error');
-            throw _context2.t0;
+          case 13:
+            _context2.prev = 13;
+            _context2.t0 = _context2["catch"](0);
+            dispatch({
+              type: _types__WEBPACK_IMPORTED_MODULE_1__["NEWS_ERROR"],
+              payload: 'NotFound'
+            });
 
-          case 19:
+          case 16:
           case "end":
             return _context2.stop();
         }
       }
-    }, null, null, [[1, 15]]);
+    }, null, null, [[0, 13]]);
   };
 }; // Set loading to true
 
@@ -15490,7 +15489,7 @@ var News = function News(_ref) {
 };
 
 News.getInitialProps = function _callee(context) {
-  var store, _context$query, section, date, id, uuid, url;
+  var store, _context$query, section, date, id, uuid, url, notFound, error;
 
   return _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.async(function _callee$(_context) {
     while (1) {
@@ -15499,58 +15498,49 @@ News.getInitialProps = function _callee(context) {
           store = context.store;
           _context$query = context.query, section = _context$query.section, date = _context$query.date, id = _context$query.id;
           uuid = id.slice(-36);
-          url = "/section/".concat(section, "/").concat(date, "/").concat(id); //let notFound = false;
-
-          _context.prev = 4;
-          _context.next = 7;
+          url = "/section/".concat(section, "/").concat(date, "/").concat(id);
+          notFound = false;
+          _context.prev = 5;
+          _context.next = 8;
           return _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.awrap(store.dispatch(Object(_actions_newsActions__WEBPACK_IMPORTED_MODULE_9__["getNews"])(section, date, uuid, url, context.req)));
 
-        case 7:
-          _context.next = 18;
+        case 8:
+          error = store.getState().news.error;
+
+          if (!(error && error.indexOf('Redirect: ') == 0)) {
+            _context.next = 11;
+            break;
+          }
+
+          return _context.abrupt("return", next_redirect__WEBPACK_IMPORTED_MODULE_6___default()(context, error.slice(10), 308));
+
+        case 11:
+          if (error == 'NotFound') {
+            notFound = true;
+          }
+
+          _context.next = 17;
           break;
-
-        case 9:
-          _context.prev = 9;
-          _context.t0 = _context["catch"](4);
-
-          if (!(_context.t0 && _context.t0.response && _context.t0.response.status)) {
-            _context.next = 16;
-            break;
-          }
-
-          if (!(_context.t0.response.status = 404)) {
-            _context.next = 14;
-            break;
-          }
-
-          return _context.abrupt("return", next_redirect__WEBPACK_IMPORTED_MODULE_6___default()(context, '/notfound', 302));
 
         case 14:
-          _context.next = 18;
-          break;
+          _context.prev = 14;
+          _context.t0 = _context["catch"](5);
+          console.log(_context.t0);
 
-        case 16:
-          if (!(_context.t0.indexOf("Redirect: ") == 0)) {
-            _context.next = 18;
-            break;
-          }
-
-          return _context.abrupt("return", next_redirect__WEBPACK_IMPORTED_MODULE_6___default()(context, _context.t0.slice(10), 308));
-
-        case 18:
+        case 17:
           return _context.abrupt("return", {
             id: id,
             uuid: uuid,
-            url: url //notFound
-
+            url: url,
+            notFound: notFound
           });
 
-        case 19:
+        case 18:
         case "end":
           return _context.stop();
       }
     }
-  }, null, null, [[4, 9]]);
+  }, null, null, [[5, 14]]);
 };
 
 var mapStateToProps = function mapStateToProps(state) {
