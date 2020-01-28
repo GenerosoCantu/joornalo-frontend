@@ -1,7 +1,13 @@
 const withCSS = require('@zeit/next-css')
-module.exports = withCSS({
-  /* config options here */
-})
+const OptimizeCSSAssetsPlugin = require("optimize-css-assets-webpack-plugin");
 
-// Metadata
-// https://nextjs.org/docs/api-reference/next/head
+module.exports =
+  withCSS({
+    webpack(config, options) {
+      config.optimization.minimizer = [];
+      config.optimization.minimizer.push(new OptimizeCSSAssetsPlugin({}));
+
+      return config;
+    }
+  });
+

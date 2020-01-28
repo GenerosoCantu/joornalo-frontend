@@ -121,7 +121,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 3);
+/******/ 	return __webpack_require__(__webpack_require__.s = 4);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -257,13 +257,21 @@ var map = {
 		"./components/bar.js",
 		1
 	],
+	"./bares": [
+		"./components/bares.js",
+		2
+	],
+	"./bares.js": [
+		"./components/bares.js",
+		2
+	],
 	"./boo": [
 		"./components/boo.js",
-		2
+		3
 	],
 	"./boo.js": [
 		"./components/boo.js",
-		2
+		3
 	],
 	"./components": [
 		"./components/components.js"
@@ -273,11 +281,11 @@ var map = {
 	],
 	"./dataContext": [
 		"./components/dataContext.js",
-		3
+		4
 	],
 	"./dataContext.js": [
 		"./components/dataContext.js",
-		3
+		4
 	],
 	"./news1": [
 		"./components/news1.js",
@@ -326,6 +334,8 @@ var map = {
 	"./Template.js": "./components/Template.js",
 	"./bar": "./components/bar.js",
 	"./bar.js": "./components/bar.js",
+	"./bares": "./components/bares.js",
+	"./bares.js": "./components/bares.js",
 	"./boo": "./components/boo.js",
 	"./boo.js": "./components/boo.js",
 	"./components": "./components/components.js",
@@ -3184,7 +3194,7 @@ const test = () => {
 
 /***/ }),
 
-/***/ 3:
+/***/ 4:
 /*!******************************************************!*\
   !*** multi ./pages/section/[section]/[date]/[id].js ***!
   \******************************************************/

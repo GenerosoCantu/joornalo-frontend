@@ -182,13 +182,21 @@ var map = {
 		"./components/bar.js",
 		2
 	],
+	"./bares": [
+		"./components/bares.js",
+		3
+	],
+	"./bares.js": [
+		"./components/bares.js",
+		3
+	],
 	"./boo": [
 		"./components/boo.js",
-		3
+		4
 	],
 	"./boo.js": [
 		"./components/boo.js",
-		3
+		4
 	],
 	"./components": [
 		"./components/components.js"
@@ -198,11 +206,11 @@ var map = {
 	],
 	"./dataContext": [
 		"./components/dataContext.js",
-		4
+		5
 	],
 	"./dataContext.js": [
 		"./components/dataContext.js",
-		4
+		5
 	],
 	"./news1": [
 		"./components/news1.js",
@@ -251,6 +259,8 @@ var map = {
 	"./Template.js": "./components/Template.js",
 	"./bar": "./components/bar.js",
 	"./bar.js": "./components/bar.js",
+	"./bares": "./components/bares.js",
+	"./bares.js": "./components/bares.js",
 	"./boo": "./components/boo.js",
 	"./boo.js": "./components/boo.js",
 	"./components": "./components/components.js",
@@ -15589,7 +15599,7 @@ var test = function test() {
 
 /***/ }),
 
-/***/ 1:
+/***/ 2:
 /*!***********************************************************************************************************************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2Fsection%2F%5Bsection%5D%2F%5Bdate%5D%2F%5Bid%5D&absolutePagePath=C%3A%5CProjects%5CDEVELOPMENT%5Cjoornalo-frontend%5Cfront.joornalo%5Cpages%5Csection%5C%5Bsection%5D%5C%5Bdate%5D%5C%5Bid%5D.js ***!
   \***********************************************************************************************************************************************************************************************************************************************/
@@ -15612,5 +15622,5 @@ module.exports = dll_5f137288facb1107b491;
 
 /***/ })
 
-},[[1,"static/runtime/webpack.js"]]]);
+},[[2,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=[id].js.map
