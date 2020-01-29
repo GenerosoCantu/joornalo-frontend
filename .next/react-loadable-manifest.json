@@ -3,320 +3,320 @@
     {
       "id": "9Uzm",
       "name": "./components/bar.js",
-      "file": "static/chunks/3.a2d8d3eed936d0c3e42a.js",
-      "publicPath": "static/chunks/3.a2d8d3eed936d0c3e42a.js"
+      "file": "static/chunks/3.5db239e248786b1395ff.js",
+      "publicPath": "static/chunks/3.5db239e248786b1395ff.js"
     }
   ],
   "./bar.js": [
     {
       "id": "9Uzm",
       "name": "./components/bar.js",
-      "file": "static/chunks/3.a2d8d3eed936d0c3e42a.js",
-      "publicPath": "static/chunks/3.a2d8d3eed936d0c3e42a.js"
+      "file": "static/chunks/3.5db239e248786b1395ff.js",
+      "publicPath": "static/chunks/3.5db239e248786b1395ff.js"
     }
   ],
   "./bares": [
     {
       "id": "hw7L",
       "name": "./components/bares.js",
-      "file": "static/chunks/4.69ef1a97be4c2d79f56f.js",
-      "publicPath": "static/chunks/4.69ef1a97be4c2d79f56f.js"
+      "file": "static/chunks/4.92a3053b513e4488ff1a.js",
+      "publicPath": "static/chunks/4.92a3053b513e4488ff1a.js"
     }
   ],
   "./bares.js": [
     {
       "id": "hw7L",
       "name": "./components/bares.js",
-      "file": "static/chunks/4.69ef1a97be4c2d79f56f.js",
-      "publicPath": "static/chunks/4.69ef1a97be4c2d79f56f.js"
+      "file": "static/chunks/4.92a3053b513e4488ff1a.js",
+      "publicPath": "static/chunks/4.92a3053b513e4488ff1a.js"
     }
   ],
   "./boo": [
     {
       "id": "0V0Z",
       "name": "./components/boo.js",
-      "file": "static/chunks/5.a74fea6d7a21858c2d5b.js",
-      "publicPath": "static/chunks/5.a74fea6d7a21858c2d5b.js"
+      "file": "static/chunks/5.e4b8e22f4fba6960fc16.js",
+      "publicPath": "static/chunks/5.e4b8e22f4fba6960fc16.js"
     }
   ],
   "./boo.js": [
     {
       "id": "0V0Z",
       "name": "./components/boo.js",
-      "file": "static/chunks/5.a74fea6d7a21858c2d5b.js",
-      "publicPath": "static/chunks/5.a74fea6d7a21858c2d5b.js"
+      "file": "static/chunks/5.e4b8e22f4fba6960fc16.js",
+      "publicPath": "static/chunks/5.e4b8e22f4fba6960fc16.js"
     }
   ],
   "./dataContext": [
     {
       "id": "t3R3",
       "name": "./components/dataContext.js",
-      "file": "static/chunks/6.cf9270940dbc8f32e499.js",
-      "publicPath": "static/chunks/6.cf9270940dbc8f32e499.js"
+      "file": "static/chunks/6.a3c1c314733e0163a73f.js",
+      "publicPath": "static/chunks/6.a3c1c314733e0163a73f.js"
     }
   ],
   "./dataContext.js": [
     {
       "id": "t3R3",
       "name": "./components/dataContext.js",
-      "file": "static/chunks/6.cf9270940dbc8f32e499.js",
-      "publicPath": "static/chunks/6.cf9270940dbc8f32e499.js"
+      "file": "static/chunks/6.a3c1c314733e0163a73f.js",
+      "publicPath": "static/chunks/6.a3c1c314733e0163a73f.js"
     }
   ],
   "./news1": [
     {
       "id": "5pKv",
       "name": "./node_modules/core-js/library/modules/_string-ws.js",
-      "file": "static/chunks/2.e48f1498a0ba077567b9.js",
-      "publicPath": "static/chunks/2.e48f1498a0ba077567b9.js"
+      "file": "static/chunks/2.59ae6073b94bdcb55dac.js",
+      "publicPath": "static/chunks/2.59ae6073b94bdcb55dac.js"
     },
     {
       "id": "6BQ9",
       "name": "./node_modules/@babel/runtime-corejs2/core-js/parse-int.js",
-      "file": "static/chunks/2.e48f1498a0ba077567b9.js",
-      "publicPath": "static/chunks/2.e48f1498a0ba077567b9.js"
+      "file": "static/chunks/2.59ae6073b94bdcb55dac.js",
+      "publicPath": "static/chunks/2.59ae6073b94bdcb55dac.js"
     },
     {
       "id": "76ZC",
       "name": "./node_modules/html-react-parser/index.js",
-      "file": "static/chunks/2.e48f1498a0ba077567b9.js",
-      "publicPath": "static/chunks/2.e48f1498a0ba077567b9.js"
+      "file": "static/chunks/2.59ae6073b94bdcb55dac.js",
+      "publicPath": "static/chunks/2.59ae6073b94bdcb55dac.js"
     },
     {
       "id": "7MhH",
       "name": "./node_modules/html-dom-parser/lib/domparser.js",
-      "file": "static/chunks/2.e48f1498a0ba077567b9.js",
-      "publicPath": "static/chunks/2.e48f1498a0ba077567b9.js"
+      "file": "static/chunks/2.59ae6073b94bdcb55dac.js",
+      "publicPath": "static/chunks/2.59ae6073b94bdcb55dac.js"
     },
     {
       "id": "CC3I",
       "name": "./node_modules/style-to-object/index.js",
-      "file": "static/chunks/2.e48f1498a0ba077567b9.js",
-      "publicPath": "static/chunks/2.e48f1498a0ba077567b9.js"
+      "file": "static/chunks/2.59ae6073b94bdcb55dac.js",
+      "publicPath": "static/chunks/2.59ae6073b94bdcb55dac.js"
     },
     {
       "id": "F3Dj",
       "name": "./node_modules/html-dom-parser/lib/constants.js",
-      "file": "static/chunks/2.e48f1498a0ba077567b9.js",
-      "publicPath": "static/chunks/2.e48f1498a0ba077567b9.js"
+      "file": "static/chunks/2.59ae6073b94bdcb55dac.js",
+      "publicPath": "static/chunks/2.59ae6073b94bdcb55dac.js"
     },
     {
       "id": "GkXj",
       "name": "./node_modules/html-react-parser/lib/dom-to-react.js",
-      "file": "static/chunks/2.e48f1498a0ba077567b9.js",
-      "publicPath": "static/chunks/2.e48f1498a0ba077567b9.js"
+      "file": "static/chunks/2.59ae6073b94bdcb55dac.js",
+      "publicPath": "static/chunks/2.59ae6073b94bdcb55dac.js"
     },
     {
       "id": "Lc7W",
       "name": "./node_modules/inline-style-parser/index.js",
-      "file": "static/chunks/2.e48f1498a0ba077567b9.js",
-      "publicPath": "static/chunks/2.e48f1498a0ba077567b9.js"
+      "file": "static/chunks/2.59ae6073b94bdcb55dac.js",
+      "publicPath": "static/chunks/2.59ae6073b94bdcb55dac.js"
     },
     {
       "id": "MHQ9",
       "name": "./node_modules/html-react-parser/lib/utilities.js",
-      "file": "static/chunks/2.e48f1498a0ba077567b9.js",
-      "publicPath": "static/chunks/2.e48f1498a0ba077567b9.js"
+      "file": "static/chunks/2.59ae6073b94bdcb55dac.js",
+      "publicPath": "static/chunks/2.59ae6073b94bdcb55dac.js"
     },
     {
       "id": "N3/Y",
       "name": "./node_modules/react-property/lib/injection.js",
-      "file": "static/chunks/2.e48f1498a0ba077567b9.js",
-      "publicPath": "static/chunks/2.e48f1498a0ba077567b9.js"
+      "file": "static/chunks/2.59ae6073b94bdcb55dac.js",
+      "publicPath": "static/chunks/2.59ae6073b94bdcb55dac.js"
     },
     {
       "id": "QIE6",
       "name": "./node_modules/html-dom-parser/lib/html-to-dom-client.js",
-      "file": "static/chunks/2.e48f1498a0ba077567b9.js",
-      "publicPath": "static/chunks/2.e48f1498a0ba077567b9.js"
+      "file": "static/chunks/2.59ae6073b94bdcb55dac.js",
+      "publicPath": "static/chunks/2.59ae6073b94bdcb55dac.js"
     },
     {
       "id": "SHT8",
       "name": "./components/news1.js",
-      "file": "static/chunks/2.e48f1498a0ba077567b9.js",
-      "publicPath": "static/chunks/2.e48f1498a0ba077567b9.js"
+      "file": "static/chunks/2.59ae6073b94bdcb55dac.js",
+      "publicPath": "static/chunks/2.59ae6073b94bdcb55dac.js"
     },
     {
       "id": "XWtR",
       "name": "./node_modules/core-js/library/modules/_parse-int.js",
-      "file": "static/chunks/2.e48f1498a0ba077567b9.js",
-      "publicPath": "static/chunks/2.e48f1498a0ba077567b9.js"
+      "file": "static/chunks/2.59ae6073b94bdcb55dac.js",
+      "publicPath": "static/chunks/2.59ae6073b94bdcb55dac.js"
     },
     {
       "id": "dEVD",
       "name": "./node_modules/core-js/library/modules/es6.parse-int.js",
-      "file": "static/chunks/2.e48f1498a0ba077567b9.js",
-      "publicPath": "static/chunks/2.e48f1498a0ba077567b9.js"
+      "file": "static/chunks/2.59ae6073b94bdcb55dac.js",
+      "publicPath": "static/chunks/2.59ae6073b94bdcb55dac.js"
     },
     {
       "id": "eKC+",
       "name": "./node_modules/react-property/index.js",
-      "file": "static/chunks/2.e48f1498a0ba077567b9.js",
-      "publicPath": "static/chunks/2.e48f1498a0ba077567b9.js"
+      "file": "static/chunks/2.59ae6073b94bdcb55dac.js",
+      "publicPath": "static/chunks/2.59ae6073b94bdcb55dac.js"
     },
     {
       "id": "nYr6",
       "name": "./node_modules/react-property/lib/HTMLDOMPropertyConfig.js",
-      "file": "static/chunks/2.e48f1498a0ba077567b9.js",
-      "publicPath": "static/chunks/2.e48f1498a0ba077567b9.js"
+      "file": "static/chunks/2.59ae6073b94bdcb55dac.js",
+      "publicPath": "static/chunks/2.59ae6073b94bdcb55dac.js"
     },
     {
       "id": "oc46",
       "name": "./node_modules/core-js/library/modules/_string-trim.js",
-      "file": "static/chunks/2.e48f1498a0ba077567b9.js",
-      "publicPath": "static/chunks/2.e48f1498a0ba077567b9.js"
+      "file": "static/chunks/2.59ae6073b94bdcb55dac.js",
+      "publicPath": "static/chunks/2.59ae6073b94bdcb55dac.js"
     },
     {
       "id": "qpZ2",
       "name": "./node_modules/html-react-parser/lib/attributes-to-props.js",
-      "file": "static/chunks/2.e48f1498a0ba077567b9.js",
-      "publicPath": "static/chunks/2.e48f1498a0ba077567b9.js"
+      "file": "static/chunks/2.59ae6073b94bdcb55dac.js",
+      "publicPath": "static/chunks/2.59ae6073b94bdcb55dac.js"
     },
     {
       "id": "uekQ",
       "name": "./node_modules/core-js/library/fn/parse-int.js",
-      "file": "static/chunks/2.e48f1498a0ba077567b9.js",
-      "publicPath": "static/chunks/2.e48f1498a0ba077567b9.js"
+      "file": "static/chunks/2.59ae6073b94bdcb55dac.js",
+      "publicPath": "static/chunks/2.59ae6073b94bdcb55dac.js"
     },
     {
       "id": "wJvl",
       "name": "./node_modules/html-dom-parser/lib/utilities.js",
-      "file": "static/chunks/2.e48f1498a0ba077567b9.js",
-      "publicPath": "static/chunks/2.e48f1498a0ba077567b9.js"
+      "file": "static/chunks/2.59ae6073b94bdcb55dac.js",
+      "publicPath": "static/chunks/2.59ae6073b94bdcb55dac.js"
     },
     {
       "id": "xp0l",
       "name": "./node_modules/react-property/lib/SVGDOMPropertyConfig.js",
-      "file": "static/chunks/2.e48f1498a0ba077567b9.js",
-      "publicPath": "static/chunks/2.e48f1498a0ba077567b9.js"
+      "file": "static/chunks/2.59ae6073b94bdcb55dac.js",
+      "publicPath": "static/chunks/2.59ae6073b94bdcb55dac.js"
     }
   ],
   "./news1.js": [
     {
       "id": "5pKv",
       "name": "./node_modules/core-js/library/modules/_string-ws.js",
-      "file": "static/chunks/2.e48f1498a0ba077567b9.js",
-      "publicPath": "static/chunks/2.e48f1498a0ba077567b9.js"
+      "file": "static/chunks/2.59ae6073b94bdcb55dac.js",
+      "publicPath": "static/chunks/2.59ae6073b94bdcb55dac.js"
     },
     {
       "id": "6BQ9",
       "name": "./node_modules/@babel/runtime-corejs2/core-js/parse-int.js",
-      "file": "static/chunks/2.e48f1498a0ba077567b9.js",
-      "publicPath": "static/chunks/2.e48f1498a0ba077567b9.js"
+      "file": "static/chunks/2.59ae6073b94bdcb55dac.js",
+      "publicPath": "static/chunks/2.59ae6073b94bdcb55dac.js"
     },
     {
       "id": "76ZC",
       "name": "./node_modules/html-react-parser/index.js",
-      "file": "static/chunks/2.e48f1498a0ba077567b9.js",
-      "publicPath": "static/chunks/2.e48f1498a0ba077567b9.js"
+      "file": "static/chunks/2.59ae6073b94bdcb55dac.js",
+      "publicPath": "static/chunks/2.59ae6073b94bdcb55dac.js"
     },
     {
       "id": "7MhH",
       "name": "./node_modules/html-dom-parser/lib/domparser.js",
-      "file": "static/chunks/2.e48f1498a0ba077567b9.js",
-      "publicPath": "static/chunks/2.e48f1498a0ba077567b9.js"
+      "file": "static/chunks/2.59ae6073b94bdcb55dac.js",
+      "publicPath": "static/chunks/2.59ae6073b94bdcb55dac.js"
     },
     {
       "id": "CC3I",
       "name": "./node_modules/style-to-object/index.js",
-      "file": "static/chunks/2.e48f1498a0ba077567b9.js",
-      "publicPath": "static/chunks/2.e48f1498a0ba077567b9.js"
+      "file": "static/chunks/2.59ae6073b94bdcb55dac.js",
+      "publicPath": "static/chunks/2.59ae6073b94bdcb55dac.js"
     },
     {
       "id": "F3Dj",
       "name": "./node_modules/html-dom-parser/lib/constants.js",
-      "file": "static/chunks/2.e48f1498a0ba077567b9.js",
-      "publicPath": "static/chunks/2.e48f1498a0ba077567b9.js"
+      "file": "static/chunks/2.59ae6073b94bdcb55dac.js",
+      "publicPath": "static/chunks/2.59ae6073b94bdcb55dac.js"
     },
     {
       "id": "GkXj",
       "name": "./node_modules/html-react-parser/lib/dom-to-react.js",
-      "file": "static/chunks/2.e48f1498a0ba077567b9.js",
-      "publicPath": "static/chunks/2.e48f1498a0ba077567b9.js"
+      "file": "static/chunks/2.59ae6073b94bdcb55dac.js",
+      "publicPath": "static/chunks/2.59ae6073b94bdcb55dac.js"
     },
     {
       "id": "Lc7W",
       "name": "./node_modules/inline-style-parser/index.js",
-      "file": "static/chunks/2.e48f1498a0ba077567b9.js",
-      "publicPath": "static/chunks/2.e48f1498a0ba077567b9.js"
+      "file": "static/chunks/2.59ae6073b94bdcb55dac.js",
+      "publicPath": "static/chunks/2.59ae6073b94bdcb55dac.js"
     },
     {
       "id": "MHQ9",
       "name": "./node_modules/html-react-parser/lib/utilities.js",
-      "file": "static/chunks/2.e48f1498a0ba077567b9.js",
-      "publicPath": "static/chunks/2.e48f1498a0ba077567b9.js"
+      "file": "static/chunks/2.59ae6073b94bdcb55dac.js",
+      "publicPath": "static/chunks/2.59ae6073b94bdcb55dac.js"
     },
     {
       "id": "N3/Y",
       "name": "./node_modules/react-property/lib/injection.js",
-      "file": "static/chunks/2.e48f1498a0ba077567b9.js",
-      "publicPath": "static/chunks/2.e48f1498a0ba077567b9.js"
+      "file": "static/chunks/2.59ae6073b94bdcb55dac.js",
+      "publicPath": "static/chunks/2.59ae6073b94bdcb55dac.js"
     },
     {
       "id": "QIE6",
       "name": "./node_modules/html-dom-parser/lib/html-to-dom-client.js",
-      "file": "static/chunks/2.e48f1498a0ba077567b9.js",
-      "publicPath": "static/chunks/2.e48f1498a0ba077567b9.js"
+      "file": "static/chunks/2.59ae6073b94bdcb55dac.js",
+      "publicPath": "static/chunks/2.59ae6073b94bdcb55dac.js"
     },
     {
       "id": "SHT8",
       "name": "./components/news1.js",
-      "file": "static/chunks/2.e48f1498a0ba077567b9.js",
-      "publicPath": "static/chunks/2.e48f1498a0ba077567b9.js"
+      "file": "static/chunks/2.59ae6073b94bdcb55dac.js",
+      "publicPath": "static/chunks/2.59ae6073b94bdcb55dac.js"
     },
     {
       "id": "XWtR",
       "name": "./node_modules/core-js/library/modules/_parse-int.js",
-      "file": "static/chunks/2.e48f1498a0ba077567b9.js",
-      "publicPath": "static/chunks/2.e48f1498a0ba077567b9.js"
+      "file": "static/chunks/2.59ae6073b94bdcb55dac.js",
+      "publicPath": "static/chunks/2.59ae6073b94bdcb55dac.js"
     },
     {
       "id": "dEVD",
       "name": "./node_modules/core-js/library/modules/es6.parse-int.js",
-      "file": "static/chunks/2.e48f1498a0ba077567b9.js",
-      "publicPath": "static/chunks/2.e48f1498a0ba077567b9.js"
+      "file": "static/chunks/2.59ae6073b94bdcb55dac.js",
+      "publicPath": "static/chunks/2.59ae6073b94bdcb55dac.js"
     },
     {
       "id": "eKC+",
       "name": "./node_modules/react-property/index.js",
-      "file": "static/chunks/2.e48f1498a0ba077567b9.js",
-      "publicPath": "static/chunks/2.e48f1498a0ba077567b9.js"
+      "file": "static/chunks/2.59ae6073b94bdcb55dac.js",
+      "publicPath": "static/chunks/2.59ae6073b94bdcb55dac.js"
     },
     {
       "id": "nYr6",
       "name": "./node_modules/react-property/lib/HTMLDOMPropertyConfig.js",
-      "file": "static/chunks/2.e48f1498a0ba077567b9.js",
-      "publicPath": "static/chunks/2.e48f1498a0ba077567b9.js"
+      "file": "static/chunks/2.59ae6073b94bdcb55dac.js",
+      "publicPath": "static/chunks/2.59ae6073b94bdcb55dac.js"
     },
     {
       "id": "oc46",
       "name": "./node_modules/core-js/library/modules/_string-trim.js",
-      "file": "static/chunks/2.e48f1498a0ba077567b9.js",
-      "publicPath": "static/chunks/2.e48f1498a0ba077567b9.js"
+      "file": "static/chunks/2.59ae6073b94bdcb55dac.js",
+      "publicPath": "static/chunks/2.59ae6073b94bdcb55dac.js"
     },
     {
       "id": "qpZ2",
       "name": "./node_modules/html-react-parser/lib/attributes-to-props.js",
-      "file": "static/chunks/2.e48f1498a0ba077567b9.js",
-      "publicPath": "static/chunks/2.e48f1498a0ba077567b9.js"
+      "file": "static/chunks/2.59ae6073b94bdcb55dac.js",
+      "publicPath": "static/chunks/2.59ae6073b94bdcb55dac.js"
     },
     {
       "id": "uekQ",
       "name": "./node_modules/core-js/library/fn/parse-int.js",
-      "file": "static/chunks/2.e48f1498a0ba077567b9.js",
-      "publicPath": "static/chunks/2.e48f1498a0ba077567b9.js"
+      "file": "static/chunks/2.59ae6073b94bdcb55dac.js",
+      "publicPath": "static/chunks/2.59ae6073b94bdcb55dac.js"
     },
     {
       "id": "wJvl",
       "name": "./node_modules/html-dom-parser/lib/utilities.js",
-      "file": "static/chunks/2.e48f1498a0ba077567b9.js",
-      "publicPath": "static/chunks/2.e48f1498a0ba077567b9.js"
+      "file": "static/chunks/2.59ae6073b94bdcb55dac.js",
+      "publicPath": "static/chunks/2.59ae6073b94bdcb55dac.js"
     },
     {
       "id": "xp0l",
       "name": "./node_modules/react-property/lib/SVGDOMPropertyConfig.js",
-      "file": "static/chunks/2.e48f1498a0ba077567b9.js",
-      "publicPath": "static/chunks/2.e48f1498a0ba077567b9.js"
+      "file": "static/chunks/2.59ae6073b94bdcb55dac.js",
+      "publicPath": "static/chunks/2.59ae6073b94bdcb55dac.js"
     }
   ]
 }

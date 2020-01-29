@@ -3,7 +3,7 @@ import withRedux from 'next-redux-wrapper'
 import { Provider } from 'react-redux';
 import store from './store';
 
-import '../styles/global.css'
+// import '../styles/global.css'
 
 // const Joornalo = ({ Component, pageProps }) => {
 
