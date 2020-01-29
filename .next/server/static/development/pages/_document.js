@@ -1523,6 +1523,16 @@ class MyDocument extends next_document__WEBPACK_IMPORTED_MODULE_8___default.a {
         lineNumber: 18
       },
       __self: this
+    }), __jsx("link", {
+      href: "http://data.joornalo.com/global.css",
+      rel: "stylesheet",
+      type: "text/css",
+      async: true,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 19
+      },
+      __self: this
     })), __jsx("body", {
       __source: {
         fileName: _jsxFileName,

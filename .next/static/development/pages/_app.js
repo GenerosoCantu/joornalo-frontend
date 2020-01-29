@@ -11369,8 +11369,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var next_redux_wrapper__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! next-redux-wrapper */ "./node_modules/next-redux-wrapper/es6/index.js");
 /* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! react-redux */ "./node_modules/react-redux/es/index.js");
 /* harmony import */ var _store__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./store */ "./pages/store.js");
-/* harmony import */ var _styles_global_css__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../styles/global.css */ "./styles/global.css");
-/* harmony import */ var _styles_global_css__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(_styles_global_css__WEBPACK_IMPORTED_MODULE_12__);
 
 
 
@@ -11384,8 +11382,8 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement;
 
 
 
-
- // const Joornalo = ({ Component, pageProps }) => {
+ // import '../styles/global.css'
+// const Joornalo = ({ Component, pageProps }) => {
 //   return (
 //     <Provider store={store}>
 //       <Component {...pageProps} />
@@ -11612,5 +11610,5 @@ module.exports = dll_5f137288facb1107b491;
 
 /***/ })
 
-},[["./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F_app&absolutePagePath=private-next-pages%2F_app.js!./","static/runtime/webpack.js","styles"]]]);
+},[["./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F_app&absolutePagePath=private-next-pages%2F_app.js!./","static/runtime/webpack.js"]]]);
 //# sourceMappingURL=_app.js.map

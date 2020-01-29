@@ -1927,8 +1927,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react-redux */ "react-redux");
 /* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(react_redux__WEBPACK_IMPORTED_MODULE_4__);
 /* harmony import */ var _store__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./store */ "./pages/store.js");
-/* harmony import */ var _styles_global_css__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../styles/global.css */ "./styles/global.css");
-/* harmony import */ var _styles_global_css__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_styles_global_css__WEBPACK_IMPORTED_MODULE_6__);
 
 var _jsxFileName = "C:\\Projects\\DEVELOPMENT\\joornalo-frontend\\front.joornalo\\pages\\_app.js";
 
@@ -1936,8 +1934,8 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
 
 
 
-
- // const Joornalo = ({ Component, pageProps }) => {
+ // import '../styles/global.css'
+// const Joornalo = ({ Component, pageProps }) => {
 //   return (
 //     <Provider store={store}>
 //       <Component {...pageProps} />
@@ -2107,17 +2105,6 @@ const initialState = {
       return state;
   }
 });
-
-/***/ }),
-
-/***/ "./styles/global.css":
-/*!***************************!*\
-  !*** ./styles/global.css ***!
-  \***************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-
 
 /***/ }),
 
