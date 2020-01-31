@@ -1,0 +1,27 @@
+{
+  "rows": [
+    {
+      "column": [
+        {
+          "component": "news1",
+          "text": "news1",
+          "width": "12"
+        },
+        {
+          "component": "boo",
+          "width": "12",
+          "text": "Boo1"
+        }
+      ]
+    },
+    {
+      "column": [
+        {
+          "component": "bar",
+          "text": "Bar1",
+          "width": "12"
+        }
+      ]
+    }
+  ]
+}

@@ -4,7 +4,7 @@ import Document, { Html, Head, Main, NextScript } from 'next/document'
 class MyDocument extends Document {
 
   static async getInitialProps(ctx) {
-    console.log("ONLY SERVER ///////////////////////////////////////////");
+    //console.log("ONLY SERVER ///////////////////////////////////////////");
     const initialProps = await Document.getInitialProps(ctx)
     return { ...initialProps, eureka: 'yes' }
   }

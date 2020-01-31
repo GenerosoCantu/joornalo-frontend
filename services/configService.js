@@ -12,10 +12,8 @@ export const initAgent = (req) => {
   const mobile = Boolean(mobilex) && !iPad;
   const tablet = (!mobilex && Boolean(android)) || Boolean(iPad);
   const desktop = !mobile && !tablet;
-
   return ((desktop || tablet) ? 'desktop' : 'mobile');
 };
-
 
 export const test = () => {
   return 'ok'

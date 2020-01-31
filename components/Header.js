@@ -1,3 +1,4 @@
+import { connect } from 'react-redux';
 import Link from 'next/link'
 
 const headerStyle = {
@@ -8,7 +9,8 @@ const linkStyle = {
   marginRight: 15
 }
 
-export default function Header() {
+const Header = ({ menu }) => {
+  console.log(menu)
   return (
     <div style={headerStyle}>
       <Link href="/">
@@ -20,3 +22,11 @@ export default function Header() {
     </div>
   )
 }
+
+const mapStateToProps = state => ({
+  menu: state.news.config['menu-header'],
+});
+
+export default connect(
+  mapStateToProps
+)(Header);

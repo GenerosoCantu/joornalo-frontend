@@ -2,13 +2,11 @@
 import React, { useEffect, useContext } from 'react';
 import Link from 'next/link';
 import { connect } from 'react-redux';
-import fetch from 'isomorphic-unfetch';
 import Layout from '../../../../components/MyLayout';
 import redirect from 'next-redirect';
 import Template from "../../../../components/Template.js";
 import Error from 'next/error'
-import { getNews } from '../../../../actions/newsActions';
-import { initAgent, test } from '../../../../services/configService';
+import { getNews, getConfig } from '../../../../store/actions/newsActions';
 
 // url ===> http://localhost:3000/section/world/2020-01-11/iraq-iran-us-troops-4c50e545-539e-4893-b505-1edc2de3c977
 
@@ -59,14 +57,19 @@ const News = ({ id, uuid, news, template, notFound }) => {
   )
 }
 
-News.getInitialProps = async function (context) {
+News.getInitialProps = async function (context, eureka) {
   const { store } = context;
   const { section, date, id } = context.query;
   const uuid = id.slice(-36);
   const url = `/section/${section}/${date}/${id}`;
   let notFound = false;
 
+  console.log(eureka);
+
   try {
+    if (!process.browser) {
+      await store.dispatch(getConfig(context.req));
+    }
     await store.dispatch(getNews(section, date, uuid, url, context.req));
     const error = store.getState().news.error;
 

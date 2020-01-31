@@ -2,6 +2,7 @@ import App from 'next/app'
 import withRedux from 'next-redux-wrapper'
 import { Provider } from 'react-redux';
 import store from './store';
+import { getConfig } from '../store/actions/newsActions';
 
 // import '../styles/global.css'
 
@@ -20,9 +21,14 @@ import store from './store';
 const _Joornalo = withRedux(store)(
   class _Joornalo extends App {
     static async getInitialProps({ Component, ctx }) {
+      const eureka = 'Eureka'
+      //console.log('+++++++++++++++++++2');
+      //await store().dispatch(getConfig());
+      //console.log(store().getState());
+
       return {
         pageProps: Component.getInitialProps
-          ? await Component.getInitialProps(ctx)
+          ? await Component.getInitialProps(ctx, eureka)
           : {}
       }
     }

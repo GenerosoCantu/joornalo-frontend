@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 1);
+/******/ 	return __webpack_require__(__webpack_require__.s = 2);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -1478,7 +1478,7 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
 
 class MyDocument extends next_document__WEBPACK_IMPORTED_MODULE_8___default.a {
   static async getInitialProps(ctx) {
-    console.log("ONLY SERVER ///////////////////////////////////////////");
+    //console.log("ONLY SERVER ///////////////////////////////////////////");
     const initialProps = await next_document__WEBPACK_IMPORTED_MODULE_8___default.a.getInitialProps(ctx);
     return _objectSpread({}, initialProps, {
       eureka: 'yes'
@@ -1524,7 +1524,7 @@ class MyDocument extends next_document__WEBPACK_IMPORTED_MODULE_8___default.a {
       },
       __self: this
     }), __jsx("link", {
-      href: "http://data.joornalo.com/global.css",
+      href: "https://data.joornalo.com/global.css",
       rel: "stylesheet",
       type: "text/css",
       async: true,
@@ -1560,7 +1560,7 @@ class MyDocument extends next_document__WEBPACK_IMPORTED_MODULE_8___default.a {
 
 /***/ }),
 
-/***/ 1:
+/***/ 2:
 /*!*********************************************!*\
   !*** multi private-next-pages/_document.js ***!
   \*********************************************/

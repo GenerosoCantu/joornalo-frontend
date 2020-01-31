@@ -1,0 +1,166 @@
+{
+  "desktop-news1": {
+    "rows": [
+      {
+        "column": [
+          {
+            "width": "8",
+            "rows": [
+              {
+                "column": [
+                  {
+                    "component": "news1",
+                    "text": "news1",
+                    "width": "12"
+                  },
+                  {
+                    "component": "bar",
+                    "text": "Bar1",
+                    "width": "12"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "width": "4",
+            "rows": [
+              {
+                "column": [
+                  {
+                    "component": "boo",
+                    "text": "Boo",
+                    "width": "12"
+                  },
+                  {
+                    "component": "bar",
+                    "text": "Bar1",
+                    "width": "12"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "column": [
+          {
+            "component": "boo",
+            "width": "12",
+            "text": "Boo1"
+          }
+        ]
+      }
+    ]
+  },
+  "desktop-news2": {
+    "rows": [
+      {
+        "column": [
+          {
+            "width": "4",
+            "rows": [
+              {
+                "column": [
+                  {
+                    "component": "boo",
+                    "text": "Boo",
+                    "width": "12"
+                  },
+                  {
+                    "component": "bar",
+                    "text": "Bar1",
+                    "width": "12"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "width": "8",
+            "rows": [
+              {
+                "column": [
+                  {
+                    "component": "news1",
+                    "text": "news1",
+                    "width": "12"
+                  },
+                  {
+                    "component": "bar",
+                    "text": "Bar1",
+                    "width": "12"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "column": [
+          {
+            "component": "boo",
+            "width": "12",
+            "text": "Boo1"
+          }
+        ]
+      }
+    ]
+  },
+  "mobile-news1": {
+    "rows": [
+      {
+        "column": [
+          {
+            "component": "news1",
+            "text": "news1",
+            "width": "12"
+          },
+          {
+            "component": "bar",
+            "text": "Bar1",
+            "width": "12"
+          }
+        ]
+      },
+      {
+        "column": [
+          {
+            "component": "boo",
+            "width": "12",
+            "text": "Boo1"
+          }
+        ]
+      }
+    ]
+  },
+  "mobile-news2": {
+    "rows": [
+      {
+        "column": [
+          {
+            "component": "news1",
+            "text": "news1",
+            "width": "12"
+          },
+          {
+            "component": "boo",
+            "width": "12",
+            "text": "Boo1"
+          }
+        ]
+      },
+      {
+        "column": [
+          {
+            "component": "bar",
+            "text": "Bar1",
+            "width": "12"
+          }
+        ]
+      }
+    ]
+  }
+}
