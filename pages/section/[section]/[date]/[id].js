@@ -23,20 +23,14 @@ const News = ({ id, uuid, news, template, notFound }) => {
 
   return (
     <Layout>
-      <h1>News story</h1>
-      {/* <h1>id:: {id}</h1> */}
-      <h1>uuid:: {uuid}</h1>
-      <h1>title:: {getTitle(news)}</h1>
+
+      <Template grid={template} data={news} />
+
 
       <ul>
         <li>
           <Link href="/section/[section]/[date]/[id]" as="/section/world/2020-01-11/iraq-iran-us-troops-4c50e545-539e-4893-b505-1edc2de3c9ZZ">
             <a>Bad link</a>
-          </Link>
-        </li>
-        <li>
-          <Link href="/section/[section]/[date]/[id]" as="/section/world/2020-01-11/iraq-iran-us-troops-4c50e545-539e-4893-b505-1edc2de3c977">
-            <a>Good link</a>
           </Link>
         </li>
         <li>
@@ -50,8 +44,6 @@ const News = ({ id, uuid, news, template, notFound }) => {
           </Link>
         </li>
       </ul>
-
-      <Template grid={template} data={news} />
 
     </Layout>
   )

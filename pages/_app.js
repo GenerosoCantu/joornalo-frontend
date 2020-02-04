@@ -4,18 +4,9 @@ import { Provider } from 'react-redux';
 import store from './store';
 import { getConfig } from '../store/actions/newsActions';
 
-// import '../styles/global.css'
-
-// const Joornalo = ({ Component, pageProps }) => {
-
-//   return (
-//     <Provider store={store}>
-//       <Component {...pageProps} />
-//     </Provider>
-//   );
-// }
-
-// export default Joornalo
+import '../styles/global.css'
+import '../styles/header.css'
+import '../styles/news.css'
 
 
 const _Joornalo = withRedux(store)(

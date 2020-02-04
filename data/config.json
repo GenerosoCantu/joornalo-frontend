@@ -112,7 +112,8 @@
     },
     {
       "text": "Buscar",
-      "link": "search/"
+      "link": "search/",
+      "sub": []
     }
   ],
   "menu-footer": [

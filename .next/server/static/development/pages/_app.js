@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 1);
+/******/ 	return __webpack_require__(__webpack_require__.s = 0);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -1904,6 +1904,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(react_redux__WEBPACK_IMPORTED_MODULE_4__);
 /* harmony import */ var _store__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./store */ "./pages/store.js");
 /* harmony import */ var _store_actions_newsActions__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../store/actions/newsActions */ "./store/actions/newsActions.js");
+/* harmony import */ var _styles_global_css__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../styles/global.css */ "./styles/global.css");
+/* harmony import */ var _styles_global_css__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_styles_global_css__WEBPACK_IMPORTED_MODULE_7__);
 
 var _jsxFileName = "C:\\Projects\\DEVELOPMENT\\joornalo-frontend\\front.joornalo\\pages\\_app.js";
 
@@ -1912,15 +1914,8 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
 
 
 
- // import '../styles/global.css'
-// const Joornalo = ({ Component, pageProps }) => {
-//   return (
-//     <Provider store={store}>
-//       <Component {...pageProps} />
-//     </Provider>
-//   );
-// }
-// export default Joornalo
+
+
 
 const _Joornalo = next_redux_wrapper__WEBPACK_IMPORTED_MODULE_3___default()(_store__WEBPACK_IMPORTED_MODULE_5__["default"])(class _Joornalo extends next_app__WEBPACK_IMPORTED_MODULE_2___default.a {
   static async getInitialProps({
@@ -1952,13 +1947,13 @@ const _Joornalo = next_redux_wrapper__WEBPACK_IMPORTED_MODULE_3___default()(_sto
       store: store,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 51
+        lineNumber: 40
       },
       __self: this
     }, __jsx(Component, Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, pageProps, {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 52
+        lineNumber: 41
       },
       __self: this
     })));
@@ -2214,8 +2209,7 @@ const initialState = {
   error: null
 };
 /* harmony default export */ __webpack_exports__["default"] = ((state = initialState, action) => {
-  console.log(action.type);
-
+  // console.log(action.type);
   switch (action.type) {
     case _types__WEBPACK_IMPORTED_MODULE_8__["GET_NEWS"]:
       return _objectSpread({}, state, {
@@ -2280,7 +2274,18 @@ const GET_CONFIG = 'GET_CONFIG';
 
 /***/ }),
 
-/***/ 1:
+/***/ "./styles/global.css":
+/*!***************************!*\
+  !*** ./styles/global.css ***!
+  \***************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+
+
+/***/ }),
+
+/***/ 0:
 /*!****************************************!*\
   !*** multi private-next-pages/_app.js ***!
   \****************************************/

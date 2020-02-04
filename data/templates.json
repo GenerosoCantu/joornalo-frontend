@@ -4,6 +4,22 @@
       {
         "column": [
           {
+            "component": "header1",
+            "width": "12"
+          }
+        ]
+      },
+      {
+        "column": [
+          {
+            "component": "adv",
+            "width": "12"
+          }
+        ]
+      },
+      {
+        "column": [
+          {
             "width": "8",
             "rows": [
               {
@@ -56,6 +72,22 @@
   },
   "desktop-news2": {
     "rows": [
+      {
+        "column": [
+          {
+            "component": "header1",
+            "width": "12"
+          }
+        ]
+      },
+      {
+        "column": [
+          {
+            "component": "news-header1",
+            "width": "12"
+          }
+        ]
+      },
       {
         "column": [
           {

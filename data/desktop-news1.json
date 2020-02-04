@@ -3,6 +3,14 @@
     {
       "column": [
         {
+          "component": "news-header1",
+          "width": "12"
+        }
+      ]
+    },
+    {
+      "column": [
+        {
           "width": "8",
           "rows": [
             {

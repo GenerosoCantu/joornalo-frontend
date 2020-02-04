@@ -7,9 +7,14 @@ import dynamic from 'next/dynamic';
 
 // this should come from Config.json
 const blockList = [
+  'adv',
+  'header1',
   'news1',
-  'bar',
-  'boo'
+  'news-header1',
+  'other-news1',
+  'most-viewed1',
+  'featured1',
+  'footer1'
 ];
 
 const ComponentsList = {};
@@ -21,6 +26,7 @@ const Components = ({ component, data, text }) => {
   const key = Math.floor(Math.random() * 100000);
 
   if (typeof ComponentsList[component] !== "undefined") {
+    //console.log("+++++++++++++++ Component: ", component)
     return React.createElement(ComponentsList[component], {
       key,
       component,

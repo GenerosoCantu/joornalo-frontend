@@ -1,7 +1,18 @@
-import React from "react";
+import React, { useEffect } from 'react';
 import Parser, { domToReact, htmlToDOM } from 'html-react-parser';
+import Adv from './adv'
 
 const news1 = ({ data }) => {
+
+  useEffect(() => {
+    const contentWidth = document.getElementsByClassName("newsContent")[0].offsetWidth;
+    //console.log(contentWidth);
+    const embed = document.querySelectorAll('.newsContent .embed iframe')
+    for (let x = 0; x < embed.length; x++) {
+      embed[x].width = contentWidth;
+      embed[x].height = contentWidth * .5625;
+    }
+  });
 
   // const modText = Parser(data.text, {
   //   replace: (domNode) => {
@@ -16,6 +27,7 @@ const news1 = ({ data }) => {
 
   let tmp = unescape(data.text);
   let find = tmp.split('<embed id="');
+
   for (let i = find.length - 1; i--;) {
     let mediaNum = parseInt(find[i + 1].charAt(0));
     if (data.media[mediaNum - 1]) {
@@ -25,7 +37,7 @@ const news1 = ({ data }) => {
     }
   }
 
-  tmp = find.join();
+  tmp = find.join('');
   find = tmp.split('<image id="');
   for (let i = find.length - 1; i--;) {
     let imageNum = parseInt(find[i + 1].charAt(0));
@@ -36,13 +48,27 @@ const news1 = ({ data }) => {
     }
   }
 
-  const modText = Parser(find.join());
+  const modText = Parser(find.join(''));
+
+  const mainImgUrl = 'https://data.joornalo.com/news/4/c/' + data.images[0].url;
+
 
   return (
     <div className="news">
-      <hr />
       <h1>{data.title}</h1>
-      <div>{modText}</div>
+      <img src={mainImgUrl} />
+      <div className="row">
+        <div className="col-3">
+          <div className="details">
+            Details
+          </div>
+          <Adv />
+        </div>
+        <div className="newsContent col-9">
+          <div>{modText}</div>
+        </div>
+      </div>
+
     </div>
   )
 };

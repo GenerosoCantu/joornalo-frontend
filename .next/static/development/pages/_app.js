@@ -13270,6 +13270,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! react-redux */ "./node_modules/react-redux/es/index.js");
 /* harmony import */ var _store__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./store */ "./pages/store.js");
 /* harmony import */ var _store_actions_newsActions__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../store/actions/newsActions */ "./store/actions/newsActions.js");
+/* harmony import */ var _styles_global_css__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ../styles/global.css */ "./styles/global.css");
+/* harmony import */ var _styles_global_css__WEBPACK_IMPORTED_MODULE_13___default = /*#__PURE__*/__webpack_require__.n(_styles_global_css__WEBPACK_IMPORTED_MODULE_13__);
 
 
 
@@ -13284,15 +13286,8 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement;
 
 
 
- // import '../styles/global.css'
-// const Joornalo = ({ Component, pageProps }) => {
-//   return (
-//     <Provider store={store}>
-//       <Component {...pageProps} />
-//     </Provider>
-//   );
-// }
-// export default Joornalo
+
+
 
 var _Joornalo = Object(next_redux_wrapper__WEBPACK_IMPORTED_MODULE_9__["default"])(_store__WEBPACK_IMPORTED_MODULE_11__["default"])(
 /*#__PURE__*/
@@ -13322,13 +13317,13 @@ function (_App) {
         store: store,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 51
+          lineNumber: 40
         },
         __self: this
       }, __jsx(Component, Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__["default"])({}, pageProps, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 52
+          lineNumber: 41
         },
         __self: this
       })));
@@ -13704,8 +13699,8 @@ var initialState = (_initialState = {
 /* harmony default export */ __webpack_exports__["default"] = (function () {
   var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : initialState;
   var action = arguments.length > 1 ? arguments[1] : undefined;
-  console.log(action.type);
 
+  // console.log(action.type);
   switch (action.type) {
     case _types__WEBPACK_IMPORTED_MODULE_8__["GET_NEWS"]:
       return _objectSpread({}, state, {
@@ -13781,5 +13776,5 @@ module.exports = dll_5f137288facb1107b491;
 
 /***/ })
 
-},[["./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F_app&absolutePagePath=private-next-pages%2F_app.js!./","static/runtime/webpack.js"]]]);
+},[["./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F_app&absolutePagePath=private-next-pages%2F_app.js!./","static/runtime/webpack.js","styles"]]]);
 //# sourceMappingURL=_app.js.map
