@@ -1,0 +1,1 @@
+{"ast":null,"code":"var __jsx = React.createElement;\nimport React from \"react\";\n\nconst MostViewed1 = ({\n  data,\n  text\n}) => {\n  return __jsx(\"div\", {\n    className: \"boo\"\n  }, __jsx(\"hr\", null), __jsx(\"h2\", null, \"Most Viewed 1: \", text));\n};\n\nexport default MostViewed1;","map":null,"metadata":{},"sourceType":"module"}

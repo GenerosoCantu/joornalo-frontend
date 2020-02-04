@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[12],{"52Qk":function(e,n,t){"use strict";t.r(n);var a=t("q1tI"),r=t.n(a).a.createElement;n.default=function(e){e.data;var n=e.text;return r("div",{className:"bar"},r("hr",null),r("h2",null,"Other News: ",n))}}}]);

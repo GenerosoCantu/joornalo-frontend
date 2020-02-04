@@ -5,13 +5,8 @@ import Adv from './adv'
 const news1 = ({ data }) => {
 
   useEffect(() => {
-    const contentWidth = document.getElementsByClassName("newsContent")[0].offsetWidth;
-    //console.log(contentWidth);
-    const embed = document.querySelectorAll('.newsContent .embed iframe')
-    for (let x = 0; x < embed.length; x++) {
-      embed[x].width = contentWidth;
-      embed[x].height = contentWidth * .5625;
-    }
+    updateImageWidths()
+    window.addEventListener('resize', updateImageWidths);
   });
 
   // const modText = Parser(data.text, {
@@ -51,6 +46,17 @@ const news1 = ({ data }) => {
   const modText = Parser(find.join(''));
 
   const mainImgUrl = 'https://data.joornalo.com/news/4/c/' + data.images[0].url;
+
+
+  const updateImageWidths = () => {
+    const contentWidth = document.querySelector(".newsContent div").offsetWidth;
+    //console.log(contentWidth);
+    const embed = document.querySelectorAll('.newsContent .embed iframe')
+    for (let x = 0; x < embed.length; x++) {
+      embed[x].width = contentWidth;
+      embed[x].height = contentWidth * .5625;
+    }
+  }
 
 
   return (
