@@ -9,12 +9,15 @@ import dynamic from 'next/dynamic';
 const blockList = [
   'adv',
   'header1',
+  'header-mobile1',
   'news1',
+  'news-mobile1',
   'news-header1',
   'other-news1',
   'most-viewed1',
   'featured1',
-  'footer1'
+  'footer1',
+  'footer-mobile1',
 ];
 
 const ComponentsList = {};

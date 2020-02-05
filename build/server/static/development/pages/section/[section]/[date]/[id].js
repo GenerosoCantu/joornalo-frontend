@@ -184,6 +184,14 @@ var map = {
 		"./components/featured1.js",
 		6
 	],
+	"./footer-mobile1": [
+		"./components/footer-mobile1.js",
+		13
+	],
+	"./footer-mobile1.js": [
+		"./components/footer-mobile1.js",
+		13
+	],
 	"./footer1": [
 		"./components/footer1.js",
 		2
@@ -191,6 +199,14 @@ var map = {
 	"./footer1.js": [
 		"./components/footer1.js",
 		2
+	],
+	"./header-mobile1": [
+		"./components/header-mobile1.js",
+		12
+	],
+	"./header-mobile1.js": [
+		"./components/header-mobile1.js",
+		12
 	],
 	"./header1": [
 		"./components/header1.js",
@@ -223,6 +239,14 @@ var map = {
 	"./news-header1.js": [
 		"./components/news-header1.js",
 		9
+	],
+	"./news-mobile1": [
+		"./components/news-mobile1.js",
+		11
+	],
+	"./news-mobile1.js": [
+		"./components/news-mobile1.js",
+		11
 	],
 	"./news1": [
 		"./components/news1.js",
@@ -285,8 +309,12 @@ var map = {
 	"./dataContext.js": "./components/dataContext.js",
 	"./featured1": "./components/featured1.js",
 	"./featured1.js": "./components/featured1.js",
+	"./footer-mobile1": "./components/footer-mobile1.js",
+	"./footer-mobile1.js": "./components/footer-mobile1.js",
 	"./footer1": "./components/footer1.js",
 	"./footer1.js": "./components/footer1.js",
+	"./header-mobile1": "./components/header-mobile1.js",
+	"./header-mobile1.js": "./components/header-mobile1.js",
 	"./header1": "./components/header1.js",
 	"./header1.js": "./components/header1.js",
 	"./menu1": "./components/menu1.js",
@@ -295,6 +323,8 @@ var map = {
 	"./most-viewed1.js": "./components/most-viewed1.js",
 	"./news-header1": "./components/news-header1.js",
 	"./news-header1.js": "./components/news-header1.js",
+	"./news-mobile1": "./components/news-mobile1.js",
+	"./news-mobile1.js": "./components/news-mobile1.js",
 	"./news1": "./components/news1.js",
 	"./news1.js": "./components/news1.js",
 	"./other-news1": "./components/other-news1.js",
@@ -467,7 +497,7 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 // https://nextjs.org/docs/advanced-features/dynamic-import
 // this should come from Config.json
 
-const blockList = ['adv', 'header1', 'news1', 'news-header1', 'other-news1', 'most-viewed1', 'featured1', 'footer1'];
+const blockList = ['adv', 'header1', 'header-mobile1', 'news1', 'news-mobile1', 'news-header1', 'other-news1', 'most-viewed1', 'featured1', 'footer1', 'footer-mobile1'];
 const ComponentsList = {};
 blockList.forEach((block, index) => {
   ComponentsList[block] = next_dynamic__WEBPACK_IMPORTED_MODULE_1___default()(() => __webpack_require__("./components lazy recursive ^\\.\\/.*$")(`./${block}`), {
@@ -498,7 +528,7 @@ const Components = ({
     return __jsx("div", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 38
+        lineNumber: 41
       },
       __self: undefined
     }, "Component not found!!!");
@@ -2994,7 +3024,7 @@ const News = ({
       lineNumber: 38
     },
     __self: undefined
-  }, "Good link"))), __jsx("li", {
+  }, "Link: Megan & Harry"))), __jsx("li", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 41
@@ -3014,7 +3044,7 @@ const News = ({
       lineNumber: 43
     },
     __self: undefined
-  }, "Good link")))));
+  }, "Link: Iran Nuclear Deal")))));
 };
 
 News.getInitialProps = async function (context, eureka) {

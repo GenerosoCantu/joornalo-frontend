@@ -101,7 +101,7 @@ var Footer1 = function Footer1(_ref) {
         lineNumber: 74
       },
       __self: this
-    }, "Banner"), __jsx("div", {
+    }), __jsx("div", {
       className: "col-lg-3 col-md-3",
       __source: {
         fileName: _jsxFileName,
@@ -150,28 +150,7 @@ var Footer1 = function Footer1(_ref) {
         lineNumber: 90
       },
       __self: this
-    }, date()))))))), __jsx("div", {
-      className: "stripe",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 98
-      },
-      __self: this
-    }, __jsx("div", {
-      className: "container-fluid",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 99
-      },
-      __self: this
-    }, __jsx(_menu1__WEBPACK_IMPORTED_MODULE_3__["default"], {
-      items: menu,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 100
-      },
-      __self: this
-    }))))
+    }, date()))))))))
   );
 };
 

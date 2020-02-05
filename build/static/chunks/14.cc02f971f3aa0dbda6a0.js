@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[14],{dDP7:function(e,n,a){"use strict";a.r(n);var t=a("q1tI"),r=a.n(t).a.createElement;n.default=function(e){e.data,e.text;return r("div",{className:"newsHeader"},r("hr",null),r("h2",null,"News Header1"))}}}]);

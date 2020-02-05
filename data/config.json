@@ -1,80 +1,74 @@
 {
   "section-clave": {
-    "cartones": "Cartones",
-    "deportes": "Deportes",
-    "espectaculos": "Espectaculos",
-    "estatal": "Estatal",
+    "sports": "Sports",
+    "entertainment": "Entertainment",
     "home": "Home",
-    "internacional": "Internacional",
+    "international": "International",
     "local": "Local",
-    "misantla": "Misantla",
-    "nacional": "Nacional",
+    "national": "National",
     "opinion": "Opinion",
-    "policiaca": "Policiaca",
-    "reportaje": "Reportaje",
-    "san-rafael": "San Rafael",
-    "sexo-y-gadgets": "Sexo y Gadgets",
-    "sociedad": "Sociedad",
-    "tlapacoyan": "Tlapacoyan"
+    "tech": "Tech",
+    "business": "Business",
+    "science": "Science"
   },
   "menu-header": [
     {
-      "text": "Portada",
+      "text": "Home",
       "link": "front/home/",
       "sub": [
         {
-          "text": "Martínez de la Torre",
+          "text": "International",
+          "link": "front/International/"
+        },
+        {
+          "text": "National",
+          "link": "front/National/"
+        },
+        {
+          "text": "Local",
           "link": "front/local/"
         },
         {
-          "text": "Misantla",
-          "link": "front/misantla/"
+          "text": "Sports",
+          "link": "front/Sports/"
         },
         {
-          "text": "San Rafael",
-          "link": "front/san-rafael/"
+          "text": "Tech",
+          "link": "front/Tech/"
         },
         {
-          "text": "Tlapacoyan",
-          "link": "front/tlapacoyan/"
+          "text": "Business",
+          "link": "front/Business/"
         },
         {
-          "text": "Estatal",
-          "link": "front/estatal/"
-        },
-        {
-          "text": "Nacional",
-          "link": "front/nacional/"
-        },
-        {
-          "text": "Internacional",
-          "link": "front/internacional/"
+          "text": "Science",
+          "link": "front/Science/"
         },
         {
           "text": "Espectáculos",
           "link": "front/espectaculos/"
         },
         {
-          "text": "Policíaca",
-          "link": "front/policiaca/"
+          "text": "Opinion",
+          "link": "front/Opinion/"
         },
         {
-          "text": "Deportes",
-          "link": "front/deportes/"
+          "text": "Entertainment",
+          "link": "front/Entertainment/"
         }
       ]
     },
     {
-      "text": "Opinión",
-      "link": "front/opinion/8",
+      "text": "Opinion",
+      "link": "front/Opinion",
       "sub": [
         {
           "text": "Editorial",
-          "link": "front/opinion/8"
+          "link": "front/Editorial"
         },
         {
-          "text": "Politicomics",
-          "link": "front/opinion/10"
+          "text": "Columns",
+          "link": "front/Columns"
         }
       ]
     },
@@ -87,31 +81,13 @@
           "link": "multimedia/"
         },
         {
-          "text": "Galerías",
+          "text": "Pictures",
           "link": "galleries/"
         }
       ]
     },
     {
-      "text": "Suplementos",
-      "link": "",
-      "sub": [
-        {
-          "text": "Sociedad",
-          "link": "front/sociedad/"
-        },
-        {
-          "text": "Reportaje",
-          "link": "front/reportaje/"
-        },
-        {
-          "text": "Sexo y Gadgets",
-          "link": "front/sexo-y-gadgets/"
-        }
-      ]
-    },
-    {
-      "text": "Buscar",
+      "text": "Search",
       "link": "search/",
       "sub": []
     }

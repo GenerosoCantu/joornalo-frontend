@@ -35,12 +35,12 @@ const News = ({ id, uuid, news, template, notFound }) => {
         </li>
         <li>
           <Link href="/section/[section]/[date]/[id]" as="/section/world-europe/2020-01-11/harry-meghan-drop-royal-duties-4c50e545-539e-4893-b505-1edc2de3c988">
-            <a>Good link</a>
+            <a>Link: Megan & Harry</a>
           </Link>
         </li>
         <li>
           <Link href="/section/[section]/[date]/[id]" as="/section/world-middleeast/2020-01-11/iraq-iran-us-troops-4c50e545-539e-4893-b505-1edc2de3c999">
-            <a>Good link</a>
+            <a>Link: Iran Nuclear Deal</a>
           </Link>
         </li>
       </ul>

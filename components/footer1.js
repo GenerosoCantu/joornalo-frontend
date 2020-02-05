@@ -72,7 +72,7 @@ const Footer1 = ({ menu }) => {
             </div>
 
             <div className="col-xl-6 col-lg-5 col-md-5 headerBanner">
-              Banner
+
             </div>
 
             <div className="col-lg-3 col-md-3">
@@ -95,11 +95,11 @@ const Footer1 = ({ menu }) => {
         </div>
       </div>
 
-      <div className="stripe">
+      {/* <div className="stripe">
         <div className="container-fluid">
           <Menu items={menu} />
         </div>
-      </div>
+      </div> */}
 
     </>
 
