@@ -11,7 +11,7 @@ const Adv = (context) => {
     const div = document.getElementById(id);
     if (div) {
       const contentWidth = div.offsetWidth
-      console.log(id, '::::', contentWidth)
+      // console.log(id, '::::', contentWidth)
 
       try {
         let observer = new IntersectionObserver((entries, observerChild) => {
@@ -46,7 +46,7 @@ const Adv = (context) => {
 
   return (
     <div className='adv' id={id}>
-      Advertising {msg}
+      Ad: {msg}
     </div>
   )
 }

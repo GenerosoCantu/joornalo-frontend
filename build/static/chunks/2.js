@@ -27,8 +27,7 @@ var Adv = function Adv(context) {
     var div = document.getElementById(id);
 
     if (div) {
-      var contentWidth = div.offsetWidth;
-      console.log(id, '::::', contentWidth);
+      var contentWidth = div.offsetWidth; // console.log(id, '::::', contentWidth)
 
       try {
         var observer = new IntersectionObserver(function (entries, observerChild) {
@@ -69,7 +68,7 @@ var Adv = function Adv(context) {
       lineNumber: 48
     },
     __self: this
-  }, "Advertising ", msg);
+  }, "Ad: ", msg);
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Adv);
@@ -107,8 +106,8 @@ var linkStyle = {
 };
 
 var date = function date() {
-  var days = ['Domingo', 'Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sábado'],
-      months = ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre'],
+  var days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'],
+      months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'],
       date = new Date();
   var displayDate = days[date.getDay()] + ', ' + months[date.getMonth()] + ' ' + date.getDate() + ', ' + date.getFullYear();
   return displayDate;
@@ -215,7 +214,7 @@ var Header1 = function Header1(_ref) {
       __self: this
     }, __jsx("input", {
       id: "search",
-      placeholder: "Buscar",
+      placeholder: "Search",
       type: "text",
       __source: {
         fileName: _jsxFileName,

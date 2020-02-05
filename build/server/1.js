@@ -28,8 +28,7 @@ const Adv = context => {
     const div = document.getElementById(id);
 
     if (div) {
-      const contentWidth = div.offsetWidth;
-      console.log(id, '::::', contentWidth);
+      const contentWidth = div.offsetWidth; // console.log(id, '::::', contentWidth)
 
       try {
         let observer = new IntersectionObserver((entries, observerChild) => {
@@ -70,7 +69,7 @@ const Adv = context => {
       lineNumber: 48
     },
     __self: undefined
-  }, "Advertising ", msg);
+  }, "Ad: ", msg);
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Adv);
@@ -109,8 +108,8 @@ const linkStyle = {
 };
 
 const date = () => {
-  let days = ['Domingo', 'Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sábado'],
-      months = ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre'],
+  let days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'],
+      months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'],
       date = new Date();
   const displayDate = days[date.getDay()] + ', ' + months[date.getMonth()] + ' ' + date.getDate() + ', ' + date.getFullYear();
   return displayDate;
@@ -218,7 +217,7 @@ const Header1 = ({
       __self: undefined
     }, __jsx("input", {
       id: "search",
-      placeholder: "Buscar",
+      placeholder: "Search",
       type: "text",
       __source: {
         fileName: _jsxFileName,

@@ -28,8 +28,7 @@ const Adv = context => {
     const div = document.getElementById(id);
 
     if (div) {
-      const contentWidth = div.offsetWidth;
-      console.log(id, '::::', contentWidth);
+      const contentWidth = div.offsetWidth; // console.log(id, '::::', contentWidth)
 
       try {
         let observer = new IntersectionObserver((entries, observerChild) => {
@@ -70,7 +69,7 @@ const Adv = context => {
       lineNumber: 48
     },
     __self: undefined
-  }, "Advertising ", msg);
+  }, "Ad: ", msg);
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Adv);

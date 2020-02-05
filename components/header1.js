@@ -14,27 +14,27 @@ const linkStyle = {
 const date = () => {
 
   let days = [
-    'Domingo',
-    'Lunes',
-    'Martes',
-    'Miércoles',
-    'Jueves',
-    'Viernes',
-    'Sábado'
+    'Sunday',
+    'Monday',
+    'Tuesday',
+    'Wednesday',
+    'Thursday',
+    'Friday',
+    'Saturday'
   ],
     months = [
-      'Enero',
-      'Febrero',
-      'Marzo',
-      'Abril',
-      'Mayo',
-      'Junio',
-      'Julio',
-      'Agosto',
-      'Septiembre',
-      'Octubre',
-      'Noviembre',
-      'Diciembre'
+      'January',
+      'February',
+      'March',
+      'April',
+      'May',
+      'June',
+      'July',
+      'August',
+      'September',
+      'October',
+      'November',
+      'December'
     ],
     date = new Date();
 
@@ -81,7 +81,7 @@ const Header1 = ({ menu }) => {
                 <div className="col">
                   <div className="search-box">
                     {/* <input id="search" value="" placeholder="Buscar" type="text" onKeydown="_keydown" /> */}
-                    <input id="search" placeholder="Buscar" type="text" />
+                    <input id="search" placeholder="Search" type="text" />
                     {/* <div on-tap="_submit" class="search-icon"></div> */}
                   </div>
                 </div>

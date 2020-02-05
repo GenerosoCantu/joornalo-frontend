@@ -28,11 +28,6 @@
                     "component": "news1",
                     "text": "news1",
                     "width": "12"
-                  },
-                  {
-                    "component": "bar",
-                    "text": "Bar1",
-                    "width": "12"
                   }
                 ]
               }
@@ -44,13 +39,17 @@
               {
                 "column": [
                   {
-                    "component": "boo",
-                    "text": "Boo",
+                    "component": "adv",
                     "width": "12"
                   },
                   {
-                    "component": "bar",
-                    "text": "Bar1",
+                    "component": "other-news1",
+                    "text": "News from same Section",
+                    "width": "12"
+                  },
+                  {
+                    "component": "most-viewed1",
+                    "text": "Most Viewed",
                     "width": "12"
                   }
                 ]
@@ -62,9 +61,12 @@
       {
         "column": [
           {
-            "component": "boo",
-            "width": "12",
-            "text": "Boo1"
+            "component": "adv",
+            "width": "12"
+          },
+          {
+            "component": "footer1",
+            "width": "12"
           }
         ]
       }
@@ -83,7 +85,7 @@
       {
         "column": [
           {
-            "component": "news-header1",
+            "component": "adv",
             "width": "12"
           }
         ]
@@ -96,13 +98,17 @@
               {
                 "column": [
                   {
-                    "component": "boo",
-                    "text": "Boo",
+                    "component": "adv",
                     "width": "12"
                   },
                   {
-                    "component": "bar",
-                    "text": "Bar1",
+                    "component": "other-news1",
+                    "text": "News from same Section",
+                    "width": "12"
+                  },
+                  {
+                    "component": "most-viewed1",
+                    "text": "Most Viewed",
                     "width": "12"
                   }
                 ]
@@ -118,11 +124,6 @@
                     "component": "news1",
                     "text": "news1",
                     "width": "12"
-                  },
-                  {
-                    "component": "bar",
-                    "text": "Bar1",
-                    "width": "12"
                   }
                 ]
               }
@@ -133,9 +134,12 @@
       {
         "column": [
           {
-            "component": "boo",
-            "width": "12",
-            "text": "Boo1"
+            "component": "adv",
+            "width": "12"
+          },
+          {
+            "component": "footer1",
+            "width": "12"
           }
         ]
       }

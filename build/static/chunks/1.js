@@ -27,8 +27,7 @@ var Adv = function Adv(context) {
     var div = document.getElementById(id);
 
     if (div) {
-      var contentWidth = div.offsetWidth;
-      console.log(id, '::::', contentWidth);
+      var contentWidth = div.offsetWidth; // console.log(id, '::::', contentWidth)
 
       try {
         var observer = new IntersectionObserver(function (entries, observerChild) {
@@ -69,7 +68,7 @@ var Adv = function Adv(context) {
       lineNumber: 48
     },
     __self: this
-  }, "Advertising ", msg);
+  }, "Ad: ", msg);
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Adv);
