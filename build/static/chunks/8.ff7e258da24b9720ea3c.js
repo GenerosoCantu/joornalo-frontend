@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[8],{BY7f:function(e,n,t){"use strict";t.r(n);var a=t("q1tI"),r=t.n(a).a.createElement;n.default=function(e){e.data;var n=e.text;return r("div",{className:"boo"},r("hr",null),r("h2",null,"Featured 1: ",n))}}}]);
