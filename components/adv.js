@@ -2,16 +2,19 @@ import React, { useState, useEffect } from "react";
 
 const Adv = (context) => {
   const [msg, setMsg] = useState('---')
+  const [id, setId] = useState(null)
 
   let loaded = false;
   let isIntersecting = false;
-  const id = 'adv' + Math.round(Math.random() * 100000);
 
   useEffect(() => {
+    if (!id) {
+      setId('adv' + Math.round(Math.random() * 100000))
+    }
+
     const div = document.getElementById(id);
     if (div) {
       const contentWidth = div.offsetWidth
-      // console.log(id, '::::', contentWidth)
 
       try {
         let observer = new IntersectionObserver((entries, observerChild) => {

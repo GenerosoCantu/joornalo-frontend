@@ -16,7 +16,7 @@
       }
     }
   ],
-  "mini-css-extract-plugin node_modules/@zeit/next-css/node_modules/css-loader/index.js??ref--5-1!styles/news.css": [
+  "mini-css-extract-plugin node_modules/@zeit/next-css/node_modules/css-loader/index.js??ref--5-1!styles/header.css": [
     {
       "modules": {
         "byIdentifier": {},
@@ -33,7 +33,7 @@
       }
     }
   ],
-  "mini-css-extract-plugin node_modules/@zeit/next-css/node_modules/css-loader/index.js??ref--5-1!styles/header.css": [
+  "mini-css-extract-plugin node_modules/@zeit/next-css/node_modules/css-loader/index.js??ref--5-1!styles/news.css": [
     {
       "modules": {
         "byIdentifier": {},
@@ -66,19 +66,19 @@
     "byName": {
       "commons": 0,
       "static/runtime/webpack.js": 1,
-      "static/runtime/main.js": 16,
-      "static/runtime/polyfills.js": 17,
-      "static\\ESDB18hueJuTmMQg1_IJm\\pages\\_app.js": 18,
-      "static\\ESDB18hueJuTmMQg1_IJm\\pages\\_error.js": 19,
-      "static\\ESDB18hueJuTmMQg1_IJm\\pages\\about.js": 20,
-      "static\\ESDB18hueJuTmMQg1_IJm\\pages\\index.js": 21,
-      "static\\ESDB18hueJuTmMQg1_IJm\\pages\\news\\[news].js": 22,
-      "static\\ESDB18hueJuTmMQg1_IJm\\pages\\notfound.js": 23,
-      "static\\ESDB18hueJuTmMQg1_IJm\\pages\\section\\[section].js": 24,
-      "static\\ESDB18hueJuTmMQg1_IJm\\pages\\section\\[section]\\[date].js": 25,
-      "static\\ESDB18hueJuTmMQg1_IJm\\pages\\section\\[section]\\[date]\\[id].js": 26,
-      "static\\ESDB18hueJuTmMQg1_IJm\\pages\\store.js": 27,
-      "styles": 28
+      "static/runtime/main.js": 17,
+      "static/runtime/polyfills.js": 18,
+      "static\\uRegCIOAKZI1Rd2uVwASd\\pages\\_app.js": 19,
+      "static\\uRegCIOAKZI1Rd2uVwASd\\pages\\_error.js": 20,
+      "static\\uRegCIOAKZI1Rd2uVwASd\\pages\\about.js": 21,
+      "static\\uRegCIOAKZI1Rd2uVwASd\\pages\\index.js": 22,
+      "static\\uRegCIOAKZI1Rd2uVwASd\\pages\\news\\[news].js": 23,
+      "static\\uRegCIOAKZI1Rd2uVwASd\\pages\\notfound.js": 24,
+      "static\\uRegCIOAKZI1Rd2uVwASd\\pages\\section\\[section].js": 25,
+      "static\\uRegCIOAKZI1Rd2uVwASd\\pages\\section\\[section]\\[date].js": 26,
+      "static\\uRegCIOAKZI1Rd2uVwASd\\pages\\section\\[section]\\[date]\\[id].js": 27,
+      "static\\uRegCIOAKZI1Rd2uVwASd\\pages\\store.js": 28,
+      "styles": 29
     },
     "bySource": {
       "0 components lazy /^\\.\\/.*$/ groupOptions: {} namespace object ./news-mobile1": 2,
@@ -108,7 +108,9 @@
       "0 components lazy /^\\.\\/.*$/ groupOptions: {} namespace object ./news-header1": 14,
       "0 components lazy /^\\.\\/.*$/ groupOptions: {} namespace object ./news-header1.js": 14,
       "0 components lazy /^\\.\\/.*$/ groupOptions: {} namespace object ./other-news1": 15,
-      "0 components lazy /^\\.\\/.*$/ groupOptions: {} namespace object ./other-news1.js": 15
+      "0 components lazy /^\\.\\/.*$/ groupOptions: {} namespace object ./other-news1.js": 15,
+      "0 components lazy /^\\.\\/.*$/ groupOptions: {} namespace object ./related-news1": 16,
+      "0 components lazy /^\\.\\/.*$/ groupOptions: {} namespace object ./related-news1.js": 16
     },
     "usedIds": [
       0,
@@ -133,6 +135,7 @@
       26,
       27,
       28,
+      29,
       3,
       4,
       5,

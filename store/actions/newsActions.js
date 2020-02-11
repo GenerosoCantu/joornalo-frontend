@@ -1,7 +1,8 @@
 import store from '../../pages/store';
-import { GET_NEWS, SET_LOADING, ADD_TEMPLATE, NEWS_ERROR, INIT_AGENT, GET_CONFIG } from '../types';
+import { GET_NEWS, SET_LOADING, ADD_TEMPLATE, NEWS_ERROR, INIT_AGENT, GET_CONFIG, GET_OTHERNEWS } from '../types';
 import { initAgent, test } from '../../services/configService';
 import axios from 'axios';
+import Parser from 'html-react-parser';
 
 
 const getTemplate = async (req, template, agent) => {
@@ -23,6 +24,30 @@ const getTemplate = async (req, template, agent) => {
     });
   }
 
+};
+
+export const getOtherNews = (section) => async (dispatch, getState) => {
+  try {
+    setLoading();
+
+    const moreUrl = `https://data.joornalo.com/news/${section}-more-news.json`;
+
+    const res = await axios.get(moreUrl);
+
+    dispatch({
+      type: GET_OTHERNEWS,
+      payload: {
+        topNews: res.data.topNews,
+        moreNews: res.data.moreNews,
+      }
+    });
+
+  } catch (err) {
+    dispatch({
+      type: NEWS_ERROR,
+      payload: 'NotFound'
+    });
+  }
 };
 
 export const getNews = (section, date, uuid, url, req) => async (dispatch, getState) => {
@@ -55,10 +80,41 @@ export const getNews = (section, date, uuid, url, req) => async (dispatch, getSt
       });
     }
 
+    // let tmp = unescape(res.data.text);
+    // let find = tmp.split('<embed id="');
+
+    // for (let i = find.length - 1; i--;) {
+    //   let mediaNum = parseInt(find[i + 1].charAt(0));
+    //   if (res.data.media[mediaNum - 1]) {
+    //     find[i + 1] = '<div class="embed">' + res.data.media[mediaNum - 1].embed + '</div>' + find[i + 1].substring(5);
+    //   } else {
+    //     find[i + 1] = find[i + 1].substring(5);
+    //   }
+    // }
+
+    // tmp = find.join('');
+    // find = tmp.split('<image id="');
+    // for (let i = find.length - 1; i--;) {
+    //   let imageNum = parseInt(find[i + 1].charAt(0));
+    //   if (res.data.images[imageNum - 1]) {
+    //     find[i + 1] = '<img src="https://data.joornalo.com/news/4/c/' + res.data.images[imageNum - 1].url + '" />' + find[i + 1].substring(5);
+    //   } else {
+    //     find[i + 1] = find[i + 1].substring(5);
+    //   }
+    // }
+
+    // res.data.modText = Parser(find.join(''));
+
+
+    // res.data.mainImgUrl = 'https://data.joornalo.com/news/4/c/' + res.data.images[0].url;
+
+    //console.log(data);
+
     dispatch({
       type: GET_NEWS,
       payload: {
         news: res.data,
+        templateName: 'template-' + res.data['template'],
         template: template
       }
     });

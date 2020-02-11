@@ -1,9 +1,9 @@
 (window["webpackJsonp"] = window["webpackJsonp"] || []).push([[5],{
 
-/***/ "./components/bares.js":
-/*!*****************************!*\
-  !*** ./components/bares.js ***!
-  \*****************************/
+/***/ "./components/adv.js":
+/*!***************************!*\
+  !*** ./components/adv.js ***!
+  \***************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -11,33 +11,74 @@
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-var _jsxFileName = "C:\\Projects\\DEVELOPMENT\\joornalo-frontend\\front.joornalo\\components\\bares.js";
+var _jsxFileName = "C:\\Projects\\DEVELOPMENT\\joornalo-frontend\\front.joornalo\\components\\adv.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
-/* harmony default export */ __webpack_exports__["default"] = (function (_ref) {
-  var data = _ref.data,
-      text = _ref.text;
+
+var Adv = function Adv(context) {
+  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])('---'),
+      msg = _useState[0],
+      setMsg = _useState[1];
+
+  var _useState2 = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(null),
+      id = _useState2[0],
+      setId = _useState2[1];
+
+  var loaded = false;
+  var isIntersecting = false;
+  Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(function () {
+    if (!id) {
+      setId('adv' + Math.round(Math.random() * 100000));
+    }
+
+    var div = document.getElementById(id);
+
+    if (div) {
+      var contentWidth = div.offsetWidth;
+
+      try {
+        var observer = new IntersectionObserver(function (entries, observerChild) {
+          if (!loaded && entries[0].isIntersecting) {
+            loaded = true;
+            isIntersecting = true;
+            observerChild.unobserve(entries[0].target);
+            preLoad();
+          }
+        });
+        observer.observe(div);
+      } catch (err) {
+        safariIssue();
+      }
+    }
+  });
+
+  var safariIssue = function safariIssue() {
+    if (!loaded) {
+      loaded = true;
+      isIntersecting = true;
+      preLoad();
+    }
+  };
+
+  var preLoad = function preLoad() {
+    if (isIntersecting) {
+      console.log('Ready to load...............................');
+      setMsg('Loaded');
+    }
+  };
+
   return __jsx("div", {
-    className: "bar",
+    className: "adv",
+    id: id,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 4
+      lineNumber: 51
     },
     __self: this
-  }, __jsx("hr", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 5
-    },
-    __self: this
-  }), __jsx("h2", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 6
-    },
-    __self: this
-  }, "BAR: ", text));
-});
+  }, "Ad: ", msg);
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (Adv);
 
 /***/ })
 

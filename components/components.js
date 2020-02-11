@@ -14,6 +14,7 @@ const blockList = [
   'news-mobile1',
   'news-header1',
   'other-news1',
+  'related-news1',
   'most-viewed1',
   'featured1',
   'footer1',

@@ -121,7 +121,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 4);
+/******/ 	return __webpack_require__(__webpack_require__.s = 3);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -148,19 +148,19 @@ var map = {
 	],
 	"./adv": [
 		"./components/adv.js",
-		3
+		4
 	],
 	"./adv.js": [
 		"./components/adv.js",
-		3
+		4
 	],
 	"./bares": [
 		"./components/bares.js",
-		4
+		5
 	],
 	"./bares.js": [
 		"./components/bares.js",
-		4
+		5
 	],
 	"./components": [
 		"./components/components.js"
@@ -170,99 +170,107 @@ var map = {
 	],
 	"./dataContext": [
 		"./components/dataContext.js",
-		5
+		6
 	],
 	"./dataContext.js": [
 		"./components/dataContext.js",
-		5
+		6
 	],
 	"./featured1": [
 		"./components/featured1.js",
-		6
+		7
 	],
 	"./featured1.js": [
 		"./components/featured1.js",
-		6
+		7
 	],
 	"./footer-mobile1": [
 		"./components/footer-mobile1.js",
-		13
+		8
 	],
 	"./footer-mobile1.js": [
 		"./components/footer-mobile1.js",
-		13
+		8
 	],
 	"./footer1": [
 		"./components/footer1.js",
-		2
+		3
 	],
 	"./footer1.js": [
 		"./components/footer1.js",
-		2
+		3
 	],
 	"./header-mobile1": [
 		"./components/header-mobile1.js",
-		12
+		9
 	],
 	"./header-mobile1.js": [
 		"./components/header-mobile1.js",
-		12
+		9
 	],
 	"./header1": [
 		"./components/header1.js",
-		1
+		0
 	],
 	"./header1.js": [
 		"./components/header1.js",
-		1
+		0
 	],
 	"./menu1": [
 		"./components/menu1.js",
-		7
+		10
 	],
 	"./menu1.js": [
 		"./components/menu1.js",
-		7
+		10
 	],
 	"./most-viewed1": [
 		"./components/most-viewed1.js",
-		8
+		11
 	],
 	"./most-viewed1.js": [
 		"./components/most-viewed1.js",
-		8
+		11
 	],
 	"./news-header1": [
 		"./components/news-header1.js",
-		9
+		12
 	],
 	"./news-header1.js": [
 		"./components/news-header1.js",
-		9
+		12
 	],
 	"./news-mobile1": [
 		"./components/news-mobile1.js",
-		11
+		1
 	],
 	"./news-mobile1.js": [
 		"./components/news-mobile1.js",
-		11
+		1
 	],
 	"./news1": [
 		"./components/news1.js",
-		0
+		2
 	],
 	"./news1.js": [
 		"./components/news1.js",
-		0
+		2
 	],
 	"./other-news1": [
 		"./components/other-news1.js",
-		10
+		13
 	],
 	"./other-news1.js": [
 		"./components/other-news1.js",
-		10
+		13
+	],
+	"./related-news1": [
+		"./components/related-news1.js",
+		14
+	],
+	"./related-news1.js": [
+		"./components/related-news1.js",
+		14
 	]
 };
 function webpackAsyncContext(req) {
@@ -328,7 +336,9 @@ var map = {
 	"./news1": "./components/news1.js",
 	"./news1.js": "./components/news1.js",
 	"./other-news1": "./components/other-news1.js",
-	"./other-news1.js": "./components/other-news1.js"
+	"./other-news1.js": "./components/other-news1.js",
+	"./related-news1": "./components/related-news1.js",
+	"./related-news1.js": "./components/related-news1.js"
 };
 
 
@@ -497,7 +507,7 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 // https://nextjs.org/docs/advanced-features/dynamic-import
 // this should come from Config.json
 
-const blockList = ['adv', 'header1', 'header-mobile1', 'news1', 'news-mobile1', 'news-header1', 'other-news1', 'most-viewed1', 'featured1', 'footer1', 'footer-mobile1'];
+const blockList = ['adv', 'header1', 'header-mobile1', 'news1', 'news-mobile1', 'news-header1', 'other-news1', 'related-news1', 'most-viewed1', 'featured1', 'footer1', 'footer-mobile1'];
 const ComponentsList = {};
 blockList.forEach((block, index) => {
   ComponentsList[block] = next_dynamic__WEBPACK_IMPORTED_MODULE_1___default()(() => __webpack_require__("./components lazy recursive ^\\.\\/.*$")(`./${block}`), {
@@ -528,7 +538,7 @@ const Components = ({
     return __jsx("div", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 41
+        lineNumber: 42
       },
       __self: undefined
     }, "Component not found!!!");
@@ -2946,6 +2956,7 @@ const News = ({
   id,
   uuid,
   news,
+  templateName,
   template,
   notFound
 }) => {
@@ -2970,24 +2981,31 @@ const News = ({
       lineNumber: 25
     },
     __self: undefined
-  }, __jsx(_components_Template_js__WEBPACK_IMPORTED_MODULE_5__["default"], {
-    grid: template,
-    data: news,
+  }, __jsx("div", {
+    className: templateName,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 27
     },
     __self: undefined
-  }), __jsx("ul", {
+  }, __jsx(_components_Template_js__WEBPACK_IMPORTED_MODULE_5__["default"], {
+    grid: template,
+    data: news,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 30
+      lineNumber: 28
+    },
+    __self: undefined
+  })), __jsx("ul", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 32
     },
     __self: undefined
   }, __jsx("li", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 31
+      lineNumber: 33
     },
     __self: undefined
   }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
@@ -2995,19 +3013,19 @@ const News = ({
     as: "/section/world/2020-01-11/iraq-iran-us-troops-4c50e545-539e-4893-b505-1edc2de3c9ZZ",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 32
+      lineNumber: 34
     },
     __self: undefined
   }, __jsx("a", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 33
+      lineNumber: 35
     },
     __self: undefined
   }, "Bad link"))), __jsx("li", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 36
+      lineNumber: 38
     },
     __self: undefined
   }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
@@ -3015,19 +3033,19 @@ const News = ({
     as: "/section/world-europe/2020-01-11/harry-meghan-drop-royal-duties-4c50e545-539e-4893-b505-1edc2de3c988",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 37
+      lineNumber: 39
     },
     __self: undefined
   }, __jsx("a", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 38
+      lineNumber: 40
     },
     __self: undefined
   }, "Link: Megan & Harry"))), __jsx("li", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 41
+      lineNumber: 43
     },
     __self: undefined
   }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
@@ -3035,13 +3053,13 @@ const News = ({
     as: "/section/world-middleeast/2020-01-11/iraq-iran-us-troops-4c50e545-539e-4893-b505-1edc2de3c999",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 42
+      lineNumber: 44
     },
     __self: undefined
   }, __jsx("a", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 43
+      lineNumber: 45
     },
     __self: undefined
   }, "Link: Iran Nuclear Deal")))));
@@ -3067,6 +3085,7 @@ News.getInitialProps = async function (context, eureka) {
     }
 
     await store.dispatch(Object(_store_actions_newsActions__WEBPACK_IMPORTED_MODULE_7__["getNews"])(section, date, uuid, url, context.req));
+    await store.dispatch(Object(_store_actions_newsActions__WEBPACK_IMPORTED_MODULE_7__["getOtherNews"])(section));
     const error = store.getState().news.error;
 
     if (error && error.indexOf('Redirect: ') == 0) {
@@ -3090,12 +3109,16 @@ News.getInitialProps = async function (context, eureka) {
 
 const mapStateToProps = state => ({
   news: state.news.news,
+  topNews: state.news.topNews,
+  moreNews: state.news.moreNews,
+  templateName: state.news.templateName,
   template: state.news.template,
   loading: state.news.loading
 });
 
 /* harmony default export */ __webpack_exports__["default"] = (Object(react_redux__WEBPACK_IMPORTED_MODULE_2__["connect"])(mapStateToProps, {
-  getNews: _store_actions_newsActions__WEBPACK_IMPORTED_MODULE_7__["getNews"]
+  getNews: _store_actions_newsActions__WEBPACK_IMPORTED_MODULE_7__["getNews"],
+  getOtherNews: _store_actions_newsActions__WEBPACK_IMPORTED_MODULE_7__["getOtherNews"]
 })(News));
 
 /***/ }),
@@ -3165,11 +3188,12 @@ const test = () => {
 /*!**************************************!*\
   !*** ./store/actions/newsActions.js ***!
   \**************************************/
-/*! exports provided: getNews, setLoading, getConfig */
+/*! exports provided: getOtherNews, getNews, setLoading, getConfig */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getOtherNews", function() { return getOtherNews; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getNews", function() { return getNews; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "setLoading", function() { return setLoading; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getConfig", function() { return getConfig; });
@@ -3180,6 +3204,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _services_configService__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../services/configService */ "./services/configService.js");
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! axios */ "axios");
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var html_react_parser__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! html-react-parser */ "html-react-parser");
+/* harmony import */ var html_react_parser__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(html_react_parser__WEBPACK_IMPORTED_MODULE_5__);
+
 
 
 
@@ -3202,6 +3229,25 @@ const getTemplate = async (req, template, agent) => {
   }
 };
 
+const getOtherNews = section => async (dispatch, getState) => {
+  try {
+    setLoading();
+    const moreUrl = `https://data.joornalo.com/news/${section}-more-news.json`;
+    const res = await axios__WEBPACK_IMPORTED_MODULE_4___default.a.get(moreUrl);
+    dispatch({
+      type: _types__WEBPACK_IMPORTED_MODULE_2__["GET_OTHERNEWS"],
+      payload: {
+        topNews: res.data.topNews,
+        moreNews: res.data.moreNews
+      }
+    });
+  } catch (err) {
+    dispatch({
+      type: _types__WEBPACK_IMPORTED_MODULE_2__["NEWS_ERROR"],
+      payload: 'NotFound'
+    });
+  }
+};
 const getNews = (section, date, uuid, url, req) => async (dispatch, getState) => {
   try {
     setLoading();
@@ -3229,12 +3275,36 @@ const getNews = (section, date, uuid, url, req) => async (dispatch, getState) =>
           }
         }
       });
-    }
+    } // let tmp = unescape(res.data.text);
+    // let find = tmp.split('<embed id="');
+    // for (let i = find.length - 1; i--;) {
+    //   let mediaNum = parseInt(find[i + 1].charAt(0));
+    //   if (res.data.media[mediaNum - 1]) {
+    //     find[i + 1] = '<div class="embed">' + res.data.media[mediaNum - 1].embed + '</div>' + find[i + 1].substring(5);
+    //   } else {
+    //     find[i + 1] = find[i + 1].substring(5);
+    //   }
+    // }
+    // tmp = find.join('');
+    // find = tmp.split('<image id="');
+    // for (let i = find.length - 1; i--;) {
+    //   let imageNum = parseInt(find[i + 1].charAt(0));
+    //   if (res.data.images[imageNum - 1]) {
+    //     find[i + 1] = '<img src="https://data.joornalo.com/news/4/c/' + res.data.images[imageNum - 1].url + '" />' + find[i + 1].substring(5);
+    //   } else {
+    //     find[i + 1] = find[i + 1].substring(5);
+    //   }
+    // }
+    // res.data.modText = Parser(find.join(''));
+    // res.data.mainImgUrl = 'https://data.joornalo.com/news/4/c/' + res.data.images[0].url;
+    //console.log(data);
+
 
     dispatch({
       type: _types__WEBPACK_IMPORTED_MODULE_2__["GET_NEWS"],
       payload: {
         news: res.data,
+        templateName: 'template-' + res.data['template'],
         template: template
       }
     });
@@ -3338,10 +3408,13 @@ const initialState = {
   news: null,
   templates: null,
   template: null,
+  templateName: null,
   front: null,
   loading: false,
   agent: null,
-  error: null
+  error: null,
+  topNews: null,
+  moreNews: null
 };
 /* harmony default export */ __webpack_exports__["default"] = ((state = initialState, action) => {
   // console.log(action.type);
@@ -3349,6 +3422,7 @@ const initialState = {
     case _types__WEBPACK_IMPORTED_MODULE_8__["GET_NEWS"]:
       return _objectSpread({}, state, {
         news: action.payload.news,
+        templateName: action.payload.templateName,
         template: action.payload.template,
         error: false,
         loading: false
@@ -3376,6 +3450,12 @@ const initialState = {
         templates: _babel_runtime_corejs2_core_js_object_assign__WEBPACK_IMPORTED_MODULE_6___default()(state.templates, action.payload.template)
       });
 
+    case _types__WEBPACK_IMPORTED_MODULE_8__["GET_OTHERNEWS"]:
+      return _objectSpread({}, state, {
+        topNews: action.payload.topNews,
+        moreNews: action.payload.moreNews
+      });
+
     default:
       return state;
   }
@@ -3387,7 +3467,7 @@ const initialState = {
 /*!************************!*\
   !*** ./store/types.js ***!
   \************************/
-/*! exports provided: SET_AGENT, GET_NEWS, SET_LOADING, NEWS_ERROR, INIT_AGENT, ADD_TEMPLATE, GET_CONFIG */
+/*! exports provided: SET_AGENT, GET_NEWS, SET_LOADING, NEWS_ERROR, INIT_AGENT, ADD_TEMPLATE, GET_CONFIG, GET_OTHERNEWS */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -3399,6 +3479,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "INIT_AGENT", function() { return INIT_AGENT; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ADD_TEMPLATE", function() { return ADD_TEMPLATE; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "GET_CONFIG", function() { return GET_CONFIG; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "GET_OTHERNEWS", function() { return GET_OTHERNEWS; });
 const SET_AGENT = 'SET_AGENT';
 const GET_NEWS = 'GET_NEWS';
 const SET_LOADING = 'SET_LOADING';
@@ -3406,10 +3487,11 @@ const NEWS_ERROR = 'NEWS_ERROR';
 const INIT_AGENT = 'INIT_AGENT';
 const ADD_TEMPLATE = 'ADD_TEMPLATE';
 const GET_CONFIG = 'GET_CONFIG';
+const GET_OTHERNEWS = 'GET_OTHERNEWS';
 
 /***/ }),
 
-/***/ 4:
+/***/ 3:
 /*!******************************************************!*\
   !*** multi ./pages/section/[section]/[date]/[id].js ***!
   \******************************************************/

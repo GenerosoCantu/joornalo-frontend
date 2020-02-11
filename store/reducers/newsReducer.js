@@ -1,4 +1,4 @@
-import { GET_NEWS, SET_LOADING, ADD_TEMPLATE, NEWS_ERROR, GET_CONFIG } from '../types';
+import { GET_NEWS, SET_LOADING, ADD_TEMPLATE, NEWS_ERROR, GET_CONFIG, GET_OTHERNEWS } from '../types';
 
 const initialState = {
   agent: null,
@@ -6,10 +6,13 @@ const initialState = {
   news: null,
   templates: null,
   template: null,
+  templateName: null,
   front: null,
   loading: false,
   agent: null,
-  error: null
+  error: null,
+  topNews: null,
+  moreNews: null
 };
 
 export default (state = initialState, action) => {
@@ -19,6 +22,7 @@ export default (state = initialState, action) => {
       return {
         ...state,
         news: action.payload.news,
+        templateName: action.payload.templateName,
         template: action.payload.template,
         error: false,
         loading: false
@@ -45,6 +49,12 @@ export default (state = initialState, action) => {
         ...state,
         templates: Object.assign(state.templates, action.payload.template)
       };
+    case GET_OTHERNEWS:
+      return {
+        ...state,
+        topNews: action.payload.topNews,
+        moreNews: action.payload.moreNews
+      }
     default:
       return state;
   }

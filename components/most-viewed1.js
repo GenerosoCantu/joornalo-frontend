@@ -1,12 +1,33 @@
 import React from "react";
+import { connect } from 'react-redux';
+import Link from 'next/link'
 
-const MostViewed1 = ({ data, text }) => {
+const MostViewed1 = ({ topNews }) => {
   return (
-    <div className="boo">
-      <hr />
-      <h2>Most Viewed 1: {text}</h2>
+    <div className="most-viewed">
+      <h2>Most Viewed</h2>
+      <ul>
+        {topNews.map((news, index) => (
+          <Link href={news.url}>
+            <li key={index}>
+              <img src={imageUrl(news.image)} />
+              <a>{news.title}</a>
+            </li>
+          </Link>
+        ))}
+      </ul>
     </div>
   )
 }
 
-export default MostViewed1;
+const imageUrl = (url) => {
+  return 'https://data.joornalo.com' + url;
+}
+
+const mapStateToProps = state => ({
+  topNews: state.news.topNews,
+});
+
+export default connect(
+  mapStateToProps
+)(MostViewed1);

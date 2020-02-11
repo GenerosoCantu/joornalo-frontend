@@ -1,6 +1,11 @@
+.news {
+  border-bottom: 1px solid#ddd;
+  padding-bottom: 1rem;
+}
+
 .embed {
   float: left;
-  margin: 0 16px 0 0;
+  margin: 0 1rem 0 0;
 }
 
 blockquote.twitter-tweet {
@@ -9,4 +14,52 @@ blockquote.twitter-tweet {
 
 .news img {
   max-width: 100%;
+}
+
+
+/* related-news */
+.related-news {
+  padding-bottom: 1rem;
+}
+
+.related-news img {
+  cursor: pointer;
+}
+
+.most-viewed a,
+.other-news a,
+.related-news a {
+  display: flex;
+  cursor: pointer;
+}
+
+.template-news1 .most-viewed,
+.template-news1 .other-news {
+  border-left: 1px solid#ddd;
+  padding-left: 2rem;
+}
+
+.template-news2 .most-viewed,
+.template-news2 .other-news {
+  border-right: 1px solid#ddd;
+  padding-right: 2rem;
+}
+
+.most-viewed h2,
+.other-news h2 {
+  margin-top: 0;
+  padding-top: 2rem;
+}
+
+.most-viewed ul,
+.other-news ul {
+  padding: 0;
+  margin: 0;
+}
+
+.most-viewed li,
+.other-news li {
+  list-style-type: none;
+  cursor: pointer;
+  padding-bottom: 2rem;
 }

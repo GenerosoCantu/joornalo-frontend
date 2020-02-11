@@ -6,12 +6,12 @@ import Layout from '../../../../components/MyLayout';
 import redirect from 'next-redirect';
 import Template from "../../../../components/Template.js";
 import Error from 'next/error'
-import { getNews, getConfig } from '../../../../store/actions/newsActions';
+import { getNews, getOtherNews, getConfig } from '../../../../store/actions/newsActions';
 
 // url ===> http://localhost:3000/section/world/2020-01-11/iraq-iran-us-troops-4c50e545-539e-4893-b505-1edc2de3c977
 
 
-const News = ({ id, uuid, news, template, notFound }) => {
+const News = ({ id, uuid, news, templateName, template, notFound }) => {
 
   const getTitle = (news) => {
     return (news) ? news.title : '';
@@ -24,7 +24,9 @@ const News = ({ id, uuid, news, template, notFound }) => {
   return (
     <Layout>
 
-      <Template grid={template} data={news} />
+      <div className={templateName}>
+        <Template grid={template} data={news} />
+      </div>
 
 
       <ul>
@@ -63,6 +65,8 @@ News.getInitialProps = async function (context, eureka) {
       await store.dispatch(getConfig(context.req));
     }
     await store.dispatch(getNews(section, date, uuid, url, context.req));
+    await store.dispatch(getOtherNews(section));
+
     const error = store.getState().news.error;
 
     if (error && error.indexOf('Redirect: ') == 0) {
@@ -87,11 +91,14 @@ News.getInitialProps = async function (context, eureka) {
 
 const mapStateToProps = state => ({
   news: state.news.news,
+  topNews: state.news.topNews,
+  moreNews: state.news.moreNews,
+  templateName: state.news.templateName,
   template: state.news.template,
   loading: state.news.loading
 });
 
 export default connect(
   mapStateToProps,
-  { getNews }
+  { getNews, getOtherNews }
 )(News);

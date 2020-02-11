@@ -1,24 +1,17 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useLayoutEffect } from 'react';
 import Parser, { domToReact, htmlToDOM } from 'html-react-parser';
 import Adv from './adv'
 
 const news1 = ({ data }) => {
 
-  useEffect(() => {
-    updateImageWidths()
-    window.addEventListener('resize', updateImageWidths);
-  });
-
-  // const modText = Parser(data.text, {
-  //   replace: (domNode) => {
-  //     if (domNode.name === 'embed') {
-  //       return <div className="embed">{Parser(data.media[domNode.attribs.id - 1].embed)}</div>;
-  //     }
-  //     if (domNode.name === 'image') {
-  //       return <img src={Parser('https://data.joornalo.com/news/4/c/' + data.images[domNode.attribs.id - 1].url)} />
-  //     }
-  //   }
+  // componentDidMount(() => {
+  //   console.log('componentDidMount')
   // });
+
+  useEffect(() => {
+    window.addEventListener('resize', updateImageWidths);
+    updateImageWidths();
+  }, []);
 
   let tmp = unescape(data.text);
   let find = tmp.split('<embed id="');
@@ -43,38 +36,43 @@ const news1 = ({ data }) => {
     }
   }
 
-  const modText = Parser(find.join(''));
+  let modText = Parser(find.join(''));
 
   const mainImgUrl = 'https://data.joornalo.com/news/4/c/' + data.images[0].url;
 
-
   const updateImageWidths = () => {
+    //console.log('updateImageWidths********')
     const contentWidth = document.querySelector(".newsContent div").offsetWidth;
     //console.log(contentWidth);
-    const embed = document.querySelectorAll('.newsContent .embed iframe')
+    let embed = document.querySelectorAll('.newsContent .embed iframe')
     for (let x = 0; x < embed.length; x++) {
       embed[x].width = contentWidth;
-      embed[x].height = contentWidth * .5625;
+      //embed[x].height = contentWidth * .5625;
     }
+    embed = document.querySelectorAll('.newsContent .embed .twitter-tweet')
+    //console.log(embed)
+    for (let x = 0; x < embed.length; x++) {
+      embed[x].style["width"] = "100%";
+    }
+
   }
 
 
   return (
-    <div className="news">
+    <div suppressHydrationWarning={true} className="news">
       <h1>{data.title}</h1>
       <img src={mainImgUrl} />
-      <div className="row">
+      <div suppressHydrationWarning={true} className="row">
         <div className="col-3">
           <div className="details">
             Details
           </div>
           <Adv />
         </div>
-        <div className="newsContent col-9">
-          <div>{modText}</div>
+        <div suppressHydrationWarning={true} className="newsContent col-9">
+          <div suppressHydrationWarning={true}>{modText}</div>
         </div>
       </div>
-
     </div>
   )
 };

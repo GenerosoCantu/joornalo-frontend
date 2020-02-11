@@ -8433,7 +8433,7 @@ Error.getInitialProps = function (_ref2) {
 
 /***/ }),
 
-/***/ 3:
+/***/ 4:
 /*!*************************************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2F_error&absolutePagePath=C%3A%5CProjects%5CDEVELOPMENT%5Cjoornalo-frontend%5Cfront.joornalo%5Cpages%5C_error.js ***!
   \*************************************************************************************************************************************************************/
@@ -8456,5 +8456,5 @@ module.exports = dll_5f137288facb1107b491;
 
 /***/ })
 
-},[[3,"static/runtime/webpack.js"]]]);
+},[[4,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=_error.js.map
