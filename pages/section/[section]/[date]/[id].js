@@ -11,7 +11,7 @@ import { getNews, getOtherNews, getConfig } from '../../../../store/actions/news
 // url ===> http://localhost:3000/section/world/2020-01-11/iraq-iran-us-troops-4c50e545-539e-4893-b505-1edc2de3c977
 
 
-const News = ({ id, uuid, news, templateName, template, notFound }) => {
+const News = ({ agent, id, uuid, news, templateName, template, notFound }) => {
 
   const getTitle = (news) => {
     return (news) ? news.title : '';
@@ -22,7 +22,7 @@ const News = ({ id, uuid, news, templateName, template, notFound }) => {
   }
 
   return (
-    <Layout>
+    <Layout agent={agent}>
 
       <div className={templateName}>
         <Template grid={template} data={news} />
@@ -51,14 +51,14 @@ const News = ({ id, uuid, news, templateName, template, notFound }) => {
   )
 }
 
-News.getInitialProps = async function (context, eureka) {
+News.getInitialProps = async function (context, agent) {
   const { store } = context;
   const { section, date, id } = context.query;
   const uuid = id.slice(-36);
   const url = `/section/${section}/${date}/${id}`;
   let notFound = false;
 
-  console.log(eureka);
+  console.log(agent);
 
   try {
     if (!process.browser) {
@@ -81,6 +81,7 @@ News.getInitialProps = async function (context, eureka) {
   }
 
   return {
+    agent,
     id,
     uuid,
     url,

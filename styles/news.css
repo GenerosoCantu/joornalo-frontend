@@ -16,6 +16,11 @@ blockquote.twitter-tweet {
   max-width: 100%;
 }
 
+/* .news .newsContent p:first-of-type:first-letter {
+  font-size: 2rem;
+  font-weight: bold;
+} */
+
 
 /* related-news */
 .related-news {
@@ -33,7 +38,7 @@ blockquote.twitter-tweet {
   cursor: pointer;
 }
 
-.template-news1 .most-viewed,
+/* .template-news1 .most-viewed,
 .template-news1 .other-news {
   border-left: 1px solid#ddd;
   padding-left: 2rem;
@@ -41,9 +46,9 @@ blockquote.twitter-tweet {
 
 .template-news2 .most-viewed,
 .template-news2 .other-news {
-  border-right: 1px solid#ddd;
-  padding-right: 2rem;
-}
+  border-left: 1px solid#ddd;
+  padding-left: 2rem;
+} */
 
 .most-viewed h2,
 .other-news h2 {

@@ -146,21 +146,29 @@ var map = {
 	"./Template.js": [
 		"./components/Template.js"
 	],
+	"./TemplateOLD": [
+		"./components/TemplateOLD.js",
+		5
+	],
+	"./TemplateOLD.js": [
+		"./components/TemplateOLD.js",
+		5
+	],
 	"./adv": [
 		"./components/adv.js",
-		4
+		6
 	],
 	"./adv.js": [
 		"./components/adv.js",
-		4
+		6
 	],
 	"./bares": [
 		"./components/bares.js",
-		5
+		7
 	],
 	"./bares.js": [
 		"./components/bares.js",
-		5
+		7
 	],
 	"./components": [
 		"./components/components.js"
@@ -170,107 +178,115 @@ var map = {
 	],
 	"./dataContext": [
 		"./components/dataContext.js",
-		6
+		8
 	],
 	"./dataContext.js": [
 		"./components/dataContext.js",
-		6
+		8
 	],
 	"./featured1": [
 		"./components/featured1.js",
-		7
+		9
 	],
 	"./featured1.js": [
 		"./components/featured1.js",
-		7
+		9
 	],
 	"./footer-mobile1": [
 		"./components/footer-mobile1.js",
-		8
+		10
 	],
 	"./footer-mobile1.js": [
 		"./components/footer-mobile1.js",
-		8
+		10
 	],
 	"./footer1": [
 		"./components/footer1.js",
-		3
+		4
 	],
 	"./footer1.js": [
 		"./components/footer1.js",
-		3
+		4
 	],
 	"./header-mobile1": [
 		"./components/header-mobile1.js",
-		9
+		11
 	],
 	"./header-mobile1.js": [
 		"./components/header-mobile1.js",
-		9
+		11
 	],
 	"./header1": [
 		"./components/header1.js",
-		0
+		3
 	],
 	"./header1.js": [
 		"./components/header1.js",
-		0
+		3
 	],
 	"./menu1": [
 		"./components/menu1.js",
-		10
+		12
 	],
 	"./menu1.js": [
 		"./components/menu1.js",
-		10
+		12
 	],
 	"./most-viewed1": [
 		"./components/most-viewed1.js",
-		11
+		13
 	],
 	"./most-viewed1.js": [
 		"./components/most-viewed1.js",
-		11
+		13
 	],
 	"./news-header1": [
 		"./components/news-header1.js",
-		12
+		14
 	],
 	"./news-header1.js": [
 		"./components/news-header1.js",
-		12
+		14
 	],
 	"./news-mobile1": [
 		"./components/news-mobile1.js",
-		1
+		0
 	],
 	"./news-mobile1.js": [
 		"./components/news-mobile1.js",
-		1
+		0
 	],
 	"./news1": [
 		"./components/news1.js",
-		2
+		1
 	],
 	"./news1.js": [
 		"./components/news1.js",
+		1
+	],
+	"./news2": [
+		"./components/news2.js",
+		2
+	],
+	"./news2.js": [
+		"./components/news2.js",
 		2
 	],
 	"./other-news1": [
 		"./components/other-news1.js",
-		13
+		15
 	],
 	"./other-news1.js": [
 		"./components/other-news1.js",
-		13
+		15
 	],
 	"./related-news1": [
 		"./components/related-news1.js",
-		14
+		16
 	],
 	"./related-news1.js": [
 		"./components/related-news1.js",
-		14
+		16
 	]
 };
 function webpackAsyncContext(req) {
@@ -307,6 +323,8 @@ var map = {
 	"./MyLayout.js": "./components/MyLayout.js",
 	"./Template": "./components/Template.js",
 	"./Template.js": "./components/Template.js",
+	"./TemplateOLD": "./components/TemplateOLD.js",
+	"./TemplateOLD.js": "./components/TemplateOLD.js",
 	"./adv": "./components/adv.js",
 	"./adv.js": "./components/adv.js",
 	"./bares": "./components/bares.js",
@@ -335,6 +353,8 @@ var map = {
 	"./news-mobile1.js": "./components/news-mobile1.js",
 	"./news1": "./components/news1.js",
 	"./news1.js": "./components/news1.js",
+	"./news2": "./components/news2.js",
+	"./news2.js": "./components/news2.js",
 	"./other-news1": "./components/other-news1.js",
 	"./other-news1.js": "./components/other-news1.js",
 	"./related-news1": "./components/related-news1.js",
@@ -390,6 +410,7 @@ const layoutStyle = {// margin: 20,
 function Layout(props) {
   return __jsx("div", {
     className: "container-fluid",
+    agent: props.agent,
     style: layoutStyle,
     __source: {
       fileName: _jsxFileName,
@@ -435,37 +456,40 @@ const Template = ({
       key: `row-${index}`,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 7
+        lineNumber: 8
       },
       __self: undefined
-    }, row.column.map((col, index) => {
-      if (col.component) {
+    }, row.column.map((col, indexy) => {
+      if (col.components) {
         return __jsx("div", {
-          className: `col-${col.width}`,
-          key: `col-${index}`,
-          __source: {
-            fileName: _jsxFileName,
-            lineNumber: 11
-          },
-          __self: undefined
-        }, __jsx(_components_js__WEBPACK_IMPORTED_MODULE_1__["default"], {
-          component: col.component,
-          data: data,
-          text: col.text,
+          className: `${col.width}`,
+          key: `${indexy}`,
           __source: {
             fileName: _jsxFileName,
             lineNumber: 12
           },
           __self: undefined
+        }, col.components.map((component, indexz) => {
+          return __jsx(_components_js__WEBPACK_IMPORTED_MODULE_1__["default"], {
+            component: component,
+            data: data,
+            text: col.text,
+            key: `${indexz}`,
+            __source: {
+              fileName: _jsxFileName,
+              lineNumber: 15
+            },
+            __self: undefined
+          });
         }));
       } else {
         if (col.rows) {
           return __jsx("div", {
-            className: `col-${col.width}`,
+            className: `${col.width}`,
             key: `col-${index}`,
             __source: {
               fileName: _jsxFileName,
-              lineNumber: 18
+              lineNumber: 23
             },
             __self: undefined
           }, __jsx(Template, {
@@ -473,7 +497,7 @@ const Template = ({
             data: data,
             __source: {
               fileName: _jsxFileName,
-              lineNumber: 19
+              lineNumber: 24
             },
             __self: undefined
           }));
@@ -507,7 +531,7 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 // https://nextjs.org/docs/advanced-features/dynamic-import
 // this should come from Config.json
 
-const blockList = ['adv', 'header1', 'header-mobile1', 'news1', 'news-mobile1', 'news-header1', 'other-news1', 'related-news1', 'most-viewed1', 'featured1', 'footer1', 'footer-mobile1'];
+const blockList = ['adv', 'header1', 'header-mobile1', 'news1', 'news2', 'news-mobile1', 'news-header1', 'other-news1', 'related-news1', 'most-viewed1', 'featured1', 'footer1', 'footer-mobile1'];
 const ComponentsList = {};
 blockList.forEach((block, index) => {
   ComponentsList[block] = next_dynamic__WEBPACK_IMPORTED_MODULE_1___default()(() => __webpack_require__("./components lazy recursive ^\\.\\/.*$")(`./${block}`), {
@@ -538,7 +562,7 @@ const Components = ({
     return __jsx("div", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 42
+        lineNumber: 43
       },
       __self: undefined
     }, "Component not found!!!");
@@ -2953,6 +2977,7 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
  // url ===> http://localhost:3000/section/world/2020-01-11/iraq-iran-us-troops-4c50e545-539e-4893-b505-1edc2de3c977
 
 const News = ({
+  agent,
   id,
   uuid,
   news,
@@ -2976,6 +3001,7 @@ const News = ({
   }
 
   return __jsx(_components_MyLayout__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    agent: agent,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 25
@@ -3065,7 +3091,7 @@ const News = ({
   }, "Link: Iran Nuclear Deal")))));
 };
 
-News.getInitialProps = async function (context, eureka) {
+News.getInitialProps = async function (context, agent) {
   const {
     store
   } = context;
@@ -3077,7 +3103,7 @@ News.getInitialProps = async function (context, eureka) {
   const uuid = id.slice(-36);
   const url = `/section/${section}/${date}/${id}`;
   let notFound = false;
-  console.log(eureka);
+  console.log(agent);
 
   try {
     if (true) {
@@ -3100,6 +3126,7 @@ News.getInitialProps = async function (context, eureka) {
   }
 
   return {
+    agent,
     id,
     uuid,
     url,

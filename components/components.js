@@ -11,6 +11,7 @@ const blockList = [
   'header1',
   'header-mobile1',
   'news1',
+  'news2',
   'news-mobile1',
   'news-header1',
   'other-news1',

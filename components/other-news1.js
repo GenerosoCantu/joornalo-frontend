@@ -8,8 +8,8 @@ const OtherNews1 = ({ moreNews }) => {
       <h2>Other News</h2>
       <ul>
         {moreNews.map((news, index) => (
-          <Link href={news.url}>
-            <li key={index}>
+          <Link href={news.url} key={index}>
+            <li>
               <img src={imageUrl(news.image)} />
               <a>{news.title}</a>
             </li>

@@ -1,9 +1,103 @@
 exports.ids = [3];
 exports.modules = {
 
-/***/ "./components/footer1.js":
+/***/ "./components/adv.js":
+/*!***************************!*\
+  !*** ./components/adv.js ***!
+  \***************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+var _jsxFileName = "C:\\Projects\\DEVELOPMENT\\joornalo-frontend\\front.joornalo\\components\\adv.js";
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
+
+const Adv = context => {
+  const {
+    0: msg,
+    1: setMsg
+  } = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])('---');
+  const {
+    0: id,
+    1: setId
+  } = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(null);
+  let loaded = false;
+  let isIntersecting = false;
+  /*
+  300x250 - Medium Rectangle - 40%
+  728x90 - Leaderboard - 25%
+  160x600 - Wide Skyscraper - 12%
+  300x600 - Half Page - 5%
+  970x250 - Billboard - 1%
+  120x600 - Skyscraper
+    320x50 - Mobile Leaderboard - 12%
+  320x320 - Mobile Full Page Flex - 1%
+  320x100 - Large Mobile
+  */
+
+  Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(() => {
+    if (!id) {
+      setId('adv' + Math.round(Math.random() * 100000));
+    }
+
+    const div = document.getElementById(id);
+
+    if (div) {
+      const contentWidth = div.offsetWidth;
+
+      try {
+        let observer = new IntersectionObserver((entries, observerChild) => {
+          if (!loaded && entries[0].isIntersecting) {
+            loaded = true;
+            isIntersecting = true;
+            observerChild.unobserve(entries[0].target);
+            preLoad();
+          }
+        });
+        observer.observe(div);
+      } catch (err) {
+        safariIssue();
+      }
+    }
+  });
+
+  const safariIssue = () => {
+    if (!loaded) {
+      loaded = true;
+      isIntersecting = true;
+      preLoad();
+    }
+  };
+
+  const preLoad = () => {
+    if (isIntersecting) {
+      console.log('Ready to load...............................');
+      setMsg('Loaded');
+    }
+  };
+
+  return __jsx("div", {
+    className: "adv",
+    id: id,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 64
+    },
+    __self: undefined
+  }, "Ad: ", msg);
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (Adv);
+
+/***/ }),
+
+/***/ "./components/header1.js":
 /*!*******************************!*\
-  !*** ./components/footer1.js ***!
+  !*** ./components/header1.js ***!
   \*******************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -17,9 +111,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var _menu1__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./menu1 */ "./components/menu1.js");
-var _jsxFileName = "C:\\Projects\\DEVELOPMENT\\joornalo-frontend\\front.joornalo\\components\\footer1.js";
+/* harmony import */ var _adv__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./adv */ "./components/adv.js");
+var _jsxFileName = "C:\\Projects\\DEVELOPMENT\\joornalo-frontend\\front.joornalo\\components\\header1.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
 
 
 
@@ -38,7 +134,7 @@ const date = () => {
   return displayDate;
 };
 
-const Footer1 = ({
+const Header1 = ({
   menu
 }) => {
   return (// <div style={headerStyle}>
@@ -53,107 +149,143 @@ const Footer1 = ({
       className: "header",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 65
+        lineNumber: 66
       },
       __self: undefined
     }, __jsx("div", {
       className: "container-fluid desktop",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 66
-      },
-      __self: undefined
-    }, __jsx("div", {
-      className: "row",
-      __source: {
-        fileName: _jsxFileName,
         lineNumber: 67
       },
       __self: undefined
     }, __jsx("div", {
-      className: "col-xl-3 col-lg-4 col-md-4",
+      className: "row",
       __source: {
         fileName: _jsxFileName,
         lineNumber: 68
       },
       __self: undefined
     }, __jsx("div", {
-      className: "logo",
+      className: "col-250",
       __source: {
         fileName: _jsxFileName,
         lineNumber: 69
+      },
+      __self: undefined
+    }, __jsx("div", {
+      className: "logo",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 70
       },
       __self: undefined
     }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
       href: "/",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 70
+        lineNumber: 71
       },
       __self: undefined
     }, __jsx("a", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 70
+        lineNumber: 71
       },
       __self: undefined
     }, "Joornalo")))), __jsx("div", {
-      className: "col-xl-6 col-lg-5 col-md-5 headerBanner",
+      className: "col-auto headerBanner",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 74
+        lineNumber: 75
       },
       __self: undefined
-    }), __jsx("div", {
-      className: "col-lg-3 col-md-3",
+    }, __jsx(_adv__WEBPACK_IMPORTED_MODULE_4__["default"], {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 78
+        lineNumber: 76
       },
       __self: undefined
-    }, __jsx("div", {
-      className: "row",
+    })), __jsx("div", {
+      className: "col-250",
       __source: {
         fileName: _jsxFileName,
         lineNumber: 79
       },
       __self: undefined
     }, __jsx("div", {
-      className: "col",
+      className: "row",
       __source: {
         fileName: _jsxFileName,
         lineNumber: 80
       },
       __self: undefined
     }, __jsx("div", {
-      className: "search-box",
+      className: "col",
       __source: {
         fileName: _jsxFileName,
         lineNumber: 81
       },
       __self: undefined
-    }))), __jsx("div", {
+    }, __jsx("div", {
+      className: "search-box",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 82
+      },
+      __self: undefined
+    }, __jsx("input", {
+      id: "search",
+      placeholder: "Search",
+      type: "text",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 84
+      },
+      __self: undefined
+    })))), __jsx("div", {
       className: "row",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 88
+        lineNumber: 90
       },
       __self: undefined
     }, __jsx("div", {
       className: "col",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 89
+        lineNumber: 91
       },
       __self: undefined
     }, __jsx("div", {
       className: "date",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 90
+        lineNumber: 92
       },
       __self: undefined
-    }, date()))))))))
+    }, date()))))))), __jsx("div", {
+      className: "stripe",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 100
+      },
+      __self: undefined
+    }, __jsx("div", {
+      className: "container-fluid",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 101
+      },
+      __self: undefined
+    }, __jsx(_menu1__WEBPACK_IMPORTED_MODULE_3__["default"], {
+      items: menu,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 102
+      },
+      __self: undefined
+    }))))
   );
 };
 
@@ -161,7 +293,7 @@ const mapStateToProps = state => ({
   menu: state.news.config['menu-header']
 });
 
-/* harmony default export */ __webpack_exports__["default"] = (Object(react_redux__WEBPACK_IMPORTED_MODULE_1__["connect"])(mapStateToProps)(Footer1));
+/* harmony default export */ __webpack_exports__["default"] = (Object(react_redux__WEBPACK_IMPORTED_MODULE_1__["connect"])(mapStateToProps)(Header1));
 
 /***/ }),
 

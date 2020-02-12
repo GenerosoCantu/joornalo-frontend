@@ -1,9 +1,9 @@
 (window["webpackJsonp"] = window["webpackJsonp"] || []).push([[12],{
 
-/***/ "./components/most-viewed1.js":
-/*!************************************!*\
-  !*** ./components/most-viewed1.js ***!
-  \************************************/
+/***/ "./components/header-mobile1.js":
+/*!**************************************!*\
+  !*** ./components/header-mobile1.js ***!
+  \**************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -11,79 +11,33 @@
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-redux */ "./node_modules/react-redux/es/index.js");
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_2__);
-var _jsxFileName = "C:\\Projects\\DEVELOPMENT\\joornalo-frontend\\front.joornalo\\components\\most-viewed1.js";
+var _jsxFileName = "C:\\Projects\\DEVELOPMENT\\joornalo-frontend\\front.joornalo\\components\\header-mobile1.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
-
-
-
-var MostViewed1 = function MostViewed1(_ref) {
-  var topNews = _ref.topNews;
+/* harmony default export */ __webpack_exports__["default"] = (function (_ref) {
+  var data = _ref.data,
+      text = _ref.text;
   return __jsx("div", {
-    className: "most-viewed",
+    className: "mobileHeader",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 7
+      lineNumber: 4
     },
     __self: this
-  }, __jsx("h2", {
+  }, __jsx("hr", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 8
+      lineNumber: 5
     },
     __self: this
-  }, "Most Viewed"), __jsx("ul", {
+  }), __jsx("h2", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 9
+      lineNumber: 6
     },
     __self: this
-  }, topNews.map(function (news, index) {
-    return __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
-      href: news.url,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 11
-      },
-      __self: this
-    }, __jsx("li", {
-      key: index,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 12
-      },
-      __self: this
-    }, __jsx("img", {
-      src: imageUrl(news.image),
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 13
-      },
-      __self: this
-    }), __jsx("a", {
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 14
-      },
-      __self: this
-    }, news.title)));
-  })));
-};
-
-var imageUrl = function imageUrl(url) {
-  return 'https://data.joornalo.com' + url;
-};
-
-var mapStateToProps = function mapStateToProps(state) {
-  return {
-    topNews: state.news.topNews
-  };
-};
-
-/* harmony default export */ __webpack_exports__["default"] = (Object(react_redux__WEBPACK_IMPORTED_MODULE_1__["connect"])(mapStateToProps)(MostViewed1));
+  }, "Mobile Header1"));
+});
 
 /***/ })
 

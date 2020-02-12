@@ -27,6 +27,18 @@ const Adv = context => {
   } = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(null);
   let loaded = false;
   let isIntersecting = false;
+  /*
+  300x250 - Medium Rectangle - 40%
+  728x90 - Leaderboard - 25%
+  160x600 - Wide Skyscraper - 12%
+  300x600 - Half Page - 5%
+  970x250 - Billboard - 1%
+  120x600 - Skyscraper
+    320x50 - Mobile Leaderboard - 12%
+  320x320 - Mobile Full Page Flex - 1%
+  320x100 - Large Mobile
+  */
+
   Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(() => {
     if (!id) {
       setId('adv' + Math.round(Math.random() * 100000));
@@ -73,7 +85,7 @@ const Adv = context => {
     id: id,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 51
+      lineNumber: 64
     },
     __self: undefined
   }, "Ad: ", msg);
@@ -83,10 +95,10 @@ const Adv = context => {
 
 /***/ }),
 
-/***/ "./components/news-mobile1.js":
-/*!************************************!*\
-  !*** ./components/news-mobile1.js ***!
-  \************************************/
+/***/ "./components/news1.js":
+/*!*****************************!*\
+  !*** ./components/news1.js ***!
+  \*****************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -100,7 +112,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var html_react_parser__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(html_react_parser__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var _adv__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./adv */ "./components/adv.js");
 
-var _jsxFileName = "C:\\Projects\\DEVELOPMENT\\joornalo-frontend\\front.joornalo\\components\\news-mobile1.js";
+var _jsxFileName = "C:\\Projects\\DEVELOPMENT\\joornalo-frontend\\front.joornalo\\components\\news1.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
 
 
@@ -109,22 +121,16 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
 const news1 = ({
   data
 }) => {
-  Object(react__WEBPACK_IMPORTED_MODULE_1__["useEffect"])(() => {
-    updateImageWidths();
-    window.addEventListener('resize', updateImageWidths);
-  }); // const modText = Parser(data.text, {
-  //   replace: (domNode) => {
-  //     if (domNode.name === 'embed') {
-  //       return <div className="embed">{Parser(data.media[domNode.attribs.id - 1].embed)}</div>;
-  //     }
-  //     if (domNode.name === 'image') {
-  //       return <img src={Parser('https://data.joornalo.com/news/4/c/' + data.images[domNode.attribs.id - 1].url)} />
-  //     }
-  //   }
+  // componentDidMount(() => {
+  //   console.log('componentDidMount')
   // });
-
+  Object(react__WEBPACK_IMPORTED_MODULE_1__["useEffect"])(() => {
+    window.addEventListener('resize', updateImageWidths);
+    updateImageWidths();
+  }, []);
   let tmp = unescape(data.text);
-  let find = tmp.split('<embed id="');
+  let find;
+  find = tmp.split('<embed id="');
 
   for (let i = find.length - 1; i--;) {
     let mediaNum = _babel_runtime_corejs2_core_js_parse_int__WEBPACK_IMPORTED_MODULE_0___default()(find[i + 1].charAt(0));
@@ -149,17 +155,23 @@ const news1 = ({
     }
   }
 
-  const modText = html_react_parser__WEBPACK_IMPORTED_MODULE_2___default()(find.join(''));
+  let modText = html_react_parser__WEBPACK_IMPORTED_MODULE_2___default()(find.join(''));
   const mainImgUrl = 'https://data.joornalo.com/news/4/c/' + data.images[0].url;
 
   const updateImageWidths = () => {
+    //console.log('updateImageWidths********')
     const contentWidth = document.querySelector(".newsContent div").offsetWidth; //console.log(contentWidth);
 
-    const embed = document.querySelectorAll('.newsContent .embed iframe');
+    let embed = document.querySelectorAll('.newsContent .embed iframe');
 
     for (let x = 0; x < embed.length; x++) {
-      embed[x].width = contentWidth;
-      embed[x].height = contentWidth * .5625;
+      embed[x].width = contentWidth; //embed[x].height = contentWidth * .5625;
+    }
+
+    embed = document.querySelectorAll('.newsContent .embed .twitter-tweet'); //console.log(embed)
+
+    for (let x = 0; x < embed.length; x++) {
+      embed[x].style["width"] = "100%";
     }
   };
 
@@ -167,60 +179,61 @@ const news1 = ({
     className: "news",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 63
+      lineNumber: 61
     },
     __self: undefined
   }, __jsx("h1", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 64
+      lineNumber: 62
     },
     __self: undefined
   }, data.title), __jsx("img", {
     src: mainImgUrl,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 65
+      lineNumber: 63
     },
     __self: undefined
   }), __jsx("div", {
-    className: "row",
+    className: "row row-m-column",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 66
+      lineNumber: 64
     },
     __self: undefined
   }, __jsx("div", {
-    className: "col-12",
+    className: "col-220 col-m-full",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 67
+      lineNumber: 65
     },
     __self: undefined
   }, __jsx("div", {
     className: "details",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 68
+      lineNumber: 66
     },
     __self: undefined
   }, "Details"), __jsx(_adv__WEBPACK_IMPORTED_MODULE_3__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 71
+      lineNumber: 69
     },
     __self: undefined
   })), __jsx("div", {
-    className: "newsContent col-12",
+    className: "newsContent col-full-220 col-m-auto",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 73
+      lineNumber: 71
     },
     __self: undefined
   }, __jsx("div", {
+    suppressHydrationWarning: true,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 74
+      lineNumber: 72
     },
     __self: undefined
   }, modText))));

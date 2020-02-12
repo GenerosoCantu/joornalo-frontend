@@ -6,7 +6,7 @@ const layoutStyle = {
 
 export default function Layout(props) {
   return (
-    <div className="container-fluid" style={layoutStyle}>
+    <div className="container-fluid" agent={props.agent} style={layoutStyle}>
       {props.children}
     </div>
   )

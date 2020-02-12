@@ -1903,7 +1903,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react-redux */ "react-redux");
 /* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(react_redux__WEBPACK_IMPORTED_MODULE_4__);
 /* harmony import */ var _store__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./store */ "./pages/store.js");
-/* harmony import */ var _store_actions_newsActions__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../store/actions/newsActions */ "./store/actions/newsActions.js");
+/* harmony import */ var _services_configService__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../services/configService */ "./services/configService.js");
 /* harmony import */ var _styles_global_css__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../styles/global.css */ "./styles/global.css");
 /* harmony import */ var _styles_global_css__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_styles_global_css__WEBPACK_IMPORTED_MODULE_7__);
 /* harmony import */ var _styles_header_css__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../styles/header.css */ "./styles/header.css");
@@ -1917,6 +1917,7 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
 
 
 
+ // import { getConfig } from '../store/actions/newsActions';
 
 
 
@@ -1928,12 +1929,12 @@ const _Joornalo = next_redux_wrapper__WEBPACK_IMPORTED_MODULE_3___default()(_sto
     Component,
     ctx
   }) {
-    const eureka = 'Eureka'; //console.log('+++++++++++++++++++2');
+    //console.log('+++++++++++++++++++2');
     //await store().dispatch(getConfig());
     //console.log(store().getState());
-
+    const agent = await Object(_services_configService__WEBPACK_IMPORTED_MODULE_6__["initAgent"])(ctx.req);
     return {
-      pageProps: Component.getInitialProps ? await Component.getInitialProps(ctx, eureka) : {}
+      pageProps: Component.getInitialProps ? await Component.getInitialProps(ctx, agent) : {}
     };
   } // componentDidMount() {
   //   const jssStyles = document.querySelector('#jss-server-side')
@@ -1953,13 +1954,13 @@ const _Joornalo = next_redux_wrapper__WEBPACK_IMPORTED_MODULE_3___default()(_sto
       store: store,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 42
+        lineNumber: 44
       },
       __self: this
     }, __jsx(Component, Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, pageProps, {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 43
+        lineNumber: 45
       },
       __self: this
     })));
@@ -2029,165 +2030,6 @@ const initAgent = req => {
 const test = () => {
   return 'ok';
 }; // export default initAgent;
-
-/***/ }),
-
-/***/ "./store/actions/newsActions.js":
-/*!**************************************!*\
-  !*** ./store/actions/newsActions.js ***!
-  \**************************************/
-/*! exports provided: getOtherNews, getNews, setLoading, getConfig */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getOtherNews", function() { return getOtherNews; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getNews", function() { return getNews; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "setLoading", function() { return setLoading; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getConfig", function() { return getConfig; });
-/* harmony import */ var _babel_runtime_corejs2_core_js_promise__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/core-js/promise */ "./node_modules/@babel/runtime-corejs2/core-js/promise.js");
-/* harmony import */ var _babel_runtime_corejs2_core_js_promise__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_corejs2_core_js_promise__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _pages_store__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../pages/store */ "./pages/store.js");
-/* harmony import */ var _types__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../types */ "./store/types.js");
-/* harmony import */ var _services_configService__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../services/configService */ "./services/configService.js");
-/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! axios */ "axios");
-/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var html_react_parser__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! html-react-parser */ "html-react-parser");
-/* harmony import */ var html_react_parser__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(html_react_parser__WEBPACK_IMPORTED_MODULE_5__);
-
-
-
-
-
-
-
-const getTemplate = async (req, template, agent) => {
-  try {
-    setLoading();
-    const tmpl = agent + '-' + template;
-    const templateUrl = `https://data.joornalo.com/templates/news/${tmpl}.json`;
-    const res = await axios__WEBPACK_IMPORTED_MODULE_4___default.a.get(templateUrl);
-    return res.data;
-  } catch (err) {
-    console.log('***********Template Error');
-    dispatch({
-      type: _types__WEBPACK_IMPORTED_MODULE_2__["NEWS_ERROR"],
-      payload: err.statusText
-    });
-  }
-};
-
-const getOtherNews = section => async (dispatch, getState) => {
-  try {
-    setLoading();
-    const moreUrl = `https://data.joornalo.com/news/${section}-more-news.json`;
-    const res = await axios__WEBPACK_IMPORTED_MODULE_4___default.a.get(moreUrl);
-    dispatch({
-      type: _types__WEBPACK_IMPORTED_MODULE_2__["GET_OTHERNEWS"],
-      payload: {
-        topNews: res.data.topNews,
-        moreNews: res.data.moreNews
-      }
-    });
-  } catch (err) {
-    dispatch({
-      type: _types__WEBPACK_IMPORTED_MODULE_2__["NEWS_ERROR"],
-      payload: 'NotFound'
-    });
-  }
-};
-const getNews = (section, date, uuid, url, req) => async (dispatch, getState) => {
-  try {
-    setLoading();
-    const path = `https://data.joornalo.com/news/${uuid.charAt(0)}/${uuid.charAt(1)}/${uuid}.json`;
-    const res = await axios__WEBPACK_IMPORTED_MODULE_4___default.a.get(path);
-
-    if (url !== res.data['url']) {
-      dispatch({
-        type: _types__WEBPACK_IMPORTED_MODULE_2__["NEWS_ERROR"],
-        payload: `Redirect: ${res.data['url']}`
-      });
-    }
-
-    const agent = getState().news.agent;
-    const tmpl = agent + '-' + res.data['template'];
-    let template = getState().news.templates[tmpl];
-
-    if (!template) {
-      template = await getTemplate(req, res.data['template'], getState().news.agent);
-      dispatch({
-        type: _types__WEBPACK_IMPORTED_MODULE_2__["ADD_TEMPLATE"],
-        payload: {
-          template: {
-            [tmpl]: template
-          }
-        }
-      });
-    } // let tmp = unescape(res.data.text);
-    // let find = tmp.split('<embed id="');
-    // for (let i = find.length - 1; i--;) {
-    //   let mediaNum = parseInt(find[i + 1].charAt(0));
-    //   if (res.data.media[mediaNum - 1]) {
-    //     find[i + 1] = '<div class="embed">' + res.data.media[mediaNum - 1].embed + '</div>' + find[i + 1].substring(5);
-    //   } else {
-    //     find[i + 1] = find[i + 1].substring(5);
-    //   }
-    // }
-    // tmp = find.join('');
-    // find = tmp.split('<image id="');
-    // for (let i = find.length - 1; i--;) {
-    //   let imageNum = parseInt(find[i + 1].charAt(0));
-    //   if (res.data.images[imageNum - 1]) {
-    //     find[i + 1] = '<img src="https://data.joornalo.com/news/4/c/' + res.data.images[imageNum - 1].url + '" />' + find[i + 1].substring(5);
-    //   } else {
-    //     find[i + 1] = find[i + 1].substring(5);
-    //   }
-    // }
-    // res.data.modText = Parser(find.join(''));
-    // res.data.mainImgUrl = 'https://data.joornalo.com/news/4/c/' + res.data.images[0].url;
-    //console.log(data);
-
-
-    dispatch({
-      type: _types__WEBPACK_IMPORTED_MODULE_2__["GET_NEWS"],
-      payload: {
-        news: res.data,
-        templateName: 'template-' + res.data['template'],
-        template: template
-      }
-    });
-  } catch (err) {
-    dispatch({
-      type: _types__WEBPACK_IMPORTED_MODULE_2__["NEWS_ERROR"],
-      payload: 'NotFound'
-    });
-  }
-}; // Set loading to true
-
-const setLoading = () => {
-  return {
-    type: _types__WEBPACK_IMPORTED_MODULE_2__["SET_LOADING"]
-  };
-};
-const getConfig = req => async dispatch => {
-  try {
-    const configUrl = `https://data.joornalo.com/config.json`;
-    const templatesUrl = `https://data.joornalo.com/templates/news/templates.json`;
-    const [config, templates, agent] = await _babel_runtime_corejs2_core_js_promise__WEBPACK_IMPORTED_MODULE_0___default.a.all([axios__WEBPACK_IMPORTED_MODULE_4___default.a.get(configUrl), axios__WEBPACK_IMPORTED_MODULE_4___default.a.get(templatesUrl), Object(_services_configService__WEBPACK_IMPORTED_MODULE_3__["initAgent"])(req)]);
-    dispatch({
-      type: _types__WEBPACK_IMPORTED_MODULE_2__["GET_CONFIG"],
-      payload: {
-        config: config.data,
-        templates: templates.data,
-        agent: agent
-      }
-    });
-  } catch (err) {// dispatch({
-    //   type: NEWS_ERROR,
-    //   payload: 'NotFound'
-    // });
-  }
-};
 
 /***/ }),
 
@@ -2384,17 +2226,6 @@ module.exports = __webpack_require__(/*! private-next-pages/_app.js */"./pages/_
 
 /***/ }),
 
-/***/ "axios":
-/*!************************!*\
-  !*** external "axios" ***!
-  \************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = require("axios");
-
-/***/ }),
-
 /***/ "core-js/library/fn/object/assign":
 /*!***************************************************!*\
   !*** external "core-js/library/fn/object/assign" ***!
@@ -2524,17 +2355,6 @@ module.exports = require("core-js/library/fn/symbol/iterator");
 /***/ (function(module, exports) {
 
 module.exports = require("core-js/library/fn/weak-map");
-
-/***/ }),
-
-/***/ "html-react-parser":
-/*!************************************!*\
-  !*** external "html-react-parser" ***!
-  \************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = require("html-react-parser");
 
 /***/ }),
 
