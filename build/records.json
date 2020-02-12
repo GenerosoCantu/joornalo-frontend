@@ -1,0 +1,161 @@
+{
+  "mini-css-extract-plugin node_modules/@zeit/next-css/node_modules/css-loader/index.js??ref--5-1!styles/header.css": [
+    {
+      "modules": {
+        "byIdentifier": {},
+        "usedIds": {}
+      },
+      "chunks": {
+        "byName": {
+          "mini-css-extract-plugin": 0
+        },
+        "bySource": {},
+        "usedIds": [
+          0
+        ]
+      }
+    }
+  ],
+  "mini-css-extract-plugin node_modules/@zeit/next-css/node_modules/css-loader/index.js??ref--5-1!styles/global.css": [
+    {
+      "modules": {
+        "byIdentifier": {},
+        "usedIds": {}
+      },
+      "chunks": {
+        "byName": {
+          "mini-css-extract-plugin": 0
+        },
+        "bySource": {},
+        "usedIds": [
+          0
+        ]
+      }
+    }
+  ],
+  "mini-css-extract-plugin node_modules/@zeit/next-css/node_modules/css-loader/index.js??ref--5-1!styles/news.css": [
+    {
+      "modules": {
+        "byIdentifier": {},
+        "usedIds": {}
+      },
+      "chunks": {
+        "byName": {
+          "mini-css-extract-plugin": 0
+        },
+        "bySource": {},
+        "usedIds": [
+          0
+        ]
+      }
+    }
+  ],
+  "modules": {
+    "byIdentifier": {
+      "css node_modules/@zeit/next-css/node_modules/css-loader/index.js??ref--5-1!styles/global.css 0": 0,
+      "css node_modules/@zeit/next-css/node_modules/css-loader/index.js??ref--5-1!styles/header.css 0": 1,
+      "css node_modules/@zeit/next-css/node_modules/css-loader/index.js??ref--5-1!styles/news.css 0": 2
+    },
+    "usedIds": {
+      "0": 0,
+      "1": 1,
+      "2": 2
+    }
+  },
+  "chunks": {
+    "byName": {
+      "commons": 0,
+      "static/runtime/webpack.js": 1,
+      "static/runtime/main.js": 18,
+      "static/runtime/polyfills.js": 19,
+      "static\\IzI7pdXXBc8mZpeSmWfEH\\pages\\_app.js": 20,
+      "static\\IzI7pdXXBc8mZpeSmWfEH\\pages\\_error.js": 21,
+      "static\\IzI7pdXXBc8mZpeSmWfEH\\pages\\about.js": 22,
+      "static\\IzI7pdXXBc8mZpeSmWfEH\\pages\\index.js": 23,
+      "static\\IzI7pdXXBc8mZpeSmWfEH\\pages\\news\\[news].js": 24,
+      "static\\IzI7pdXXBc8mZpeSmWfEH\\pages\\notfound.js": 25,
+      "static\\IzI7pdXXBc8mZpeSmWfEH\\pages\\section\\[section].js": 26,
+      "static\\IzI7pdXXBc8mZpeSmWfEH\\pages\\section\\[section]\\[date].js": 27,
+      "static\\IzI7pdXXBc8mZpeSmWfEH\\pages\\section\\[section]\\[date]\\[id].js": 28,
+      "static\\IzI7pdXXBc8mZpeSmWfEH\\pages\\store.js": 29,
+      "styles": 30
+    },
+    "bySource": {
+      "0 components lazy /^\\.\\/.*$/ groupOptions: {} namespace object ./adv": 0,
+      "0 components lazy /^\\.\\/.*$/ groupOptions: {} namespace object ./adv.js": 0,
+      "0 components lazy /^\\.\\/.*$/ groupOptions: {} namespace object ./header1": 0,
+      "0 components lazy /^\\.\\/.*$/ groupOptions: {} namespace object ./header1.js": 0,
+      "0 components lazy /^\\.\\/.*$/ groupOptions: {} namespace object ./news-mobile1": 0,
+      "0 components lazy /^\\.\\/.*$/ groupOptions: {} namespace object ./news-mobile1.js": 0,
+      "0 components lazy /^\\.\\/.*$/ groupOptions: {} namespace object ./news1": 0,
+      "0 components lazy /^\\.\\/.*$/ groupOptions: {} namespace object ./news1.js": 0,
+      "0 components lazy /^\\.\\/.*$/ groupOptions: {} namespace object ./news2": 0,
+      "0 components lazy /^\\.\\/.*$/ groupOptions: {} namespace object ./news2.js": 0,
+      "1 components lazy /^\\.\\/.*$/ groupOptions: {} namespace object ./news-mobile1": 2,
+      "1 components lazy /^\\.\\/.*$/ groupOptions: {} namespace object ./news-mobile1.js": 2,
+      "1 components lazy /^\\.\\/.*$/ groupOptions: {} namespace object ./news1": 3,
+      "1 components lazy /^\\.\\/.*$/ groupOptions: {} namespace object ./news1.js": 3,
+      "1 components lazy /^\\.\\/.*$/ groupOptions: {} namespace object ./news2": 4,
+      "1 components lazy /^\\.\\/.*$/ groupOptions: {} namespace object ./news2.js": 4,
+      "0 components lazy /^\\.\\/.*$/ groupOptions: {} namespace object ./footer1": 5,
+      "0 components lazy /^\\.\\/.*$/ groupOptions: {} namespace object ./footer1.js": 5,
+      "1 components lazy /^\\.\\/.*$/ groupOptions: {} namespace object ./header1": 6,
+      "1 components lazy /^\\.\\/.*$/ groupOptions: {} namespace object ./header1.js": 6,
+      "0 components lazy /^\\.\\/.*$/ groupOptions: {} namespace object ./TemplateOLD": 7,
+      "0 components lazy /^\\.\\/.*$/ groupOptions: {} namespace object ./TemplateOLD.js": 7,
+      "0 components lazy /^\\.\\/.*$/ groupOptions: {} namespace object ./bares": 8,
+      "0 components lazy /^\\.\\/.*$/ groupOptions: {} namespace object ./bares.js": 8,
+      "0 components lazy /^\\.\\/.*$/ groupOptions: {} namespace object ./dataContext": 9,
+      "0 components lazy /^\\.\\/.*$/ groupOptions: {} namespace object ./dataContext.js": 9,
+      "0 components lazy /^\\.\\/.*$/ groupOptions: {} namespace object ./featured1": 10,
+      "0 components lazy /^\\.\\/.*$/ groupOptions: {} namespace object ./featured1.js": 10,
+      "0 components lazy /^\\.\\/.*$/ groupOptions: {} namespace object ./footer-mobile1": 11,
+      "0 components lazy /^\\.\\/.*$/ groupOptions: {} namespace object ./footer-mobile1.js": 11,
+      "0 components lazy /^\\.\\/.*$/ groupOptions: {} namespace object ./header-mobile1": 12,
+      "0 components lazy /^\\.\\/.*$/ groupOptions: {} namespace object ./header-mobile1.js": 12,
+      "0 components lazy /^\\.\\/.*$/ groupOptions: {} namespace object ./menu1": 13,
+      "0 components lazy /^\\.\\/.*$/ groupOptions: {} namespace object ./menu1.js": 13,
+      "0 components lazy /^\\.\\/.*$/ groupOptions: {} namespace object ./most-viewed1": 14,
+      "0 components lazy /^\\.\\/.*$/ groupOptions: {} namespace object ./most-viewed1.js": 14,
+      "0 components lazy /^\\.\\/.*$/ groupOptions: {} namespace object ./news-header1": 15,
+      "0 components lazy /^\\.\\/.*$/ groupOptions: {} namespace object ./news-header1.js": 15,
+      "0 components lazy /^\\.\\/.*$/ groupOptions: {} namespace object ./other-news1": 16,
+      "0 components lazy /^\\.\\/.*$/ groupOptions: {} namespace object ./other-news1.js": 16,
+      "0 components lazy /^\\.\\/.*$/ groupOptions: {} namespace object ./related-news1": 17,
+      "0 components lazy /^\\.\\/.*$/ groupOptions: {} namespace object ./related-news1.js": 17
+    },
+    "usedIds": [
+      0,
+      1,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      2,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      3,
+      30,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ]
+  }
+}
