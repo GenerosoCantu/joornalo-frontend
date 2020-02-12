@@ -20,21 +20,29 @@ var map = {
 	"./Template.js": [
 		"./components/Template.js"
 	],
+	"./TemplateOLD": [
+		"./components/TemplateOLD.js",
+		6
+	],
+	"./TemplateOLD.js": [
+		"./components/TemplateOLD.js",
+		6
+	],
 	"./adv": [
 		"./components/adv.js",
-		5
+		7
 	],
 	"./adv.js": [
 		"./components/adv.js",
-		5
+		7
 	],
 	"./bares": [
 		"./components/bares.js",
-		6
+		8
 	],
 	"./bares.js": [
 		"./components/bares.js",
-		6
+		8
 	],
 	"./components": [
 		"./components/components.js"
@@ -44,107 +52,115 @@ var map = {
 	],
 	"./dataContext": [
 		"./components/dataContext.js",
-		7
+		9
 	],
 	"./dataContext.js": [
 		"./components/dataContext.js",
-		7
+		9
 	],
 	"./featured1": [
 		"./components/featured1.js",
-		8
+		10
 	],
 	"./featured1.js": [
 		"./components/featured1.js",
-		8
+		10
 	],
 	"./footer-mobile1": [
 		"./components/footer-mobile1.js",
-		9
+		11
 	],
 	"./footer-mobile1.js": [
 		"./components/footer-mobile1.js",
-		9
+		11
 	],
 	"./footer1": [
 		"./components/footer1.js",
-		4
+		5
 	],
 	"./footer1.js": [
 		"./components/footer1.js",
-		4
+		5
 	],
 	"./header-mobile1": [
 		"./components/header-mobile1.js",
-		10
+		12
 	],
 	"./header-mobile1.js": [
 		"./components/header-mobile1.js",
-		10
+		12
 	],
 	"./header1": [
 		"./components/header1.js",
-		1
+		4
 	],
 	"./header1.js": [
 		"./components/header1.js",
-		1
+		4
 	],
 	"./menu1": [
 		"./components/menu1.js",
-		11
+		13
 	],
 	"./menu1.js": [
 		"./components/menu1.js",
-		11
+		13
 	],
 	"./most-viewed1": [
 		"./components/most-viewed1.js",
-		12
+		14
 	],
 	"./most-viewed1.js": [
 		"./components/most-viewed1.js",
-		12
+		14
 	],
 	"./news-header1": [
 		"./components/news-header1.js",
-		13
+		15
 	],
 	"./news-header1.js": [
 		"./components/news-header1.js",
-		13
+		15
 	],
 	"./news-mobile1": [
 		"./components/news-mobile1.js",
-		2
+		1
 	],
 	"./news-mobile1.js": [
 		"./components/news-mobile1.js",
-		2
+		1
 	],
 	"./news1": [
 		"./components/news1.js",
-		3
+		2
 	],
 	"./news1.js": [
 		"./components/news1.js",
+		2
+	],
+	"./news2": [
+		"./components/news2.js",
+		3
+	],
+	"./news2.js": [
+		"./components/news2.js",
 		3
 	],
 	"./other-news1": [
 		"./components/other-news1.js",
-		14
+		16
 	],
 	"./other-news1.js": [
 		"./components/other-news1.js",
-		14
+		16
 	],
 	"./related-news1": [
 		"./components/related-news1.js",
-		15
+		17
 	],
 	"./related-news1.js": [
 		"./components/related-news1.js",
-		15
+		17
 	]
 };
 function webpackAsyncContext(req) {
@@ -181,6 +197,8 @@ var map = {
 	"./MyLayout.js": "./components/MyLayout.js",
 	"./Template": "./components/Template.js",
 	"./Template.js": "./components/Template.js",
+	"./TemplateOLD": "./components/TemplateOLD.js",
+	"./TemplateOLD.js": "./components/TemplateOLD.js",
 	"./adv": "./components/adv.js",
 	"./adv.js": "./components/adv.js",
 	"./bares": "./components/bares.js",
@@ -209,6 +227,8 @@ var map = {
 	"./news-mobile1.js": "./components/news-mobile1.js",
 	"./news1": "./components/news1.js",
 	"./news1.js": "./components/news1.js",
+	"./news2": "./components/news2.js",
+	"./news2.js": "./components/news2.js",
 	"./other-news1": "./components/other-news1.js",
 	"./other-news1.js": "./components/other-news1.js",
 	"./related-news1": "./components/related-news1.js",
@@ -264,6 +284,7 @@ var layoutStyle = {// margin: 20,
 function Layout(props) {
   return __jsx("div", {
     className: "container-fluid",
+    agent: props.agent,
     style: layoutStyle,
     __source: {
       fileName: _jsxFileName,
@@ -308,37 +329,40 @@ var Template = function Template(_ref) {
       key: "row-".concat(index),
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 7
+        lineNumber: 8
       },
       __self: this
-    }, row.column.map(function (col, index) {
-      if (col.component) {
+    }, row.column.map(function (col, indexy) {
+      if (col.components) {
         return __jsx("div", {
-          className: "col-".concat(col.width),
-          key: "col-".concat(index),
-          __source: {
-            fileName: _jsxFileName,
-            lineNumber: 11
-          },
-          __self: this
-        }, __jsx(_components_js__WEBPACK_IMPORTED_MODULE_1__["default"], {
-          component: col.component,
-          data: data,
-          text: col.text,
+          className: "".concat(col.width),
+          key: "".concat(indexy),
           __source: {
             fileName: _jsxFileName,
             lineNumber: 12
           },
           __self: this
+        }, col.components.map(function (component, indexz) {
+          return __jsx(_components_js__WEBPACK_IMPORTED_MODULE_1__["default"], {
+            component: component,
+            data: data,
+            text: col.text,
+            key: "".concat(indexz),
+            __source: {
+              fileName: _jsxFileName,
+              lineNumber: 15
+            },
+            __self: this
+          });
         }));
       } else {
         if (col.rows) {
           return __jsx("div", {
-            className: "col-".concat(col.width),
+            className: "".concat(col.width),
             key: "col-".concat(index),
             __source: {
               fileName: _jsxFileName,
-              lineNumber: 18
+              lineNumber: 23
             },
             __self: this
           }, __jsx(Template, {
@@ -346,7 +370,7 @@ var Template = function Template(_ref) {
             data: data,
             __source: {
               fileName: _jsxFileName,
-              lineNumber: 19
+              lineNumber: 24
             },
             __self: this
           }));
@@ -380,7 +404,7 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 // https://nextjs.org/docs/advanced-features/dynamic-import
 // this should come from Config.json
 
-var blockList = ['adv', 'header1', 'header-mobile1', 'news1', 'news-mobile1', 'news-header1', 'other-news1', 'related-news1', 'most-viewed1', 'featured1', 'footer1', 'footer-mobile1'];
+var blockList = ['adv', 'header1', 'header-mobile1', 'news1', 'news2', 'news-mobile1', 'news-header1', 'other-news1', 'related-news1', 'most-viewed1', 'featured1', 'footer1', 'footer-mobile1'];
 var ComponentsList = {};
 blockList.forEach(function (block, index) {
   ComponentsList[block] = next_dynamic__WEBPACK_IMPORTED_MODULE_1___default()(function () {
@@ -414,7 +438,7 @@ var Components = function Components(_ref) {
     return __jsx("div", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 42
+        lineNumber: 43
       },
       __self: this
     }, "Component not found!!!");
@@ -17374,7 +17398,8 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
  // url ===> http://localhost:3000/section/world/2020-01-11/iraq-iran-us-troops-4c50e545-539e-4893-b505-1edc2de3c977
 
 var News = function News(_ref) {
-  var id = _ref.id,
+  var agent = _ref.agent,
+      id = _ref.id,
       uuid = _ref.uuid,
       news = _ref.news,
       templateName = _ref.templateName,
@@ -17397,6 +17422,7 @@ var News = function News(_ref) {
   }
 
   return __jsx(_components_MyLayout__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    agent: agent,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 25
@@ -17486,7 +17512,7 @@ var News = function News(_ref) {
   }, "Link: Iran Nuclear Deal")))));
 };
 
-News.getInitialProps = function _callee(context, eureka) {
+News.getInitialProps = function _callee(context, agent) {
   var store, _context$query, section, date, id, uuid, url, notFound, error;
 
   return _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.async(function _callee$(_context) {
@@ -17498,7 +17524,7 @@ News.getInitialProps = function _callee(context, eureka) {
           uuid = id.slice(-36);
           url = "/section/".concat(section, "/").concat(date, "/").concat(id);
           notFound = false;
-          console.log(eureka);
+          console.log(agent);
           _context.prev = 6;
 
           if (true) {
@@ -17542,6 +17568,7 @@ News.getInitialProps = function _callee(context, eureka) {
 
         case 23:
           return _context.abrupt("return", {
+            agent: agent,
             id: id,
             uuid: uuid,
             url: url,

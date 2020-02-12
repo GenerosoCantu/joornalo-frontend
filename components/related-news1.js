@@ -11,8 +11,8 @@ const RelatedNews1 = ({ topNews }) => {
       <h2>Related Stories</h2>
       <div className="row">
         {topNews4.map((news, index) => (
-          <Link href={news.url}>
-            <div className="col-3" key={index}>
+          <Link href={news.url} key={index}>
+            <div className="col-auto">
               <img src={imageUrl(news.image)} />
               <a>{news.title}</a>
             </div>

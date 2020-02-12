@@ -66,17 +66,17 @@ const Header1 = ({ menu }) => {
       <div className="header">
         <div className="container-fluid desktop">
           <div className="row">
-            <div className="col-xl-3 col-lg-4 col-md-4">
+            <div className="col-250">
               <div className="logo">
                 <Link href="/"><a>Joornalo</a></Link>
               </div>
             </div>
 
-            <div className="col-xl-6 col-lg-5 col-md-5 headerBanner">
+            <div className="col-auto headerBanner">
               <Adv />
             </div>
 
-            <div className="col-lg-3 col-md-3">
+            <div className="col-250">
               <div className="row">
                 <div className="col">
                   <div className="search-box">

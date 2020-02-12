@@ -1,0 +1,1 @@
+{"code":"(window.webpackJsonp=window.webpackJsonp||[]).push([[12],{MjaN:function(e,a,n){\"use strict\";n.r(a);var t=n(\"q1tI\"),l=n.n(t).a.createElement;a.default=function(e){e.data,e.text;return l(\"div\",{className:\"mobileHeader\"},l(\"hr\",null),l(\"h2\",null,\"Mobile Header1\"))}}}]);"}

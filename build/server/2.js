@@ -27,6 +27,18 @@ const Adv = context => {
   } = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(null);
   let loaded = false;
   let isIntersecting = false;
+  /*
+  300x250 - Medium Rectangle - 40%
+  728x90 - Leaderboard - 25%
+  160x600 - Wide Skyscraper - 12%
+  300x600 - Half Page - 5%
+  970x250 - Billboard - 1%
+  120x600 - Skyscraper
+    320x50 - Mobile Leaderboard - 12%
+  320x320 - Mobile Full Page Flex - 1%
+  320x100 - Large Mobile
+  */
+
   Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(() => {
     if (!id) {
       setId('adv' + Math.round(Math.random() * 100000));
@@ -73,7 +85,7 @@ const Adv = context => {
     id: id,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 51
+      lineNumber: 64
     },
     __self: undefined
   }, "Ad: ", msg);
@@ -83,9 +95,9 @@ const Adv = context => {
 
 /***/ }),
 
-/***/ "./components/news1.js":
+/***/ "./components/news2.js":
 /*!*****************************!*\
-  !*** ./components/news1.js ***!
+  !*** ./components/news2.js ***!
   \*****************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -100,13 +112,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var html_react_parser__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(html_react_parser__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var _adv__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./adv */ "./components/adv.js");
 
-var _jsxFileName = "C:\\Projects\\DEVELOPMENT\\joornalo-frontend\\front.joornalo\\components\\news1.js";
+var _jsxFileName = "C:\\Projects\\DEVELOPMENT\\joornalo-frontend\\front.joornalo\\components\\news2.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
 
 
 
 
-const news1 = ({
+const news2 = ({
   data
 }) => {
   // componentDidMount(() => {
@@ -117,7 +129,8 @@ const news1 = ({
     updateImageWidths();
   }, []);
   let tmp = unescape(data.text);
-  let find = tmp.split('<embed id="');
+  let find;
+  find = tmp.split('<embed id="');
 
   for (let i = find.length - 1; i--;) {
     let mediaNum = _babel_runtime_corejs2_core_js_parse_int__WEBPACK_IMPORTED_MODULE_0___default()(find[i + 1].charAt(0));
@@ -163,73 +176,70 @@ const news1 = ({
   };
 
   return __jsx("div", {
-    suppressHydrationWarning: true,
     className: "news",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 62
+      lineNumber: 61
     },
     __self: undefined
   }, __jsx("h1", {
     __source: {
       fileName: _jsxFileName,
+      lineNumber: 62
+    },
+    __self: undefined
+  }, data.title), __jsx("div", {
+    className: "row row-m-column",
+    __source: {
+      fileName: _jsxFileName,
       lineNumber: 63
     },
     __self: undefined
-  }, data.title), __jsx("img", {
-    src: mainImgUrl,
+  }, __jsx("div", {
+    className: "col-220 col-m-full",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 64
-    },
-    __self: undefined
-  }), __jsx("div", {
-    suppressHydrationWarning: true,
-    className: "row",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 65
-    },
-    __self: undefined
-  }, __jsx("div", {
-    className: "col-3",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 66
     },
     __self: undefined
   }, __jsx("div", {
     className: "details",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 67
+      lineNumber: 65
     },
     __self: undefined
   }, "Details"), __jsx(_adv__WEBPACK_IMPORTED_MODULE_3__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 70
+      lineNumber: 68
     },
     __self: undefined
   })), __jsx("div", {
+    className: "newsContent col-full-220 col-m-auto",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 70
+    },
+    __self: undefined
+  }, __jsx("img", {
+    src: mainImgUrl,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 71
+    },
+    __self: undefined
+  }), __jsx("div", {
     suppressHydrationWarning: true,
-    className: "newsContent col-9",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 72
     },
     __self: undefined
-  }, __jsx("div", {
-    suppressHydrationWarning: true,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 73
-    },
-    __self: undefined
   }, modText))));
 };
 
-/* harmony default export */ __webpack_exports__["default"] = (news1);
+/* harmony default export */ __webpack_exports__["default"] = (news2);
 
 /***/ }),
 

@@ -115,6 +115,7 @@ const layoutStyle = {// margin: 20,
 function Layout(props) {
   return __jsx("div", {
     className: "container-fluid",
+    agent: props.agent,
     style: layoutStyle,
     __source: {
       fileName: _jsxFileName,

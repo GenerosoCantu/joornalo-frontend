@@ -8,8 +8,8 @@ const MostViewed1 = ({ topNews }) => {
       <h2>Most Viewed</h2>
       <ul>
         {topNews.map((news, index) => (
-          <Link href={news.url}>
-            <li key={index}>
+          <Link href={news.url} key={index}>
+            <li>
               <img src={imageUrl(news.image)} />
               <a>{news.title}</a>
             </li>

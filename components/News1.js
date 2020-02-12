@@ -14,7 +14,8 @@ const news1 = ({ data }) => {
   }, []);
 
   let tmp = unescape(data.text);
-  let find = tmp.split('<embed id="');
+  let find;
+  find = tmp.split('<embed id="');
 
   for (let i = find.length - 1; i--;) {
     let mediaNum = parseInt(find[i + 1].charAt(0));
@@ -54,22 +55,20 @@ const news1 = ({ data }) => {
     for (let x = 0; x < embed.length; x++) {
       embed[x].style["width"] = "100%";
     }
-
   }
 
-
   return (
-    <div suppressHydrationWarning={true} className="news">
+    <div className="news">
       <h1>{data.title}</h1>
       <img src={mainImgUrl} />
-      <div suppressHydrationWarning={true} className="row">
-        <div className="col-3">
+      <div className="row row-m-column">
+        <div className="col-220 col-m-full">
           <div className="details">
             Details
           </div>
           <Adv />
         </div>
-        <div suppressHydrationWarning={true} className="newsContent col-9">
+        <div className="newsContent col-full-220 col-m-auto">
           <div suppressHydrationWarning={true}>{modText}</div>
         </div>
       </div>

@@ -7,6 +7,19 @@ const Adv = (context) => {
   let loaded = false;
   let isIntersecting = false;
 
+  /*
+  300x250 - Medium Rectangle - 40%
+  728x90 - Leaderboard - 25%
+  160x600 - Wide Skyscraper - 12%
+  300x600 - Half Page - 5%
+  970x250 - Billboard - 1%
+  120x600 - Skyscraper
+
+  320x50 - Mobile Leaderboard - 12%
+  320x320 - Mobile Full Page Flex - 1%
+  320x100 - Large Mobile
+  */
+
   useEffect(() => {
     if (!id) {
       setId('adv' + Math.round(Math.random() * 100000))
