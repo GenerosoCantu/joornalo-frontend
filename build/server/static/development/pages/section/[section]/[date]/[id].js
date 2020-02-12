@@ -121,7 +121,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 3);
+/******/ 	return __webpack_require__(__webpack_require__.s = 4);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -250,19 +250,19 @@ var map = {
 	],
 	"./news-mobile1": [
 		"./components/news-mobile1.js",
-		0
+		1
 	],
 	"./news-mobile1.js": [
 		"./components/news-mobile1.js",
-		0
+		1
 	],
 	"./news1": [
 		"./components/news1.js",
-		1
+		17
 	],
 	"./news1.js": [
 		"./components/news1.js",
-		1
+		17
 	],
 	"./news2": [
 		"./components/news2.js",
@@ -3518,7 +3518,7 @@ const GET_OTHERNEWS = 'GET_OTHERNEWS';
 
 /***/ }),
 
-/***/ 3:
+/***/ 4:
 /*!******************************************************!*\
   !*** multi ./pages/section/[section]/[date]/[id].js ***!
   \******************************************************/

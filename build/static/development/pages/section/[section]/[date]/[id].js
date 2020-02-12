@@ -124,19 +124,19 @@ var map = {
 	],
 	"./news-mobile1": [
 		"./components/news-mobile1.js",
-		1
+		2
 	],
 	"./news-mobile1.js": [
 		"./components/news-mobile1.js",
-		1
+		2
 	],
 	"./news1": [
 		"./components/news1.js",
-		2
+		18
 	],
 	"./news1.js": [
 		"./components/news1.js",
-		2
+		18
 	],
 	"./news2": [
 		"./components/news2.js",
@@ -18066,7 +18066,7 @@ var GET_OTHERNEWS = 'GET_OTHERNEWS';
 
 /***/ }),
 
-/***/ 3:
+/***/ 4:
 /*!***********************************************************************************************************************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2Fsection%2F%5Bsection%5D%2F%5Bdate%5D%2F%5Bid%5D&absolutePagePath=C%3A%5CProjects%5CDEVELOPMENT%5Cjoornalo-frontend%5Cfront.joornalo%5Cpages%5Csection%5C%5Bsection%5D%5C%5Bdate%5D%5C%5Bid%5D.js ***!
   \***********************************************************************************************************************************************************************************************************************************************/
@@ -18089,5 +18089,5 @@ module.exports = dll_5f137288facb1107b491;
 
 /***/ })
 
-},[[3,"static/runtime/webpack.js"]]]);
+},[[4,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=[id].js.map
