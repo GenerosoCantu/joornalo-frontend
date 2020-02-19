@@ -25,8 +25,21 @@ const Adv = context => {
     0: id,
     1: setId
   } = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(null);
+  const {
+    0: first,
+    1: setFirst
+  } = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(null);
+  const {
+    0: adsrc,
+    1: setAdsrc
+  } = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(null); // const [contentWidth, setContentWidth] = useState(0)
+
   let loaded = false;
-  let isIntersecting = false;
+  let isIntersecting = false; // let banner = ''
+  // if (context.params) {
+  //   banner = context.params.size;
+  // }
+
   /*
   300x250 - Medium Rectangle - 40%
   728x90 - Leaderboard - 25%
@@ -44,23 +57,25 @@ const Adv = context => {
       setId('adv' + Math.round(Math.random() * 100000));
     }
 
-    const div = document.getElementById(id);
+    if (!first && id) {
+      setFirst(true);
+      const div = document.getElementById(id);
 
-    if (div) {
-      const contentWidth = div.offsetWidth;
-
-      try {
-        let observer = new IntersectionObserver((entries, observerChild) => {
-          if (!loaded && entries[0].isIntersecting) {
-            loaded = true;
-            isIntersecting = true;
-            observerChild.unobserve(entries[0].target);
-            preLoad();
-          }
-        });
-        observer.observe(div);
-      } catch (err) {
-        safariIssue();
+      if (div) {
+        // setContentWidth(div.offsetWidth)
+        try {
+          let observer = new IntersectionObserver((entries, observerChild) => {
+            if (!loaded && entries[0].isIntersecting) {
+              loaded = true;
+              isIntersecting = true;
+              observerChild.unobserve(entries[0].target);
+              preLoad();
+            }
+          });
+          observer.observe(div);
+        } catch (err) {
+          safariIssue();
+        }
       }
     }
   });
@@ -72,25 +87,47 @@ const Adv = context => {
       preLoad();
     }
   };
+  /*
+  300x250 - Medium Rectangle - 40%
+  728x90 - Leaderboard - 25%
+  160x600 - Wide Skyscraper - 12%
+  300x600 - Half Page - 5%
+  120x600 - Skyscraper
+    970x250 - Billboard - 1%
+  */
+
 
   const preLoad = () => {
+    //console.log('Ready to load...............................', id)
     if (isIntersecting) {
-      console.log('Ready to load...............................');
       setMsg('Loaded');
+      let num = Math.floor(Math.random() * 4);
+      let bb = ['a', 'b', 'c', 'd'];
+      setAdsrc('https://data.joornalo.com/ads/' + context.params.size + bb[num] + '.jpg');
     }
   };
 
   return __jsx("div", {
-    className: "adv",
+    className: "adv eureka",
     id: id,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 64
+      lineNumber: 89
     },
     __self: undefined
-  }, "Ad: ", msg);
+  }, __jsx("img", {
+    src: adsrc,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 90
+    },
+    __self: undefined
+  }));
 };
 
+{
+  /* Ad {banner} ({contentWidth}): {msg} */
+}
 /* harmony default export */ __webpack_exports__["default"] = (Adv);
 
 /***/ }),
@@ -125,6 +162,9 @@ const headerStyle = {
 const linkStyle = {
   marginRight: 15
 };
+const AdParams = {
+  size: '728x90'
+};
 
 const date = () => {
   let days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'],
@@ -149,89 +189,90 @@ const Header1 = ({
       className: "header",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 66
+        lineNumber: 69
       },
       __self: undefined
     }, __jsx("div", {
       className: "container-fluid desktop",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 67
+        lineNumber: 70
       },
       __self: undefined
     }, __jsx("div", {
       className: "row",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 68
+        lineNumber: 71
       },
       __self: undefined
     }, __jsx("div", {
       className: "col-250",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 69
+        lineNumber: 72
       },
       __self: undefined
     }, __jsx("div", {
       className: "logo",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 70
+        lineNumber: 73
       },
       __self: undefined
     }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
       href: "/",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 71
+        lineNumber: 74
       },
       __self: undefined
     }, __jsx("a", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 71
+        lineNumber: 74
       },
       __self: undefined
     }, "Joornalo")))), __jsx("div", {
       className: "col-auto headerBanner",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 75
+        lineNumber: 78
       },
       __self: undefined
     }, __jsx(_adv__WEBPACK_IMPORTED_MODULE_4__["default"], {
+      params: AdParams,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 76
+        lineNumber: 79
       },
       __self: undefined
     })), __jsx("div", {
       className: "col-250",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 79
+        lineNumber: 82
       },
       __self: undefined
     }, __jsx("div", {
       className: "row",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 80
+        lineNumber: 83
       },
       __self: undefined
     }, __jsx("div", {
       className: "col",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 81
+        lineNumber: 84
       },
       __self: undefined
     }, __jsx("div", {
       className: "search-box",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 82
+        lineNumber: 85
       },
       __self: undefined
     }, __jsx("input", {
@@ -240,49 +281,49 @@ const Header1 = ({
       type: "text",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 84
+        lineNumber: 87
       },
       __self: undefined
     })))), __jsx("div", {
       className: "row",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 90
+        lineNumber: 93
       },
       __self: undefined
     }, __jsx("div", {
       className: "col",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 91
+        lineNumber: 94
       },
       __self: undefined
     }, __jsx("div", {
       className: "date",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 92
+        lineNumber: 95
       },
       __self: undefined
     }, date()))))))), __jsx("div", {
       className: "stripe",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 100
+        lineNumber: 103
       },
       __self: undefined
     }, __jsx("div", {
       className: "container-fluid",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 101
+        lineNumber: 104
       },
       __self: undefined
     }, __jsx(_menu1__WEBPACK_IMPORTED_MODULE_3__["default"], {
       items: menu,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 102
+        lineNumber: 105
       },
       __self: undefined
     }))))

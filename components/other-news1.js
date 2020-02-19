@@ -3,15 +3,19 @@ import { connect } from 'react-redux';
 import Link from 'next/link'
 
 const OtherNews1 = ({ moreNews }) => {
+
+  if (!moreNews) return null
   return (
     <div className="other-news">
-      <h2>Other News</h2>
+      <div className="blockheader"><span>Other News</span></div>
       <ul>
         {moreNews.map((news, index) => (
           <Link href={news.url} key={index}>
             <li>
-              <img src={imageUrl(news.image)} />
-              <a>{news.title}</a>
+              <a>
+                <img src={imageUrl(news.image)} />
+                <div>{news.title}</div>
+              </a>
             </li>
           </Link>
         ))}

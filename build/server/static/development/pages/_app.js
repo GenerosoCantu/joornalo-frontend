@@ -2097,9 +2097,11 @@ const initialState = {
   config: null,
   news: null,
   templates: null,
-  template: null,
-  templateName: null,
+  newsTemplate: null,
+  newsTemplateName: null,
   front: null,
+  frontTemplate: null,
+  frontTemplateName: null,
   loading: false,
   agent: null,
   error: null,
@@ -2112,8 +2114,8 @@ const initialState = {
     case _types__WEBPACK_IMPORTED_MODULE_8__["GET_NEWS"]:
       return _objectSpread({}, state, {
         news: action.payload.news,
-        templateName: action.payload.templateName,
-        template: action.payload.template,
+        newsTemplateName: action.payload.templateName,
+        newsTemplate: action.payload.template,
         error: false,
         loading: false
       });
@@ -2146,6 +2148,17 @@ const initialState = {
         moreNews: action.payload.moreNews
       });
 
+    case _types__WEBPACK_IMPORTED_MODULE_8__["GET_FRONT"]:
+      //console.log(action.payload.front)
+      return _objectSpread({}, state, {
+        front: action.payload.front,
+        frontTemplateName: action.payload.templateName,
+        frontTemplate: action.payload.template,
+        topNews: action.payload.front.topNews,
+        error: false,
+        loading: false
+      });
+
     default:
       return state;
   }
@@ -2157,7 +2170,7 @@ const initialState = {
 /*!************************!*\
   !*** ./store/types.js ***!
   \************************/
-/*! exports provided: SET_AGENT, GET_NEWS, SET_LOADING, NEWS_ERROR, INIT_AGENT, ADD_TEMPLATE, GET_CONFIG, GET_OTHERNEWS */
+/*! exports provided: SET_AGENT, GET_NEWS, SET_LOADING, NEWS_ERROR, INIT_AGENT, ADD_TEMPLATE, GET_CONFIG, GET_OTHERNEWS, FRONT_ERROR, GET_FRONT */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2170,6 +2183,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ADD_TEMPLATE", function() { return ADD_TEMPLATE; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "GET_CONFIG", function() { return GET_CONFIG; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "GET_OTHERNEWS", function() { return GET_OTHERNEWS; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FRONT_ERROR", function() { return FRONT_ERROR; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "GET_FRONT", function() { return GET_FRONT; });
 const SET_AGENT = 'SET_AGENT';
 const GET_NEWS = 'GET_NEWS';
 const SET_LOADING = 'SET_LOADING';
@@ -2178,6 +2193,8 @@ const INIT_AGENT = 'INIT_AGENT';
 const ADD_TEMPLATE = 'ADD_TEMPLATE';
 const GET_CONFIG = 'GET_CONFIG';
 const GET_OTHERNEWS = 'GET_OTHERNEWS';
+const FRONT_ERROR = 'FRONT_ERROR';
+const GET_FRONT = 'GET_FRONT';
 
 /***/ }),
 

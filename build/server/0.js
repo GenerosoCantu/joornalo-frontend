@@ -25,8 +25,21 @@ const Adv = context => {
     0: id,
     1: setId
   } = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(null);
+  const {
+    0: first,
+    1: setFirst
+  } = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(null);
+  const {
+    0: adsrc,
+    1: setAdsrc
+  } = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(null); // const [contentWidth, setContentWidth] = useState(0)
+
   let loaded = false;
-  let isIntersecting = false;
+  let isIntersecting = false; // let banner = ''
+  // if (context.params) {
+  //   banner = context.params.size;
+  // }
+
   /*
   300x250 - Medium Rectangle - 40%
   728x90 - Leaderboard - 25%
@@ -44,23 +57,25 @@ const Adv = context => {
       setId('adv' + Math.round(Math.random() * 100000));
     }
 
-    const div = document.getElementById(id);
+    if (!first && id) {
+      setFirst(true);
+      const div = document.getElementById(id);
 
-    if (div) {
-      const contentWidth = div.offsetWidth;
-
-      try {
-        let observer = new IntersectionObserver((entries, observerChild) => {
-          if (!loaded && entries[0].isIntersecting) {
-            loaded = true;
-            isIntersecting = true;
-            observerChild.unobserve(entries[0].target);
-            preLoad();
-          }
-        });
-        observer.observe(div);
-      } catch (err) {
-        safariIssue();
+      if (div) {
+        // setContentWidth(div.offsetWidth)
+        try {
+          let observer = new IntersectionObserver((entries, observerChild) => {
+            if (!loaded && entries[0].isIntersecting) {
+              loaded = true;
+              isIntersecting = true;
+              observerChild.unobserve(entries[0].target);
+              preLoad();
+            }
+          });
+          observer.observe(div);
+        } catch (err) {
+          safariIssue();
+        }
       }
     }
   });
@@ -72,25 +87,47 @@ const Adv = context => {
       preLoad();
     }
   };
+  /*
+  300x250 - Medium Rectangle - 40%
+  728x90 - Leaderboard - 25%
+  160x600 - Wide Skyscraper - 12%
+  300x600 - Half Page - 5%
+  120x600 - Skyscraper
+    970x250 - Billboard - 1%
+  */
+
 
   const preLoad = () => {
+    //console.log('Ready to load...............................', id)
     if (isIntersecting) {
-      console.log('Ready to load...............................');
       setMsg('Loaded');
+      let num = Math.floor(Math.random() * 4);
+      let bb = ['a', 'b', 'c', 'd'];
+      setAdsrc('https://data.joornalo.com/ads/' + context.params.size + bb[num] + '.jpg');
     }
   };
 
   return __jsx("div", {
-    className: "adv",
+    className: "adv eureka",
     id: id,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 64
+      lineNumber: 89
     },
     __self: undefined
-  }, "Ad: ", msg);
+  }, __jsx("img", {
+    src: adsrc,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 90
+    },
+    __self: undefined
+  }));
 };
 
+{
+  /* Ad {banner} ({contentWidth}): {msg} */
+}
 /* harmony default export */ __webpack_exports__["default"] = (Adv);
 
 /***/ }),

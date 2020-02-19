@@ -24,8 +24,21 @@ var Adv = function Adv(context) {
       id = _useState2[0],
       setId = _useState2[1];
 
+  var _useState3 = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(null),
+      first = _useState3[0],
+      setFirst = _useState3[1];
+
+  var _useState4 = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(null),
+      adsrc = _useState4[0],
+      setAdsrc = _useState4[1]; // const [contentWidth, setContentWidth] = useState(0)
+
+
   var loaded = false;
-  var isIntersecting = false;
+  var isIntersecting = false; // let banner = ''
+  // if (context.params) {
+  //   banner = context.params.size;
+  // }
+
   /*
   300x250 - Medium Rectangle - 40%
   728x90 - Leaderboard - 25%
@@ -43,23 +56,25 @@ var Adv = function Adv(context) {
       setId('adv' + Math.round(Math.random() * 100000));
     }
 
-    var div = document.getElementById(id);
+    if (!first && id) {
+      setFirst(true);
+      var div = document.getElementById(id);
 
-    if (div) {
-      var contentWidth = div.offsetWidth;
-
-      try {
-        var observer = new IntersectionObserver(function (entries, observerChild) {
-          if (!loaded && entries[0].isIntersecting) {
-            loaded = true;
-            isIntersecting = true;
-            observerChild.unobserve(entries[0].target);
-            preLoad();
-          }
-        });
-        observer.observe(div);
-      } catch (err) {
-        safariIssue();
+      if (div) {
+        // setContentWidth(div.offsetWidth)
+        try {
+          var observer = new IntersectionObserver(function (entries, observerChild) {
+            if (!loaded && entries[0].isIntersecting) {
+              loaded = true;
+              isIntersecting = true;
+              observerChild.unobserve(entries[0].target);
+              preLoad();
+            }
+          });
+          observer.observe(div);
+        } catch (err) {
+          safariIssue();
+        }
       }
     }
   });
@@ -71,25 +86,47 @@ var Adv = function Adv(context) {
       preLoad();
     }
   };
+  /*
+  300x250 - Medium Rectangle - 40%
+  728x90 - Leaderboard - 25%
+  160x600 - Wide Skyscraper - 12%
+  300x600 - Half Page - 5%
+  120x600 - Skyscraper
+    970x250 - Billboard - 1%
+  */
+
 
   var preLoad = function preLoad() {
+    //console.log('Ready to load...............................', id)
     if (isIntersecting) {
-      console.log('Ready to load...............................');
       setMsg('Loaded');
+      var num = Math.floor(Math.random() * 4);
+      var bb = ['a', 'b', 'c', 'd'];
+      setAdsrc('https://data.joornalo.com/ads/' + context.params.size + bb[num] + '.jpg');
     }
   };
 
   return __jsx("div", {
-    className: "adv",
+    className: "adv eureka",
     id: id,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 64
+      lineNumber: 89
     },
     __self: this
-  }, "Ad: ", msg);
+  }, __jsx("img", {
+    src: adsrc,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 90
+    },
+    __self: this
+  }));
 };
 
+{
+  /* Ad {banner} ({contentWidth}): {msg} */
+}
 /* harmony default export */ __webpack_exports__["default"] = (Adv);
 
 /***/ }),

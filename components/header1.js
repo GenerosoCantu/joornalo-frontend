@@ -11,6 +11,10 @@ const linkStyle = {
   marginRight: 15
 }
 
+const AdParams = {
+  size: '728x90'
+}
+
 const date = () => {
 
   let days = [
@@ -51,7 +55,6 @@ const date = () => {
 }
 
 const Header1 = ({ menu }) => {
-
   return (
     // <div style={headerStyle}>
     //   <Link href="/">
@@ -73,7 +76,7 @@ const Header1 = ({ menu }) => {
             </div>
 
             <div className="col-auto headerBanner">
-              <Adv />
+              <Adv params={AdParams} />
             </div>
 
             <div className="col-250">

@@ -22,27 +22,35 @@ var map = {
 	],
 	"./TemplateOLD": [
 		"./components/TemplateOLD.js",
-		6
+		7
 	],
 	"./TemplateOLD.js": [
 		"./components/TemplateOLD.js",
-		6
+		7
 	],
 	"./adv": [
 		"./components/adv.js",
-		7
+		8
 	],
 	"./adv.js": [
 		"./components/adv.js",
-		7
+		8
+	],
+	"./adv2": [
+		"./components/adv2.js",
+		26
+	],
+	"./adv2.js": [
+		"./components/adv2.js",
+		26
 	],
 	"./bares": [
 		"./components/bares.js",
-		8
+		9
 	],
 	"./bares.js": [
 		"./components/bares.js",
-		8
+		9
 	],
 	"./components": [
 		"./components/components.js"
@@ -52,27 +60,27 @@ var map = {
 	],
 	"./dataContext": [
 		"./components/dataContext.js",
-		9
+		10
 	],
 	"./dataContext.js": [
 		"./components/dataContext.js",
-		9
+		10
 	],
 	"./featured1": [
 		"./components/featured1.js",
-		10
+		11
 	],
 	"./featured1.js": [
 		"./components/featured1.js",
-		10
+		11
 	],
 	"./footer-mobile1": [
 		"./components/footer-mobile1.js",
-		11
+		12
 	],
 	"./footer-mobile1.js": [
 		"./components/footer-mobile1.js",
-		11
+		12
 	],
 	"./footer1": [
 		"./components/footer1.js",
@@ -82,13 +90,29 @@ var map = {
 		"./components/footer1.js",
 		5
 	],
+	"./front1": [
+		"./components/front1.js",
+		6
+	],
+	"./front1.js": [
+		"./components/front1.js",
+		6
+	],
+	"./front2": [
+		"./components/front2.js",
+		13
+	],
+	"./front2.js": [
+		"./components/front2.js",
+		13
+	],
 	"./header-mobile1": [
 		"./components/header-mobile1.js",
-		12
+		14
 	],
 	"./header-mobile1.js": [
 		"./components/header-mobile1.js",
-		12
+		14
 	],
 	"./header1": [
 		"./components/header1.js",
@@ -98,29 +122,45 @@ var map = {
 		"./components/header1.js",
 		4
 	],
+	"./latest1": [
+		"./components/latest1.js",
+		15
+	],
+	"./latest1.js": [
+		"./components/latest1.js",
+		15
+	],
 	"./menu1": [
 		"./components/menu1.js",
-		13
+		16
 	],
 	"./menu1.js": [
 		"./components/menu1.js",
-		13
+		16
 	],
 	"./most-viewed1": [
 		"./components/most-viewed1.js",
-		14
+		17
 	],
 	"./most-viewed1.js": [
 		"./components/most-viewed1.js",
-		14
+		17
+	],
+	"./multimedia1": [
+		"./components/multimedia1.js",
+		18
+	],
+	"./multimedia1.js": [
+		"./components/multimedia1.js",
+		18
 	],
 	"./news-header1": [
 		"./components/news-header1.js",
-		15
+		19
 	],
 	"./news-header1.js": [
 		"./components/news-header1.js",
-		15
+		19
 	],
 	"./news-mobile1": [
 		"./components/news-mobile1.js",
@@ -146,21 +186,53 @@ var map = {
 		"./components/news2.js",
 		3
 	],
+	"./newsBlock": [
+		"./components/newsBlock.js",
+		20
+	],
+	"./newsBlock.js": [
+		"./components/newsBlock.js",
+		20
+	],
+	"./opinion1": [
+		"./components/opinion1.js",
+		21
+	],
+	"./opinion1.js": [
+		"./components/opinion1.js",
+		21
+	],
 	"./other-news1": [
 		"./components/other-news1.js",
-		16
+		22
 	],
 	"./other-news1.js": [
 		"./components/other-news1.js",
-		16
+		22
 	],
 	"./related-news1": [
 		"./components/related-news1.js",
-		17
+		23
 	],
 	"./related-news1.js": [
 		"./components/related-news1.js",
-		17
+		23
+	],
+	"./sections1": [
+		"./components/sections1.js",
+		24
+	],
+	"./sections1.js": [
+		"./components/sections1.js",
+		24
+	],
+	"./weather1": [
+		"./components/weather1.js",
+		25
+	],
+	"./weather1.js": [
+		"./components/weather1.js",
+		25
 	]
 };
 function webpackAsyncContext(req) {
@@ -201,6 +273,8 @@ var map = {
 	"./TemplateOLD.js": "./components/TemplateOLD.js",
 	"./adv": "./components/adv.js",
 	"./adv.js": "./components/adv.js",
+	"./adv2": "./components/adv2.js",
+	"./adv2.js": "./components/adv2.js",
 	"./bares": "./components/bares.js",
 	"./bares.js": "./components/bares.js",
 	"./components": "./components/components.js",
@@ -213,14 +287,22 @@ var map = {
 	"./footer-mobile1.js": "./components/footer-mobile1.js",
 	"./footer1": "./components/footer1.js",
 	"./footer1.js": "./components/footer1.js",
+	"./front1": "./components/front1.js",
+	"./front1.js": "./components/front1.js",
+	"./front2": "./components/front2.js",
+	"./front2.js": "./components/front2.js",
 	"./header-mobile1": "./components/header-mobile1.js",
 	"./header-mobile1.js": "./components/header-mobile1.js",
 	"./header1": "./components/header1.js",
 	"./header1.js": "./components/header1.js",
+	"./latest1": "./components/latest1.js",
+	"./latest1.js": "./components/latest1.js",
 	"./menu1": "./components/menu1.js",
 	"./menu1.js": "./components/menu1.js",
 	"./most-viewed1": "./components/most-viewed1.js",
 	"./most-viewed1.js": "./components/most-viewed1.js",
+	"./multimedia1": "./components/multimedia1.js",
+	"./multimedia1.js": "./components/multimedia1.js",
 	"./news-header1": "./components/news-header1.js",
 	"./news-header1.js": "./components/news-header1.js",
 	"./news-mobile1": "./components/news-mobile1.js",
@@ -229,10 +311,18 @@ var map = {
 	"./news1.js": "./components/news1.js",
 	"./news2": "./components/news2.js",
 	"./news2.js": "./components/news2.js",
+	"./newsBlock": "./components/newsBlock.js",
+	"./newsBlock.js": "./components/newsBlock.js",
+	"./opinion1": "./components/opinion1.js",
+	"./opinion1.js": "./components/opinion1.js",
 	"./other-news1": "./components/other-news1.js",
 	"./other-news1.js": "./components/other-news1.js",
 	"./related-news1": "./components/related-news1.js",
-	"./related-news1.js": "./components/related-news1.js"
+	"./related-news1.js": "./components/related-news1.js",
+	"./sections1": "./components/sections1.js",
+	"./sections1.js": "./components/sections1.js",
+	"./weather1": "./components/weather1.js",
+	"./weather1.js": "./components/weather1.js"
 };
 
 
@@ -316,10 +406,11 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 var Template = function Template(_ref) {
   var grid = _ref.grid,
       data = _ref.data;
+  console.log("Template----------------------------------------");
   if (!grid || !data) return __jsx("div", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 4
+      lineNumber: 5
     },
     __self: this
   });
@@ -329,7 +420,7 @@ var Template = function Template(_ref) {
       key: "row-".concat(index),
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 8
+        lineNumber: 9
       },
       __self: this
     }, row.column.map(function (col, indexy) {
@@ -339,18 +430,18 @@ var Template = function Template(_ref) {
           key: "".concat(indexy),
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 12
+            lineNumber: 13
           },
           __self: this
         }, col.components.map(function (component, indexz) {
           return __jsx(_components_js__WEBPACK_IMPORTED_MODULE_1__["default"], {
-            component: component,
+            component: component.id,
             data: data,
-            text: col.text,
+            params: component,
             key: "".concat(indexz),
             __source: {
               fileName: _jsxFileName,
-              lineNumber: 15
+              lineNumber: 16
             },
             __self: this
           });
@@ -362,7 +453,7 @@ var Template = function Template(_ref) {
             key: "col-".concat(index),
             __source: {
               fileName: _jsxFileName,
-              lineNumber: 23
+              lineNumber: 24
             },
             __self: this
           }, __jsx(Template, {
@@ -370,7 +461,7 @@ var Template = function Template(_ref) {
             data: data,
             __source: {
               fileName: _jsxFileName,
-              lineNumber: 24
+              lineNumber: 25
             },
             __self: this
           }));
@@ -404,7 +495,7 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 // https://nextjs.org/docs/advanced-features/dynamic-import
 // this should come from Config.json
 
-var blockList = ['adv', 'header1', 'header-mobile1', 'news1', 'news2', 'news-mobile1', 'news-header1', 'other-news1', 'related-news1', 'most-viewed1', 'featured1', 'footer1', 'footer-mobile1'];
+var blockList = ['adv', 'header1', 'header-mobile1', 'news1', 'news2', 'news-mobile1', 'news-header1', 'other-news1', 'related-news1', 'most-viewed1', 'featured1', 'footer1', 'footer-mobile1', 'front1', 'front2', 'opinion1', 'multimedia1', 'weather1', 'latest1', 'sections1'];
 var ComponentsList = {};
 blockList.forEach(function (block, index) {
   ComponentsList[block] = next_dynamic__WEBPACK_IMPORTED_MODULE_1___default()(function () {
@@ -422,23 +513,22 @@ blockList.forEach(function (block, index) {
 var Components = function Components(_ref) {
   var component = _ref.component,
       data = _ref.data,
-      text = _ref.text;
+      params = _ref.params;
   var key = Math.floor(Math.random() * 100000);
 
   if (typeof ComponentsList[component] !== "undefined") {
-    //console.log("+++++++++++++++ Component: ", component)
     return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(ComponentsList[component], {
       key: key,
       component: component,
       data: data,
-      text: text
+      params: params
     });
   } else {
-    console.log("+++++++++++++++ Component not found!!!");
+    console.log(component, "+++++++++++++++ Component not found!!!");
     return __jsx("div", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 43
+        lineNumber: 49
       },
       __self: this
     }, "Component not found!!!");
@@ -17376,18 +17466,17 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-redux */ "./node_modules/react-redux/es/index.js");
-/* harmony import */ var _components_MyLayout__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../../../components/MyLayout */ "./components/MyLayout.js");
-/* harmony import */ var next_redirect__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! next-redirect */ "./node_modules/next-redirect/index.js");
-/* harmony import */ var next_redirect__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(next_redirect__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var _components_Template_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../../../components/Template.js */ "./components/Template.js");
-/* harmony import */ var next_error__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! next/error */ "./node_modules/next/error.js");
-/* harmony import */ var next_error__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(next_error__WEBPACK_IMPORTED_MODULE_7__);
-/* harmony import */ var _store_actions_newsActions__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../../../store/actions/newsActions */ "./store/actions/newsActions.js");
+/* harmony import */ var next_redirect__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! next-redirect */ "./node_modules/next-redirect/index.js");
+/* harmony import */ var next_redirect__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(next_redirect__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var next_error__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! next/error */ "./node_modules/next/error.js");
+/* harmony import */ var next_error__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(next_error__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react-redux */ "./node_modules/react-redux/es/index.js");
+/* harmony import */ var _store_actions_newsActions__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../../../store/actions/newsActions */ "./store/actions/newsActions.js");
+/* harmony import */ var _components_Template_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../../../components/Template.js */ "./components/Template.js");
+/* harmony import */ var _components_MyLayout__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../../../components/MyLayout */ "./components/MyLayout.js");
 
 var _jsxFileName = "C:\\Projects\\DEVELOPMENT\\joornalo-frontend\\front.joornalo\\pages\\section\\[section]\\[date]\\[id].js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
-// import { useRouter } from 'next/router'
 
 
 
@@ -17411,48 +17500,48 @@ var News = function News(_ref) {
   };
 
   if (notFound) {
-    return __jsx(next_error__WEBPACK_IMPORTED_MODULE_7___default.a, {
+    return __jsx(next_error__WEBPACK_IMPORTED_MODULE_4___default.a, {
       statusCode: "404",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 21
+        lineNumber: 20
       },
       __self: this
     });
   }
 
-  return __jsx(_components_MyLayout__WEBPACK_IMPORTED_MODULE_4__["default"], {
+  return __jsx(_components_MyLayout__WEBPACK_IMPORTED_MODULE_8__["default"], {
     agent: agent,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 25
+      lineNumber: 24
     },
     __self: this
   }, __jsx("div", {
     className: templateName,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 27
+      lineNumber: 26
     },
     __self: this
-  }, __jsx(_components_Template_js__WEBPACK_IMPORTED_MODULE_6__["default"], {
+  }, __jsx(_components_Template_js__WEBPACK_IMPORTED_MODULE_7__["default"], {
     grid: template,
     data: news,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 28
+      lineNumber: 27
     },
     __self: this
   })), __jsx("ul", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 32
+      lineNumber: 31
     },
     __self: this
   }, __jsx("li", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 33
+      lineNumber: 32
     },
     __self: this
   }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
@@ -17460,19 +17549,19 @@ var News = function News(_ref) {
     as: "/section/world/2020-01-11/iraq-iran-us-troops-4c50e545-539e-4893-b505-1edc2de3c9ZZ",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 34
+      lineNumber: 33
     },
     __self: this
   }, __jsx("a", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 35
+      lineNumber: 34
     },
     __self: this
   }, "Bad link"))), __jsx("li", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 38
+      lineNumber: 37
     },
     __self: this
   }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
@@ -17480,19 +17569,19 @@ var News = function News(_ref) {
     as: "/section/world-europe/2020-01-11/harry-meghan-drop-royal-duties-4c50e545-539e-4893-b505-1edc2de3c988",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 39
+      lineNumber: 38
     },
     __self: this
   }, __jsx("a", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 40
+      lineNumber: 39
     },
     __self: this
   }, "Link: Megan & Harry"))), __jsx("li", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 43
+      lineNumber: 42
     },
     __self: this
   }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
@@ -17500,13 +17589,13 @@ var News = function News(_ref) {
     as: "/section/world-middleeast/2020-01-11/iraq-iran-us-troops-4c50e545-539e-4893-b505-1edc2de3c999",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 44
+      lineNumber: 43
     },
     __self: this
   }, __jsx("a", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 45
+      lineNumber: 44
     },
     __self: this
   }, "Link: Iran Nuclear Deal")))));
@@ -17533,15 +17622,15 @@ News.getInitialProps = function _callee(context, agent) {
           }
 
           _context.next = 10;
-          return _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.awrap(store.dispatch(Object(_store_actions_newsActions__WEBPACK_IMPORTED_MODULE_8__["getConfig"])(context.req)));
+          return _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.awrap(store.dispatch(Object(_store_actions_newsActions__WEBPACK_IMPORTED_MODULE_6__["getConfig"])(context.req)));
 
         case 10:
           _context.next = 12;
-          return _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.awrap(store.dispatch(Object(_store_actions_newsActions__WEBPACK_IMPORTED_MODULE_8__["getNews"])(section, date, uuid, url, context.req)));
+          return _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.awrap(store.dispatch(Object(_store_actions_newsActions__WEBPACK_IMPORTED_MODULE_6__["getNews"])(section, date, uuid, url, context.req)));
 
         case 12:
           _context.next = 14;
-          return _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.awrap(store.dispatch(Object(_store_actions_newsActions__WEBPACK_IMPORTED_MODULE_8__["getOtherNews"])(section)));
+          return _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.awrap(store.dispatch(Object(_store_actions_newsActions__WEBPACK_IMPORTED_MODULE_6__["getOtherNews"])(section)));
 
         case 14:
           error = store.getState().news.error;
@@ -17551,7 +17640,7 @@ News.getInitialProps = function _callee(context, agent) {
             break;
           }
 
-          return _context.abrupt("return", next_redirect__WEBPACK_IMPORTED_MODULE_5___default()(context, error.slice(10), 308));
+          return _context.abrupt("return", next_redirect__WEBPACK_IMPORTED_MODULE_3___default()(context, error.slice(10), 308));
 
         case 17:
           if (error == 'NotFound') {
@@ -17588,15 +17677,15 @@ var mapStateToProps = function mapStateToProps(state) {
     news: state.news.news,
     topNews: state.news.topNews,
     moreNews: state.news.moreNews,
-    templateName: state.news.templateName,
-    template: state.news.template,
+    templateName: state.news.newsTemplateName,
+    template: state.news.newsTemplate,
     loading: state.news.loading
   };
 };
 
-/* harmony default export */ __webpack_exports__["default"] = (Object(react_redux__WEBPACK_IMPORTED_MODULE_3__["connect"])(mapStateToProps, {
-  getNews: _store_actions_newsActions__WEBPACK_IMPORTED_MODULE_8__["getNews"],
-  getOtherNews: _store_actions_newsActions__WEBPACK_IMPORTED_MODULE_8__["getOtherNews"]
+/* harmony default export */ __webpack_exports__["default"] = (Object(react_redux__WEBPACK_IMPORTED_MODULE_5__["connect"])(mapStateToProps, {
+  getNews: _store_actions_newsActions__WEBPACK_IMPORTED_MODULE_6__["getNews"],
+  getOtherNews: _store_actions_newsActions__WEBPACK_IMPORTED_MODULE_6__["getOtherNews"]
 })(News));
 
 /***/ }),
@@ -17664,13 +17753,14 @@ var test = function test() {
 /*!**************************************!*\
   !*** ./store/actions/newsActions.js ***!
   \**************************************/
-/*! exports provided: getOtherNews, getNews, setLoading, getConfig */
+/*! exports provided: getOtherNews, getNews, getFront, setLoading, getConfig */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getOtherNews", function() { return getOtherNews; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getNews", function() { return getNews; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getFront", function() { return getFront; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "setLoading", function() { return setLoading; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getConfig", function() { return getConfig; });
 /* harmony import */ var _babel_runtime_corejs2_core_js_promise__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/core-js/promise */ "./node_modules/@babel/runtime-corejs2/core-js/promise.js");
@@ -17816,29 +17906,6 @@ var getNews = function getNews(section, date, uuid, url, req) {
             });
 
           case 15:
-            // let tmp = unescape(res.data.text);
-            // let find = tmp.split('<embed id="');
-            // for (let i = find.length - 1; i--;) {
-            //   let mediaNum = parseInt(find[i + 1].charAt(0));
-            //   if (res.data.media[mediaNum - 1]) {
-            //     find[i + 1] = '<div class="embed">' + res.data.media[mediaNum - 1].embed + '</div>' + find[i + 1].substring(5);
-            //   } else {
-            //     find[i + 1] = find[i + 1].substring(5);
-            //   }
-            // }
-            // tmp = find.join('');
-            // find = tmp.split('<image id="');
-            // for (let i = find.length - 1; i--;) {
-            //   let imageNum = parseInt(find[i + 1].charAt(0));
-            //   if (res.data.images[imageNum - 1]) {
-            //     find[i + 1] = '<img src="https://data.joornalo.com/news/4/c/' + res.data.images[imageNum - 1].url + '" />' + find[i + 1].substring(5);
-            //   } else {
-            //     find[i + 1] = find[i + 1].substring(5);
-            //   }
-            // }
-            // res.data.modText = Parser(find.join(''));
-            // res.data.mainImgUrl = 'https://data.joornalo.com/news/4/c/' + res.data.images[0].url;
-            //console.log(data);
             dispatch({
               type: _types__WEBPACK_IMPORTED_MODULE_5__["GET_NEWS"],
               payload: {
@@ -17865,6 +17932,78 @@ var getNews = function getNews(section, date, uuid, url, req) {
       }
     }, null, null, [[0, 18]]);
   };
+};
+var getFront = function getFront(section, req) {
+  return function _callee3(dispatch, getState) {
+    var path, res, agent, tmpl, template;
+    return _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_3___default.a.async(function _callee3$(_context4) {
+      while (1) {
+        switch (_context4.prev = _context4.next) {
+          case 0:
+            _context4.prev = 0;
+            setLoading();
+            path = "https://data.joornalo.com/sections/latest/".concat(section, ".json");
+            _context4.next = 5;
+            return _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_3___default.a.awrap(axios__WEBPACK_IMPORTED_MODULE_7___default.a.get(path));
+
+          case 5:
+            res = _context4.sent;
+            // if (url !== res.data['url']) {
+            //   dispatch({
+            //     type: FRONT_ERROR,
+            //     payload: `Redirect: ${res.data['url']}`
+            //   });
+            // }
+            agent = getState().news.agent;
+            tmpl = agent + '-' + res.data['template'];
+            template = getState().news.templates[tmpl];
+
+            if (template) {
+              _context4.next = 14;
+              break;
+            }
+
+            _context4.next = 12;
+            return _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_3___default.a.awrap(getTemplate(req, res.data['template'], getState().news.agent));
+
+          case 12:
+            template = _context4.sent;
+            dispatch({
+              type: _types__WEBPACK_IMPORTED_MODULE_5__["ADD_TEMPLATE"],
+              payload: {
+                template: Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_2__["default"])({}, tmpl, template)
+              }
+            });
+
+          case 14:
+            //console.log(res.data)
+            dispatch({
+              type: _types__WEBPACK_IMPORTED_MODULE_5__["GET_FRONT"],
+              payload: {
+                front: res.data,
+                templateName: 'template-' + res.data['template'],
+                template: template
+              }
+            });
+            _context4.next = 21;
+            break;
+
+          case 17:
+            _context4.prev = 17;
+            _context4.t0 = _context4["catch"](0);
+            console.log('FRONT_ERROR--------------------');
+            dispatch({
+              type: _types__WEBPACK_IMPORTED_MODULE_5__["FRONT_ERROR"],
+              payload: 'NotFound'
+            });
+
+          case 21:
+          case "end":
+            return _context4.stop();
+        }
+      }
+    }, null, null, [[0, 17]]);
+  };
 }; // Set loading to true
 
 var setLoading = function setLoading() {
@@ -17873,21 +18012,21 @@ var setLoading = function setLoading() {
   };
 };
 var getConfig = function getConfig(req) {
-  return function _callee3(dispatch) {
+  return function _callee4(dispatch) {
     var configUrl, templatesUrl, _ref, _ref2, config, templates, agent;
 
-    return _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_3___default.a.async(function _callee3$(_context4) {
+    return _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_3___default.a.async(function _callee4$(_context5) {
       while (1) {
-        switch (_context4.prev = _context4.next) {
+        switch (_context5.prev = _context5.next) {
           case 0:
-            _context4.prev = 0;
+            _context5.prev = 0;
             configUrl = "https://data.joornalo.com/config.json";
             templatesUrl = "https://data.joornalo.com/templates/news/templates.json";
-            _context4.next = 5;
+            _context5.next = 5;
             return _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_3___default.a.awrap(_babel_runtime_corejs2_core_js_promise__WEBPACK_IMPORTED_MODULE_0___default.a.all([axios__WEBPACK_IMPORTED_MODULE_7___default.a.get(configUrl), axios__WEBPACK_IMPORTED_MODULE_7___default.a.get(templatesUrl), Object(_services_configService__WEBPACK_IMPORTED_MODULE_6__["initAgent"])(req)]));
 
           case 5:
-            _ref = _context4.sent;
+            _ref = _context5.sent;
             _ref2 = Object(_babel_runtime_corejs2_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_1__["default"])(_ref, 3);
             config = _ref2[0];
             templates = _ref2[1];
@@ -17900,16 +18039,16 @@ var getConfig = function getConfig(req) {
                 agent: agent
               }
             });
-            _context4.next = 15;
+            _context5.next = 15;
             break;
 
           case 13:
-            _context4.prev = 13;
-            _context4.t0 = _context4["catch"](0);
+            _context5.prev = 13;
+            _context5.t0 = _context5["catch"](0);
 
           case 15:
           case "end":
-            return _context4.stop();
+            return _context5.stop();
         }
       }
     }, null, null, [[0, 13]]);
@@ -17983,9 +18122,11 @@ var initialState = (_initialState = {
   config: null,
   news: null,
   templates: null,
-  template: null,
-  templateName: null,
+  newsTemplate: null,
+  newsTemplateName: null,
   front: null,
+  frontTemplate: null,
+  frontTemplateName: null,
   loading: false
 }, Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_7__["default"])(_initialState, "agent", null), Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_7__["default"])(_initialState, "error", null), Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_7__["default"])(_initialState, "topNews", null), Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_7__["default"])(_initialState, "moreNews", null), _initialState);
 /* harmony default export */ __webpack_exports__["default"] = (function () {
@@ -17997,8 +18138,8 @@ var initialState = (_initialState = {
     case _types__WEBPACK_IMPORTED_MODULE_8__["GET_NEWS"]:
       return _objectSpread({}, state, {
         news: action.payload.news,
-        templateName: action.payload.templateName,
-        template: action.payload.template,
+        newsTemplateName: action.payload.templateName,
+        newsTemplate: action.payload.template,
         error: false,
         loading: false
       });
@@ -18031,6 +18172,17 @@ var initialState = (_initialState = {
         moreNews: action.payload.moreNews
       });
 
+    case _types__WEBPACK_IMPORTED_MODULE_8__["GET_FRONT"]:
+      //console.log(action.payload.front)
+      return _objectSpread({}, state, {
+        front: action.payload.front,
+        frontTemplateName: action.payload.templateName,
+        frontTemplate: action.payload.template,
+        topNews: action.payload.front.topNews,
+        error: false,
+        loading: false
+      });
+
     default:
       return state;
   }
@@ -18042,7 +18194,7 @@ var initialState = (_initialState = {
 /*!************************!*\
   !*** ./store/types.js ***!
   \************************/
-/*! exports provided: SET_AGENT, GET_NEWS, SET_LOADING, NEWS_ERROR, INIT_AGENT, ADD_TEMPLATE, GET_CONFIG, GET_OTHERNEWS */
+/*! exports provided: SET_AGENT, GET_NEWS, SET_LOADING, NEWS_ERROR, INIT_AGENT, ADD_TEMPLATE, GET_CONFIG, GET_OTHERNEWS, FRONT_ERROR, GET_FRONT */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -18055,6 +18207,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ADD_TEMPLATE", function() { return ADD_TEMPLATE; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "GET_CONFIG", function() { return GET_CONFIG; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "GET_OTHERNEWS", function() { return GET_OTHERNEWS; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FRONT_ERROR", function() { return FRONT_ERROR; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "GET_FRONT", function() { return GET_FRONT; });
 var SET_AGENT = 'SET_AGENT';
 var GET_NEWS = 'GET_NEWS';
 var SET_LOADING = 'SET_LOADING';
@@ -18063,10 +18217,12 @@ var INIT_AGENT = 'INIT_AGENT';
 var ADD_TEMPLATE = 'ADD_TEMPLATE';
 var GET_CONFIG = 'GET_CONFIG';
 var GET_OTHERNEWS = 'GET_OTHERNEWS';
+var FRONT_ERROR = 'FRONT_ERROR';
+var GET_FRONT = 'GET_FRONT';
 
 /***/ }),
 
-/***/ 4:
+/***/ 5:
 /*!***********************************************************************************************************************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2Fsection%2F%5Bsection%5D%2F%5Bdate%5D%2F%5Bid%5D&absolutePagePath=C%3A%5CProjects%5CDEVELOPMENT%5Cjoornalo-frontend%5Cfront.joornalo%5Cpages%5Csection%5C%5Bsection%5D%5C%5Bdate%5D%5C%5Bid%5D.js ***!
   \***********************************************************************************************************************************************************************************************************************************************/
@@ -18089,5 +18245,5 @@ module.exports = dll_5f137288facb1107b491;
 
 /***/ })
 
-},[[4,"static/runtime/webpack.js"]]]);
+},[[5,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=[id].js.map

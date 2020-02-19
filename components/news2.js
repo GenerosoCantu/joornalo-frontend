@@ -4,6 +4,10 @@ import Adv from './adv'
 
 const news2 = ({ data }) => {
 
+  const AdParams = {
+    size: '160x600'
+  }
+
   // componentDidMount(() => {
   //   console.log('componentDidMount')
   // });
@@ -42,18 +46,22 @@ const news2 = ({ data }) => {
   const mainImgUrl = 'https://data.joornalo.com/news/4/c/' + data.images[0].url;
 
   const updateImageWidths = () => {
-    //console.log('updateImageWidths********')
-    const contentWidth = document.querySelector(".newsContent div").offsetWidth;
-    //console.log(contentWidth);
-    let embed = document.querySelectorAll('.newsContent .embed iframe')
-    for (let x = 0; x < embed.length; x++) {
-      embed[x].width = contentWidth;
-      //embed[x].height = contentWidth * .5625;
-    }
-    embed = document.querySelectorAll('.newsContent .embed .twitter-tweet')
-    //console.log(embed)
-    for (let x = 0; x < embed.length; x++) {
-      embed[x].style["width"] = "100%";
+    try {
+      //console.log('updateImageWidths********')
+      const contentWidth = document.querySelector(".newsContent div").offsetWidth;
+      //console.log(contentWidth);
+      let embed = document.querySelectorAll('.newsContent .embed iframe')
+      for (let x = 0; x < embed.length; x++) {
+        embed[x].width = contentWidth;
+        //embed[x].height = contentWidth * .5625;
+      }
+      embed = document.querySelectorAll('.newsContent .embed .twitter-tweet')
+      //console.log(embed)
+      for (let x = 0; x < embed.length; x++) {
+        embed[x].style["width"] = "100%";
+      }
+    } catch (er) {
+      window.removeEventListener('resize', updateImageWidths, false);
     }
   }
 
@@ -65,7 +73,7 @@ const news2 = ({ data }) => {
           <div className="details">
             Details
           </div>
-          <Adv />
+          <Adv params={AdParams} />
         </div>
         <div className="newsContent col-full-220 col-m-auto">
           <img src={mainImgUrl} />

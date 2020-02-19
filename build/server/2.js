@@ -25,8 +25,21 @@ const Adv = context => {
     0: id,
     1: setId
   } = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(null);
+  const {
+    0: first,
+    1: setFirst
+  } = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(null);
+  const {
+    0: adsrc,
+    1: setAdsrc
+  } = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(null); // const [contentWidth, setContentWidth] = useState(0)
+
   let loaded = false;
-  let isIntersecting = false;
+  let isIntersecting = false; // let banner = ''
+  // if (context.params) {
+  //   banner = context.params.size;
+  // }
+
   /*
   300x250 - Medium Rectangle - 40%
   728x90 - Leaderboard - 25%
@@ -44,23 +57,25 @@ const Adv = context => {
       setId('adv' + Math.round(Math.random() * 100000));
     }
 
-    const div = document.getElementById(id);
+    if (!first && id) {
+      setFirst(true);
+      const div = document.getElementById(id);
 
-    if (div) {
-      const contentWidth = div.offsetWidth;
-
-      try {
-        let observer = new IntersectionObserver((entries, observerChild) => {
-          if (!loaded && entries[0].isIntersecting) {
-            loaded = true;
-            isIntersecting = true;
-            observerChild.unobserve(entries[0].target);
-            preLoad();
-          }
-        });
-        observer.observe(div);
-      } catch (err) {
-        safariIssue();
+      if (div) {
+        // setContentWidth(div.offsetWidth)
+        try {
+          let observer = new IntersectionObserver((entries, observerChild) => {
+            if (!loaded && entries[0].isIntersecting) {
+              loaded = true;
+              isIntersecting = true;
+              observerChild.unobserve(entries[0].target);
+              preLoad();
+            }
+          });
+          observer.observe(div);
+        } catch (err) {
+          safariIssue();
+        }
       }
     }
   });
@@ -72,25 +87,47 @@ const Adv = context => {
       preLoad();
     }
   };
+  /*
+  300x250 - Medium Rectangle - 40%
+  728x90 - Leaderboard - 25%
+  160x600 - Wide Skyscraper - 12%
+  300x600 - Half Page - 5%
+  120x600 - Skyscraper
+    970x250 - Billboard - 1%
+  */
+
 
   const preLoad = () => {
+    //console.log('Ready to load...............................', id)
     if (isIntersecting) {
-      console.log('Ready to load...............................');
       setMsg('Loaded');
+      let num = Math.floor(Math.random() * 4);
+      let bb = ['a', 'b', 'c', 'd'];
+      setAdsrc('https://data.joornalo.com/ads/' + context.params.size + bb[num] + '.jpg');
     }
   };
 
   return __jsx("div", {
-    className: "adv",
+    className: "adv eureka",
     id: id,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 64
+      lineNumber: 89
     },
     __self: undefined
-  }, "Ad: ", msg);
+  }, __jsx("img", {
+    src: adsrc,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 90
+    },
+    __self: undefined
+  }));
 };
 
+{
+  /* Ad {banner} ({contentWidth}): {msg} */
+}
 /* harmony default export */ __webpack_exports__["default"] = (Adv);
 
 /***/ }),
@@ -121,9 +158,12 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
 const news2 = ({
   data
 }) => {
-  // componentDidMount(() => {
+  const AdParams = {
+    size: '160x600'
+  }; // componentDidMount(() => {
   //   console.log('componentDidMount')
   // });
+
   Object(react__WEBPACK_IMPORTED_MODULE_1__["useEffect"])(() => {
     window.addEventListener('resize', updateImageWidths);
     updateImageWidths();
@@ -159,19 +199,23 @@ const news2 = ({
   const mainImgUrl = 'https://data.joornalo.com/news/4/c/' + data.images[0].url;
 
   const updateImageWidths = () => {
-    //console.log('updateImageWidths********')
-    const contentWidth = document.querySelector(".newsContent div").offsetWidth; //console.log(contentWidth);
+    try {
+      //console.log('updateImageWidths********')
+      const contentWidth = document.querySelector(".newsContent div").offsetWidth; //console.log(contentWidth);
 
-    let embed = document.querySelectorAll('.newsContent .embed iframe');
+      let embed = document.querySelectorAll('.newsContent .embed iframe');
 
-    for (let x = 0; x < embed.length; x++) {
-      embed[x].width = contentWidth; //embed[x].height = contentWidth * .5625;
-    }
+      for (let x = 0; x < embed.length; x++) {
+        embed[x].width = contentWidth; //embed[x].height = contentWidth * .5625;
+      }
 
-    embed = document.querySelectorAll('.newsContent .embed .twitter-tweet'); //console.log(embed)
+      embed = document.querySelectorAll('.newsContent .embed .twitter-tweet'); //console.log(embed)
 
-    for (let x = 0; x < embed.length; x++) {
-      embed[x].style["width"] = "100%";
+      for (let x = 0; x < embed.length; x++) {
+        embed[x].style["width"] = "100%";
+      }
+    } catch (er) {
+      window.removeEventListener('resize', updateImageWidths, false);
     }
   };
 
@@ -179,61 +223,62 @@ const news2 = ({
     className: "news",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 61
+      lineNumber: 69
     },
     __self: undefined
   }, __jsx("h1", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 62
+      lineNumber: 70
     },
     __self: undefined
   }, data.title), __jsx("div", {
     className: "row row-m-column",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 63
+      lineNumber: 71
     },
     __self: undefined
   }, __jsx("div", {
     className: "col-220 col-m-full",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 64
+      lineNumber: 72
     },
     __self: undefined
   }, __jsx("div", {
     className: "details",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 65
+      lineNumber: 73
     },
     __self: undefined
   }, "Details"), __jsx(_adv__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    params: AdParams,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 68
+      lineNumber: 76
     },
     __self: undefined
   })), __jsx("div", {
     className: "newsContent col-full-220 col-m-auto",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 70
+      lineNumber: 78
     },
     __self: undefined
   }, __jsx("img", {
     src: mainImgUrl,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 71
+      lineNumber: 79
     },
     __self: undefined
   }), __jsx("div", {
     suppressHydrationWarning: true,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 72
+      lineNumber: 80
     },
     __self: undefined
   }, modText))));

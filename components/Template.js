@@ -1,6 +1,7 @@
 import Components from "./components.js";
 
 const Template = ({ grid, data }) => {
+  console.log("Template----------------------------------------")
   if (!grid || !data) return (<div></div>);
 
   return grid.rows.map((row, index) => {
@@ -12,7 +13,7 @@ const Template = ({ grid, data }) => {
               <div className={`${col.width}`} key={`${indexy}`}>
                 {col.components.map((component, indexz) => {
                   return (
-                    <Components component={component} data={data} text={col.text} key={`${indexz}`} />
+                    <Components component={component.id} data={data} params={component} key={`${indexz}`} />
                   )
                 })}
               </div>

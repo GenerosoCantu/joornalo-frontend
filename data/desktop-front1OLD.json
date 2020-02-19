@@ -1,0 +1,106 @@
+{
+  "rows": [
+    {
+      "column": [
+        {
+          "components": [
+            "header1"
+          ],
+          "width": "col-full"
+        }
+      ]
+    },
+    {
+      "column": [
+        {
+          "components": [
+            "adv"
+          ],
+          "width": "col-full"
+        }
+      ]
+    },
+    {
+      "column": [
+        {
+          "width": "col-auto col-m-full-300",
+          "rows": [
+            {
+              "column": [
+                {
+                  "components": [
+                    "most-viewed1"
+                  ],
+                  "width": "col-33"
+                },
+                {
+                  "components": [
+                    "front1"
+                  ],
+                  "width": "col-66"
+                }
+              ]
+            },
+            {
+              "column": [
+                {
+                  "components": [
+                    "front2"
+                  ],
+                  "width": "col-full"
+                }
+              ]
+            },
+            {
+              "column": [
+                {
+                  "components": [
+                    "latest1"
+                  ],
+                  "width": "col-25"
+                },
+                {
+                  "components": [
+                    "sections1"
+                  ],
+                  "width": "col-75"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "width": "col-300 col-m-300 border-left",
+          "components": [
+            "featured1",
+            "opinion1",
+            "adv",
+            "multimedia1",
+            "weather1",
+            "adv"
+          ]
+        }
+      ]
+    },
+    {
+      "column": [
+        {
+          "components": [
+            "adv"
+          ],
+          "width": "col-full"
+        }
+      ]
+    },
+    {
+      "column": [
+        {
+          "components": [
+            "footer1"
+          ],
+          "width": "col-full"
+        }
+      ]
+    }
+  ]
+}

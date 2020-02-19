@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[22],{WAbn:function(n,t,e){"use strict";e.r(t);var a=e("q1tI"),i=e.n(a).a.createElement;t.default=function(n){n.data,n.text;return i("div",{className:"opinion1"},i("hr",null),i("h2",null,"Opinion 1"))}}}]);

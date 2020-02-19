@@ -1,0 +1,140 @@
+{
+  "rows": [
+    {
+      "column": [
+        {
+          "components": [
+            {
+              "id": "header1"
+            }
+          ],
+          "width": "col-full"
+        }
+      ]
+    },
+    {
+      "column": [
+        {
+          "components": [
+            {
+              "id": "adv",
+              "size": "980x90"
+            }
+          ],
+          "width": "col-full"
+        }
+      ]
+    },
+    {
+      "column": [
+        {
+          "width": "col-auto col-m-full-300",
+          "rows": [
+            {
+              "column": [
+                {
+                  "components": [
+                    {
+                      "id": "most-viewed1"
+                    }
+                  ],
+                  "width": "col-33"
+                },
+                {
+                  "components": [
+                    {
+                      "id": "front1"
+                    }
+                  ],
+                  "width": "col-66"
+                }
+              ]
+            },
+            {
+              "column": [
+                {
+                  "components": [
+                    {
+                      "id": "front2"
+                    }
+                  ],
+                  "width": "col-full"
+                }
+              ]
+            },
+            {
+              "column": [
+                {
+                  "components": [
+                    {
+                      "id": "latest1"
+                    }
+                  ],
+                  "width": "col-25"
+                },
+                {
+                  "components": [
+                    {
+                      "id": "sections1"
+                    }
+                  ],
+                  "width": "col-75"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "width": "col-300 col-m-300 border-left",
+          "components": [
+            {
+              "id": "featured1"
+            },
+            {
+              "id": "opinion1"
+            },
+            {
+              "id": "adv",
+              "size": "300x250"
+            },
+            {
+              "id": "multimedia1"
+            },
+            {
+              "id": "weather1"
+            },
+            {
+              "id": "adv",
+              "size": "300x250"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "column": [
+        {
+          "components": [
+            {
+              "id": "adv",
+              "size": "980x90"
+            }
+          ],
+          "width": "col-full"
+        }
+      ]
+    },
+    {
+      "column": [
+        {
+          "components": [
+            {
+              "id": "footer1"
+            }
+          ],
+          "width": "col-full"
+        }
+      ]
+    }
+  ]
+}

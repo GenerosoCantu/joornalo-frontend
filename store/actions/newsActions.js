@@ -1,5 +1,5 @@
 import store from '../../pages/store';
-import { GET_NEWS, SET_LOADING, ADD_TEMPLATE, NEWS_ERROR, INIT_AGENT, GET_CONFIG, GET_OTHERNEWS } from '../types';
+import { GET_NEWS, SET_LOADING, ADD_TEMPLATE, NEWS_ERROR, INIT_AGENT, GET_CONFIG, GET_OTHERNEWS, FRONT_ERROR, GET_FRONT } from '../types';
 import { initAgent, test } from '../../services/configService';
 import axios from 'axios';
 import Parser from 'html-react-parser';
@@ -80,36 +80,6 @@ export const getNews = (section, date, uuid, url, req) => async (dispatch, getSt
       });
     }
 
-    // let tmp = unescape(res.data.text);
-    // let find = tmp.split('<embed id="');
-
-    // for (let i = find.length - 1; i--;) {
-    //   let mediaNum = parseInt(find[i + 1].charAt(0));
-    //   if (res.data.media[mediaNum - 1]) {
-    //     find[i + 1] = '<div class="embed">' + res.data.media[mediaNum - 1].embed + '</div>' + find[i + 1].substring(5);
-    //   } else {
-    //     find[i + 1] = find[i + 1].substring(5);
-    //   }
-    // }
-
-    // tmp = find.join('');
-    // find = tmp.split('<image id="');
-    // for (let i = find.length - 1; i--;) {
-    //   let imageNum = parseInt(find[i + 1].charAt(0));
-    //   if (res.data.images[imageNum - 1]) {
-    //     find[i + 1] = '<img src="https://data.joornalo.com/news/4/c/' + res.data.images[imageNum - 1].url + '" />' + find[i + 1].substring(5);
-    //   } else {
-    //     find[i + 1] = find[i + 1].substring(5);
-    //   }
-    // }
-
-    // res.data.modText = Parser(find.join(''));
-
-
-    // res.data.mainImgUrl = 'https://data.joornalo.com/news/4/c/' + res.data.images[0].url;
-
-    //console.log(data);
-
     dispatch({
       type: GET_NEWS,
       payload: {
@@ -122,6 +92,57 @@ export const getNews = (section, date, uuid, url, req) => async (dispatch, getSt
   } catch (err) {
     dispatch({
       type: NEWS_ERROR,
+      payload: 'NotFound'
+    });
+  }
+};
+
+
+export const getFront = (section, req) => async (dispatch, getState) => {
+  try {
+    setLoading();
+
+    const path = `https://data.joornalo.com/sections/latest/${section}.json`
+
+    const res = await axios.get(path);
+
+    // if (url !== res.data['url']) {
+    //   dispatch({
+    //     type: FRONT_ERROR,
+    //     payload: `Redirect: ${res.data['url']}`
+    //   });
+    // }
+
+    const agent = getState().news.agent;
+    const tmpl = agent + '-' + res.data['template'];
+
+    let template = getState().news.templates[tmpl];
+
+    if (!template) {
+      template = await getTemplate(req, res.data['template'], getState().news.agent);
+      dispatch({
+        type: ADD_TEMPLATE,
+        payload: {
+          template: { [tmpl]: template }
+        }
+      });
+    }
+
+    //console.log(res.data)
+
+    dispatch({
+      type: GET_FRONT,
+      payload: {
+        front: res.data,
+        templateName: 'template-' + res.data['template'],
+        template: template
+      }
+    });
+
+  } catch (err) {
+    console.log('FRONT_ERROR--------------------')
+    dispatch({
+      type: FRONT_ERROR,
       payload: 'NotFound'
     });
   }

@@ -20,6 +20,13 @@ const blockList = [
   'featured1',
   'footer1',
   'footer-mobile1',
+  'front1',
+  'front2',
+  'opinion1',
+  'multimedia1',
+  'weather1',
+  'latest1',
+  'sections1'
 ];
 
 const ComponentsList = {};
@@ -27,19 +34,18 @@ blockList.forEach((block, index) => {
   ComponentsList[block] = dynamic(() => import(`./${block}`));
 });
 
-const Components = ({ component, data, text }) => {
+const Components = ({ component, data, params }) => {
   const key = Math.floor(Math.random() * 100000);
 
   if (typeof ComponentsList[component] !== "undefined") {
-    //console.log("+++++++++++++++ Component: ", component)
     return React.createElement(ComponentsList[component], {
       key,
       component,
       data,
-      text
+      params
     });
   } else {
-    console.log("+++++++++++++++ Component not found!!!")
+    console.log(component, "+++++++++++++++ Component not found!!!")
     return <div>Component not found!!!</div>
   }
 };

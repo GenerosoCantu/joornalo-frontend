@@ -3,49 +3,47 @@
     {
       "column": [
         {
-          "component": "news-header1",
-          "width": "12"
+          "components": [
+            "header1"
+          ],
+          "width": "col-full"
         }
       ]
     },
     {
       "column": [
         {
-          "width": "8",
+          "components": [
+            "adv"
+          ],
+          "width": "col-full"
+        }
+      ]
+    },
+    {
+      "column": [
+        {
+          "width": "col-auto col-m-full-220",
           "rows": [
             {
               "column": [
                 {
-                  "component": "news1",
+                  "components": [
+                    "news1"
+                  ],
                   "text": "news1",
-                  "width": "12"
-                },
-                {
-                  "component": "bar",
-                  "text": "Bar1",
-                  "width": "12"
+                  "width": "col-full"
                 }
               ]
             }
           ]
         },
         {
-          "width": "4",
-          "rows": [
-            {
-              "column": [
-                {
-                  "component": "boo",
-                  "text": "Boo",
-                  "width": "12"
-                },
-                {
-                  "component": "bar",
-                  "text": "Bar1",
-                  "width": "12"
-                }
-              ]
-            }
+          "width": "col-300 col-m-220 border-left",
+          "components": [
+            "adv",
+            "other-news1",
+            "most-viewed1"
           ]
         }
       ]
@@ -53,9 +51,31 @@
     {
       "column": [
         {
-          "component": "boo",
-          "width": "12",
-          "text": "Boo1"
+          "components": [
+            "related-news1"
+          ],
+          "text": "Related Stories",
+          "width": "col-full"
+        }
+      ]
+    },
+    {
+      "column": [
+        {
+          "components": [
+            "adv"
+          ],
+          "width": "col-full"
+        }
+      ]
+    },
+    {
+      "column": [
+        {
+          "components": [
+            "footer1"
+          ],
+          "width": "col-full"
         }
       ]
     }

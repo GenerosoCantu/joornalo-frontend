@@ -1,17 +1,23 @@
 import React from "react";
 import { connect } from 'react-redux';
 import Link from 'next/link'
+import NewsBlock from "./newsBlock.js";
 
 const MostViewed1 = ({ topNews }) => {
+  console.log("+++++++++++++++ MostViewed1")
+  if (!topNews) return null
   return (
     <div className="most-viewed">
-      <h2>Most Viewed</h2>
+      <div className="blockheader"><span>Most Viewed</span></div>
       <ul>
         {topNews.map((news, index) => (
           <Link href={news.url} key={index}>
             <li>
-              <img src={imageUrl(news.image)} />
-              <a>{news.title}</a>
+              <span>{index + 1}</span>
+              <div>
+                {(index == 0) ? <img src={imageUrl(news.image)} /> : null}
+                <a>{news.title}</a>
+              </div>
             </li>
           </Link>
         ))}

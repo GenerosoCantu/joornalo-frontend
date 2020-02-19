@@ -1,10 +1,10 @@
 exports.ids = [6];
 exports.modules = {
 
-/***/ "./components/adv.js":
-/*!***************************!*\
-  !*** ./components/adv.js ***!
-  \***************************/
+/***/ "./components/TemplateOLD.js":
+/*!***********************************!*\
+  !*** ./components/TemplateOLD.js ***!
+  \***********************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -12,86 +12,78 @@ exports.modules = {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-var _jsxFileName = "C:\\Projects\\DEVELOPMENT\\joornalo-frontend\\front.joornalo\\components\\adv.js";
+/* harmony import */ var _components_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components.js */ "./components/components.js");
+var _jsxFileName = "C:\\Projects\\DEVELOPMENT\\joornalo-frontend\\front.joornalo\\components\\TemplateOLD.js";
+
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
-const Adv = context => {
-  const {
-    0: msg,
-    1: setMsg
-  } = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])('---');
-  const {
-    0: id,
-    1: setId
-  } = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(null);
-  let loaded = false;
-  let isIntersecting = false;
-  /*
-  300x250 - Medium Rectangle - 40%
-  728x90 - Leaderboard - 25%
-  160x600 - Wide Skyscraper - 12%
-  300x600 - Half Page - 5%
-  970x250 - Billboard - 1%
-  120x600 - Skyscraper
-    320x50 - Mobile Leaderboard - 12%
-  320x320 - Mobile Full Page Flex - 1%
-  320x100 - Large Mobile
-  */
-
-  Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(() => {
-    if (!id) {
-      setId('adv' + Math.round(Math.random() * 100000));
-    }
-
-    const div = document.getElementById(id);
-
-    if (div) {
-      const contentWidth = div.offsetWidth;
-
-      try {
-        let observer = new IntersectionObserver((entries, observerChild) => {
-          if (!loaded && entries[0].isIntersecting) {
-            loaded = true;
-            isIntersecting = true;
-            observerChild.unobserve(entries[0].target);
-            preLoad();
-          }
-        });
-        observer.observe(div);
-      } catch (err) {
-        safariIssue();
-      }
-    }
-  });
-
-  const safariIssue = () => {
-    if (!loaded) {
-      loaded = true;
-      isIntersecting = true;
-      preLoad();
-    }
-  };
-
-  const preLoad = () => {
-    if (isIntersecting) {
-      console.log('Ready to load...............................');
-      setMsg('Loaded');
-    }
-  };
-
-  return __jsx("div", {
-    className: "adv",
-    id: id,
+const Template = ({
+  grid,
+  data
+}) => {
+  if (!grid || !data) return __jsx("div", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 64
+      lineNumber: 4
     },
     __self: undefined
-  }, "Ad: ", msg);
+  });
+  return grid.rows.map((row, index) => {
+    return __jsx("div", {
+      className: "row",
+      key: `row-${index}`,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 7
+      },
+      __self: undefined
+    }, row.column.map((col, index) => {
+      if (col.component) {
+        return __jsx("div", {
+          className: `${col.width}`,
+          key: `col-${index}`,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 11
+          },
+          __self: undefined
+        }, __jsx(_components_js__WEBPACK_IMPORTED_MODULE_1__["default"], {
+          component: col.component,
+          data: data,
+          text: col.text,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 12
+          },
+          __self: undefined
+        }));
+      } else {
+        if (col.rows) {
+          return __jsx("div", {
+            className: `${col.width}`,
+            key: `col-${index}`,
+            __source: {
+              fileName: _jsxFileName,
+              lineNumber: 18
+            },
+            __self: undefined
+          }, __jsx(Template, {
+            grid: col,
+            data: data,
+            __source: {
+              fileName: _jsxFileName,
+              lineNumber: 19
+            },
+            __self: undefined
+          }));
+        }
+      }
+    }));
+  });
 };
 
-/* harmony default export */ __webpack_exports__["default"] = (Adv);
+/* harmony default export */ __webpack_exports__["default"] = (Template);
 
 /***/ })
 

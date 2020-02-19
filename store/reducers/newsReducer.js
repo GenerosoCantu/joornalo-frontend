@@ -1,13 +1,15 @@
-import { GET_NEWS, SET_LOADING, ADD_TEMPLATE, NEWS_ERROR, GET_CONFIG, GET_OTHERNEWS } from '../types';
+import { GET_NEWS, SET_LOADING, ADD_TEMPLATE, NEWS_ERROR, GET_CONFIG, GET_OTHERNEWS, GET_FRONT, FRONT_ERROR } from '../types';
 
 const initialState = {
   agent: null,
   config: null,
   news: null,
   templates: null,
-  template: null,
-  templateName: null,
+  newsTemplate: null,
+  newsTemplateName: null,
   front: null,
+  frontTemplate: null,
+  frontTemplateName: null,
   loading: false,
   agent: null,
   error: null,
@@ -22,8 +24,8 @@ export default (state = initialState, action) => {
       return {
         ...state,
         news: action.payload.news,
-        templateName: action.payload.templateName,
-        template: action.payload.template,
+        newsTemplateName: action.payload.templateName,
+        newsTemplate: action.payload.template,
         error: false,
         loading: false
       };
@@ -55,6 +57,17 @@ export default (state = initialState, action) => {
         topNews: action.payload.topNews,
         moreNews: action.payload.moreNews
       }
+    case GET_FRONT:
+      //console.log(action.payload.front)
+      return {
+        ...state,
+        front: action.payload.front,
+        frontTemplateName: action.payload.templateName,
+        frontTemplate: action.payload.template,
+        topNews: action.payload.front.topNews,
+        error: false,
+        loading: false
+      };
     default:
       return state;
   }

@@ -11588,9 +11588,11 @@ var initialState = (_initialState = {
   config: null,
   news: null,
   templates: null,
-  template: null,
-  templateName: null,
+  newsTemplate: null,
+  newsTemplateName: null,
   front: null,
+  frontTemplate: null,
+  frontTemplateName: null,
   loading: false
 }, Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_7__["default"])(_initialState, "agent", null), Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_7__["default"])(_initialState, "error", null), Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_7__["default"])(_initialState, "topNews", null), Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_7__["default"])(_initialState, "moreNews", null), _initialState);
 /* harmony default export */ __webpack_exports__["default"] = (function () {
@@ -11602,8 +11604,8 @@ var initialState = (_initialState = {
     case _types__WEBPACK_IMPORTED_MODULE_8__["GET_NEWS"]:
       return _objectSpread({}, state, {
         news: action.payload.news,
-        templateName: action.payload.templateName,
-        template: action.payload.template,
+        newsTemplateName: action.payload.templateName,
+        newsTemplate: action.payload.template,
         error: false,
         loading: false
       });
@@ -11636,6 +11638,17 @@ var initialState = (_initialState = {
         moreNews: action.payload.moreNews
       });
 
+    case _types__WEBPACK_IMPORTED_MODULE_8__["GET_FRONT"]:
+      //console.log(action.payload.front)
+      return _objectSpread({}, state, {
+        front: action.payload.front,
+        frontTemplateName: action.payload.templateName,
+        frontTemplate: action.payload.template,
+        topNews: action.payload.front.topNews,
+        error: false,
+        loading: false
+      });
+
     default:
       return state;
   }
@@ -11647,7 +11660,7 @@ var initialState = (_initialState = {
 /*!************************!*\
   !*** ./store/types.js ***!
   \************************/
-/*! exports provided: SET_AGENT, GET_NEWS, SET_LOADING, NEWS_ERROR, INIT_AGENT, ADD_TEMPLATE, GET_CONFIG, GET_OTHERNEWS */
+/*! exports provided: SET_AGENT, GET_NEWS, SET_LOADING, NEWS_ERROR, INIT_AGENT, ADD_TEMPLATE, GET_CONFIG, GET_OTHERNEWS, FRONT_ERROR, GET_FRONT */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -11660,6 +11673,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ADD_TEMPLATE", function() { return ADD_TEMPLATE; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "GET_CONFIG", function() { return GET_CONFIG; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "GET_OTHERNEWS", function() { return GET_OTHERNEWS; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FRONT_ERROR", function() { return FRONT_ERROR; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "GET_FRONT", function() { return GET_FRONT; });
 var SET_AGENT = 'SET_AGENT';
 var GET_NEWS = 'GET_NEWS';
 var SET_LOADING = 'SET_LOADING';
@@ -11668,6 +11683,8 @@ var INIT_AGENT = 'INIT_AGENT';
 var ADD_TEMPLATE = 'ADD_TEMPLATE';
 var GET_CONFIG = 'GET_CONFIG';
 var GET_OTHERNEWS = 'GET_OTHERNEWS';
+var FRONT_ERROR = 'FRONT_ERROR';
+var GET_FRONT = 'GET_FRONT';
 
 /***/ }),
 

@@ -121,7 +121,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 4);
+/******/ 	return __webpack_require__(__webpack_require__.s = 5);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -148,27 +148,35 @@ var map = {
 	],
 	"./TemplateOLD": [
 		"./components/TemplateOLD.js",
-		5
+		6
 	],
 	"./TemplateOLD.js": [
 		"./components/TemplateOLD.js",
-		5
+		6
 	],
 	"./adv": [
 		"./components/adv.js",
-		6
+		7
 	],
 	"./adv.js": [
 		"./components/adv.js",
-		6
+		7
+	],
+	"./adv2": [
+		"./components/adv2.js",
+		25
+	],
+	"./adv2.js": [
+		"./components/adv2.js",
+		25
 	],
 	"./bares": [
 		"./components/bares.js",
-		7
+		8
 	],
 	"./bares.js": [
 		"./components/bares.js",
-		7
+		8
 	],
 	"./components": [
 		"./components/components.js"
@@ -178,27 +186,27 @@ var map = {
 	],
 	"./dataContext": [
 		"./components/dataContext.js",
-		8
+		9
 	],
 	"./dataContext.js": [
 		"./components/dataContext.js",
-		8
+		9
 	],
 	"./featured1": [
 		"./components/featured1.js",
-		9
+		10
 	],
 	"./featured1.js": [
 		"./components/featured1.js",
-		9
+		10
 	],
 	"./footer-mobile1": [
 		"./components/footer-mobile1.js",
-		10
+		11
 	],
 	"./footer-mobile1.js": [
 		"./components/footer-mobile1.js",
-		10
+		11
 	],
 	"./footer1": [
 		"./components/footer1.js",
@@ -208,13 +216,29 @@ var map = {
 		"./components/footer1.js",
 		4
 	],
+	"./front1": [
+		"./components/front1.js",
+		5
+	],
+	"./front1.js": [
+		"./components/front1.js",
+		5
+	],
+	"./front2": [
+		"./components/front2.js",
+		12
+	],
+	"./front2.js": [
+		"./components/front2.js",
+		12
+	],
 	"./header-mobile1": [
 		"./components/header-mobile1.js",
-		11
+		13
 	],
 	"./header-mobile1.js": [
 		"./components/header-mobile1.js",
-		11
+		13
 	],
 	"./header1": [
 		"./components/header1.js",
@@ -224,29 +248,45 @@ var map = {
 		"./components/header1.js",
 		3
 	],
+	"./latest1": [
+		"./components/latest1.js",
+		14
+	],
+	"./latest1.js": [
+		"./components/latest1.js",
+		14
+	],
 	"./menu1": [
 		"./components/menu1.js",
-		12
+		15
 	],
 	"./menu1.js": [
 		"./components/menu1.js",
-		12
+		15
 	],
 	"./most-viewed1": [
 		"./components/most-viewed1.js",
-		13
+		16
 	],
 	"./most-viewed1.js": [
 		"./components/most-viewed1.js",
-		13
+		16
+	],
+	"./multimedia1": [
+		"./components/multimedia1.js",
+		17
+	],
+	"./multimedia1.js": [
+		"./components/multimedia1.js",
+		17
 	],
 	"./news-header1": [
 		"./components/news-header1.js",
-		14
+		18
 	],
 	"./news-header1.js": [
 		"./components/news-header1.js",
-		14
+		18
 	],
 	"./news-mobile1": [
 		"./components/news-mobile1.js",
@@ -272,21 +312,53 @@ var map = {
 		"./components/news2.js",
 		2
 	],
+	"./newsBlock": [
+		"./components/newsBlock.js",
+		19
+	],
+	"./newsBlock.js": [
+		"./components/newsBlock.js",
+		19
+	],
+	"./opinion1": [
+		"./components/opinion1.js",
+		20
+	],
+	"./opinion1.js": [
+		"./components/opinion1.js",
+		20
+	],
 	"./other-news1": [
 		"./components/other-news1.js",
-		15
+		21
 	],
 	"./other-news1.js": [
 		"./components/other-news1.js",
-		15
+		21
 	],
 	"./related-news1": [
 		"./components/related-news1.js",
-		16
+		22
 	],
 	"./related-news1.js": [
 		"./components/related-news1.js",
-		16
+		22
+	],
+	"./sections1": [
+		"./components/sections1.js",
+		23
+	],
+	"./sections1.js": [
+		"./components/sections1.js",
+		23
+	],
+	"./weather1": [
+		"./components/weather1.js",
+		24
+	],
+	"./weather1.js": [
+		"./components/weather1.js",
+		24
 	]
 };
 function webpackAsyncContext(req) {
@@ -327,6 +399,8 @@ var map = {
 	"./TemplateOLD.js": "./components/TemplateOLD.js",
 	"./adv": "./components/adv.js",
 	"./adv.js": "./components/adv.js",
+	"./adv2": "./components/adv2.js",
+	"./adv2.js": "./components/adv2.js",
 	"./bares": "./components/bares.js",
 	"./bares.js": "./components/bares.js",
 	"./components": "./components/components.js",
@@ -339,14 +413,22 @@ var map = {
 	"./footer-mobile1.js": "./components/footer-mobile1.js",
 	"./footer1": "./components/footer1.js",
 	"./footer1.js": "./components/footer1.js",
+	"./front1": "./components/front1.js",
+	"./front1.js": "./components/front1.js",
+	"./front2": "./components/front2.js",
+	"./front2.js": "./components/front2.js",
 	"./header-mobile1": "./components/header-mobile1.js",
 	"./header-mobile1.js": "./components/header-mobile1.js",
 	"./header1": "./components/header1.js",
 	"./header1.js": "./components/header1.js",
+	"./latest1": "./components/latest1.js",
+	"./latest1.js": "./components/latest1.js",
 	"./menu1": "./components/menu1.js",
 	"./menu1.js": "./components/menu1.js",
 	"./most-viewed1": "./components/most-viewed1.js",
 	"./most-viewed1.js": "./components/most-viewed1.js",
+	"./multimedia1": "./components/multimedia1.js",
+	"./multimedia1.js": "./components/multimedia1.js",
 	"./news-header1": "./components/news-header1.js",
 	"./news-header1.js": "./components/news-header1.js",
 	"./news-mobile1": "./components/news-mobile1.js",
@@ -355,10 +437,18 @@ var map = {
 	"./news1.js": "./components/news1.js",
 	"./news2": "./components/news2.js",
 	"./news2.js": "./components/news2.js",
+	"./newsBlock": "./components/newsBlock.js",
+	"./newsBlock.js": "./components/newsBlock.js",
+	"./opinion1": "./components/opinion1.js",
+	"./opinion1.js": "./components/opinion1.js",
 	"./other-news1": "./components/other-news1.js",
 	"./other-news1.js": "./components/other-news1.js",
 	"./related-news1": "./components/related-news1.js",
-	"./related-news1.js": "./components/related-news1.js"
+	"./related-news1.js": "./components/related-news1.js",
+	"./sections1": "./components/sections1.js",
+	"./sections1.js": "./components/sections1.js",
+	"./weather1": "./components/weather1.js",
+	"./weather1.js": "./components/weather1.js"
 };
 
 
@@ -443,10 +533,11 @@ const Template = ({
   grid,
   data
 }) => {
+  console.log("Template----------------------------------------");
   if (!grid || !data) return __jsx("div", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 4
+      lineNumber: 5
     },
     __self: undefined
   });
@@ -456,7 +547,7 @@ const Template = ({
       key: `row-${index}`,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 8
+        lineNumber: 9
       },
       __self: undefined
     }, row.column.map((col, indexy) => {
@@ -466,18 +557,18 @@ const Template = ({
           key: `${indexy}`,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 12
+            lineNumber: 13
           },
           __self: undefined
         }, col.components.map((component, indexz) => {
           return __jsx(_components_js__WEBPACK_IMPORTED_MODULE_1__["default"], {
-            component: component,
+            component: component.id,
             data: data,
-            text: col.text,
+            params: component,
             key: `${indexz}`,
             __source: {
               fileName: _jsxFileName,
-              lineNumber: 15
+              lineNumber: 16
             },
             __self: undefined
           });
@@ -489,7 +580,7 @@ const Template = ({
             key: `col-${index}`,
             __source: {
               fileName: _jsxFileName,
-              lineNumber: 23
+              lineNumber: 24
             },
             __self: undefined
           }, __jsx(Template, {
@@ -497,7 +588,7 @@ const Template = ({
             data: data,
             __source: {
               fileName: _jsxFileName,
-              lineNumber: 24
+              lineNumber: 25
             },
             __self: undefined
           }));
@@ -531,7 +622,7 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 // https://nextjs.org/docs/advanced-features/dynamic-import
 // this should come from Config.json
 
-const blockList = ['adv', 'header1', 'header-mobile1', 'news1', 'news2', 'news-mobile1', 'news-header1', 'other-news1', 'related-news1', 'most-viewed1', 'featured1', 'footer1', 'footer-mobile1'];
+const blockList = ['adv', 'header1', 'header-mobile1', 'news1', 'news2', 'news-mobile1', 'news-header1', 'other-news1', 'related-news1', 'most-viewed1', 'featured1', 'footer1', 'footer-mobile1', 'front1', 'front2', 'opinion1', 'multimedia1', 'weather1', 'latest1', 'sections1'];
 const ComponentsList = {};
 blockList.forEach((block, index) => {
   ComponentsList[block] = next_dynamic__WEBPACK_IMPORTED_MODULE_1___default()(() => __webpack_require__("./components lazy recursive ^\\.\\/.*$")(`./${block}`), {
@@ -545,24 +636,23 @@ blockList.forEach((block, index) => {
 const Components = ({
   component,
   data,
-  text
+  params
 }) => {
   const key = Math.floor(Math.random() * 100000);
 
   if (typeof ComponentsList[component] !== "undefined") {
-    //console.log("+++++++++++++++ Component: ", component)
     return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(ComponentsList[component], {
       key,
       component,
       data,
-      text
+      params
     });
   } else {
-    console.log("+++++++++++++++ Component not found!!!");
+    console.log(component, "+++++++++++++++ Component not found!!!");
     return __jsx("div", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 43
+        lineNumber: 49
       },
       __self: undefined
     }, "Component not found!!!");
@@ -2955,18 +3045,17 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-redux */ "react-redux");
-/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react_redux__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _components_MyLayout__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../../components/MyLayout */ "./components/MyLayout.js");
-/* harmony import */ var next_redirect__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! next-redirect */ "next-redirect");
-/* harmony import */ var next_redirect__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(next_redirect__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var _components_Template_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../../../components/Template.js */ "./components/Template.js");
-/* harmony import */ var next_error__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! next/error */ "./node_modules/next/error.js");
-/* harmony import */ var next_error__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(next_error__WEBPACK_IMPORTED_MODULE_6__);
-/* harmony import */ var _store_actions_newsActions__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../../../store/actions/newsActions */ "./store/actions/newsActions.js");
+/* harmony import */ var next_redirect__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! next-redirect */ "next-redirect");
+/* harmony import */ var next_redirect__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_redirect__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var next_error__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! next/error */ "./node_modules/next/error.js");
+/* harmony import */ var next_error__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(next_error__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react-redux */ "react-redux");
+/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(react_redux__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _store_actions_newsActions__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../../../store/actions/newsActions */ "./store/actions/newsActions.js");
+/* harmony import */ var _components_Template_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../../../components/Template.js */ "./components/Template.js");
+/* harmony import */ var _components_MyLayout__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../../../components/MyLayout */ "./components/MyLayout.js");
 var _jsxFileName = "C:\\Projects\\DEVELOPMENT\\joornalo-frontend\\front.joornalo\\pages\\section\\[section]\\[date]\\[id].js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
-// import { useRouter } from 'next/router'
 
 
 
@@ -2990,48 +3079,48 @@ const News = ({
   };
 
   if (notFound) {
-    return __jsx(next_error__WEBPACK_IMPORTED_MODULE_6___default.a, {
+    return __jsx(next_error__WEBPACK_IMPORTED_MODULE_3___default.a, {
       statusCode: "404",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 21
+        lineNumber: 20
       },
       __self: undefined
     });
   }
 
-  return __jsx(_components_MyLayout__WEBPACK_IMPORTED_MODULE_3__["default"], {
+  return __jsx(_components_MyLayout__WEBPACK_IMPORTED_MODULE_7__["default"], {
     agent: agent,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 25
+      lineNumber: 24
     },
     __self: undefined
   }, __jsx("div", {
     className: templateName,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 27
+      lineNumber: 26
     },
     __self: undefined
-  }, __jsx(_components_Template_js__WEBPACK_IMPORTED_MODULE_5__["default"], {
+  }, __jsx(_components_Template_js__WEBPACK_IMPORTED_MODULE_6__["default"], {
     grid: template,
     data: news,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 28
+      lineNumber: 27
     },
     __self: undefined
   })), __jsx("ul", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 32
+      lineNumber: 31
     },
     __self: undefined
   }, __jsx("li", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 33
+      lineNumber: 32
     },
     __self: undefined
   }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
@@ -3039,19 +3128,19 @@ const News = ({
     as: "/section/world/2020-01-11/iraq-iran-us-troops-4c50e545-539e-4893-b505-1edc2de3c9ZZ",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 34
+      lineNumber: 33
     },
     __self: undefined
   }, __jsx("a", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 35
+      lineNumber: 34
     },
     __self: undefined
   }, "Bad link"))), __jsx("li", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 38
+      lineNumber: 37
     },
     __self: undefined
   }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
@@ -3059,19 +3148,19 @@ const News = ({
     as: "/section/world-europe/2020-01-11/harry-meghan-drop-royal-duties-4c50e545-539e-4893-b505-1edc2de3c988",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 39
+      lineNumber: 38
     },
     __self: undefined
   }, __jsx("a", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 40
+      lineNumber: 39
     },
     __self: undefined
   }, "Link: Megan & Harry"))), __jsx("li", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 43
+      lineNumber: 42
     },
     __self: undefined
   }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
@@ -3079,13 +3168,13 @@ const News = ({
     as: "/section/world-middleeast/2020-01-11/iraq-iran-us-troops-4c50e545-539e-4893-b505-1edc2de3c999",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 44
+      lineNumber: 43
     },
     __self: undefined
   }, __jsx("a", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 45
+      lineNumber: 44
     },
     __self: undefined
   }, "Link: Iran Nuclear Deal")))));
@@ -3107,15 +3196,15 @@ News.getInitialProps = async function (context, agent) {
 
   try {
     if (true) {
-      await store.dispatch(Object(_store_actions_newsActions__WEBPACK_IMPORTED_MODULE_7__["getConfig"])(context.req));
+      await store.dispatch(Object(_store_actions_newsActions__WEBPACK_IMPORTED_MODULE_5__["getConfig"])(context.req));
     }
 
-    await store.dispatch(Object(_store_actions_newsActions__WEBPACK_IMPORTED_MODULE_7__["getNews"])(section, date, uuid, url, context.req));
-    await store.dispatch(Object(_store_actions_newsActions__WEBPACK_IMPORTED_MODULE_7__["getOtherNews"])(section));
+    await store.dispatch(Object(_store_actions_newsActions__WEBPACK_IMPORTED_MODULE_5__["getNews"])(section, date, uuid, url, context.req));
+    await store.dispatch(Object(_store_actions_newsActions__WEBPACK_IMPORTED_MODULE_5__["getOtherNews"])(section));
     const error = store.getState().news.error;
 
     if (error && error.indexOf('Redirect: ') == 0) {
-      return next_redirect__WEBPACK_IMPORTED_MODULE_4___default()(context, error.slice(10), 308);
+      return next_redirect__WEBPACK_IMPORTED_MODULE_2___default()(context, error.slice(10), 308);
     }
 
     if (error == 'NotFound') {
@@ -3138,14 +3227,14 @@ const mapStateToProps = state => ({
   news: state.news.news,
   topNews: state.news.topNews,
   moreNews: state.news.moreNews,
-  templateName: state.news.templateName,
-  template: state.news.template,
+  templateName: state.news.newsTemplateName,
+  template: state.news.newsTemplate,
   loading: state.news.loading
 });
 
-/* harmony default export */ __webpack_exports__["default"] = (Object(react_redux__WEBPACK_IMPORTED_MODULE_2__["connect"])(mapStateToProps, {
-  getNews: _store_actions_newsActions__WEBPACK_IMPORTED_MODULE_7__["getNews"],
-  getOtherNews: _store_actions_newsActions__WEBPACK_IMPORTED_MODULE_7__["getOtherNews"]
+/* harmony default export */ __webpack_exports__["default"] = (Object(react_redux__WEBPACK_IMPORTED_MODULE_4__["connect"])(mapStateToProps, {
+  getNews: _store_actions_newsActions__WEBPACK_IMPORTED_MODULE_5__["getNews"],
+  getOtherNews: _store_actions_newsActions__WEBPACK_IMPORTED_MODULE_5__["getOtherNews"]
 })(News));
 
 /***/ }),
@@ -3215,13 +3304,14 @@ const test = () => {
 /*!**************************************!*\
   !*** ./store/actions/newsActions.js ***!
   \**************************************/
-/*! exports provided: getOtherNews, getNews, setLoading, getConfig */
+/*! exports provided: getOtherNews, getNews, getFront, setLoading, getConfig */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getOtherNews", function() { return getOtherNews; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getNews", function() { return getNews; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getFront", function() { return getFront; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "setLoading", function() { return setLoading; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getConfig", function() { return getConfig; });
 /* harmony import */ var _babel_runtime_corejs2_core_js_promise__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/core-js/promise */ "./node_modules/@babel/runtime-corejs2/core-js/promise.js");
@@ -3302,30 +3392,7 @@ const getNews = (section, date, uuid, url, req) => async (dispatch, getState) =>
           }
         }
       });
-    } // let tmp = unescape(res.data.text);
-    // let find = tmp.split('<embed id="');
-    // for (let i = find.length - 1; i--;) {
-    //   let mediaNum = parseInt(find[i + 1].charAt(0));
-    //   if (res.data.media[mediaNum - 1]) {
-    //     find[i + 1] = '<div class="embed">' + res.data.media[mediaNum - 1].embed + '</div>' + find[i + 1].substring(5);
-    //   } else {
-    //     find[i + 1] = find[i + 1].substring(5);
-    //   }
-    // }
-    // tmp = find.join('');
-    // find = tmp.split('<image id="');
-    // for (let i = find.length - 1; i--;) {
-    //   let imageNum = parseInt(find[i + 1].charAt(0));
-    //   if (res.data.images[imageNum - 1]) {
-    //     find[i + 1] = '<img src="https://data.joornalo.com/news/4/c/' + res.data.images[imageNum - 1].url + '" />' + find[i + 1].substring(5);
-    //   } else {
-    //     find[i + 1] = find[i + 1].substring(5);
-    //   }
-    // }
-    // res.data.modText = Parser(find.join(''));
-    // res.data.mainImgUrl = 'https://data.joornalo.com/news/4/c/' + res.data.images[0].url;
-    //console.log(data);
-
+    }
 
     dispatch({
       type: _types__WEBPACK_IMPORTED_MODULE_2__["GET_NEWS"],
@@ -3338,6 +3405,50 @@ const getNews = (section, date, uuid, url, req) => async (dispatch, getState) =>
   } catch (err) {
     dispatch({
       type: _types__WEBPACK_IMPORTED_MODULE_2__["NEWS_ERROR"],
+      payload: 'NotFound'
+    });
+  }
+};
+const getFront = (section, req) => async (dispatch, getState) => {
+  try {
+    setLoading();
+    const path = `https://data.joornalo.com/sections/latest/${section}.json`;
+    const res = await axios__WEBPACK_IMPORTED_MODULE_4___default.a.get(path); // if (url !== res.data['url']) {
+    //   dispatch({
+    //     type: FRONT_ERROR,
+    //     payload: `Redirect: ${res.data['url']}`
+    //   });
+    // }
+
+    const agent = getState().news.agent;
+    const tmpl = agent + '-' + res.data['template'];
+    let template = getState().news.templates[tmpl];
+
+    if (!template) {
+      template = await getTemplate(req, res.data['template'], getState().news.agent);
+      dispatch({
+        type: _types__WEBPACK_IMPORTED_MODULE_2__["ADD_TEMPLATE"],
+        payload: {
+          template: {
+            [tmpl]: template
+          }
+        }
+      });
+    } //console.log(res.data)
+
+
+    dispatch({
+      type: _types__WEBPACK_IMPORTED_MODULE_2__["GET_FRONT"],
+      payload: {
+        front: res.data,
+        templateName: 'template-' + res.data['template'],
+        template: template
+      }
+    });
+  } catch (err) {
+    console.log('FRONT_ERROR--------------------');
+    dispatch({
+      type: _types__WEBPACK_IMPORTED_MODULE_2__["FRONT_ERROR"],
       payload: 'NotFound'
     });
   }
@@ -3434,9 +3545,11 @@ const initialState = {
   config: null,
   news: null,
   templates: null,
-  template: null,
-  templateName: null,
+  newsTemplate: null,
+  newsTemplateName: null,
   front: null,
+  frontTemplate: null,
+  frontTemplateName: null,
   loading: false,
   agent: null,
   error: null,
@@ -3449,8 +3562,8 @@ const initialState = {
     case _types__WEBPACK_IMPORTED_MODULE_8__["GET_NEWS"]:
       return _objectSpread({}, state, {
         news: action.payload.news,
-        templateName: action.payload.templateName,
-        template: action.payload.template,
+        newsTemplateName: action.payload.templateName,
+        newsTemplate: action.payload.template,
         error: false,
         loading: false
       });
@@ -3483,6 +3596,17 @@ const initialState = {
         moreNews: action.payload.moreNews
       });
 
+    case _types__WEBPACK_IMPORTED_MODULE_8__["GET_FRONT"]:
+      //console.log(action.payload.front)
+      return _objectSpread({}, state, {
+        front: action.payload.front,
+        frontTemplateName: action.payload.templateName,
+        frontTemplate: action.payload.template,
+        topNews: action.payload.front.topNews,
+        error: false,
+        loading: false
+      });
+
     default:
       return state;
   }
@@ -3494,7 +3618,7 @@ const initialState = {
 /*!************************!*\
   !*** ./store/types.js ***!
   \************************/
-/*! exports provided: SET_AGENT, GET_NEWS, SET_LOADING, NEWS_ERROR, INIT_AGENT, ADD_TEMPLATE, GET_CONFIG, GET_OTHERNEWS */
+/*! exports provided: SET_AGENT, GET_NEWS, SET_LOADING, NEWS_ERROR, INIT_AGENT, ADD_TEMPLATE, GET_CONFIG, GET_OTHERNEWS, FRONT_ERROR, GET_FRONT */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -3507,6 +3631,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ADD_TEMPLATE", function() { return ADD_TEMPLATE; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "GET_CONFIG", function() { return GET_CONFIG; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "GET_OTHERNEWS", function() { return GET_OTHERNEWS; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FRONT_ERROR", function() { return FRONT_ERROR; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "GET_FRONT", function() { return GET_FRONT; });
 const SET_AGENT = 'SET_AGENT';
 const GET_NEWS = 'GET_NEWS';
 const SET_LOADING = 'SET_LOADING';
@@ -3515,10 +3641,12 @@ const INIT_AGENT = 'INIT_AGENT';
 const ADD_TEMPLATE = 'ADD_TEMPLATE';
 const GET_CONFIG = 'GET_CONFIG';
 const GET_OTHERNEWS = 'GET_OTHERNEWS';
+const FRONT_ERROR = 'FRONT_ERROR';
+const GET_FRONT = 'GET_FRONT';
 
 /***/ }),
 
-/***/ 4:
+/***/ 5:
 /*!******************************************************!*\
   !*** multi ./pages/section/[section]/[date]/[id].js ***!
   \******************************************************/

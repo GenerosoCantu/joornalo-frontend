@@ -3,6 +3,7 @@ import { connect } from 'react-redux';
 import Link from 'next/link'
 
 const RelatedNews1 = ({ topNews }) => {
+  if (!topNews) return null
 
   let topNews4 = topNews.slice(0, 4)
 
