@@ -4,7 +4,7 @@ import NewsBlock from "./newsBlock.js";
 const Front1 = ({ data }) => {
 
   return (
-    <div className="front1">
+    <div className="front1 block">
       <NewsBlock news={data.frontNews[0]}></NewsBlock>
     </div>
   )

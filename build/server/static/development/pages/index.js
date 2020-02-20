@@ -148,35 +148,35 @@ var map = {
 	],
 	"./TemplateOLD": [
 		"./components/TemplateOLD.js",
-		6
+		8
 	],
 	"./TemplateOLD.js": [
 		"./components/TemplateOLD.js",
-		6
+		8
 	],
 	"./adv": [
 		"./components/adv.js",
-		7
+		9
 	],
 	"./adv.js": [
 		"./components/adv.js",
-		7
+		9
 	],
 	"./adv2": [
 		"./components/adv2.js",
-		25
+		10
 	],
 	"./adv2.js": [
 		"./components/adv2.js",
-		25
+		10
 	],
 	"./bares": [
 		"./components/bares.js",
-		8
+		11
 	],
 	"./bares.js": [
 		"./components/bares.js",
-		8
+		11
 	],
 	"./components": [
 		"./components/components.js"
@@ -186,27 +186,27 @@ var map = {
 	],
 	"./dataContext": [
 		"./components/dataContext.js",
-		9
+		12
 	],
 	"./dataContext.js": [
 		"./components/dataContext.js",
-		9
+		12
 	],
 	"./featured1": [
 		"./components/featured1.js",
-		10
+		13
 	],
 	"./featured1.js": [
 		"./components/featured1.js",
-		10
+		13
 	],
 	"./footer-mobile1": [
 		"./components/footer-mobile1.js",
-		11
+		14
 	],
 	"./footer-mobile1.js": [
 		"./components/footer-mobile1.js",
-		11
+		14
 	],
 	"./footer1": [
 		"./components/footer1.js",
@@ -226,19 +226,19 @@ var map = {
 	],
 	"./front2": [
 		"./components/front2.js",
-		12
+		6
 	],
 	"./front2.js": [
 		"./components/front2.js",
-		12
+		6
 	],
 	"./header-mobile1": [
 		"./components/header-mobile1.js",
-		13
+		15
 	],
 	"./header-mobile1.js": [
 		"./components/header-mobile1.js",
-		13
+		15
 	],
 	"./header1": [
 		"./components/header1.js",
@@ -250,43 +250,43 @@ var map = {
 	],
 	"./latest1": [
 		"./components/latest1.js",
-		14
+		16
 	],
 	"./latest1.js": [
 		"./components/latest1.js",
-		14
+		16
 	],
 	"./menu1": [
 		"./components/menu1.js",
-		15
+		17
 	],
 	"./menu1.js": [
 		"./components/menu1.js",
-		15
+		17
 	],
 	"./most-viewed1": [
 		"./components/most-viewed1.js",
-		16
+		7
 	],
 	"./most-viewed1.js": [
 		"./components/most-viewed1.js",
-		16
+		7
 	],
 	"./multimedia1": [
 		"./components/multimedia1.js",
-		17
+		18
 	],
 	"./multimedia1.js": [
 		"./components/multimedia1.js",
-		17
+		18
 	],
 	"./news-header1": [
 		"./components/news-header1.js",
-		18
+		19
 	],
 	"./news-header1.js": [
 		"./components/news-header1.js",
-		18
+		19
 	],
 	"./news-mobile1": [
 		"./components/news-mobile1.js",
@@ -314,51 +314,51 @@ var map = {
 	],
 	"./newsBlock": [
 		"./components/newsBlock.js",
-		19
+		20
 	],
 	"./newsBlock.js": [
 		"./components/newsBlock.js",
-		19
+		20
 	],
 	"./opinion1": [
 		"./components/opinion1.js",
-		20
+		21
 	],
 	"./opinion1.js": [
 		"./components/opinion1.js",
-		20
+		21
 	],
 	"./other-news1": [
 		"./components/other-news1.js",
-		21
+		22
 	],
 	"./other-news1.js": [
 		"./components/other-news1.js",
-		21
+		22
 	],
 	"./related-news1": [
 		"./components/related-news1.js",
-		22
+		23
 	],
 	"./related-news1.js": [
 		"./components/related-news1.js",
-		22
+		23
 	],
 	"./sections1": [
 		"./components/sections1.js",
-		23
+		24
 	],
 	"./sections1.js": [
 		"./components/sections1.js",
-		23
+		24
 	],
 	"./weather1": [
 		"./components/weather1.js",
-		24
+		25
 	],
 	"./weather1.js": [
 		"./components/weather1.js",
-		24
+		25
 	]
 };
 function webpackAsyncContext(req) {

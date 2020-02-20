@@ -3,7 +3,7 @@ import React from "react";
 const Featured1 = ({ data, text }) => {
   console.log("+++++++++++++++ Featured1")
   return (
-    <div className="featured1">
+    <div className="featured1 block">
       <hr />
       <h2>Featured 1</h2>
     </div>

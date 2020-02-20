@@ -24,12 +24,25 @@
   --error-background-color: #FCDFDF;
 
   --light-color: #6C7179;
-  --link-color: #00747A;
+  --link-color: #333;
   --accent-alt-color: #0FC2CC;
   --accent-color: #991202;
   --dark-accent-color: #FF6666;
   --light-accent-color: #ccc;
+
+  \--font-common-base: {
+    font-family: "Open Sans", Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  \--joornalo-font-common-base: {
+    font-family: "Open Sans", Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+
 }
+
+
 
 
 body {
@@ -60,7 +73,7 @@ html {
 
 */
 a {
-  @apply --hinge-font-medium;
+  /* @apply --hinge-font-medium; */
   text-decoration: none;
   cursor: pointer;
   color: var(--link-color);
@@ -81,6 +94,56 @@ img {
   width: 100%;
   height: auto;
 }
+
+
+
+
+
+h6 {
+  font-size: 1rem;
+  line-height: 1.2rem;
+}
+
+h5 {
+  font-size: 1.125rem;
+  line-height: 1.5rem;
+  margin: 0;
+}
+
+h4 {
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+  font-weight: 300;
+  margin-bottom: 0.4rem;
+  margin: .2rem 0;
+}
+
+h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  line-height: 1.6rem;
+  margin: .2rem 0;
+}
+
+h2 {
+  font-size: 2.25rem;
+  line-height: 2.6rem;
+  margin-bottom: 0.6rem;
+  font-weight: normal;
+}
+
+h1 {
+  font-size: 3.5rem;
+  line-height: 2.2rem;
+  margin-bottom: 1rem;
+}
+
+
+
+.block {
+  margin-bottom: 2rem;
+}
+
 
 .adv {
   /* background: #eee; */
@@ -528,6 +591,18 @@ blockquote.twitter-tweet {
   max-width: 100%;
 }
 
+.NewsBlock h2 {
+  font-size: 1rem;
+  color: #333;
+  margin: 0.2rem 0 .5rem;
+  font-weight: 500;
+  line-height: 1.3em;
+}
+
+.NewsBlock h2:hover {
+  color: #cc0002;
+}
+
 /* .news .newsContent p:first-of-type:first-letter {
   font-size: 2rem;
   font-weight: bold;
@@ -581,12 +656,23 @@ blockquote.twitter-tweet {
   padding-bottom: 2rem;
 } */
 
+.front1 .NewsBlock h2 {
+  font-size: 2rem;
+  line-height: 2.2rem;
+}
+
+.front1 .NewsBlock div {
+  font-size: 1.2rem;
+}
+
 .front2 {
   display: flex;
+  margin: 0 -0.5rem;
 }
 
 .front2 .NewsBlock {
   flex: 1;
+  padding: 0 0.5rem;
 }
 
 
@@ -672,6 +758,58 @@ blockquote.twitter-tweet {
   padding-left: .5rem;
   height: 100%;
   float: left;
+}
+
+/* Sections */
+.sections1 .blockheader {
+  margin-bottom: 1rem;
+}
+
+.sections1 .NewsBlock {
+  flex: 1;
+  padding: 0 1rem;
+}
+
+/* Opinion1 */
+
+.opinion1 ol {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.opinion1 li {
+  border-bottom: 1px dashed #ccc;
+  padding: 0.4rem 0;
+}
+
+.opinion1 h5,
+.opinion1 h6 {
+  margin: 0;
+  line-height: 1rem;
+  font-weight: 600;
+  margin: .4rem 0;
+}
+
+.opinion1 h6 {
+  color: #3699AB;
+  font-weight: 400;
+}
+
+.opinion1 h5 {
+  font-weight: 500;
+}
+
+.opinion1 h5.title {
+  font-weight: 200;
+}
+
+.opinion1 a {
+  color: #333;
+}
+
+.opinion1 li:hover {
+  background: #eee;
 }
 
 /*# sourceMappingURL=styles.chunk.css.map*/

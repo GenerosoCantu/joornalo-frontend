@@ -16,6 +16,18 @@ blockquote.twitter-tweet {
   max-width: 100%;
 }
 
+.NewsBlock h2 {
+  font-size: 1rem;
+  color: #333;
+  margin: 0.2rem 0 .5rem;
+  font-weight: 500;
+  line-height: 1.3em;
+}
+
+.NewsBlock h2:hover {
+  color: #cc0002;
+}
+
 /* .news .newsContent p:first-of-type:first-letter {
   font-size: 2rem;
   font-weight: bold;
@@ -69,12 +81,23 @@ blockquote.twitter-tweet {
   padding-bottom: 2rem;
 } */
 
+.front1 .NewsBlock h2 {
+  font-size: 2rem;
+  line-height: 2.2rem;
+}
+
+.front1 .NewsBlock div {
+  font-size: 1.2rem;
+}
+
 .front2 {
   display: flex;
+  margin: 0 -0.5rem;
 }
 
 .front2 .NewsBlock {
   flex: 1;
+  padding: 0 0.5rem;
 }
 
 
@@ -160,4 +183,56 @@ blockquote.twitter-tweet {
   padding-left: .5rem;
   height: 100%;
   float: left;
+}
+
+/* Sections */
+.sections1 .blockheader {
+  margin-bottom: 1rem;
+}
+
+.sections1 .NewsBlock {
+  flex: 1;
+  padding: 0 1rem;
+}
+
+/* Opinion1 */
+
+.opinion1 ol {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.opinion1 li {
+  border-bottom: 1px dashed #ccc;
+  padding: 0.4rem 0;
+}
+
+.opinion1 h5,
+.opinion1 h6 {
+  margin: 0;
+  line-height: 1rem;
+  font-weight: 600;
+  margin: .4rem 0;
+}
+
+.opinion1 h6 {
+  color: #3699AB;
+  font-weight: 400;
+}
+
+.opinion1 h5 {
+  font-weight: 500;
+}
+
+.opinion1 h5.title {
+  font-weight: 200;
+}
+
+.opinion1 a {
+  color: #333;
+}
+
+.opinion1 li:hover {
+  background: #eee;
 }

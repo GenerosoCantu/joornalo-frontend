@@ -67,7 +67,7 @@ const news2 = ({ data }) => {
 
   return (
     <div className="news">
-      <h1>{data.title}</h1>
+      <h2>{data.title}</h2>
       <div className="row row-m-column">
         <div className="col-220 col-m-full">
           <div className="details">

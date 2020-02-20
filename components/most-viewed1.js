@@ -7,7 +7,7 @@ const MostViewed1 = ({ topNews }) => {
   console.log("+++++++++++++++ MostViewed1")
   if (!topNews) return null
   return (
-    <div className="most-viewed">
+    <div className="most-viewed block">
       <div className="blockheader"><span>Most Viewed</span></div>
       <ul>
         {topNews.map((news, index) => (
@@ -15,7 +15,7 @@ const MostViewed1 = ({ topNews }) => {
             <li>
               <span>{index + 1}</span>
               <div>
-                {(index == 0) ? <img src={imageUrl(news.image)} /> : null}
+                {(index == 0) ? <img src={news.img} /> : null}
                 <a>{news.title}</a>
               </div>
             </li>

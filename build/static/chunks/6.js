@@ -20,7 +20,7 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 var Front1 = function Front1(_ref) {
   var data = _ref.data;
   return __jsx("div", {
-    className: "front1",
+    className: "front1 block",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 7
@@ -67,7 +67,7 @@ var NewsBlock = function NewsBlock(_ref) {
 
   if (typeof diaplayImage === 'undefined' || diaplayImage) {
     image = __jsx("img", {
-      src: imageUrl(news.image),
+      src: news.img,
       __source: {
         fileName: _jsxFileName,
         lineNumber: 10

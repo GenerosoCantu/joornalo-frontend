@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[26],{oqwu:function(e,t,n){"use strict";n.r(t);var a=n("q1tI"),r=n.n(a).a.createElement;t.default=function(e){e.data,e.text;return r("div",{className:"weather1"},r("hr",null),r("h2",null,"Weather 1"))}}}]);

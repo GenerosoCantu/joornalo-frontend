@@ -22,7 +22,7 @@ const Front1 = ({
   data
 }) => {
   return __jsx("div", {
-    className: "front1",
+    className: "front1 block",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 7
@@ -70,7 +70,7 @@ const NewsBlock = ({
 
   if (typeof diaplayImage === 'undefined' || diaplayImage) {
     image = __jsx("img", {
-      src: imageUrl(news.image),
+      src: news.img,
       __source: {
         fileName: _jsxFileName,
         lineNumber: 10

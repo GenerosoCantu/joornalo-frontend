@@ -24,12 +24,25 @@
   --error-background-color: #FCDFDF;
 
   --light-color: #6C7179;
-  --link-color: #00747A;
+  --link-color: #333;
   --accent-alt-color: #0FC2CC;
   --accent-color: #991202;
   --dark-accent-color: #FF6666;
   --light-accent-color: #ccc;
+
+  --font-common-base: {
+    font-family: "Open Sans", Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  --joornalo-font-common-base: {
+    font-family: "Open Sans", Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+
 }
+
+
 
 
 body {
@@ -60,7 +73,7 @@ html {
 
 */
 a {
-  @apply --hinge-font-medium;
+  /* @apply --hinge-font-medium; */
   text-decoration: none;
   cursor: pointer;
   color: var(--link-color);
@@ -81,6 +94,56 @@ img {
   width: 100%;
   height: auto;
 }
+
+
+
+
+
+h6 {
+  font-size: 1rem;
+  line-height: 1.2rem;
+}
+
+h5 {
+  font-size: 1.125rem;
+  line-height: 1.5rem;
+  margin: 0;
+}
+
+h4 {
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+  font-weight: 300;
+  margin-bottom: 0.4rem;
+  margin: .2rem 0;
+}
+
+h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  line-height: 1.6rem;
+  margin: .2rem 0;
+}
+
+h2 {
+  font-size: 2.25rem;
+  line-height: 2.6rem;
+  margin-bottom: 0.6rem;
+  font-weight: normal;
+}
+
+h1 {
+  font-size: 3.5rem;
+  line-height: 2.2rem;
+  margin-bottom: 1rem;
+}
+
+
+
+.block {
+  margin-bottom: 2rem;
+}
+
 
 .adv {
   /* background: #eee; */

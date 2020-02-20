@@ -1,0 +1,1 @@
+{"code":"(window.webpackJsonp=window.webpackJsonp||[]).push([[11],{BY7f:function(e,t,n){\"use strict\";n.r(t);var a=n(\"q1tI\"),u=n.n(a).a.createElement;t.default=function(e){e.data,e.text;return console.log(\"+++++++++++++++ Featured1\"),u(\"div\",{className:\"featured1 block\"},u(\"hr\",null),u(\"h2\",null,\"Featured 1\"))}}}]);"}

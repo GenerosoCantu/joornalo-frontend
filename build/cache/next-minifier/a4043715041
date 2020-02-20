@@ -1,0 +1,1 @@
+{"code":"(window.webpackJsonp=window.webpackJsonp||[]).push([[9],{hw7L:function(n,a,t){\"use strict\";t.r(a);var e=t(\"q1tI\"),r=t.n(e).a.createElement;a.default=function(n){n.data;var a=n.text;return r(\"div\",{className:\"bar\"},r(\"hr\",null),r(\"h2\",null,\"BAR: \",a))}}}]);"}

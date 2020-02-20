@@ -7,7 +7,7 @@ const NewsBlock = ({ news, diaplayImage, displayDesc }) => {
     desc = '';
 
   if ((typeof diaplayImage === 'undefined') || diaplayImage) {
-    image = <img src={imageUrl(news.image)} />;
+    image = <img src={news.img} />;
   }
   if ((typeof displayDesc === 'undefined') || displayDesc) {
     desc = <div>{news.desc}</div>;

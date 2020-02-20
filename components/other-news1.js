@@ -6,7 +6,7 @@ const OtherNews1 = ({ moreNews }) => {
 
   if (!moreNews) return null
   return (
-    <div className="other-news">
+    <div className="other-news block">
       <div className="blockheader"><span>Other News</span></div>
       <ul>
         {moreNews.map((news, index) => (
