@@ -27,19 +27,14 @@ const Weather1 = ({
       lineNumber: 5
     },
     __self: undefined
-  }, __jsx("hr", {
+  }, __jsx("img", {
+    src: "https://www.theweather.com/wimages/foto1c57d79984397d0508b62ab57f5f7912.png",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 6
     },
     __self: undefined
-  }), __jsx("h2", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 7
-    },
-    __self: undefined
-  }, "Weather 1"));
+  }));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Weather1);

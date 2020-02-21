@@ -16,9 +16,6 @@ const Index = ({ agent, front, templateName, template }) => {
         <Template grid={template} data={front} />
       </div>
 
-      <Link href="/section/[section]/[date]/[id]" as="/section/world-middleeast/2020-01-11/iraq-iran-us-troops-4c50e545-539e-4893-b505-1edc2de3c988">
-        <a>News link</a>
-      </Link>
     </Layout>
   )
 };

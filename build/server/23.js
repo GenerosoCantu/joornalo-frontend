@@ -1,10 +1,10 @@
 exports.ids = [23];
 exports.modules = {
 
-/***/ "./components/related-news1.js":
-/*!*************************************!*\
-  !*** ./components/related-news1.js ***!
-  \*************************************/
+/***/ "./components/other-news1.js":
+/*!***********************************!*\
+  !*** ./components/other-news1.js ***!
+  \***********************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -16,66 +16,76 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_redux__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_2__);
-var _jsxFileName = "C:\\Projects\\DEVELOPMENT\\joornalo-frontend\\front.joornalo\\components\\related-news1.js";
+var _jsxFileName = "C:\\Projects\\DEVELOPMENT\\joornalo-frontend\\front.joornalo\\components\\other-news1.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 
 
-const RelatedNews1 = ({
-  topNews
+const OtherNews1 = ({
+  moreNews
 }) => {
-  if (!topNews) return null;
-  let topNews4 = topNews.slice(0, 4);
+  if (!moreNews) return null;
   return __jsx("div", {
-    className: "related-news block",
+    className: "other-news block",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 9
+    },
+    __self: undefined
+  }, __jsx("div", {
+    className: "blockheader",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 10
+    },
+    __self: undefined
+  }, __jsx("span", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 10
+    },
+    __self: undefined
+  }, "Other News")), __jsx("ul", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 11
     },
     __self: undefined
-  }, __jsx("h2", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 12
-    },
-    __self: undefined
-  }, "Related Stories"), __jsx("div", {
-    className: "row",
+  }, moreNews.map((news, index) => __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
+    href: news.url,
+    key: index,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 13
     },
     __self: undefined
-  }, topNews4.map((news, index) => __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
-    href: news.url,
-    key: index,
+  }, __jsx("li", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 14
+    },
+    __self: undefined
+  }, __jsx("a", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 15
-    },
-    __self: undefined
-  }, __jsx("div", {
-    className: "col-auto",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 16
     },
     __self: undefined
   }, __jsx("img", {
     src: imageUrl(news.image),
     __source: {
       fileName: _jsxFileName,
+      lineNumber: 16
+    },
+    __self: undefined
+  }), __jsx("div", {
+    __source: {
+      fileName: _jsxFileName,
       lineNumber: 17
     },
     __self: undefined
-  }), __jsx("a", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 18
-    },
-    __self: undefined
-  }, news.title))))));
+  }, news.title)))))));
 };
 
 const imageUrl = url => {
@@ -83,10 +93,10 @@ const imageUrl = url => {
 };
 
 const mapStateToProps = state => ({
-  topNews: state.news.topNews
+  moreNews: state.news.moreNews
 });
 
-/* harmony default export */ __webpack_exports__["default"] = (Object(react_redux__WEBPACK_IMPORTED_MODULE_1__["connect"])(mapStateToProps)(RelatedNews1));
+/* harmony default export */ __webpack_exports__["default"] = (Object(react_redux__WEBPACK_IMPORTED_MODULE_1__["connect"])(mapStateToProps)(OtherNews1));
 
 /***/ })
 

@@ -26,7 +26,8 @@ const blockList = [
   'multimedia1',
   'weather1',
   'latest1',
-  'sections1'
+  'sections1',
+  'galleries1'
 ];
 
 const ComponentsList = {};

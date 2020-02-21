@@ -1,11 +1,13 @@
 import React from "react";
+import NewsBlock from "./newsBlock.js";
 
-const Featured1 = ({ data, text }) => {
-  console.log("+++++++++++++++ Featured1")
+const Featured1 = ({ data }) => {
   return (
     <div className="featured1 block">
-      <hr />
-      <h2>Featured 1</h2>
+      <div className="blockheader"><span>Featured</span></div>
+      {data.featured.map((news, index) => (
+        <NewsBlock news={news} displayDesc={false} key={index}></NewsBlock>
+      ))}
     </div>
   )
 }

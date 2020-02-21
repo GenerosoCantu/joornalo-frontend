@@ -4,7 +4,6 @@ import Link from 'next/link'
 import NewsBlock from "./newsBlock.js";
 
 const MostViewed1 = ({ topNews }) => {
-  console.log("+++++++++++++++ MostViewed1")
   if (!topNews) return null
   return (
     <div className="most-viewed block">

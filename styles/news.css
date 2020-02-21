@@ -28,6 +28,10 @@ blockquote.twitter-tweet {
   color: #cc0002;
 }
 
+.blockheader {
+  margin-bottom: 1rem;
+}
+
 /* .news .newsContent p:first-of-type:first-letter {
   font-size: 2rem;
   font-weight: bold;
@@ -186,9 +190,6 @@ blockquote.twitter-tweet {
 }
 
 /* Sections */
-.sections1 .blockheader {
-  margin-bottom: 1rem;
-}
 
 .sections1 .NewsBlock {
   flex: 1;
@@ -235,4 +236,33 @@ blockquote.twitter-tweet {
 
 .opinion1 li:hover {
   background: #eee;
+}
+
+
+/* galleries / featured */
+
+.multimedia1,
+.featured1,
+.galleries1 {
+  background-color: #666;
+  padding: .5rem;
+}
+
+.multimedia1 .blockheader span,
+.featured1 .blockheader span,
+.galleries1 .blockheader span {
+  color: #fff;
+  background-color: #666;
+}
+
+.multimedia1 .blockheader::after,
+.featured1 .blockheader::after,
+.galleries1 .blockheader::after {
+  border-top: 2px solid #fff;
+}
+
+.multimedia1 .NewsBlock h2,
+.featured1 .NewsBlock h2,
+.galleries1 .NewsBlock h2 {
+  color: #fff;
 }
