@@ -7,27 +7,27 @@ import dynamic from 'next/dynamic';
 
 // this should come from Config.json
 const blockList = [
-  'adv',
-  'header1',
-  'header-mobile1',
-  'news1',
-  'news2',
-  'news-mobile1',
-  'news-header1',
-  'other-news1',
-  'related-news1',
-  'most-viewed1',
-  'featured1',
-  'footer1',
-  'footer-mobile1',
-  'front1',
-  'front2',
-  'opinion1',
-  'multimedia1',
-  'weather1',
-  'latest1',
-  'sections1',
-  'galleries1'
+  'block-adv',
+  'block-header1',
+  'block-header-mobile1',
+  'block-news1',
+  'block-news2',
+  'block-news-mobile1',
+  'block-news-header1',
+  'block-other-news1',
+  'block-related-news1',
+  'block-most-viewed1',
+  'block-featured1',
+  'block-footer1',
+  'block-footer-mobile1',
+  'block-front1',
+  'block-front2',
+  'block-opinion1',
+  'block-multimedia1',
+  'block-weather1',
+  'block-latest1',
+  'block-sections1',
+  'block-galleries1'
 ];
 
 const ComponentsList = {};

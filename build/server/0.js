@@ -1,10 +1,10 @@
 exports.ids = [0];
 exports.modules = {
 
-/***/ "./components/adv.js":
-/*!***************************!*\
-  !*** ./components/adv.js ***!
-  \***************************/
+/***/ "./components/block-adv.js":
+/*!*********************************!*\
+  !*** ./components/block-adv.js ***!
+  \*********************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -12,7 +12,7 @@ exports.modules = {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-var _jsxFileName = "C:\\Projects\\DEVELOPMENT\\joornalo-frontend\\front.joornalo\\components\\adv.js";
+var _jsxFileName = "C:\\Projects\\DEVELOPMENT\\joornalo-frontend\\front.joornalo\\components\\block-adv.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
@@ -132,10 +132,10 @@ const Adv = context => {
 
 /***/ }),
 
-/***/ "./components/news-mobile1.js":
-/*!************************************!*\
-  !*** ./components/news-mobile1.js ***!
-  \************************************/
+/***/ "./components/block-news-mobile1.js":
+/*!******************************************!*\
+  !*** ./components/block-news-mobile1.js ***!
+  \******************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -147,9 +147,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var html_react_parser__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! html-react-parser */ "html-react-parser");
 /* harmony import */ var html_react_parser__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(html_react_parser__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _adv__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./adv */ "./components/adv.js");
+/* harmony import */ var _block_adv__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./block-adv */ "./components/block-adv.js");
 
-var _jsxFileName = "C:\\Projects\\DEVELOPMENT\\joornalo-frontend\\front.joornalo\\components\\news-mobile1.js";
+var _jsxFileName = "C:\\Projects\\DEVELOPMENT\\joornalo-frontend\\front.joornalo\\components\\block-news-mobile1.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
 
 
@@ -161,7 +161,10 @@ const news1 = ({
   Object(react__WEBPACK_IMPORTED_MODULE_1__["useEffect"])(() => {
     updateImageWidths();
     window.addEventListener('resize', updateImageWidths);
-  }); // const modText = Parser(data.text, {
+  });
+  const AdParams = {
+    size: '320x50'
+  }; // const modText = Parser(data.text, {
   //   replace: (domNode) => {
   //     if (domNode.name === 'embed') {
   //       return <div className="embed">{Parser(data.media[domNode.attribs.id - 1].embed)}</div>;
@@ -216,60 +219,61 @@ const news1 = ({
     className: "news",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 63
+      lineNumber: 67
     },
     __self: undefined
   }, __jsx("h1", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 64
+      lineNumber: 68
     },
     __self: undefined
   }, data.title), __jsx("img", {
     src: mainImgUrl,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 65
+      lineNumber: 69
     },
     __self: undefined
   }), __jsx("div", {
     className: "row",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 66
+      lineNumber: 70
     },
     __self: undefined
   }, __jsx("div", {
     className: "col-12",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 67
+      lineNumber: 71
     },
     __self: undefined
   }, __jsx("div", {
     className: "details",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 68
+      lineNumber: 72
     },
     __self: undefined
-  }, "Details"), __jsx(_adv__WEBPACK_IMPORTED_MODULE_3__["default"], {
+  }, "Details"), __jsx(_block_adv__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    params: AdParams,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 71
+      lineNumber: 75
     },
     __self: undefined
   })), __jsx("div", {
     className: "newsContent col-12",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 73
+      lineNumber: 77
     },
     __self: undefined
   }, __jsx("div", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 74
+      lineNumber: 78
     },
     __self: undefined
   }, modText))));

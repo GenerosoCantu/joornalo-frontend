@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[26],{oqwu:function(t,e,a){"use strict";a.r(e);var w=a("q1tI"),n=a.n(w).a.createElement;e.default=function(t){t.data,t.text;return n("div",{className:"weather1"},n("img",{src:"https://www.theweather.com/wimages/foto1c57d79984397d0508b62ab57f5f7912.png"}))}}}]);

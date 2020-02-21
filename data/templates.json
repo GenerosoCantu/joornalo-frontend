@@ -6,7 +6,7 @@
           {
             "components": [
               {
-                "id": "header1"
+                "id": "block-header1"
               }
             ],
             "width": "col-full"
@@ -18,7 +18,7 @@
           {
             "components": [
               {
-                "id": "adv",
+                "id": "block-adv",
                 "size": "980x90"
               }
             ],
@@ -36,7 +36,7 @@
                   {
                     "components": [
                       {
-                        "id": "news1"
+                        "id": "block-news1"
                       }
                     ],
                     "width": "col-full"
@@ -49,14 +49,14 @@
             "width": "col-300 col-m-220 border-left",
             "components": [
               {
-                "id": "adv",
+                "id": "block-adv",
                 "size": "300x250"
               },
               {
-                "id": "other-news1"
+                "id": "block-other-news1"
               },
               {
-                "id": "most-viewed1"
+                "id": "block-most-viewed1"
               }
             ]
           }
@@ -67,10 +67,9 @@
           {
             "components": [
               {
-                "id": "related-news1"
+                "id": "block-related-news1"
               }
             ],
-            "text": "Related Stories",
             "width": "col-full"
           }
         ]
@@ -80,7 +79,7 @@
           {
             "components": [
               {
-                "id": "adv",
+                "id": "block-adv",
                 "size": "980x90"
               }
             ],
@@ -93,7 +92,7 @@
           {
             "components": [
               {
-                "id": "footer1"
+                "id": "block-footer1"
               }
             ],
             "width": "col-full"
@@ -109,7 +108,7 @@
           {
             "components": [
               {
-                "id": "header1"
+                "id": "block-header1"
               }
             ],
             "width": "col-full"
@@ -121,7 +120,7 @@
           {
             "components": [
               {
-                "id": "adv",
+                "id": "block-adv",
                 "size": "980x90"
               }
             ],
@@ -139,7 +138,7 @@
                   {
                     "components": [
                       {
-                        "id": "news2"
+                        "id": "block-news2"
                       }
                     ],
                     "width": "col-full"
@@ -152,14 +151,14 @@
             "width": "col-300 col-m-220 border-left",
             "components": [
               {
-                "id": "adv",
+                "id": "block-adv",
                 "size": "300x250"
               },
               {
-                "id": "other-news1"
+                "id": "block-other-news1"
               },
               {
-                "id": "most-viewed1"
+                "id": "block-most-viewed1"
               }
             ]
           }
@@ -170,7 +169,7 @@
           {
             "components": [
               {
-                "id": "related-news1"
+                "id": "block-related-news1"
               }
             ],
             "width": "col-full"
@@ -182,7 +181,7 @@
           {
             "components": [
               {
-                "id": "adv",
+                "id": "block-adv",
                 "size": "980x90"
               }
             ],
@@ -195,7 +194,7 @@
           {
             "components": [
               {
-                "id": "footer1"
+                "id": "block-footer1"
               }
             ],
             "width": "col-full"
@@ -210,14 +209,8 @@
         "column": [
           {
             "components": [
-              "header-mobile1"
-            ],
-            "width": "col-full"
-          },
-          {
-            "components": [
               {
-                "id": "news-mobile1"
+                "id": "block-header-mobile1"
               }
             ],
             "width": "col-full"
@@ -225,7 +218,15 @@
           {
             "components": [
               {
-                "id": "adv",
+                "id": "block-news-mobile1"
+              }
+            ],
+            "width": "col-full"
+          },
+          {
+            "components": [
+              {
+                "id": "block-adv",
                 "size": "320x50"
               }
             ],
@@ -234,7 +235,7 @@
           {
             "components": [
               {
-                "id": "footer-mobile1"
+                "id": "block-footer-mobile1"
               }
             ],
             "width": "col-full"
@@ -250,7 +251,7 @@
           {
             "components": [
               {
-                "id": "header-mobile1"
+                "id": "block-header-mobile1"
               }
             ],
             "width": "col-full"
@@ -258,7 +259,7 @@
           {
             "components": [
               {
-                "id": "news-mobile1"
+                "id": "block-news-mobile1"
               }
             ],
             "width": "col-full"
@@ -266,7 +267,7 @@
           {
             "components": [
               {
-                "id": "adv",
+                "id": "block-adv",
                 "size": "320x50"
               }
             ],
@@ -275,7 +276,7 @@
           {
             "components": [
               {
-                "id": "footer-mobile1"
+                "id": "block-footer-mobile1"
               }
             ],
             "width": "col-full"

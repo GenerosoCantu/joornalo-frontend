@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[20],{y6nP:function(a,e,t){"use strict";t.r(e);var n=t("q1tI"),i=t.n(n),l=t("k5hG"),s=i.a.createElement;e.default=function(a){var e=a.data;a.text;return s("div",{className:"multimedia1 block"},s("div",{className:"blockheader"},s("span",null,"Multimedia")),s(l.default,{news:e.multimedia[0],displayDesc:!1}))}}}]);

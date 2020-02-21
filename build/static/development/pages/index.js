@@ -20,37 +20,189 @@ var map = {
 	"./Template.js": [
 		"./components/Template.js"
 	],
-	"./TemplateOLD": [
-		"./components/TemplateOLD.js",
-		11
-	],
-	"./TemplateOLD.js": [
-		"./components/TemplateOLD.js",
-		11
-	],
-	"./adv": [
-		"./components/adv.js",
-		12
-	],
-	"./adv.js": [
-		"./components/adv.js",
-		12
-	],
-	"./adv2": [
-		"./components/adv2.js",
-		13
-	],
-	"./adv2.js": [
-		"./components/adv2.js",
-		13
-	],
-	"./bares": [
-		"./components/bares.js",
+	"./XXXdataContext": [
+		"./components/XXXdataContext.js",
 		14
 	],
-	"./bares.js": [
-		"./components/bares.js",
+	"./XXXdataContext.js": [
+		"./components/XXXdataContext.js",
 		14
+	],
+	"./block-adv": [
+		"./components/block-adv.js",
+		15
+	],
+	"./block-adv.js": [
+		"./components/block-adv.js",
+		15
+	],
+	"./block-featured1": [
+		"./components/block-featured1.js",
+		5
+	],
+	"./block-featured1.js": [
+		"./components/block-featured1.js",
+		5
+	],
+	"./block-footer-mobile1": [
+		"./components/block-footer-mobile1.js",
+		16
+	],
+	"./block-footer-mobile1.js": [
+		"./components/block-footer-mobile1.js",
+		16
+	],
+	"./block-footer1": [
+		"./components/block-footer1.js",
+		6
+	],
+	"./block-footer1.js": [
+		"./components/block-footer1.js",
+		6
+	],
+	"./block-front1": [
+		"./components/block-front1.js",
+		7
+	],
+	"./block-front1.js": [
+		"./components/block-front1.js",
+		7
+	],
+	"./block-front2": [
+		"./components/block-front2.js",
+		8
+	],
+	"./block-front2.js": [
+		"./components/block-front2.js",
+		8
+	],
+	"./block-galleries1": [
+		"./components/block-galleries1.js",
+		9
+	],
+	"./block-galleries1.js": [
+		"./components/block-galleries1.js",
+		9
+	],
+	"./block-header-mobile1": [
+		"./components/block-header-mobile1.js",
+		17
+	],
+	"./block-header-mobile1.js": [
+		"./components/block-header-mobile1.js",
+		17
+	],
+	"./block-header1": [
+		"./components/block-header1.js",
+		4
+	],
+	"./block-header1.js": [
+		"./components/block-header1.js",
+		4
+	],
+	"./block-latest1": [
+		"./components/block-latest1.js",
+		10
+	],
+	"./block-latest1.js": [
+		"./components/block-latest1.js",
+		10
+	],
+	"./block-menu1": [
+		"./components/block-menu1.js",
+		18
+	],
+	"./block-menu1.js": [
+		"./components/block-menu1.js",
+		18
+	],
+	"./block-most-viewed1": [
+		"./components/block-most-viewed1.js",
+		11
+	],
+	"./block-most-viewed1.js": [
+		"./components/block-most-viewed1.js",
+		11
+	],
+	"./block-multimedia1": [
+		"./components/block-multimedia1.js",
+		12
+	],
+	"./block-multimedia1.js": [
+		"./components/block-multimedia1.js",
+		12
+	],
+	"./block-news-header1": [
+		"./components/block-news-header1.js",
+		19
+	],
+	"./block-news-header1.js": [
+		"./components/block-news-header1.js",
+		19
+	],
+	"./block-news-mobile1": [
+		"./components/block-news-mobile1.js",
+		1
+	],
+	"./block-news-mobile1.js": [
+		"./components/block-news-mobile1.js",
+		1
+	],
+	"./block-news1": [
+		"./components/block-news1.js",
+		2
+	],
+	"./block-news1.js": [
+		"./components/block-news1.js",
+		2
+	],
+	"./block-news2": [
+		"./components/block-news2.js",
+		3
+	],
+	"./block-news2.js": [
+		"./components/block-news2.js",
+		3
+	],
+	"./block-opinion1": [
+		"./components/block-opinion1.js",
+		20
+	],
+	"./block-opinion1.js": [
+		"./components/block-opinion1.js",
+		20
+	],
+	"./block-other-news1": [
+		"./components/block-other-news1.js",
+		21
+	],
+	"./block-other-news1.js": [
+		"./components/block-other-news1.js",
+		21
+	],
+	"./block-related-news1": [
+		"./components/block-related-news1.js",
+		22
+	],
+	"./block-related-news1.js": [
+		"./components/block-related-news1.js",
+		22
+	],
+	"./block-sections1": [
+		"./components/block-sections1.js",
+		13
+	],
+	"./block-sections1.js": [
+		"./components/block-sections1.js",
+		13
+	],
+	"./block-weather1": [
+		"./components/block-weather1.js",
+		23
+	],
+	"./block-weather1.js": [
+		"./components/block-weather1.js",
+		23
 	],
 	"./components": [
 		"./components/components.js"
@@ -58,189 +210,13 @@ var map = {
 	"./components.js": [
 		"./components/components.js"
 	],
-	"./dataContext": [
-		"./components/dataContext.js",
-		15
-	],
-	"./dataContext.js": [
-		"./components/dataContext.js",
-		15
-	],
-	"./featured1": [
-		"./components/featured1.js",
-		16
-	],
-	"./featured1.js": [
-		"./components/featured1.js",
-		16
-	],
-	"./footer-mobile1": [
-		"./components/footer-mobile1.js",
-		17
-	],
-	"./footer-mobile1.js": [
-		"./components/footer-mobile1.js",
-		17
-	],
-	"./footer1": [
-		"./components/footer1.js",
-		5
-	],
-	"./footer1.js": [
-		"./components/footer1.js",
-		5
-	],
-	"./front1": [
-		"./components/front1.js",
-		6
-	],
-	"./front1.js": [
-		"./components/front1.js",
-		6
-	],
-	"./front2": [
-		"./components/front2.js",
-		7
-	],
-	"./front2.js": [
-		"./components/front2.js",
-		7
-	],
-	"./galleries1": [
-		"./components/galleries1.js",
-		27
-	],
-	"./galleries1.js": [
-		"./components/galleries1.js",
-		27
-	],
-	"./header-mobile1": [
-		"./components/header-mobile1.js",
-		18
-	],
-	"./header-mobile1.js": [
-		"./components/header-mobile1.js",
-		18
-	],
-	"./header1": [
-		"./components/header1.js",
-		4
-	],
-	"./header1.js": [
-		"./components/header1.js",
-		4
-	],
-	"./latest1": [
-		"./components/latest1.js",
-		8
-	],
-	"./latest1.js": [
-		"./components/latest1.js",
-		8
-	],
-	"./menu1": [
-		"./components/menu1.js",
-		19
-	],
-	"./menu1.js": [
-		"./components/menu1.js",
-		19
-	],
-	"./most-viewed1": [
-		"./components/most-viewed1.js",
-		9
-	],
-	"./most-viewed1.js": [
-		"./components/most-viewed1.js",
-		9
-	],
-	"./multimedia1": [
-		"./components/multimedia1.js",
-		20
-	],
-	"./multimedia1.js": [
-		"./components/multimedia1.js",
-		20
-	],
-	"./news-header1": [
-		"./components/news-header1.js",
-		21
-	],
-	"./news-header1.js": [
-		"./components/news-header1.js",
-		21
-	],
-	"./news-mobile1": [
-		"./components/news-mobile1.js",
-		1
-	],
-	"./news-mobile1.js": [
-		"./components/news-mobile1.js",
-		1
-	],
-	"./news1": [
-		"./components/news1.js",
-		2
-	],
-	"./news1.js": [
-		"./components/news1.js",
-		2
-	],
-	"./news2": [
-		"./components/news2.js",
-		3
-	],
-	"./news2.js": [
-		"./components/news2.js",
-		3
-	],
 	"./newsBlock": [
 		"./components/newsBlock.js",
-		22
+		24
 	],
 	"./newsBlock.js": [
 		"./components/newsBlock.js",
-		22
-	],
-	"./opinion1": [
-		"./components/opinion1.js",
-		23
-	],
-	"./opinion1.js": [
-		"./components/opinion1.js",
-		23
-	],
-	"./other-news1": [
-		"./components/other-news1.js",
 		24
-	],
-	"./other-news1.js": [
-		"./components/other-news1.js",
-		24
-	],
-	"./related-news1": [
-		"./components/related-news1.js",
-		25
-	],
-	"./related-news1.js": [
-		"./components/related-news1.js",
-		25
-	],
-	"./sections1": [
-		"./components/sections1.js",
-		10
-	],
-	"./sections1.js": [
-		"./components/sections1.js",
-		10
-	],
-	"./weather1": [
-		"./components/weather1.js",
-		26
-	],
-	"./weather1.js": [
-		"./components/weather1.js",
-		26
 	]
 };
 function webpackAsyncContext(req) {
@@ -277,62 +253,56 @@ var map = {
 	"./MyLayout.js": "./components/MyLayout.js",
 	"./Template": "./components/Template.js",
 	"./Template.js": "./components/Template.js",
-	"./TemplateOLD": "./components/TemplateOLD.js",
-	"./TemplateOLD.js": "./components/TemplateOLD.js",
-	"./adv": "./components/adv.js",
-	"./adv.js": "./components/adv.js",
-	"./adv2": "./components/adv2.js",
-	"./adv2.js": "./components/adv2.js",
-	"./bares": "./components/bares.js",
-	"./bares.js": "./components/bares.js",
+	"./XXXdataContext": "./components/XXXdataContext.js",
+	"./XXXdataContext.js": "./components/XXXdataContext.js",
+	"./block-adv": "./components/block-adv.js",
+	"./block-adv.js": "./components/block-adv.js",
+	"./block-featured1": "./components/block-featured1.js",
+	"./block-featured1.js": "./components/block-featured1.js",
+	"./block-footer-mobile1": "./components/block-footer-mobile1.js",
+	"./block-footer-mobile1.js": "./components/block-footer-mobile1.js",
+	"./block-footer1": "./components/block-footer1.js",
+	"./block-footer1.js": "./components/block-footer1.js",
+	"./block-front1": "./components/block-front1.js",
+	"./block-front1.js": "./components/block-front1.js",
+	"./block-front2": "./components/block-front2.js",
+	"./block-front2.js": "./components/block-front2.js",
+	"./block-galleries1": "./components/block-galleries1.js",
+	"./block-galleries1.js": "./components/block-galleries1.js",
+	"./block-header-mobile1": "./components/block-header-mobile1.js",
+	"./block-header-mobile1.js": "./components/block-header-mobile1.js",
+	"./block-header1": "./components/block-header1.js",
+	"./block-header1.js": "./components/block-header1.js",
+	"./block-latest1": "./components/block-latest1.js",
+	"./block-latest1.js": "./components/block-latest1.js",
+	"./block-menu1": "./components/block-menu1.js",
+	"./block-menu1.js": "./components/block-menu1.js",
+	"./block-most-viewed1": "./components/block-most-viewed1.js",
+	"./block-most-viewed1.js": "./components/block-most-viewed1.js",
+	"./block-multimedia1": "./components/block-multimedia1.js",
+	"./block-multimedia1.js": "./components/block-multimedia1.js",
+	"./block-news-header1": "./components/block-news-header1.js",
+	"./block-news-header1.js": "./components/block-news-header1.js",
+	"./block-news-mobile1": "./components/block-news-mobile1.js",
+	"./block-news-mobile1.js": "./components/block-news-mobile1.js",
+	"./block-news1": "./components/block-news1.js",
+	"./block-news1.js": "./components/block-news1.js",
+	"./block-news2": "./components/block-news2.js",
+	"./block-news2.js": "./components/block-news2.js",
+	"./block-opinion1": "./components/block-opinion1.js",
+	"./block-opinion1.js": "./components/block-opinion1.js",
+	"./block-other-news1": "./components/block-other-news1.js",
+	"./block-other-news1.js": "./components/block-other-news1.js",
+	"./block-related-news1": "./components/block-related-news1.js",
+	"./block-related-news1.js": "./components/block-related-news1.js",
+	"./block-sections1": "./components/block-sections1.js",
+	"./block-sections1.js": "./components/block-sections1.js",
+	"./block-weather1": "./components/block-weather1.js",
+	"./block-weather1.js": "./components/block-weather1.js",
 	"./components": "./components/components.js",
 	"./components.js": "./components/components.js",
-	"./dataContext": "./components/dataContext.js",
-	"./dataContext.js": "./components/dataContext.js",
-	"./featured1": "./components/featured1.js",
-	"./featured1.js": "./components/featured1.js",
-	"./footer-mobile1": "./components/footer-mobile1.js",
-	"./footer-mobile1.js": "./components/footer-mobile1.js",
-	"./footer1": "./components/footer1.js",
-	"./footer1.js": "./components/footer1.js",
-	"./front1": "./components/front1.js",
-	"./front1.js": "./components/front1.js",
-	"./front2": "./components/front2.js",
-	"./front2.js": "./components/front2.js",
-	"./galleries1": "./components/galleries1.js",
-	"./galleries1.js": "./components/galleries1.js",
-	"./header-mobile1": "./components/header-mobile1.js",
-	"./header-mobile1.js": "./components/header-mobile1.js",
-	"./header1": "./components/header1.js",
-	"./header1.js": "./components/header1.js",
-	"./latest1": "./components/latest1.js",
-	"./latest1.js": "./components/latest1.js",
-	"./menu1": "./components/menu1.js",
-	"./menu1.js": "./components/menu1.js",
-	"./most-viewed1": "./components/most-viewed1.js",
-	"./most-viewed1.js": "./components/most-viewed1.js",
-	"./multimedia1": "./components/multimedia1.js",
-	"./multimedia1.js": "./components/multimedia1.js",
-	"./news-header1": "./components/news-header1.js",
-	"./news-header1.js": "./components/news-header1.js",
-	"./news-mobile1": "./components/news-mobile1.js",
-	"./news-mobile1.js": "./components/news-mobile1.js",
-	"./news1": "./components/news1.js",
-	"./news1.js": "./components/news1.js",
-	"./news2": "./components/news2.js",
-	"./news2.js": "./components/news2.js",
 	"./newsBlock": "./components/newsBlock.js",
-	"./newsBlock.js": "./components/newsBlock.js",
-	"./opinion1": "./components/opinion1.js",
-	"./opinion1.js": "./components/opinion1.js",
-	"./other-news1": "./components/other-news1.js",
-	"./other-news1.js": "./components/other-news1.js",
-	"./related-news1": "./components/related-news1.js",
-	"./related-news1.js": "./components/related-news1.js",
-	"./sections1": "./components/sections1.js",
-	"./sections1.js": "./components/sections1.js",
-	"./weather1": "./components/weather1.js",
-	"./weather1.js": "./components/weather1.js"
+	"./newsBlock.js": "./components/newsBlock.js"
 };
 
 
@@ -504,7 +474,7 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 // https://nextjs.org/docs/advanced-features/dynamic-import
 // this should come from Config.json
 
-var blockList = ['adv', 'header1', 'header-mobile1', 'news1', 'news2', 'news-mobile1', 'news-header1', 'other-news1', 'related-news1', 'most-viewed1', 'featured1', 'footer1', 'footer-mobile1', 'front1', 'front2', 'opinion1', 'multimedia1', 'weather1', 'latest1', 'sections1', 'galleries1'];
+var blockList = ['block-adv', 'block-header1', 'block-header-mobile1', 'block-news1', 'block-news2', 'block-news-mobile1', 'block-news-header1', 'block-other-news1', 'block-related-news1', 'block-most-viewed1', 'block-featured1', 'block-footer1', 'block-footer-mobile1', 'block-front1', 'block-front2', 'block-opinion1', 'block-multimedia1', 'block-weather1', 'block-latest1', 'block-sections1', 'block-galleries1'];
 var ComponentsList = {};
 blockList.forEach(function (block, index) {
   ComponentsList[block] = next_dynamic__WEBPACK_IMPORTED_MODULE_1___default()(function () {
@@ -17679,15 +17649,16 @@ var getTemplate = function getTemplate(req, template, agent) {
           setLoading();
           tmpl = agent + '-' + template;
           templateUrl = "https://data.joornalo.com/templates/news/".concat(tmpl, ".json");
-          _context.next = 6;
+          console.log(templateUrl);
+          _context.next = 7;
           return _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_3___default.a.awrap(axios__WEBPACK_IMPORTED_MODULE_7___default.a.get(templateUrl));
 
-        case 6:
+        case 7:
           res = _context.sent;
           return _context.abrupt("return", res.data);
 
-        case 10:
-          _context.prev = 10;
+        case 11:
+          _context.prev = 11;
           _context.t0 = _context["catch"](0);
           console.log('***********Template Error');
           dispatch({
@@ -17695,12 +17666,12 @@ var getTemplate = function getTemplate(req, template, agent) {
             payload: _context.t0.statusText
           });
 
-        case 14:
+        case 15:
         case "end":
           return _context.stop();
       }
     }
-  }, null, null, [[0, 10]]);
+  }, null, null, [[0, 11]]);
 };
 
 var getOtherNews = function getOtherNews(section) {
@@ -18105,7 +18076,7 @@ var GET_FRONT = 'GET_FRONT';
 
 /***/ }),
 
-/***/ 3:
+/***/ 4:
 /*!******************************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2F&absolutePagePath=C%3A%5CProjects%5CDEVELOPMENT%5Cjoornalo-frontend%5Cfront.joornalo%5Cpages%5Cindex.js ***!
   \******************************************************************************************************************************************************/
@@ -18128,5 +18099,5 @@ module.exports = dll_5f137288facb1107b491;
 
 /***/ })
 
-},[[3,"static/runtime/webpack.js"]]]);
+},[[4,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=index.js.map

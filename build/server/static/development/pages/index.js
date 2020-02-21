@@ -121,7 +121,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 3);
+/******/ 	return __webpack_require__(__webpack_require__.s = 4);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -146,37 +146,189 @@ var map = {
 	"./Template.js": [
 		"./components/Template.js"
 	],
-	"./TemplateOLD": [
-		"./components/TemplateOLD.js",
-		10
-	],
-	"./TemplateOLD.js": [
-		"./components/TemplateOLD.js",
-		10
-	],
-	"./adv": [
-		"./components/adv.js",
-		11
-	],
-	"./adv.js": [
-		"./components/adv.js",
-		11
-	],
-	"./adv2": [
-		"./components/adv2.js",
-		12
-	],
-	"./adv2.js": [
-		"./components/adv2.js",
-		12
-	],
-	"./bares": [
-		"./components/bares.js",
+	"./XXXdataContext": [
+		"./components/XXXdataContext.js",
 		13
 	],
-	"./bares.js": [
-		"./components/bares.js",
+	"./XXXdataContext.js": [
+		"./components/XXXdataContext.js",
 		13
+	],
+	"./block-adv": [
+		"./components/block-adv.js",
+		14
+	],
+	"./block-adv.js": [
+		"./components/block-adv.js",
+		14
+	],
+	"./block-featured1": [
+		"./components/block-featured1.js",
+		4
+	],
+	"./block-featured1.js": [
+		"./components/block-featured1.js",
+		4
+	],
+	"./block-footer-mobile1": [
+		"./components/block-footer-mobile1.js",
+		15
+	],
+	"./block-footer-mobile1.js": [
+		"./components/block-footer-mobile1.js",
+		15
+	],
+	"./block-footer1": [
+		"./components/block-footer1.js",
+		5
+	],
+	"./block-footer1.js": [
+		"./components/block-footer1.js",
+		5
+	],
+	"./block-front1": [
+		"./components/block-front1.js",
+		6
+	],
+	"./block-front1.js": [
+		"./components/block-front1.js",
+		6
+	],
+	"./block-front2": [
+		"./components/block-front2.js",
+		7
+	],
+	"./block-front2.js": [
+		"./components/block-front2.js",
+		7
+	],
+	"./block-galleries1": [
+		"./components/block-galleries1.js",
+		8
+	],
+	"./block-galleries1.js": [
+		"./components/block-galleries1.js",
+		8
+	],
+	"./block-header-mobile1": [
+		"./components/block-header-mobile1.js",
+		16
+	],
+	"./block-header-mobile1.js": [
+		"./components/block-header-mobile1.js",
+		16
+	],
+	"./block-header1": [
+		"./components/block-header1.js",
+		3
+	],
+	"./block-header1.js": [
+		"./components/block-header1.js",
+		3
+	],
+	"./block-latest1": [
+		"./components/block-latest1.js",
+		9
+	],
+	"./block-latest1.js": [
+		"./components/block-latest1.js",
+		9
+	],
+	"./block-menu1": [
+		"./components/block-menu1.js",
+		17
+	],
+	"./block-menu1.js": [
+		"./components/block-menu1.js",
+		17
+	],
+	"./block-most-viewed1": [
+		"./components/block-most-viewed1.js",
+		10
+	],
+	"./block-most-viewed1.js": [
+		"./components/block-most-viewed1.js",
+		10
+	],
+	"./block-multimedia1": [
+		"./components/block-multimedia1.js",
+		11
+	],
+	"./block-multimedia1.js": [
+		"./components/block-multimedia1.js",
+		11
+	],
+	"./block-news-header1": [
+		"./components/block-news-header1.js",
+		18
+	],
+	"./block-news-header1.js": [
+		"./components/block-news-header1.js",
+		18
+	],
+	"./block-news-mobile1": [
+		"./components/block-news-mobile1.js",
+		0
+	],
+	"./block-news-mobile1.js": [
+		"./components/block-news-mobile1.js",
+		0
+	],
+	"./block-news1": [
+		"./components/block-news1.js",
+		1
+	],
+	"./block-news1.js": [
+		"./components/block-news1.js",
+		1
+	],
+	"./block-news2": [
+		"./components/block-news2.js",
+		2
+	],
+	"./block-news2.js": [
+		"./components/block-news2.js",
+		2
+	],
+	"./block-opinion1": [
+		"./components/block-opinion1.js",
+		19
+	],
+	"./block-opinion1.js": [
+		"./components/block-opinion1.js",
+		19
+	],
+	"./block-other-news1": [
+		"./components/block-other-news1.js",
+		20
+	],
+	"./block-other-news1.js": [
+		"./components/block-other-news1.js",
+		20
+	],
+	"./block-related-news1": [
+		"./components/block-related-news1.js",
+		21
+	],
+	"./block-related-news1.js": [
+		"./components/block-related-news1.js",
+		21
+	],
+	"./block-sections1": [
+		"./components/block-sections1.js",
+		12
+	],
+	"./block-sections1.js": [
+		"./components/block-sections1.js",
+		12
+	],
+	"./block-weather1": [
+		"./components/block-weather1.js",
+		22
+	],
+	"./block-weather1.js": [
+		"./components/block-weather1.js",
+		22
 	],
 	"./components": [
 		"./components/components.js"
@@ -184,189 +336,13 @@ var map = {
 	"./components.js": [
 		"./components/components.js"
 	],
-	"./dataContext": [
-		"./components/dataContext.js",
-		14
-	],
-	"./dataContext.js": [
-		"./components/dataContext.js",
-		14
-	],
-	"./featured1": [
-		"./components/featured1.js",
-		15
-	],
-	"./featured1.js": [
-		"./components/featured1.js",
-		15
-	],
-	"./footer-mobile1": [
-		"./components/footer-mobile1.js",
-		16
-	],
-	"./footer-mobile1.js": [
-		"./components/footer-mobile1.js",
-		16
-	],
-	"./footer1": [
-		"./components/footer1.js",
-		4
-	],
-	"./footer1.js": [
-		"./components/footer1.js",
-		4
-	],
-	"./front1": [
-		"./components/front1.js",
-		5
-	],
-	"./front1.js": [
-		"./components/front1.js",
-		5
-	],
-	"./front2": [
-		"./components/front2.js",
-		6
-	],
-	"./front2.js": [
-		"./components/front2.js",
-		6
-	],
-	"./galleries1": [
-		"./components/galleries1.js",
-		26
-	],
-	"./galleries1.js": [
-		"./components/galleries1.js",
-		26
-	],
-	"./header-mobile1": [
-		"./components/header-mobile1.js",
-		17
-	],
-	"./header-mobile1.js": [
-		"./components/header-mobile1.js",
-		17
-	],
-	"./header1": [
-		"./components/header1.js",
-		3
-	],
-	"./header1.js": [
-		"./components/header1.js",
-		3
-	],
-	"./latest1": [
-		"./components/latest1.js",
-		7
-	],
-	"./latest1.js": [
-		"./components/latest1.js",
-		7
-	],
-	"./menu1": [
-		"./components/menu1.js",
-		18
-	],
-	"./menu1.js": [
-		"./components/menu1.js",
-		18
-	],
-	"./most-viewed1": [
-		"./components/most-viewed1.js",
-		8
-	],
-	"./most-viewed1.js": [
-		"./components/most-viewed1.js",
-		8
-	],
-	"./multimedia1": [
-		"./components/multimedia1.js",
-		19
-	],
-	"./multimedia1.js": [
-		"./components/multimedia1.js",
-		19
-	],
-	"./news-header1": [
-		"./components/news-header1.js",
-		20
-	],
-	"./news-header1.js": [
-		"./components/news-header1.js",
-		20
-	],
-	"./news-mobile1": [
-		"./components/news-mobile1.js",
-		0
-	],
-	"./news-mobile1.js": [
-		"./components/news-mobile1.js",
-		0
-	],
-	"./news1": [
-		"./components/news1.js",
-		1
-	],
-	"./news1.js": [
-		"./components/news1.js",
-		1
-	],
-	"./news2": [
-		"./components/news2.js",
-		2
-	],
-	"./news2.js": [
-		"./components/news2.js",
-		2
-	],
 	"./newsBlock": [
 		"./components/newsBlock.js",
-		21
+		23
 	],
 	"./newsBlock.js": [
 		"./components/newsBlock.js",
-		21
-	],
-	"./opinion1": [
-		"./components/opinion1.js",
-		22
-	],
-	"./opinion1.js": [
-		"./components/opinion1.js",
-		22
-	],
-	"./other-news1": [
-		"./components/other-news1.js",
 		23
-	],
-	"./other-news1.js": [
-		"./components/other-news1.js",
-		23
-	],
-	"./related-news1": [
-		"./components/related-news1.js",
-		24
-	],
-	"./related-news1.js": [
-		"./components/related-news1.js",
-		24
-	],
-	"./sections1": [
-		"./components/sections1.js",
-		9
-	],
-	"./sections1.js": [
-		"./components/sections1.js",
-		9
-	],
-	"./weather1": [
-		"./components/weather1.js",
-		25
-	],
-	"./weather1.js": [
-		"./components/weather1.js",
-		25
 	]
 };
 function webpackAsyncContext(req) {
@@ -403,62 +379,56 @@ var map = {
 	"./MyLayout.js": "./components/MyLayout.js",
 	"./Template": "./components/Template.js",
 	"./Template.js": "./components/Template.js",
-	"./TemplateOLD": "./components/TemplateOLD.js",
-	"./TemplateOLD.js": "./components/TemplateOLD.js",
-	"./adv": "./components/adv.js",
-	"./adv.js": "./components/adv.js",
-	"./adv2": "./components/adv2.js",
-	"./adv2.js": "./components/adv2.js",
-	"./bares": "./components/bares.js",
-	"./bares.js": "./components/bares.js",
+	"./XXXdataContext": "./components/XXXdataContext.js",
+	"./XXXdataContext.js": "./components/XXXdataContext.js",
+	"./block-adv": "./components/block-adv.js",
+	"./block-adv.js": "./components/block-adv.js",
+	"./block-featured1": "./components/block-featured1.js",
+	"./block-featured1.js": "./components/block-featured1.js",
+	"./block-footer-mobile1": "./components/block-footer-mobile1.js",
+	"./block-footer-mobile1.js": "./components/block-footer-mobile1.js",
+	"./block-footer1": "./components/block-footer1.js",
+	"./block-footer1.js": "./components/block-footer1.js",
+	"./block-front1": "./components/block-front1.js",
+	"./block-front1.js": "./components/block-front1.js",
+	"./block-front2": "./components/block-front2.js",
+	"./block-front2.js": "./components/block-front2.js",
+	"./block-galleries1": "./components/block-galleries1.js",
+	"./block-galleries1.js": "./components/block-galleries1.js",
+	"./block-header-mobile1": "./components/block-header-mobile1.js",
+	"./block-header-mobile1.js": "./components/block-header-mobile1.js",
+	"./block-header1": "./components/block-header1.js",
+	"./block-header1.js": "./components/block-header1.js",
+	"./block-latest1": "./components/block-latest1.js",
+	"./block-latest1.js": "./components/block-latest1.js",
+	"./block-menu1": "./components/block-menu1.js",
+	"./block-menu1.js": "./components/block-menu1.js",
+	"./block-most-viewed1": "./components/block-most-viewed1.js",
+	"./block-most-viewed1.js": "./components/block-most-viewed1.js",
+	"./block-multimedia1": "./components/block-multimedia1.js",
+	"./block-multimedia1.js": "./components/block-multimedia1.js",
+	"./block-news-header1": "./components/block-news-header1.js",
+	"./block-news-header1.js": "./components/block-news-header1.js",
+	"./block-news-mobile1": "./components/block-news-mobile1.js",
+	"./block-news-mobile1.js": "./components/block-news-mobile1.js",
+	"./block-news1": "./components/block-news1.js",
+	"./block-news1.js": "./components/block-news1.js",
+	"./block-news2": "./components/block-news2.js",
+	"./block-news2.js": "./components/block-news2.js",
+	"./block-opinion1": "./components/block-opinion1.js",
+	"./block-opinion1.js": "./components/block-opinion1.js",
+	"./block-other-news1": "./components/block-other-news1.js",
+	"./block-other-news1.js": "./components/block-other-news1.js",
+	"./block-related-news1": "./components/block-related-news1.js",
+	"./block-related-news1.js": "./components/block-related-news1.js",
+	"./block-sections1": "./components/block-sections1.js",
+	"./block-sections1.js": "./components/block-sections1.js",
+	"./block-weather1": "./components/block-weather1.js",
+	"./block-weather1.js": "./components/block-weather1.js",
 	"./components": "./components/components.js",
 	"./components.js": "./components/components.js",
-	"./dataContext": "./components/dataContext.js",
-	"./dataContext.js": "./components/dataContext.js",
-	"./featured1": "./components/featured1.js",
-	"./featured1.js": "./components/featured1.js",
-	"./footer-mobile1": "./components/footer-mobile1.js",
-	"./footer-mobile1.js": "./components/footer-mobile1.js",
-	"./footer1": "./components/footer1.js",
-	"./footer1.js": "./components/footer1.js",
-	"./front1": "./components/front1.js",
-	"./front1.js": "./components/front1.js",
-	"./front2": "./components/front2.js",
-	"./front2.js": "./components/front2.js",
-	"./galleries1": "./components/galleries1.js",
-	"./galleries1.js": "./components/galleries1.js",
-	"./header-mobile1": "./components/header-mobile1.js",
-	"./header-mobile1.js": "./components/header-mobile1.js",
-	"./header1": "./components/header1.js",
-	"./header1.js": "./components/header1.js",
-	"./latest1": "./components/latest1.js",
-	"./latest1.js": "./components/latest1.js",
-	"./menu1": "./components/menu1.js",
-	"./menu1.js": "./components/menu1.js",
-	"./most-viewed1": "./components/most-viewed1.js",
-	"./most-viewed1.js": "./components/most-viewed1.js",
-	"./multimedia1": "./components/multimedia1.js",
-	"./multimedia1.js": "./components/multimedia1.js",
-	"./news-header1": "./components/news-header1.js",
-	"./news-header1.js": "./components/news-header1.js",
-	"./news-mobile1": "./components/news-mobile1.js",
-	"./news-mobile1.js": "./components/news-mobile1.js",
-	"./news1": "./components/news1.js",
-	"./news1.js": "./components/news1.js",
-	"./news2": "./components/news2.js",
-	"./news2.js": "./components/news2.js",
 	"./newsBlock": "./components/newsBlock.js",
-	"./newsBlock.js": "./components/newsBlock.js",
-	"./opinion1": "./components/opinion1.js",
-	"./opinion1.js": "./components/opinion1.js",
-	"./other-news1": "./components/other-news1.js",
-	"./other-news1.js": "./components/other-news1.js",
-	"./related-news1": "./components/related-news1.js",
-	"./related-news1.js": "./components/related-news1.js",
-	"./sections1": "./components/sections1.js",
-	"./sections1.js": "./components/sections1.js",
-	"./weather1": "./components/weather1.js",
-	"./weather1.js": "./components/weather1.js"
+	"./newsBlock.js": "./components/newsBlock.js"
 };
 
 
@@ -631,7 +601,7 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 // https://nextjs.org/docs/advanced-features/dynamic-import
 // this should come from Config.json
 
-const blockList = ['adv', 'header1', 'header-mobile1', 'news1', 'news2', 'news-mobile1', 'news-header1', 'other-news1', 'related-news1', 'most-viewed1', 'featured1', 'footer1', 'footer-mobile1', 'front1', 'front2', 'opinion1', 'multimedia1', 'weather1', 'latest1', 'sections1', 'galleries1'];
+const blockList = ['block-adv', 'block-header1', 'block-header-mobile1', 'block-news1', 'block-news2', 'block-news-mobile1', 'block-news-header1', 'block-other-news1', 'block-related-news1', 'block-most-viewed1', 'block-featured1', 'block-footer1', 'block-footer-mobile1', 'block-front1', 'block-front2', 'block-opinion1', 'block-multimedia1', 'block-weather1', 'block-latest1', 'block-sections1', 'block-galleries1'];
 const ComponentsList = {};
 blockList.forEach((block, index) => {
   ComponentsList[block] = next_dynamic__WEBPACK_IMPORTED_MODULE_1___default()(() => __webpack_require__("./components lazy recursive ^\\.\\/.*$")(`./${block}`), {
@@ -3229,6 +3199,7 @@ const getTemplate = async (req, template, agent) => {
     setLoading();
     const tmpl = agent + '-' + template;
     const templateUrl = `https://data.joornalo.com/templates/news/${tmpl}.json`;
+    console.log(templateUrl);
     const res = await axios__WEBPACK_IMPORTED_MODULE_4___default.a.get(templateUrl);
     return res.data;
   } catch (err) {
@@ -3540,7 +3511,7 @@ const GET_FRONT = 'GET_FRONT';
 
 /***/ }),
 
-/***/ 3:
+/***/ 4:
 /*!******************************!*\
   !*** multi ./pages/index.js ***!
   \******************************/

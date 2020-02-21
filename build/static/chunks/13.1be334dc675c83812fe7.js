@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[13],{WxxT:function(e,n,a){"use strict";a.r(n);var t=a("q1tI"),l=a.n(t).a.createElement;n.default=function(e){e.data,e.text;return l("div",{className:"mobileHeader"},l("hr",null),l("h2",null,"Mobile Header1"))}}}]);

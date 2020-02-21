@@ -5,7 +5,7 @@
         {
           "components": [
             {
-              "id": "header1"
+              "id": "block-header1"
             }
           ],
           "width": "col-full"
@@ -17,7 +17,7 @@
         {
           "components": [
             {
-              "id": "adv",
+              "id": "block-adv",
               "size": "980x90"
             }
           ],
@@ -35,7 +35,7 @@
                 {
                   "components": [
                     {
-                      "id": "most-viewed1"
+                      "id": "block-most-viewed1"
                     }
                   ],
                   "width": "col-33"
@@ -43,7 +43,7 @@
                 {
                   "components": [
                     {
-                      "id": "front1"
+                      "id": "block-front1"
                     }
                   ],
                   "width": "col-66"
@@ -55,7 +55,7 @@
                 {
                   "components": [
                     {
-                      "id": "front2"
+                      "id": "block-front2"
                     }
                   ],
                   "width": "col-full"
@@ -67,7 +67,7 @@
                 {
                   "components": [
                     {
-                      "id": "latest1"
+                      "id": "block-latest1"
                     }
                   ],
                   "width": "col-25"
@@ -75,7 +75,7 @@
                 {
                   "components": [
                     {
-                      "id": "sections1"
+                      "id": "block-sections1"
                     }
                   ],
                   "width": "col-75"
@@ -88,27 +88,27 @@
           "width": "col-300 col-m-300 border-left",
           "components": [
             {
-              "id": "featured1"
+              "id": "block-featured1"
             },
             {
-              "id": "opinion1"
+              "id": "block-opinion1"
             },
             {
-              "id": "adv",
+              "id": "block-adv",
               "size": "300x250"
             },
             {
-              "id": "multimedia1"
+              "id": "block-multimedia1"
             },
             {
-              "id": "weather1"
+              "id": "block-weather1"
             },
             {
-              "id": "adv",
+              "id": "block-adv",
               "size": "300x250"
             },
             {
-              "id": "galleries1"
+              "id": "block-galleries1"
             }
           ]
         }
@@ -119,7 +119,7 @@
         {
           "components": [
             {
-              "id": "adv",
+              "id": "block-adv",
               "size": "980x90"
             }
           ],
@@ -132,7 +132,7 @@
         {
           "components": [
             {
-              "id": "footer1"
+              "id": "block-footer1"
             }
           ],
           "width": "col-full"

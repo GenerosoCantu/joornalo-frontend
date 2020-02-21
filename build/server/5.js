@@ -1,10 +1,10 @@
 exports.ids = [5];
 exports.modules = {
 
-/***/ "./components/front1.js":
-/*!******************************!*\
-  !*** ./components/front1.js ***!
-  \******************************/
+/***/ "./components/block-footer1.js":
+/*!*************************************!*\
+  !*** ./components/block-footer1.js ***!
+  \*************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -12,40 +12,163 @@ exports.modules = {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _newsBlock_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./newsBlock.js */ "./components/newsBlock.js");
-var _jsxFileName = "C:\\Projects\\DEVELOPMENT\\joornalo-frontend\\front.joornalo\\components\\front1.js";
+/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-redux */ "react-redux");
+/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_redux__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _block_menu1__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./block-menu1 */ "./components/block-menu1.js");
+var _jsxFileName = "C:\\Projects\\DEVELOPMENT\\joornalo-frontend\\front.joornalo\\components\\block-footer1.js";
+
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 
-const Front1 = ({
-  data
-}) => {
-  return __jsx("div", {
-    className: "front1 block",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 7
-    },
-    __self: undefined
-  }, __jsx(_newsBlock_js__WEBPACK_IMPORTED_MODULE_1__["default"], {
-    news: data.frontNews[0],
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 8
-    },
-    __self: undefined
-  }));
+const headerStyle = {
+  background: '#f01818'
+};
+const linkStyle = {
+  marginRight: 15
 };
 
-/* harmony default export */ __webpack_exports__["default"] = (Front1);
+const date = () => {
+  let days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'],
+      months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'],
+      date = new Date();
+  const displayDate = days[date.getDay()] + ', ' + months[date.getMonth()] + ' ' + date.getDate() + ', ' + date.getFullYear();
+  return displayDate;
+};
+
+const Footer1 = ({
+  menu
+}) => {
+  return (// <div style={headerStyle}>
+    //   <Link href="/">
+    //     <a style={linkStyle}>Home</a>
+    //   </Link>
+    //   <Link href="/about">
+    //     <a style={linkStyle}>About</a>
+    //   </Link>
+    // </div>
+    __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx("div", {
+      className: "header",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 65
+      },
+      __self: undefined
+    }, __jsx("div", {
+      className: "container-fluid desktop",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 66
+      },
+      __self: undefined
+    }, __jsx("div", {
+      className: "row",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 67
+      },
+      __self: undefined
+    }, __jsx("div", {
+      className: "col-250",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 68
+      },
+      __self: undefined
+    }, __jsx("div", {
+      className: "logo",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 69
+      },
+      __self: undefined
+    }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
+      href: "/",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 70
+      },
+      __self: undefined
+    }, __jsx("a", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 70
+      },
+      __self: undefined
+    }, "Joornalo")))), __jsx("div", {
+      className: "col-auto",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 74
+      },
+      __self: undefined
+    }), __jsx("div", {
+      className: "col-250",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 78
+      },
+      __self: undefined
+    }, __jsx("div", {
+      className: "row",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 79
+      },
+      __self: undefined
+    }, __jsx("div", {
+      className: "col",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 80
+      },
+      __self: undefined
+    }, __jsx("div", {
+      className: "search-box",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 81
+      },
+      __self: undefined
+    }))), __jsx("div", {
+      className: "row",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 88
+      },
+      __self: undefined
+    }, __jsx("div", {
+      className: "col",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 89
+      },
+      __self: undefined
+    }, __jsx("div", {
+      className: "date",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 90
+      },
+      __self: undefined
+    }, date()))))))))
+  );
+};
+
+const mapStateToProps = state => ({
+  menu: state.news.config['menu-header']
+});
+
+/* harmony default export */ __webpack_exports__["default"] = (Object(react_redux__WEBPACK_IMPORTED_MODULE_1__["connect"])(mapStateToProps)(Footer1));
 
 /***/ }),
 
-/***/ "./components/newsBlock.js":
-/*!*********************************!*\
-  !*** ./components/newsBlock.js ***!
-  \*********************************/
+/***/ "./components/block-menu1.js":
+/*!***********************************!*\
+  !*** ./components/block-menu1.js ***!
+  \***********************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -55,74 +178,93 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_1__);
-var _jsxFileName = "C:\\Projects\\DEVELOPMENT\\joornalo-frontend\\front.joornalo\\components\\newsBlock.js";
+var _jsxFileName = "C:\\Projects\\DEVELOPMENT\\joornalo-frontend\\front.joornalo\\components\\block-menu1.js";
+
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
-
-const NewsBlock = ({
-  news,
-  diaplayImage,
-  displayDesc
+const Menu = ({
+  items
 }) => {
-  let image = '',
-      desc = '';
-
-  if (typeof diaplayImage === 'undefined' || diaplayImage) {
-    image = __jsx("img", {
-      src: news.img,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 10
-      },
-      __self: undefined
-    });
-  }
-
-  if (typeof displayDesc === 'undefined' || displayDesc) {
-    desc = __jsx("div", {
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 13
-      },
-      __self: undefined
-    }, news.desc);
-  }
-
-  return __jsx("div", {
-    className: "NewsBlock",
+  return __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx("div", {
+    className: "row menu",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 16
+      lineNumber: 8
+    },
+    __self: undefined
+  }, __jsx("div", {
+    className: "col",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 9
+    },
+    __self: undefined
+  }, __jsx("ul", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 11
+    },
+    __self: undefined
+  }, items.map((item, index) => __jsx("li", {
+    key: index,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 14
     },
     __self: undefined
   }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-    href: news.url,
+    href: "{item.link}",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 17
+      lineNumber: 15
     },
     __self: undefined
   }, __jsx("a", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 18
+      lineNumber: 15
     },
     __self: undefined
-  }, image, __jsx("h2", {
+  }, item.text)), __jsx("div", {
+    hidden: !item.sub,
+    className: "bg",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 20
+      lineNumber: 17
     },
     __self: undefined
-  }, news.title), desc)));
+  }), __jsx("ol", {
+    hidden: !item.sub,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 19
+    },
+    __self: undefined
+  }, item.sub.map((sub, index0) => __jsx("li", {
+    key: index0,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 22
+    },
+    __self: undefined
+  }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+    href: "{sub.link}",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 23
+    },
+    __self: undefined
+  }, __jsx("a", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 23
+    },
+    __self: undefined
+  }, sub.text)))))))))));
 };
 
-const imageUrl = url => {
-  return 'https://data.joornalo.com' + url;
-};
-
-/* harmony default export */ __webpack_exports__["default"] = (NewsBlock);
+/* harmony default export */ __webpack_exports__["default"] = (Menu);
 
 /***/ })
 

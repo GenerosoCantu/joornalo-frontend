@@ -1,10 +1,10 @@
 exports.ids = [3];
 exports.modules = {
 
-/***/ "./components/adv.js":
-/*!***************************!*\
-  !*** ./components/adv.js ***!
-  \***************************/
+/***/ "./components/block-adv.js":
+/*!*********************************!*\
+  !*** ./components/block-adv.js ***!
+  \*********************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -12,7 +12,7 @@ exports.modules = {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-var _jsxFileName = "C:\\Projects\\DEVELOPMENT\\joornalo-frontend\\front.joornalo\\components\\adv.js";
+var _jsxFileName = "C:\\Projects\\DEVELOPMENT\\joornalo-frontend\\front.joornalo\\components\\block-adv.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
@@ -132,10 +132,10 @@ const Adv = context => {
 
 /***/ }),
 
-/***/ "./components/header1.js":
-/*!*******************************!*\
-  !*** ./components/header1.js ***!
-  \*******************************/
+/***/ "./components/block-header1.js":
+/*!*************************************!*\
+  !*** ./components/block-header1.js ***!
+  \*************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -147,9 +147,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_redux__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _menu1__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./menu1 */ "./components/menu1.js");
-/* harmony import */ var _adv__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./adv */ "./components/adv.js");
-var _jsxFileName = "C:\\Projects\\DEVELOPMENT\\joornalo-frontend\\front.joornalo\\components\\header1.js";
+/* harmony import */ var _block_menu1__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./block-menu1 */ "./components/block-menu1.js");
+/* harmony import */ var _block_adv__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./block-adv */ "./components/block-adv.js");
+var _jsxFileName = "C:\\Projects\\DEVELOPMENT\\joornalo-frontend\\front.joornalo\\components\\block-header1.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
@@ -240,7 +240,7 @@ const Header1 = ({
         lineNumber: 78
       },
       __self: undefined
-    }, __jsx(_adv__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    }, __jsx(_block_adv__WEBPACK_IMPORTED_MODULE_4__["default"], {
       params: AdParams,
       __source: {
         fileName: _jsxFileName,
@@ -319,7 +319,7 @@ const Header1 = ({
         lineNumber: 104
       },
       __self: undefined
-    }, __jsx(_menu1__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    }, __jsx(_block_menu1__WEBPACK_IMPORTED_MODULE_3__["default"], {
       items: menu,
       __source: {
         fileName: _jsxFileName,
@@ -338,10 +338,10 @@ const mapStateToProps = state => ({
 
 /***/ }),
 
-/***/ "./components/menu1.js":
-/*!*****************************!*\
-  !*** ./components/menu1.js ***!
-  \*****************************/
+/***/ "./components/block-menu1.js":
+/*!***********************************!*\
+  !*** ./components/block-menu1.js ***!
+  \***********************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -351,7 +351,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_1__);
-var _jsxFileName = "C:\\Projects\\DEVELOPMENT\\joornalo-frontend\\front.joornalo\\components\\menu1.js";
+var _jsxFileName = "C:\\Projects\\DEVELOPMENT\\joornalo-frontend\\front.joornalo\\components\\block-menu1.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 

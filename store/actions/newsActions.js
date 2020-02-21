@@ -12,6 +12,7 @@ const getTemplate = async (req, template, agent) => {
     const tmpl = agent + '-' + template;
     const templateUrl = `https://data.joornalo.com/templates/news/${tmpl}.json`;
 
+    console.log(templateUrl)
     const res = await axios.get(templateUrl);
 
     return res.data;

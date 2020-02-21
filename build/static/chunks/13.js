@@ -1,9 +1,9 @@
 (window["webpackJsonp"] = window["webpackJsonp"] || []).push([[13],{
 
-/***/ "./components/adv2.js":
-/*!****************************!*\
-  !*** ./components/adv2.js ***!
-  \****************************/
+/***/ "./components/block-sections1.js":
+/*!***************************************!*\
+  !*** ./components/block-sections1.js ***!
+  \***************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -11,130 +11,148 @@
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-var _jsxFileName = "C:\\Projects\\DEVELOPMENT\\joornalo-frontend\\front.joornalo\\components\\adv2.js";
+/* harmony import */ var _newsBlock_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./newsBlock.js */ "./components/newsBlock.js");
+var _jsxFileName = "C:\\Projects\\DEVELOPMENT\\joornalo-frontend\\front.joornalo\\components\\block-sections1.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
-var Adv2 = function Adv2(context) {
-  console.log('Adv****************');
 
-  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])('---'),
-      msg = _useState[0],
-      setMsg = _useState[1];
-
-  var _useState2 = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(null),
-      id = _useState2[0],
-      setId = _useState2[1];
-
-  var _useState3 = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(null),
-      first = _useState3[0],
-      setFirst = _useState3[1];
-
-  var _useState4 = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(null),
-      adsrc = _useState4[0],
-      setAdsrc = _useState4[1]; // const [contentWidth, setContentWidth] = useState(0)
-
-
-  var loaded = false;
-  var isIntersecting = false; // let banner = ''
-  // if (context.params) {
-  //   banner = context.params.size;
-  // }
-
-  /*
-  300x250 - Medium Rectangle - 40%
-  728x90 - Leaderboard - 25%
-  160x600 - Wide Skyscraper - 12%
-  300x600 - Half Page - 5%
-  970x250 - Billboard - 1%
-  120x600 - Skyscraper
-    320x50 - Mobile Leaderboard - 12%
-  320x320 - Mobile Full Page Flex - 1%
-  320x100 - Large Mobile
-  */
-
-  Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(function () {
-    console.log('useEffect...............................', id);
-
-    if (!id) {
-      setId('adv' + Math.round(Math.random() * 100000));
-      console.log('setId...............................', id);
-    }
-
-    if (!first && id) {
-      console.log('first****************************', id);
-      setFirst(true);
-      var div = document.getElementById(id);
-
-      if (div) {
-        // setContentWidth(div.offsetWidth)
-        try {
-          var observer = new IntersectionObserver(function (entries, observerChild) {
-            if (!loaded && entries[0].isIntersecting) {
-              loaded = true;
-              isIntersecting = true;
-              observerChild.unobserve(entries[0].target);
-              preLoad();
-            }
-          });
-          observer.observe(div);
-        } catch (err) {
-          safariIssue();
-        }
-      }
-    }
-  });
-
-  var safariIssue = function safariIssue() {
-    if (!loaded) {
-      loaded = true;
-      isIntersecting = true;
-      preLoad();
-    }
-  };
-  /*
-  300x250 - Medium Rectangle - 40%
-  728x90 - Leaderboard - 25%
-  160x600 - Wide Skyscraper - 12%
-  300x600 - Half Page - 5%
-  120x600 - Skyscraper
-    970x250 - Billboard - 1%
-  */
-
-
-  var preLoad = function preLoad() {
-    console.log('Ready to load...............................', id);
-
-    if (isIntersecting) {
-      setMsg('Loaded');
-      var num = Math.floor(Math.random() * 4);
-      var bb = ['a', 'b', 'c', 'd'];
-      setAdsrc('https://data.joornalo.com/ads/' + context.params.size + bb[num] + '.jpg');
-    }
-  };
-
+var Sections1 = function Sections1(_ref) {
+  var data = _ref.data;
   return __jsx("div", {
-    className: "adv eureka",
-    id: id,
+    className: "sections1 block",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 93
+      lineNumber: 6
     },
     __self: this
-  }, __jsx("img", {
-    src: adsrc,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 94
-    },
-    __self: this
+  }, data.sectionNews.map(function (section, index) {
+    return __jsx("div", {
+      key: index,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 8
+      },
+      __self: this
+    }, __jsx("div", {
+      className: "blockheader",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 9
+      },
+      __self: this
+    }, __jsx("span", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 9
+      },
+      __self: this
+    }, section.section)), __jsx("div", {
+      className: "row",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 10
+      },
+      __self: this
+    }, section.news.map(function (news, index0) {
+      return __jsx(_newsBlock_js__WEBPACK_IMPORTED_MODULE_1__["default"], {
+        news: news,
+        displayDesc: false,
+        key: index0,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 12
+        },
+        __self: this
+      });
+    })));
   }));
 };
 
-{
-  /* Ad {banner} ({contentWidth}): {msg} */
-}
-/* harmony default export */ __webpack_exports__["default"] = (Adv2);
+/* harmony default export */ __webpack_exports__["default"] = (Sections1);
+
+/***/ }),
+
+/***/ "./components/newsBlock.js":
+/*!*********************************!*\
+  !*** ./components/newsBlock.js ***!
+  \*********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_1__);
+var _jsxFileName = "C:\\Projects\\DEVELOPMENT\\joornalo-frontend\\front.joornalo\\components\\newsBlock.js";
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
+
+
+var NewsBlock = function NewsBlock(_ref) {
+  var news = _ref.news,
+      diaplayImage = _ref.diaplayImage,
+      displayDesc = _ref.displayDesc;
+  var image = '',
+      desc = '';
+
+  if (typeof diaplayImage === 'undefined' || diaplayImage) {
+    image = __jsx("img", {
+      src: news.img,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 10
+      },
+      __self: this
+    });
+  }
+
+  if (typeof displayDesc === 'undefined' || displayDesc) {
+    desc = __jsx("div", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 13
+      },
+      __self: this
+    }, news.desc);
+  }
+
+  return __jsx("div", {
+    className: "NewsBlock",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 16
+    },
+    __self: this
+  }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+    href: news.url,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 17
+    },
+    __self: this
+  }, __jsx("a", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 18
+    },
+    __self: this
+  }, image, __jsx("h2", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 20
+    },
+    __self: this
+  }, news.title), desc)));
+};
+
+var imageUrl = function imageUrl(url) {
+  return 'https://data.joornalo.com' + url;
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (NewsBlock);
 
 /***/ })
 

@@ -1,10 +1,10 @@
 exports.ids = [8];
 exports.modules = {
 
-/***/ "./components/most-viewed1.js":
-/*!************************************!*\
-  !*** ./components/most-viewed1.js ***!
-  \************************************/
+/***/ "./components/block-galleries1.js":
+/*!****************************************!*\
+  !*** ./components/block-galleries1.js ***!
+  \****************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -12,99 +12,48 @@ exports.modules = {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-redux */ "react-redux");
-/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_redux__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _newsBlock_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./newsBlock.js */ "./components/newsBlock.js");
-var _jsxFileName = "C:\\Projects\\DEVELOPMENT\\joornalo-frontend\\front.joornalo\\components\\most-viewed1.js";
+/* harmony import */ var _newsBlock_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./newsBlock.js */ "./components/newsBlock.js");
+var _jsxFileName = "C:\\Projects\\DEVELOPMENT\\joornalo-frontend\\front.joornalo\\components\\block-galleries1.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 
-
-
-const MostViewed1 = ({
-  topNews
+const Galleries1 = ({
+  data
 }) => {
-  if (!topNews) return null;
   return __jsx("div", {
-    className: "most-viewed block",
+    className: "galleries1 block",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 9
+      lineNumber: 6
     },
     __self: undefined
   }, __jsx("div", {
     className: "blockheader",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 10
+      lineNumber: 7
     },
     __self: undefined
   }, __jsx("span", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 10
+      lineNumber: 7
     },
     __self: undefined
-  }, "Most Viewed")), __jsx("ul", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 11
-    },
-    __self: undefined
-  }, topNews.map((news, index) => __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
-    href: news.url,
+  }, "Galleries")), data.galleries.map((news, index) => __jsx(_newsBlock_js__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    news: news,
+    displayDesc: false,
     key: index,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 13
+      lineNumber: 9
     },
     __self: undefined
-  }, __jsx("li", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 14
-    },
-    __self: undefined
-  }, __jsx("span", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 15
-    },
-    __self: undefined
-  }, index + 1), __jsx("div", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 16
-    },
-    __self: undefined
-  }, index == 0 ? __jsx("img", {
-    src: news.img,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 17
-    },
-    __self: undefined
-  }) : null, __jsx("a", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 18
-    },
-    __self: undefined
-  }, news.title)))))));
+  })));
 };
 
-const imageUrl = url => {
-  return 'https://data.joornalo.com' + url;
-};
-
-const mapStateToProps = state => ({
-  topNews: state.news.topNews
-});
-
-/* harmony default export */ __webpack_exports__["default"] = (Object(react_redux__WEBPACK_IMPORTED_MODULE_1__["connect"])(mapStateToProps)(MostViewed1));
+/* harmony default export */ __webpack_exports__["default"] = (Galleries1);
 
 /***/ }),
 

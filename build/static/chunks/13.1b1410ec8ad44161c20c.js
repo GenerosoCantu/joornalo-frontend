@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[13],{Usrw:function(n,e,t){"use strict";t.r(e);var a=t("q1tI"),r=t.n(a),s=t("k5hG"),o=r.a.createElement;e.default=function(n){var e=n.data;return o("div",{className:"front1 block"},o(s.default,{news:e.frontNews[0]}))}}}]);
