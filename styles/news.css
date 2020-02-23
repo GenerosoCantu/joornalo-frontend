@@ -94,6 +94,10 @@ blockquote.twitter-tweet {
   font-size: 1.2rem;
 }
 
+[agent="mobile"] .front1 .NewsBlock .desc {
+  display: none;
+}
+
 .front2 {
   display: flex;
   margin: 0 -0.5rem;
@@ -103,6 +107,17 @@ blockquote.twitter-tweet {
   flex: 1;
   padding: 0 0.5rem;
 }
+
+[agent="mobile"] .front2 {
+  flex-wrap: wrap;
+}
+
+
+[agent="mobile"] .front2 .NewsBlock {
+  width: 50%;
+  min-width: 50%;
+}
+
 
 
 /* Top News */
@@ -196,6 +211,18 @@ blockquote.twitter-tweet {
   padding: 0 1rem;
 }
 
+[agent="mobile"] .sections1 .NewsBlock a {
+  display: flex;
+  margin-bottom: 1rem;
+}
+
+[agent="mobile"] .sections1 .NewsBlock img {
+  margin-right: 15px;
+  width: 130px;
+}
+
+
+
 /* Opinion1 */
 
 .opinion1 ol {
@@ -265,4 +292,18 @@ blockquote.twitter-tweet {
 .featured1 .NewsBlock h2,
 .galleries1 .NewsBlock h2 {
   color: #fff;
+}
+
+[agent="mobile"] .featured1 .NewsBlock .img {
+  position: relative;
+  padding-top: 55%;
+  overflow: hidden;
+}
+
+[agent="mobile"] .featured1 .NewsBlock img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
 }

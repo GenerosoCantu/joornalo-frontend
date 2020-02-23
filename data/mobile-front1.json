@@ -1,0 +1,67 @@
+{
+  "rows": [
+    {
+      "column": [
+        {
+          "components": [
+            {
+              "id": "block-header-mobile1"
+            }
+          ],
+          "width": "col-band"
+        }
+      ]
+    },
+    {
+      "column": [
+        {
+          "components": [
+            {
+              "id": "block-front1"
+            },
+            {
+              "id": "block-front2"
+            },
+            {
+              "id": "block-adv",
+              "size": "300x250"
+            },
+            {
+              "id": "block-most-viewed1"
+            },
+            {
+              "id": "block-featured1"
+            },
+            {
+              "id": "block-adv",
+              "size": "300x250"
+            },
+            {
+              "id": "block-sections1"
+            },
+            {
+              "id": "block-opinion1"
+            },
+            {
+              "id": "block-multimedia1"
+            },
+            {
+              "id": "block-weather1"
+            },
+            {
+              "id": "block-adv",
+              "size": "300x250"
+            },
+            {
+              "id": "block-galleries1"
+            },
+            {
+              "id": "block-footer-mobile1"
+            }
+          ],
+          "width": "col-full"
+        }
+      ]
+    }
+  ]
+}

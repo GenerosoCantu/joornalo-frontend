@@ -31,17 +31,17 @@
     "byName": {
       "init-server.js": 24,
       "on-error-server.js": 25,
-      "static\\9EH0VFLx6TtmkXYUMM6cs\\pages\\_app.js": 26,
-      "static\\9EH0VFLx6TtmkXYUMM6cs\\pages\\_document.js": 27,
-      "static\\9EH0VFLx6TtmkXYUMM6cs\\pages\\_error.js": 28,
-      "static\\9EH0VFLx6TtmkXYUMM6cs\\pages\\about.js": 29,
-      "static\\9EH0VFLx6TtmkXYUMM6cs\\pages\\index.js": 30,
-      "static\\9EH0VFLx6TtmkXYUMM6cs\\pages\\news\\[news].js": 31,
-      "static\\9EH0VFLx6TtmkXYUMM6cs\\pages\\notfound.js": 32,
-      "static\\9EH0VFLx6TtmkXYUMM6cs\\pages\\section\\[section].js": 33,
-      "static\\9EH0VFLx6TtmkXYUMM6cs\\pages\\section\\[section]\\[date].js": 34,
-      "static\\9EH0VFLx6TtmkXYUMM6cs\\pages\\section\\[section]\\[date]\\[id].js": 35,
-      "static\\9EH0VFLx6TtmkXYUMM6cs\\pages\\store.js": 36
+      "static\\i3Nvpu5w5cDoSj1ZJygw4\\pages\\_app.js": 26,
+      "static\\i3Nvpu5w5cDoSj1ZJygw4\\pages\\_document.js": 27,
+      "static\\i3Nvpu5w5cDoSj1ZJygw4\\pages\\_error.js": 28,
+      "static\\i3Nvpu5w5cDoSj1ZJygw4\\pages\\about.js": 29,
+      "static\\i3Nvpu5w5cDoSj1ZJygw4\\pages\\index.js": 30,
+      "static\\i3Nvpu5w5cDoSj1ZJygw4\\pages\\news\\[news].js": 31,
+      "static\\i3Nvpu5w5cDoSj1ZJygw4\\pages\\notfound.js": 32,
+      "static\\i3Nvpu5w5cDoSj1ZJygw4\\pages\\section\\[section].js": 33,
+      "static\\i3Nvpu5w5cDoSj1ZJygw4\\pages\\section\\[section]\\[date].js": 34,
+      "static\\i3Nvpu5w5cDoSj1ZJygw4\\pages\\section\\[section]\\[date]\\[id].js": 35,
+      "static\\i3Nvpu5w5cDoSj1ZJygw4\\pages\\store.js": 36
     },
     "bySource": {
       "0 components lazy /^\\.\\/.*$/ groupOptions: {} namespace object ./block-news-mobile1": 0,

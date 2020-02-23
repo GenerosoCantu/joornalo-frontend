@@ -220,7 +220,7 @@ var news1 = function news1(_ref) {
       lineNumber: 67
     },
     __self: this
-  }, __jsx("h1", {
+  }, __jsx("h2", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 68

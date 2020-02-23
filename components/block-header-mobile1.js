@@ -1,8 +1,26 @@
 import React from "react";
 
-export default ({ data, text }) => (
-  <div className="mobileHeader">
-    <hr />
-    <h2>Mobile Header1</h2>
-  </div>
-);
+const headerMobile = ({ data }) => {
+
+  function mobileMenu() {
+    console.log('Click!');
+  }
+
+  return (
+    <div className="mobileHeader">
+
+      <div className="menu" onClick={mobileMenu}></div>
+
+      <div className="logo">
+        <a href="/"></a>
+      </div>
+
+      <a className="search" href="search"></a>
+
+      {/* <block-menu-mobile show="{{ showMenu }}" menu="[[menu]]"></block-menu-mobile> */}
+
+    </div>
+  )
+}
+
+export default headerMobile;

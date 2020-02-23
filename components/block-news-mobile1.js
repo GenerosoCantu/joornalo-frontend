@@ -65,7 +65,7 @@ const news1 = ({ data }) => {
 
   return (
     <div className="news">
-      <h1>{data.title}</h1>
+      <h2>{data.title}</h2>
       <img src={mainImgUrl} />
       <div className="row">
         <div className="col-12">

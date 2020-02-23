@@ -14,30 +14,55 @@ __webpack_require__.r(__webpack_exports__);
 var _jsxFileName = "C:\\Projects\\DEVELOPMENT\\joornalo-frontend\\front.joornalo\\components\\block-header-mobile1.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
-/* harmony default export */ __webpack_exports__["default"] = (function (_ref) {
-  var data = _ref.data,
-      text = _ref.text;
+
+var headerMobile = function headerMobile(_ref) {
+  var data = _ref.data;
+
+  function mobileMenu() {
+    console.log('Click!');
+  }
+
   return __jsx("div", {
     className: "mobileHeader",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 4
+      lineNumber: 10
     },
     __self: this
-  }, __jsx("hr", {
+  }, __jsx("div", {
+    className: "menu",
+    onClick: mobileMenu,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 5
+      lineNumber: 12
     },
     __self: this
-  }), __jsx("h2", {
+  }), __jsx("div", {
+    className: "logo",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 6
+      lineNumber: 14
     },
     __self: this
-  }, "Mobile Header1"));
-});
+  }, __jsx("a", {
+    href: "/",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 15
+    },
+    __self: this
+  })), __jsx("a", {
+    className: "search",
+    href: "search",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 18
+    },
+    __self: this
+  }));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (headerMobile);
 
 /***/ })
 

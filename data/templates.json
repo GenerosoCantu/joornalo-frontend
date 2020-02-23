@@ -213,7 +213,7 @@
                 "id": "block-header-mobile1"
               }
             ],
-            "width": "col-full"
+            "width": "col-band"
           },
           {
             "components": [
@@ -254,7 +254,7 @@
                 "id": "block-header-mobile1"
               }
             ],
-            "width": "col-full"
+            "width": "col-band"
           },
           {
             "components": [

@@ -16,9 +16,13 @@ const NewsBlock = ({ news, diaplayImage, displayDesc }) => {
     <div className="NewsBlock">
       <Link href={news.url}>
         <a>
-          {image}
+          <div className="img">
+            {image}
+          </div>
           <h2>{news.title}</h2>
-          {desc}
+          <div className="desc">
+            {desc}
+          </div>
         </a>
       </Link>
     </div>

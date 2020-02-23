@@ -1,21 +1,4 @@
 {
-  "mini-css-extract-plugin node_modules/@zeit/next-css/node_modules/css-loader/index.js??ref--5-1!styles/header.css": [
-    {
-      "modules": {
-        "byIdentifier": {},
-        "usedIds": {}
-      },
-      "chunks": {
-        "byName": {
-          "mini-css-extract-plugin": 0
-        },
-        "bySource": {},
-        "usedIds": [
-          0
-        ]
-      }
-    }
-  ],
   "mini-css-extract-plugin node_modules/@zeit/next-css/node_modules/css-loader/index.js??ref--5-1!styles/global.css": [
     {
       "modules": {
@@ -50,6 +33,23 @@
       }
     }
   ],
+  "mini-css-extract-plugin node_modules/@zeit/next-css/node_modules/css-loader/index.js??ref--5-1!styles/header.css": [
+    {
+      "modules": {
+        "byIdentifier": {},
+        "usedIds": {}
+      },
+      "chunks": {
+        "byName": {
+          "mini-css-extract-plugin": 0
+        },
+        "bySource": {},
+        "usedIds": [
+          0
+        ]
+      }
+    }
+  ],
   "modules": {
     "byIdentifier": {
       "css node_modules/@zeit/next-css/node_modules/css-loader/index.js??ref--5-1!styles/global.css 0": 0,
@@ -68,16 +68,16 @@
       "static/runtime/webpack.js": 1,
       "static/runtime/main.js": 24,
       "static/runtime/polyfills.js": 25,
-      "static\\9EH0VFLx6TtmkXYUMM6cs\\pages\\_app.js": 26,
-      "static\\9EH0VFLx6TtmkXYUMM6cs\\pages\\_error.js": 27,
-      "static\\9EH0VFLx6TtmkXYUMM6cs\\pages\\about.js": 28,
-      "static\\9EH0VFLx6TtmkXYUMM6cs\\pages\\index.js": 29,
-      "static\\9EH0VFLx6TtmkXYUMM6cs\\pages\\news\\[news].js": 30,
-      "static\\9EH0VFLx6TtmkXYUMM6cs\\pages\\notfound.js": 31,
-      "static\\9EH0VFLx6TtmkXYUMM6cs\\pages\\section\\[section].js": 32,
-      "static\\9EH0VFLx6TtmkXYUMM6cs\\pages\\section\\[section]\\[date].js": 33,
-      "static\\9EH0VFLx6TtmkXYUMM6cs\\pages\\section\\[section]\\[date]\\[id].js": 34,
-      "static\\9EH0VFLx6TtmkXYUMM6cs\\pages\\store.js": 35,
+      "static\\i3Nvpu5w5cDoSj1ZJygw4\\pages\\_app.js": 26,
+      "static\\i3Nvpu5w5cDoSj1ZJygw4\\pages\\_error.js": 27,
+      "static\\i3Nvpu5w5cDoSj1ZJygw4\\pages\\about.js": 28,
+      "static\\i3Nvpu5w5cDoSj1ZJygw4\\pages\\index.js": 29,
+      "static\\i3Nvpu5w5cDoSj1ZJygw4\\pages\\news\\[news].js": 30,
+      "static\\i3Nvpu5w5cDoSj1ZJygw4\\pages\\notfound.js": 31,
+      "static\\i3Nvpu5w5cDoSj1ZJygw4\\pages\\section\\[section].js": 32,
+      "static\\i3Nvpu5w5cDoSj1ZJygw4\\pages\\section\\[section]\\[date].js": 33,
+      "static\\i3Nvpu5w5cDoSj1ZJygw4\\pages\\section\\[section]\\[date]\\[id].js": 34,
+      "static\\i3Nvpu5w5cDoSj1ZJygw4\\pages\\store.js": 35,
       "styles": 36
     },
     "bySource": {

@@ -175,13 +175,27 @@ var NewsBlock = function NewsBlock(_ref) {
       lineNumber: 18
     },
     __self: this
-  }, image, __jsx("h2", {
+  }, __jsx("div", {
+    className: "img",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 20
+      lineNumber: 19
     },
     __self: this
-  }, news.title), desc)));
+  }, image), __jsx("h2", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 22
+    },
+    __self: this
+  }, news.title), __jsx("div", {
+    className: "desc",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 23
+    },
+    __self: this
+  }, desc))));
 };
 
 var imageUrl = function imageUrl(url) {

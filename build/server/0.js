@@ -222,7 +222,7 @@ const news1 = ({
       lineNumber: 67
     },
     __self: undefined
-  }, __jsx("h1", {
+  }, __jsx("h2", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 68

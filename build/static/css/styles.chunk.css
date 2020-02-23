@@ -40,7 +40,30 @@
     -webkit-font-smoothing: antialiased;
   }
 
+  \--joornalo-icon: {
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
 }
+
+/* @font-face {
+  font-family: 'icomoon';
+  src: url('./fonts/icomoon.eot?rj0a2s');
+  src: url('./fonts/icomoon.eot?rj0a2s#iefix') format('embedded-opentype'),
+    url('./fonts/icomoon.ttf?rj0a2s') format('truetype'),
+    url('./fonts/icomoon.woff?rj0a2s') format('woff'),
+    url('./fonts/icomoon.svg?rj0a2s#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+} */
 
 
 
@@ -241,6 +264,14 @@ html,
   max-width: none
 } */
 
+.col-band {
+  flex: 1 0 100%;
+  max-width: 100%;
+  padding: 0;
+  margin-bottom: 60px;
+}
+
+
 .col-full {
   flex: 1 0 100%;
   max-width: 100%
@@ -362,7 +393,7 @@ html,
   padding: 0;
 }
 
-.desktop .logo a {
+.logo a {
   display: block;
   width: 100%;
   height: 110px;
@@ -370,6 +401,37 @@ html,
   background-size: 90% auto;
   text-indent: -1000px;
   z-index: 10;
+}
+
+.headerMobile {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  display: flex;
+  height: 51px;
+  opacity: 1;
+  background: #fff;
+  border-bottom: 1px solid #ccc;
+}
+
+.mobileHeader .menu {
+  width: 54px;
+}
+
+.mobileHeader .logo {
+  flex: 1;
+  padding: 0;
+}
+
+.mobileHeader .logo a {
+  width: 100%;
+  height: 50px;
+  background-size: 100% 20px;
+  background-position: 20px 7px;
+  display: block;
+  height: 50px;
+  background-size: 150px;
 }
 
 .search-box {
@@ -416,7 +478,7 @@ input:-webkit-autofill {
   height: 60px;
 }
 
-.headerMobile {
+.mobileHeader {
   position: fixed;
   top: 0;
   width: 100%;
@@ -429,29 +491,19 @@ input:-webkit-autofill {
   border-bottom: 1px solid #ccc;
 }
 
-.headerMobile .menu {
+.mobileHeader .menu {
   width: 54px;
 }
 
-.headerMobile .logo {
-  flex: 1;
-  padding: 0;
-}
 
-.headerMobile .logo a {
-  width: 100%;
-  height: 50px;
-  background-size: 100% 20px;
-  background-position: 22px 15px;
-}
 
-.headerMobile .search {
+.mobileHeader .search {
   width: 54px;
   text-align: right;
 }
 
-.headerMobile .menu,
-.headerMobile .search {
+.mobileHeader .menu,
+.mobileHeader .search {
   @apply --joornalo-icon;
   cursor: pointer;
   color: #fff;
@@ -459,7 +511,7 @@ input:-webkit-autofill {
   padding-top: 0.8rem;
 }
 
-.headerMobile .menu:before {
+.mobileHeader .menu:before {
   content: '\E9BD';
   padding-left: 0.8rem;
   color: #888;
@@ -467,24 +519,12 @@ input:-webkit-autofill {
   font-size: 24px;
 }
 
-.headerMobile .search:before {
+.mobileHeader .search:before {
   content: '\E986';
   padding-right: 0.8rem;
   color: #888;
   line-height: 1.8rem;
 }
-
-.headerMobile .logo a {
-  display: block;
-  /*width: 460px;*/
-  height: 50px;
-  /* background: url(../../../images/msnoticias.gif) no-repeat 16px top; */
-  background-size: 100px;
-}
-
-/* .headerBanner {
-  margin: 0.6rem 0;
-} */
 
 .advMobile {
   margin: 0 0 0.5rem;
@@ -669,6 +709,10 @@ blockquote.twitter-tweet {
   font-size: 1.2rem;
 }
 
+[agent="mobile"] .front1 .NewsBlock .desc {
+  display: none;
+}
+
 .front2 {
   display: flex;
   margin: 0 -0.5rem;
@@ -678,6 +722,17 @@ blockquote.twitter-tweet {
   flex: 1;
   padding: 0 0.5rem;
 }
+
+[agent="mobile"] .front2 {
+  flex-wrap: wrap;
+}
+
+
+[agent="mobile"] .front2 .NewsBlock {
+  width: 50%;
+  min-width: 50%;
+}
+
 
 
 /* Top News */
@@ -771,6 +826,18 @@ blockquote.twitter-tweet {
   padding: 0 1rem;
 }
 
+[agent="mobile"] .sections1 .NewsBlock a {
+  display: flex;
+  margin-bottom: 1rem;
+}
+
+[agent="mobile"] .sections1 .NewsBlock img {
+  margin-right: 15px;
+  width: 130px;
+}
+
+
+
 /* Opinion1 */
 
 .opinion1 ol {
@@ -840,6 +907,20 @@ blockquote.twitter-tweet {
 .featured1 .NewsBlock h2,
 .galleries1 .NewsBlock h2 {
   color: #fff;
+}
+
+[agent="mobile"] .featured1 .NewsBlock .img {
+  position: relative;
+  padding-top: 55%;
+  overflow: hidden;
+}
+
+[agent="mobile"] .featured1 .NewsBlock img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
 }
 
 /*# sourceMappingURL=styles.chunk.css.map*/
