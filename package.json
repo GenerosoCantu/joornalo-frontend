@@ -20,7 +20,7 @@
     "next": "^9.0.0",
     "next-babel-minify": "^1.0.0",
     "next-redirect": "github:GenerosoCantu/next-redirect",
-    "next-redux-wrapper": "latest",
+    "next-redux-wrapper": "^4.0.1",
     "react": "^16.8.4",
     "react-dom": "^16.8.4",
     "react-redux": "^7.1.3",

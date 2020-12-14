@@ -10,7 +10,7 @@ const MostViewed1 = ({ topNews }) => {
       <div className="blockheader"><span>Most Viewed</span></div>
       <ul>
         {topNews.map((news, index) => (
-          <Link href={news.url} key={index}>
+          <Link href="/section/[section]/[date]/[id]" as={news.url} key={index}>
             <li>
               <span>{index + 1}</span>
               <div>

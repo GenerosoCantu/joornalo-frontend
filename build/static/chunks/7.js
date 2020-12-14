@@ -94,7 +94,8 @@ var NewsBlock = function NewsBlock(_ref) {
     },
     __self: this
   }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-    href: news.url,
+    href: "/section/[section]/[date]/[id]",
+    as: news.url,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 17

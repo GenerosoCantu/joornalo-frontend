@@ -14,7 +14,7 @@ const NewsBlock = ({ news, diaplayImage, displayDesc }) => {
   }
   return (
     <div className="NewsBlock">
-      <Link href={news.url}>
+      <Link href="/section/[section]/[date]/[id]" as={news.url}>
         <a>
           <div className="img">
             {image}
