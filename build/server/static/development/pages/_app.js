@@ -1911,7 +1911,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _styles_news_css__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../styles/news.css */ "./styles/news.css");
 /* harmony import */ var _styles_news_css__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(_styles_news_css__WEBPACK_IMPORTED_MODULE_9__);
 
-var _jsxFileName = "C:\\Projects\\DEVELOPMENT\\joornalo-frontend\\front.joornalo\\pages\\_app.js";
+var _jsxFileName = "C:\\Projects\\DEVELOPMENT\\joornalo-frontend\\front.joornalo.12.13.2000\\joornalo-frontend\\pages\\_app.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
 

@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[9],{UZC8:function(e,t,n){"use strict";n.r(t);var o=n("q1tI"),a=n.n(o).a.createElement;t.default=function(e){e.data,e.text;return a("div",{className:"mobileFooter"},a("hr",null),a("h2",null,"Mobile Footer1"))}}}]);

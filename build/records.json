@@ -1,0 +1,207 @@
+{
+  "mini-css-extract-plugin node_modules/@zeit/next-css/node_modules/css-loader/index.js??ref--5-1!styles/header.css": [
+    {
+      "modules": {
+        "byIdentifier": {},
+        "usedIds": {}
+      },
+      "chunks": {
+        "byName": {
+          "mini-css-extract-plugin": 0
+        },
+        "bySource": {},
+        "usedIds": [
+          0
+        ]
+      }
+    }
+  ],
+  "mini-css-extract-plugin node_modules/@zeit/next-css/node_modules/css-loader/index.js??ref--5-1!styles/global.css": [
+    {
+      "modules": {
+        "byIdentifier": {},
+        "usedIds": {}
+      },
+      "chunks": {
+        "byName": {
+          "mini-css-extract-plugin": 0
+        },
+        "bySource": {},
+        "usedIds": [
+          0
+        ]
+      }
+    }
+  ],
+  "mini-css-extract-plugin node_modules/@zeit/next-css/node_modules/css-loader/index.js??ref--5-1!styles/news.css": [
+    {
+      "modules": {
+        "byIdentifier": {},
+        "usedIds": {}
+      },
+      "chunks": {
+        "byName": {
+          "mini-css-extract-plugin": 0
+        },
+        "bySource": {},
+        "usedIds": [
+          0
+        ]
+      }
+    }
+  ],
+  "modules": {
+    "byIdentifier": {
+      "css node_modules/@zeit/next-css/node_modules/css-loader/index.js??ref--5-1!styles/global.css 0": 0,
+      "css node_modules/@zeit/next-css/node_modules/css-loader/index.js??ref--5-1!styles/header.css 0": 1,
+      "css node_modules/@zeit/next-css/node_modules/css-loader/index.js??ref--5-1!styles/news.css 0": 2
+    },
+    "usedIds": {
+      "0": 0,
+      "1": 1,
+      "2": 2
+    }
+  },
+  "chunks": {
+    "byName": {
+      "commons": 0,
+      "static/runtime/webpack.js": 1,
+      "static/runtime/main.js": 24,
+      "static/runtime/polyfills.js": 25,
+      "static\\8ycXAp3MXJGrBz9zKCDQS\\pages\\_app.js": 26,
+      "static\\8ycXAp3MXJGrBz9zKCDQS\\pages\\_error.js": 27,
+      "static\\8ycXAp3MXJGrBz9zKCDQS\\pages\\about.js": 28,
+      "static\\8ycXAp3MXJGrBz9zKCDQS\\pages\\index.js": 29,
+      "static\\8ycXAp3MXJGrBz9zKCDQS\\pages\\news\\[news].js": 30,
+      "static\\8ycXAp3MXJGrBz9zKCDQS\\pages\\notfound.js": 31,
+      "static\\8ycXAp3MXJGrBz9zKCDQS\\pages\\section\\[section].js": 32,
+      "static\\8ycXAp3MXJGrBz9zKCDQS\\pages\\section\\[section]\\[date].js": 33,
+      "static\\8ycXAp3MXJGrBz9zKCDQS\\pages\\section\\[section]\\[date]\\[id].js": 34,
+      "static\\8ycXAp3MXJGrBz9zKCDQS\\pages\\store.js": 35,
+      "styles": 36,
+      "static\\Wu9EkphY2g9cIa-fKb5IQ\\pages\\_app.js": 37,
+      "static\\Wu9EkphY2g9cIa-fKb5IQ\\pages\\_error.js": 38,
+      "static\\Wu9EkphY2g9cIa-fKb5IQ\\pages\\about.js": 39,
+      "static\\Wu9EkphY2g9cIa-fKb5IQ\\pages\\index.js": 40,
+      "static\\Wu9EkphY2g9cIa-fKb5IQ\\pages\\news\\[news].js": 41,
+      "static\\Wu9EkphY2g9cIa-fKb5IQ\\pages\\notfound.js": 42,
+      "static\\Wu9EkphY2g9cIa-fKb5IQ\\pages\\section\\[section].js": 43,
+      "static\\Wu9EkphY2g9cIa-fKb5IQ\\pages\\section\\[section]\\[date].js": 44,
+      "static\\Wu9EkphY2g9cIa-fKb5IQ\\pages\\section\\[section]\\[date]\\[id].js": 45,
+      "static\\Wu9EkphY2g9cIa-fKb5IQ\\pages\\store.js": 46
+    },
+    "bySource": {
+      "0 components lazy /^\\.\\/.*$/ groupOptions: {} namespace object ./block-adv": 0,
+      "0 components lazy /^\\.\\/.*$/ groupOptions: {} namespace object ./block-adv.js": 0,
+      "0 components lazy /^\\.\\/.*$/ groupOptions: {} namespace object ./block-header1": 0,
+      "0 components lazy /^\\.\\/.*$/ groupOptions: {} namespace object ./block-header1.js": 0,
+      "0 components lazy /^\\.\\/.*$/ groupOptions: {} namespace object ./block-news-mobile1": 0,
+      "0 components lazy /^\\.\\/.*$/ groupOptions: {} namespace object ./block-news-mobile1.js": 0,
+      "0 components lazy /^\\.\\/.*$/ groupOptions: {} namespace object ./block-news1": 0,
+      "0 components lazy /^\\.\\/.*$/ groupOptions: {} namespace object ./block-news1.js": 0,
+      "0 components lazy /^\\.\\/.*$/ groupOptions: {} namespace object ./block-news2": 0,
+      "0 components lazy /^\\.\\/.*$/ groupOptions: {} namespace object ./block-news2.js": 0,
+      "0 components lazy /^\\.\\/.*$/ groupOptions: {} namespace object ./block-featured1": 0,
+      "0 components lazy /^\\.\\/.*$/ groupOptions: {} namespace object ./block-featured1.js": 0,
+      "0 components lazy /^\\.\\/.*$/ groupOptions: {} namespace object ./block-front1": 0,
+      "0 components lazy /^\\.\\/.*$/ groupOptions: {} namespace object ./block-front1.js": 0,
+      "0 components lazy /^\\.\\/.*$/ groupOptions: {} namespace object ./block-front2": 0,
+      "0 components lazy /^\\.\\/.*$/ groupOptions: {} namespace object ./block-front2.js": 0,
+      "0 components lazy /^\\.\\/.*$/ groupOptions: {} namespace object ./block-galleries1": 0,
+      "0 components lazy /^\\.\\/.*$/ groupOptions: {} namespace object ./block-galleries1.js": 0,
+      "0 components lazy /^\\.\\/.*$/ groupOptions: {} namespace object ./block-latest1": 0,
+      "0 components lazy /^\\.\\/.*$/ groupOptions: {} namespace object ./block-latest1.js": 0,
+      "0 components lazy /^\\.\\/.*$/ groupOptions: {} namespace object ./block-most-viewed1": 0,
+      "0 components lazy /^\\.\\/.*$/ groupOptions: {} namespace object ./block-most-viewed1.js": 0,
+      "0 components lazy /^\\.\\/.*$/ groupOptions: {} namespace object ./block-multimedia1": 0,
+      "0 components lazy /^\\.\\/.*$/ groupOptions: {} namespace object ./block-multimedia1.js": 0,
+      "0 components lazy /^\\.\\/.*$/ groupOptions: {} namespace object ./block-sections1": 0,
+      "0 components lazy /^\\.\\/.*$/ groupOptions: {} namespace object ./block-sections1.js": 0,
+      "0 components lazy /^\\.\\/.*$/ groupOptions: {} namespace object ./newsBlock": 0,
+      "0 components lazy /^\\.\\/.*$/ groupOptions: {} namespace object ./newsBlock.js": 0,
+      "1 components lazy /^\\.\\/.*$/ groupOptions: {} namespace object ./block-news-mobile1": 2,
+      "1 components lazy /^\\.\\/.*$/ groupOptions: {} namespace object ./block-news-mobile1.js": 2,
+      "1 components lazy /^\\.\\/.*$/ groupOptions: {} namespace object ./block-news1": 3,
+      "1 components lazy /^\\.\\/.*$/ groupOptions: {} namespace object ./block-news1.js": 3,
+      "1 components lazy /^\\.\\/.*$/ groupOptions: {} namespace object ./block-news2": 4,
+      "1 components lazy /^\\.\\/.*$/ groupOptions: {} namespace object ./block-news2.js": 4,
+      "0 components lazy /^\\.\\/.*$/ groupOptions: {} namespace object ./block-footer1": 5,
+      "0 components lazy /^\\.\\/.*$/ groupOptions: {} namespace object ./block-footer1.js": 5,
+      "1 components lazy /^\\.\\/.*$/ groupOptions: {} namespace object ./block-header1": 6,
+      "1 components lazy /^\\.\\/.*$/ groupOptions: {} namespace object ./block-header1.js": 6,
+      "0 components lazy /^\\.\\/.*$/ groupOptions: {} namespace object ./XXXdataContext": 7,
+      "0 components lazy /^\\.\\/.*$/ groupOptions: {} namespace object ./XXXdataContext.js": 7,
+      "1 components lazy /^\\.\\/.*$/ groupOptions: {} namespace object ./block-featured1": 8,
+      "1 components lazy /^\\.\\/.*$/ groupOptions: {} namespace object ./block-featured1.js": 8,
+      "0 components lazy /^\\.\\/.*$/ groupOptions: {} namespace object ./block-footer-mobile1": 9,
+      "0 components lazy /^\\.\\/.*$/ groupOptions: {} namespace object ./block-footer-mobile1.js": 9,
+      "1 components lazy /^\\.\\/.*$/ groupOptions: {} namespace object ./block-front1": 10,
+      "1 components lazy /^\\.\\/.*$/ groupOptions: {} namespace object ./block-front1.js": 10,
+      "1 components lazy /^\\.\\/.*$/ groupOptions: {} namespace object ./block-front2": 11,
+      "1 components lazy /^\\.\\/.*$/ groupOptions: {} namespace object ./block-front2.js": 11,
+      "1 components lazy /^\\.\\/.*$/ groupOptions: {} namespace object ./block-galleries1": 12,
+      "1 components lazy /^\\.\\/.*$/ groupOptions: {} namespace object ./block-galleries1.js": 12,
+      "0 components lazy /^\\.\\/.*$/ groupOptions: {} namespace object ./block-header-mobile1": 13,
+      "0 components lazy /^\\.\\/.*$/ groupOptions: {} namespace object ./block-header-mobile1.js": 13,
+      "1 components lazy /^\\.\\/.*$/ groupOptions: {} namespace object ./block-latest1": 14,
+      "1 components lazy /^\\.\\/.*$/ groupOptions: {} namespace object ./block-latest1.js": 14,
+      "0 components lazy /^\\.\\/.*$/ groupOptions: {} namespace object ./block-menu1": 15,
+      "0 components lazy /^\\.\\/.*$/ groupOptions: {} namespace object ./block-menu1.js": 15,
+      "1 components lazy /^\\.\\/.*$/ groupOptions: {} namespace object ./block-most-viewed1": 16,
+      "1 components lazy /^\\.\\/.*$/ groupOptions: {} namespace object ./block-most-viewed1.js": 16,
+      "1 components lazy /^\\.\\/.*$/ groupOptions: {} namespace object ./block-multimedia1": 17,
+      "1 components lazy /^\\.\\/.*$/ groupOptions: {} namespace object ./block-multimedia1.js": 17,
+      "0 components lazy /^\\.\\/.*$/ groupOptions: {} namespace object ./block-news-header1": 18,
+      "0 components lazy /^\\.\\/.*$/ groupOptions: {} namespace object ./block-news-header1.js": 18,
+      "0 components lazy /^\\.\\/.*$/ groupOptions: {} namespace object ./block-opinion1": 19,
+      "0 components lazy /^\\.\\/.*$/ groupOptions: {} namespace object ./block-opinion1.js": 19,
+      "0 components lazy /^\\.\\/.*$/ groupOptions: {} namespace object ./block-other-news1": 20,
+      "0 components lazy /^\\.\\/.*$/ groupOptions: {} namespace object ./block-other-news1.js": 20,
+      "0 components lazy /^\\.\\/.*$/ groupOptions: {} namespace object ./block-related-news1": 21,
+      "0 components lazy /^\\.\\/.*$/ groupOptions: {} namespace object ./block-related-news1.js": 21,
+      "1 components lazy /^\\.\\/.*$/ groupOptions: {} namespace object ./block-sections1": 22,
+      "1 components lazy /^\\.\\/.*$/ groupOptions: {} namespace object ./block-sections1.js": 22,
+      "0 components lazy /^\\.\\/.*$/ groupOptions: {} namespace object ./block-weather1": 23,
+      "0 components lazy /^\\.\\/.*$/ groupOptions: {} namespace object ./block-weather1.js": 23
+    },
+    "usedIds": [
+      0,
+      1,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      2,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      3,
+      36,
+      37,
+      38,
+      39,
+      4,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      5,
+      6,
+      7,
+      8,
+      9
+    ]
+  }
+}
