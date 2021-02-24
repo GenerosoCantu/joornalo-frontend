@@ -5157,7 +5157,7 @@ function connect(options) {
       error.name = err.name;
       error.stack = err.stack; // __NEXT_DIST_DIR is provided by webpack
 
-      (0, _sourceMapSupport.rewriteStacktrace)(error, "C:\\Projects\\DEVELOPMENT\\joornalo-frontend\\front.joornalo.12.13.2000\\joornalo-frontend\\build");
+      (0, _sourceMapSupport.rewriteStacktrace)(error, "C:\\Projects\\DEVELOPMENT\\joornalo-frontend\\front.joornalo.2.23.2021\\joornalo-frontend\\build");
       return error;
     }
   };

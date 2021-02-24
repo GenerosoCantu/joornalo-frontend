@@ -121,7 +121,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 4);
+/******/ 	return __webpack_require__(__webpack_require__.s = 3);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -470,7 +470,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Layout; });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-var _jsxFileName = "C:\\Projects\\DEVELOPMENT\\joornalo-frontend\\front.joornalo.12.13.2000\\joornalo-frontend\\components\\MyLayout.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 const layoutStyle = {// margin: 20,
@@ -481,12 +480,7 @@ function Layout(props) {
   return __jsx("div", {
     className: "container-fluid",
     agent: props.agent,
-    style: layoutStyle,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 9
-    },
-    __self: this
+    style: layoutStyle
   }, props.children);
 }
 
@@ -504,7 +498,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _components_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components.js */ "./components/components.js");
-var _jsxFileName = "C:\\Projects\\DEVELOPMENT\\joornalo-frontend\\front.joornalo.12.13.2000\\joornalo-frontend\\components\\Template.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
@@ -513,63 +506,32 @@ const Template = ({
   grid,
   data
 }) => {
-  if (!grid || !data) return __jsx("div", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 4
-    },
-    __self: undefined
-  });
+  if (!grid || !data) return __jsx("div", null);
   return grid.rows.map((row, index) => {
     return __jsx("div", {
       className: "row",
-      key: `row-${index}`,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 8
-      },
-      __self: undefined
+      key: `row-${index}`
     }, row.column.map((col, indexy) => {
       if (col.components) {
         return __jsx("div", {
           className: `${col.width}`,
-          key: `${indexy}`,
-          __source: {
-            fileName: _jsxFileName,
-            lineNumber: 12
-          },
-          __self: undefined
+          key: `${indexy}`
         }, col.components.map((component, indexz) => {
           return __jsx(_components_js__WEBPACK_IMPORTED_MODULE_1__["default"], {
             component: component.id,
             data: data,
             params: component,
-            key: `${indexz}`,
-            __source: {
-              fileName: _jsxFileName,
-              lineNumber: 15
-            },
-            __self: undefined
+            key: `${indexz}`
           });
         }));
       } else {
         if (col.rows) {
           return __jsx("div", {
             className: `${col.width}`,
-            key: `col-${index}`,
-            __source: {
-              fileName: _jsxFileName,
-              lineNumber: 23
-            },
-            __self: undefined
+            key: `col-${index}`
           }, __jsx(Template, {
             grid: col,
-            data: data,
-            __source: {
-              fileName: _jsxFileName,
-              lineNumber: 24
-            },
-            __self: undefined
+            data: data
           }));
         }
       }
@@ -594,7 +556,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var next_dynamic__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/dynamic */ "next/dynamic");
 /* harmony import */ var next_dynamic__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_dynamic__WEBPACK_IMPORTED_MODULE_1__);
-var _jsxFileName = "C:\\Projects\\DEVELOPMENT\\joornalo-frontend\\front.joornalo.12.13.2000\\joornalo-frontend\\components\\components.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
  // https://www.storyblok.com/tp/react-dynamic-component-from-json
@@ -628,13 +589,7 @@ const Components = ({
     });
   } else {
     console.log(component, "+++++++++++++++ Component not found!!!");
-    return __jsx("div", {
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 50
-      },
-      __self: undefined
-    }, "Component not found!!!");
+    return __jsx("div", null, "Component not found!!!");
   }
 };
 
@@ -3033,7 +2988,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _store_actions_newsActions__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../store/actions/newsActions */ "./store/actions/newsActions.js");
 /* harmony import */ var _components_Template_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../components/Template.js */ "./components/Template.js");
 /* harmony import */ var _components_MyLayout__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../components/MyLayout */ "./components/MyLayout.js");
-var _jsxFileName = "C:\\Projects\\DEVELOPMENT\\joornalo-frontend\\front.joornalo.12.13.2000\\joornalo-frontend\\pages\\index.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
@@ -3051,27 +3005,12 @@ const Index = ({
   template
 }) => {
   return __jsx(_components_MyLayout__WEBPACK_IMPORTED_MODULE_7__["default"], {
-    agent: agent,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 13
-    },
-    __self: undefined
+    agent: agent
   }, __jsx("div", {
-    className: templateName,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 15
-    },
-    __self: undefined
+    className: templateName
   }, __jsx(_components_Template_js__WEBPACK_IMPORTED_MODULE_6__["default"], {
     grid: template,
-    data: front,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 16
-    },
-    __self: undefined
+    data: front
   })));
 };
 
@@ -3511,14 +3450,14 @@ const GET_FRONT = 'GET_FRONT';
 
 /***/ }),
 
-/***/ 4:
+/***/ 3:
 /*!******************************!*\
   !*** multi ./pages/index.js ***!
   \******************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! C:\Projects\DEVELOPMENT\joornalo-frontend\front.joornalo.12.13.2000\joornalo-frontend\pages\index.js */"./pages/index.js");
+module.exports = __webpack_require__(/*! C:\Projects\DEVELOPMENT\joornalo-frontend\front.joornalo.2.23.2021\joornalo-frontend\pages\index.js */"./pages/index.js");
 
 
 /***/ }),
