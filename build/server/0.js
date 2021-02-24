@@ -12,7 +12,6 @@ exports.modules = {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-var _jsxFileName = "C:\\Projects\\DEVELOPMENT\\joornalo-frontend\\front.joornalo.12.13.2000\\joornalo-frontend\\components\\block-adv.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
@@ -109,19 +108,9 @@ const Adv = context => {
 
   return __jsx("div", {
     className: "adv eureka",
-    id: id,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 89
-    },
-    __self: undefined
+    id: id
   }, __jsx("img", {
-    src: adsrc,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 90
-    },
-    __self: undefined
+    src: adsrc
   }));
 };
 
@@ -149,7 +138,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var html_react_parser__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(html_react_parser__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var _block_adv__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./block-adv */ "./components/block-adv.js");
 
-var _jsxFileName = "C:\\Projects\\DEVELOPMENT\\joornalo-frontend\\front.joornalo.12.13.2000\\joornalo-frontend\\components\\block-news-mobile1.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
 
 
@@ -216,67 +204,20 @@ const news1 = ({
   };
 
   return __jsx("div", {
-    className: "news",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 67
-    },
-    __self: undefined
-  }, __jsx("h2", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 68
-    },
-    __self: undefined
-  }, data.title), __jsx("img", {
-    src: mainImgUrl,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 69
-    },
-    __self: undefined
+    className: "news"
+  }, __jsx("h2", null, data.title), __jsx("img", {
+    src: mainImgUrl
   }), __jsx("div", {
-    className: "row",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 70
-    },
-    __self: undefined
+    className: "row"
   }, __jsx("div", {
-    className: "col-12",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 71
-    },
-    __self: undefined
+    className: "col-12"
   }, __jsx("div", {
-    className: "details",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 72
-    },
-    __self: undefined
+    className: "details"
   }, "Details"), __jsx(_block_adv__WEBPACK_IMPORTED_MODULE_3__["default"], {
-    params: AdParams,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 75
-    },
-    __self: undefined
+    params: AdParams
   })), __jsx("div", {
-    className: "newsContent col-12",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 77
-    },
-    __self: undefined
-  }, __jsx("div", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 78
-    },
-    __self: undefined
-  }, modText))));
+    className: "newsContent col-12"
+  }, __jsx("div", null, modText))));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (news1);

@@ -344,7 +344,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Layout; });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-var _jsxFileName = "C:\\Projects\\DEVELOPMENT\\joornalo-frontend\\front.joornalo.12.13.2000\\joornalo-frontend\\components\\MyLayout.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 var layoutStyle = {// margin: 20,
@@ -355,12 +354,7 @@ function Layout(props) {
   return __jsx("div", {
     className: "container-fluid",
     agent: props.agent,
-    style: layoutStyle,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 9
-    },
-    __self: this
+    style: layoutStyle
   }, props.children);
 }
 
@@ -378,7 +372,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _components_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components.js */ "./components/components.js");
-var _jsxFileName = "C:\\Projects\\DEVELOPMENT\\joornalo-frontend\\front.joornalo.12.13.2000\\joornalo-frontend\\components\\Template.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
@@ -386,63 +379,32 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 var Template = function Template(_ref) {
   var grid = _ref.grid,
       data = _ref.data;
-  if (!grid || !data) return __jsx("div", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 4
-    },
-    __self: this
-  });
+  if (!grid || !data) return __jsx("div", null);
   return grid.rows.map(function (row, index) {
     return __jsx("div", {
       className: "row",
-      key: "row-".concat(index),
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 8
-      },
-      __self: this
+      key: "row-".concat(index)
     }, row.column.map(function (col, indexy) {
       if (col.components) {
         return __jsx("div", {
           className: "".concat(col.width),
-          key: "".concat(indexy),
-          __source: {
-            fileName: _jsxFileName,
-            lineNumber: 12
-          },
-          __self: this
+          key: "".concat(indexy)
         }, col.components.map(function (component, indexz) {
           return __jsx(_components_js__WEBPACK_IMPORTED_MODULE_1__["default"], {
             component: component.id,
             data: data,
             params: component,
-            key: "".concat(indexz),
-            __source: {
-              fileName: _jsxFileName,
-              lineNumber: 15
-            },
-            __self: this
+            key: "".concat(indexz)
           });
         }));
       } else {
         if (col.rows) {
           return __jsx("div", {
             className: "".concat(col.width),
-            key: "col-".concat(index),
-            __source: {
-              fileName: _jsxFileName,
-              lineNumber: 23
-            },
-            __self: this
+            key: "col-".concat(index)
           }, __jsx(Template, {
             grid: col,
-            data: data,
-            __source: {
-              fileName: _jsxFileName,
-              lineNumber: 24
-            },
-            __self: this
+            data: data
           }));
         }
       }
@@ -467,7 +429,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var next_dynamic__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/dynamic */ "./node_modules/next/dist/next-server/lib/dynamic.js");
 /* harmony import */ var next_dynamic__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_dynamic__WEBPACK_IMPORTED_MODULE_1__);
-var _jsxFileName = "C:\\Projects\\DEVELOPMENT\\joornalo-frontend\\front.joornalo.12.13.2000\\joornalo-frontend\\components\\components.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
  // https://www.storyblok.com/tp/react-dynamic-component-from-json
@@ -504,13 +465,7 @@ var Components = function Components(_ref) {
     });
   } else {
     console.log(component, "+++++++++++++++ Component not found!!!");
-    return __jsx("div", {
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 50
-      },
-      __self: this
-    }, "Component not found!!!");
+    return __jsx("div", null, "Component not found!!!");
   }
 };
 
@@ -8677,10 +8632,10 @@ var assign=Object.assign.bind(Object);function g(){return assign;}Object.defineP
 
 /***/ }),
 
-/***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F&absolutePagePath=C%3A%5CProjects%5CDEVELOPMENT%5Cjoornalo-frontend%5Cfront.joornalo.12.13.2000%5Cjoornalo-frontend%5Cpages%5Cindex.js!./":
-/*!*********************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F&absolutePagePath=C%3A%5CProjects%5CDEVELOPMENT%5Cjoornalo-frontend%5Cfront.joornalo.12.13.2000%5Cjoornalo-frontend%5Cpages%5Cindex.js ***!
-  \*********************************************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F&absolutePagePath=C%3A%5CProjects%5CDEVELOPMENT%5Cjoornalo-frontend%5Cfront.joornalo.2.23.2021%5Cjoornalo-frontend%5Cpages%5Cindex.js!./":
+/*!********************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F&absolutePagePath=C%3A%5CProjects%5CDEVELOPMENT%5Cjoornalo-frontend%5Cfront.joornalo.2.23.2021%5Cjoornalo-frontend%5Cpages%5Cindex.js ***!
+  \********************************************************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -17454,7 +17409,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_Template_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../components/Template.js */ "./components/Template.js");
 /* harmony import */ var _components_MyLayout__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../components/MyLayout */ "./components/MyLayout.js");
 
-var _jsxFileName = "C:\\Projects\\DEVELOPMENT\\joornalo-frontend\\front.joornalo.12.13.2000\\joornalo-frontend\\pages\\index.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
 
 
@@ -17471,27 +17425,12 @@ var Index = function Index(_ref) {
       templateName = _ref.templateName,
       template = _ref.template;
   return __jsx(_components_MyLayout__WEBPACK_IMPORTED_MODULE_8__["default"], {
-    agent: agent,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 13
-    },
-    __self: this
+    agent: agent
   }, __jsx("div", {
-    className: templateName,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 15
-    },
-    __self: this
+    className: templateName
   }, __jsx(_components_Template_js__WEBPACK_IMPORTED_MODULE_7__["default"], {
     grid: template,
-    data: front,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 16
-    },
-    __self: this
+    data: front
   })));
 };
 
@@ -18076,14 +18015,14 @@ var GET_FRONT = 'GET_FRONT';
 
 /***/ }),
 
-/***/ 4:
-/*!*************************************************************************************************************************************************************************************!*\
-  !*** multi next-client-pages-loader?page=%2F&absolutePagePath=C%3A%5CProjects%5CDEVELOPMENT%5Cjoornalo-frontend%5Cfront.joornalo.12.13.2000%5Cjoornalo-frontend%5Cpages%5Cindex.js ***!
-  \*************************************************************************************************************************************************************************************/
+/***/ 3:
+/*!************************************************************************************************************************************************************************************!*\
+  !*** multi next-client-pages-loader?page=%2F&absolutePagePath=C%3A%5CProjects%5CDEVELOPMENT%5Cjoornalo-frontend%5Cfront.joornalo.2.23.2021%5Cjoornalo-frontend%5Cpages%5Cindex.js ***!
+  \************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2F&absolutePagePath=C%3A%5CProjects%5CDEVELOPMENT%5Cjoornalo-frontend%5Cfront.joornalo.12.13.2000%5Cjoornalo-frontend%5Cpages%5Cindex.js! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F&absolutePagePath=C%3A%5CProjects%5CDEVELOPMENT%5Cjoornalo-frontend%5Cfront.joornalo.12.13.2000%5Cjoornalo-frontend%5Cpages%5Cindex.js!./");
+module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2F&absolutePagePath=C%3A%5CProjects%5CDEVELOPMENT%5Cjoornalo-frontend%5Cfront.joornalo.2.23.2021%5Cjoornalo-frontend%5Cpages%5Cindex.js! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F&absolutePagePath=C%3A%5CProjects%5CDEVELOPMENT%5Cjoornalo-frontend%5Cfront.joornalo.2.23.2021%5Cjoornalo-frontend%5Cpages%5Cindex.js!./");
 
 
 /***/ }),
@@ -18099,5 +18038,5 @@ module.exports = dll_0d6a75bfb970ed5c01a6;
 
 /***/ })
 
-},[[4,"static/runtime/webpack.js"]]]);
+},[[3,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=index.js.map
