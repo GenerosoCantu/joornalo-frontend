@@ -12,13 +12,12 @@ const getTemplate = async (req, template, agent) => {
     const tmpl = agent + '-' + template;
     const templateUrl = `https://data.joornalo.com/templates/news/${tmpl}.json`;
 
-    console.log(templateUrl)
     const res = await axios.get(templateUrl);
 
     return res.data;
 
   } catch (err) {
-    console.log('***********Template Error');
+    console.log('***********Template Error!');
     dispatch({
       type: NEWS_ERROR,
       payload: err.statusText
@@ -141,7 +140,8 @@ export const getFront = (section, req) => async (dispatch, getState) => {
     });
 
   } catch (err) {
-    console.log('FRONT_ERROR--------------------')
+    console.log('FRONT_ERROR--------------------');
+    console.log(err);
     dispatch({
       type: FRONT_ERROR,
       payload: 'NotFound'

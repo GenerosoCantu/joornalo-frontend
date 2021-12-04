@@ -1,0 +1,1 @@
+{"code":"(window.webpackJsonp_N_E=window.webpackJsonp_N_E||[]).push([[25],{uBCr:function(e,n,a){\"use strict\";a.r(n);var t=a(\"q1tI\"),r=a.n(t).a.createElement;n.default=function(e){e.data,e.text;return r(\"div\",{className:\"newsHeader\"},r(\"hr\",null),r(\"h2\",null,\"News Header1\"))}}}]);","extractedComments":[]}

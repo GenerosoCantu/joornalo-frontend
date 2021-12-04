@@ -1,1 +1,0 @@
-{"code":"(window.webpackJsonp=window.webpackJsonp||[]).push([[17],{YaUk:function(t,a,e){\"use strict\";e.r(a);var n=e(\"q1tI\"),s=e.n(n).a.createElement;a.default=function(t){t.data,t.text;return s(\"div\",{className:\"latest1\"},s(\"hr\",null),s(\"h2\",null,\"Latest 1\"))}}}]);"}

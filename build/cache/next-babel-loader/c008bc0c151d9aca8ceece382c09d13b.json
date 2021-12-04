@@ -1,1 +1,0 @@
-{"ast":null,"code":"var __jsx = React.createElement;\nimport React from \"react\";\nexport default (({\n  data,\n  text\n}) => __jsx(\"div\", {\n  className: \"mobileHeader\"\n}, __jsx(\"hr\", null), __jsx(\"h2\", null, \"Mobile Header1\")));","map":null,"metadata":{},"sourceType":"module"}

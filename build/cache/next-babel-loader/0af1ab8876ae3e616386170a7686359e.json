@@ -1,1 +1,0 @@
-{"ast":null,"code":"var __jsx = React.createElement;\nimport React from \"react\";\n\nconst Weather1 = ({\n  data,\n  text\n}) => {\n  return __jsx(\"div\", {\n    className: \"weather1\"\n  }, __jsx(\"hr\", null), __jsx(\"h2\", null, \"Weather 1\"));\n};\n\nexport default Weather1;","map":null,"metadata":{},"sourceType":"module"}

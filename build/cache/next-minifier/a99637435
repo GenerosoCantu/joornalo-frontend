@@ -1,1 +1,0 @@
-{"code":"(window.webpackJsonp=window.webpackJsonp||[]).push([[19],{y6nP:function(n,t,e){\"use strict\";e.r(t);var a=e(\"q1tI\"),i=e.n(a).a.createElement;t.default=function(n){n.data,n.text;return i(\"div\",{className:\"multimedia1\"},i(\"hr\",null),i(\"h2\",null,\"Multimedia 1\"))}}}]);"}

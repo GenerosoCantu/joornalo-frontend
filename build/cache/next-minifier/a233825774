@@ -1,1 +1,0 @@
-{"code":"(window.webpackJsonp=window.webpackJsonp||[]).push([[10],{e4pm:function(e,n,t){\"use strict\";t.r(n);var a=t(\"q1tI\"),o=t.n(a),r=t(\"k5hG\"),s=o.a.createElement;n.default=function(e){var n=e.data;return s(\"div\",{className:\"front1 block\"},s(r.default,{news:n.frontNews[0]}))}}}]);"}

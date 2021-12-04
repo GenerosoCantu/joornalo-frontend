@@ -1,1 +1,0 @@
-{"version":3,"file":"static/chunks/14.js","sources":["webpack:///./components/XXXdataContext.js"],"sourcesContent":["import { createContext } from 'react';\r\n\r\nconst DataContext = createContext();\r\n\r\nexport default DataContext;"],"mappings":";;;;;;;;;;AAAA;AAAA;AAAA;AAAA;AAEA;AAEA;;;;A","sourceRoot":""}

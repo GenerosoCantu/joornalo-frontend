@@ -1,1 +1,0 @@
-{"ast":null,"code":"var __jsx = React.createElement;\nimport React from \"react\";\n\nconst Multimedia1 = ({\n  data,\n  text\n}) => {\n  return __jsx(\"div\", {\n    className: \"multimedia1\"\n  }, __jsx(\"hr\", null), __jsx(\"h2\", null, \"Multimedia 1\"));\n};\n\nexport default Multimedia1;","map":null,"metadata":{},"sourceType":"module"}

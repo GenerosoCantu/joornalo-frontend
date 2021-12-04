@@ -2,777 +2,407 @@
   "./XXXdataContext": [
     {
       "id": "./components/XXXdataContext.js",
-      "name": "./components/XXXdataContext.js",
-      "file": "static/chunks/14.js",
-      "publicPath": "static/chunks/14.js"
+      "file": "static/chunks/14.js"
     }
   ],
   "./XXXdataContext.js": [
     {
       "id": "./components/XXXdataContext.js",
-      "name": "./components/XXXdataContext.js",
-      "file": "static/chunks/14.js",
-      "publicPath": "static/chunks/14.js"
+      "file": "static/chunks/14.js"
     }
   ],
   "./block-adv": [
     {
       "id": "./components/block-adv.js",
-      "name": "./components/block-adv.js",
-      "file": "static/chunks/15.js",
-      "publicPath": "static/chunks/15.js"
+      "file": "static/chunks/15.js"
     }
   ],
   "./block-adv.js": [
     {
       "id": "./components/block-adv.js",
-      "name": "./components/block-adv.js",
-      "file": "static/chunks/15.js",
-      "publicPath": "static/chunks/15.js"
+      "file": "static/chunks/15.js"
     }
   ],
   "./block-featured1": [
     {
       "id": "./components/block-featured1.js",
-      "name": "./components/block-featured1.js",
-      "file": "static/chunks/5.js",
-      "publicPath": "static/chunks/5.js"
+      "file": "static/chunks/5.js"
     },
     {
       "id": "./components/newsBlock.js",
-      "name": "./components/newsBlock.js",
-      "file": "static/chunks/5.js",
-      "publicPath": "static/chunks/5.js"
+      "file": "static/chunks/5.js"
     }
   ],
   "./block-featured1.js": [
     {
       "id": "./components/block-featured1.js",
-      "name": "./components/block-featured1.js",
-      "file": "static/chunks/5.js",
-      "publicPath": "static/chunks/5.js"
+      "file": "static/chunks/5.js"
     },
     {
       "id": "./components/newsBlock.js",
-      "name": "./components/newsBlock.js",
-      "file": "static/chunks/5.js",
-      "publicPath": "static/chunks/5.js"
+      "file": "static/chunks/5.js"
     }
   ],
   "./block-footer-mobile1": [
     {
       "id": "./components/block-footer-mobile1.js",
-      "name": "./components/block-footer-mobile1.js",
-      "file": "static/chunks/16.js",
-      "publicPath": "static/chunks/16.js"
+      "file": "static/chunks/16.js"
     }
   ],
   "./block-footer-mobile1.js": [
     {
       "id": "./components/block-footer-mobile1.js",
-      "name": "./components/block-footer-mobile1.js",
-      "file": "static/chunks/16.js",
-      "publicPath": "static/chunks/16.js"
+      "file": "static/chunks/16.js"
     }
   ],
   "./block-footer1": [
     {
       "id": "./components/block-footer1.js",
-      "name": "./components/block-footer1.js",
-      "file": "static/chunks/6.js",
-      "publicPath": "static/chunks/6.js"
+      "file": "static/chunks/6.js"
     },
     {
       "id": "./components/block-menu1.js",
-      "name": "./components/block-menu1.js",
-      "file": "static/chunks/6.js",
-      "publicPath": "static/chunks/6.js"
+      "file": "static/chunks/6.js"
     }
   ],
   "./block-footer1.js": [
     {
       "id": "./components/block-footer1.js",
-      "name": "./components/block-footer1.js",
-      "file": "static/chunks/6.js",
-      "publicPath": "static/chunks/6.js"
+      "file": "static/chunks/6.js"
     },
     {
       "id": "./components/block-menu1.js",
-      "name": "./components/block-menu1.js",
-      "file": "static/chunks/6.js",
-      "publicPath": "static/chunks/6.js"
+      "file": "static/chunks/6.js"
     }
   ],
   "./block-front1": [
     {
       "id": "./components/block-front1.js",
-      "name": "./components/block-front1.js",
-      "file": "static/chunks/7.js",
-      "publicPath": "static/chunks/7.js"
+      "file": "static/chunks/7.js"
     },
     {
       "id": "./components/newsBlock.js",
-      "name": "./components/newsBlock.js",
-      "file": "static/chunks/7.js",
-      "publicPath": "static/chunks/7.js"
+      "file": "static/chunks/7.js"
     }
   ],
   "./block-front1.js": [
     {
       "id": "./components/block-front1.js",
-      "name": "./components/block-front1.js",
-      "file": "static/chunks/7.js",
-      "publicPath": "static/chunks/7.js"
+      "file": "static/chunks/7.js"
     },
     {
       "id": "./components/newsBlock.js",
-      "name": "./components/newsBlock.js",
-      "file": "static/chunks/7.js",
-      "publicPath": "static/chunks/7.js"
+      "file": "static/chunks/7.js"
     }
   ],
   "./block-front2": [
     {
       "id": "./components/block-front2.js",
-      "name": "./components/block-front2.js",
-      "file": "static/chunks/8.js",
-      "publicPath": "static/chunks/8.js"
+      "file": "static/chunks/8.js"
     },
     {
       "id": "./components/newsBlock.js",
-      "name": "./components/newsBlock.js",
-      "file": "static/chunks/8.js",
-      "publicPath": "static/chunks/8.js"
+      "file": "static/chunks/8.js"
     }
   ],
   "./block-front2.js": [
     {
       "id": "./components/block-front2.js",
-      "name": "./components/block-front2.js",
-      "file": "static/chunks/8.js",
-      "publicPath": "static/chunks/8.js"
+      "file": "static/chunks/8.js"
     },
     {
       "id": "./components/newsBlock.js",
-      "name": "./components/newsBlock.js",
-      "file": "static/chunks/8.js",
-      "publicPath": "static/chunks/8.js"
+      "file": "static/chunks/8.js"
     }
   ],
   "./block-galleries1": [
     {
       "id": "./components/block-galleries1.js",
-      "name": "./components/block-galleries1.js",
-      "file": "static/chunks/9.js",
-      "publicPath": "static/chunks/9.js"
+      "file": "static/chunks/9.js"
     },
     {
       "id": "./components/newsBlock.js",
-      "name": "./components/newsBlock.js",
-      "file": "static/chunks/9.js",
-      "publicPath": "static/chunks/9.js"
+      "file": "static/chunks/9.js"
     }
   ],
   "./block-galleries1.js": [
     {
       "id": "./components/block-galleries1.js",
-      "name": "./components/block-galleries1.js",
-      "file": "static/chunks/9.js",
-      "publicPath": "static/chunks/9.js"
+      "file": "static/chunks/9.js"
     },
     {
       "id": "./components/newsBlock.js",
-      "name": "./components/newsBlock.js",
-      "file": "static/chunks/9.js",
-      "publicPath": "static/chunks/9.js"
+      "file": "static/chunks/9.js"
     }
   ],
   "./block-header-mobile1": [
     {
       "id": "./components/block-header-mobile1.js",
-      "name": "./components/block-header-mobile1.js",
-      "file": "static/chunks/17.js",
-      "publicPath": "static/chunks/17.js"
+      "file": "static/chunks/17.js"
     }
   ],
   "./block-header-mobile1.js": [
     {
       "id": "./components/block-header-mobile1.js",
-      "name": "./components/block-header-mobile1.js",
-      "file": "static/chunks/17.js",
-      "publicPath": "static/chunks/17.js"
+      "file": "static/chunks/17.js"
     }
   ],
   "./block-header1": [
     {
       "id": "./components/block-adv.js",
-      "name": "./components/block-adv.js",
-      "file": "static/chunks/4.js",
-      "publicPath": "static/chunks/4.js"
+      "file": "static/chunks/1.js"
     },
     {
       "id": "./components/block-header1.js",
-      "name": "./components/block-header1.js",
-      "file": "static/chunks/4.js",
-      "publicPath": "static/chunks/4.js"
+      "file": "static/chunks/1.js"
     },
     {
       "id": "./components/block-menu1.js",
-      "name": "./components/block-menu1.js",
-      "file": "static/chunks/4.js",
-      "publicPath": "static/chunks/4.js"
+      "file": "static/chunks/1.js"
     }
   ],
   "./block-header1.js": [
     {
       "id": "./components/block-adv.js",
-      "name": "./components/block-adv.js",
-      "file": "static/chunks/4.js",
-      "publicPath": "static/chunks/4.js"
+      "file": "static/chunks/1.js"
     },
     {
       "id": "./components/block-header1.js",
-      "name": "./components/block-header1.js",
-      "file": "static/chunks/4.js",
-      "publicPath": "static/chunks/4.js"
+      "file": "static/chunks/1.js"
     },
     {
       "id": "./components/block-menu1.js",
-      "name": "./components/block-menu1.js",
-      "file": "static/chunks/4.js",
-      "publicPath": "static/chunks/4.js"
+      "file": "static/chunks/1.js"
     }
   ],
   "./block-latest1": [
     {
       "id": "./components/block-latest1.js",
-      "name": "./components/block-latest1.js",
-      "file": "static/chunks/10.js",
-      "publicPath": "static/chunks/10.js"
+      "file": "static/chunks/10.js"
     },
     {
       "id": "./components/newsBlock.js",
-      "name": "./components/newsBlock.js",
-      "file": "static/chunks/10.js",
-      "publicPath": "static/chunks/10.js"
+      "file": "static/chunks/10.js"
     }
   ],
   "./block-latest1.js": [
     {
       "id": "./components/block-latest1.js",
-      "name": "./components/block-latest1.js",
-      "file": "static/chunks/10.js",
-      "publicPath": "static/chunks/10.js"
+      "file": "static/chunks/10.js"
     },
     {
       "id": "./components/newsBlock.js",
-      "name": "./components/newsBlock.js",
-      "file": "static/chunks/10.js",
-      "publicPath": "static/chunks/10.js"
+      "file": "static/chunks/10.js"
     }
   ],
   "./block-menu1": [
     {
       "id": "./components/block-menu1.js",
-      "name": "./components/block-menu1.js",
-      "file": "static/chunks/18.js",
-      "publicPath": "static/chunks/18.js"
+      "file": "static/chunks/18.js"
     }
   ],
   "./block-menu1.js": [
     {
       "id": "./components/block-menu1.js",
-      "name": "./components/block-menu1.js",
-      "file": "static/chunks/18.js",
-      "publicPath": "static/chunks/18.js"
+      "file": "static/chunks/18.js"
     }
   ],
   "./block-most-viewed1": [
     {
       "id": "./components/block-most-viewed1.js",
-      "name": "./components/block-most-viewed1.js",
-      "file": "static/chunks/11.js",
-      "publicPath": "static/chunks/11.js"
+      "file": "static/chunks/11.js"
     },
     {
       "id": "./components/newsBlock.js",
-      "name": "./components/newsBlock.js",
-      "file": "static/chunks/11.js",
-      "publicPath": "static/chunks/11.js"
+      "file": "static/chunks/11.js"
     }
   ],
   "./block-most-viewed1.js": [
     {
       "id": "./components/block-most-viewed1.js",
-      "name": "./components/block-most-viewed1.js",
-      "file": "static/chunks/11.js",
-      "publicPath": "static/chunks/11.js"
+      "file": "static/chunks/11.js"
     },
     {
       "id": "./components/newsBlock.js",
-      "name": "./components/newsBlock.js",
-      "file": "static/chunks/11.js",
-      "publicPath": "static/chunks/11.js"
+      "file": "static/chunks/11.js"
     }
   ],
   "./block-multimedia1": [
     {
       "id": "./components/block-multimedia1.js",
-      "name": "./components/block-multimedia1.js",
-      "file": "static/chunks/12.js",
-      "publicPath": "static/chunks/12.js"
+      "file": "static/chunks/12.js"
     },
     {
       "id": "./components/newsBlock.js",
-      "name": "./components/newsBlock.js",
-      "file": "static/chunks/12.js",
-      "publicPath": "static/chunks/12.js"
+      "file": "static/chunks/12.js"
     }
   ],
   "./block-multimedia1.js": [
     {
       "id": "./components/block-multimedia1.js",
-      "name": "./components/block-multimedia1.js",
-      "file": "static/chunks/12.js",
-      "publicPath": "static/chunks/12.js"
+      "file": "static/chunks/12.js"
     },
     {
       "id": "./components/newsBlock.js",
-      "name": "./components/newsBlock.js",
-      "file": "static/chunks/12.js",
-      "publicPath": "static/chunks/12.js"
+      "file": "static/chunks/12.js"
     }
   ],
   "./block-news-header1": [
     {
       "id": "./components/block-news-header1.js",
-      "name": "./components/block-news-header1.js",
-      "file": "static/chunks/19.js",
-      "publicPath": "static/chunks/19.js"
+      "file": "static/chunks/19.js"
     }
   ],
   "./block-news-header1.js": [
     {
       "id": "./components/block-news-header1.js",
-      "name": "./components/block-news-header1.js",
-      "file": "static/chunks/19.js",
-      "publicPath": "static/chunks/19.js"
+      "file": "static/chunks/19.js"
     }
   ],
   "./block-news-mobile1": [
     {
       "id": "./components/block-adv.js",
-      "name": "./components/block-adv.js",
-      "file": "static/chunks/1.js",
-      "publicPath": "static/chunks/1.js"
+      "file": "static/chunks/2.js"
     },
     {
       "id": "./components/block-news-mobile1.js",
-      "name": "./components/block-news-mobile1.js",
-      "file": "static/chunks/1.js",
-      "publicPath": "static/chunks/1.js"
-    },
-    {
-      "id": "./node_modules/@babel/runtime-corejs2/core-js/parse-int.js",
-      "name": "./node_modules/@babel/runtime-corejs2/core-js/parse-int.js",
-      "file": "static/chunks/1.js",
-      "publicPath": "static/chunks/1.js"
-    },
-    {
-      "id": "./node_modules/core-js/library/fn/parse-int.js",
-      "name": "./node_modules/core-js/library/fn/parse-int.js",
-      "file": "static/chunks/1.js",
-      "publicPath": "static/chunks/1.js"
-    },
-    {
-      "id": "./node_modules/core-js/library/modules/_parse-int.js",
-      "name": "./node_modules/core-js/library/modules/_parse-int.js",
-      "file": "static/chunks/1.js",
-      "publicPath": "static/chunks/1.js"
-    },
-    {
-      "id": "./node_modules/core-js/library/modules/_string-trim.js",
-      "name": "./node_modules/core-js/library/modules/_string-trim.js",
-      "file": "static/chunks/1.js",
-      "publicPath": "static/chunks/1.js"
-    },
-    {
-      "id": "./node_modules/core-js/library/modules/_string-ws.js",
-      "name": "./node_modules/core-js/library/modules/_string-ws.js",
-      "file": "static/chunks/1.js",
-      "publicPath": "static/chunks/1.js"
-    },
-    {
-      "id": "./node_modules/core-js/library/modules/es6.parse-int.js",
-      "name": "./node_modules/core-js/library/modules/es6.parse-int.js",
-      "file": "static/chunks/1.js",
-      "publicPath": "static/chunks/1.js"
+      "file": "static/chunks/2.js"
     }
   ],
   "./block-news-mobile1.js": [
     {
       "id": "./components/block-adv.js",
-      "name": "./components/block-adv.js",
-      "file": "static/chunks/1.js",
-      "publicPath": "static/chunks/1.js"
+      "file": "static/chunks/2.js"
     },
     {
       "id": "./components/block-news-mobile1.js",
-      "name": "./components/block-news-mobile1.js",
-      "file": "static/chunks/1.js",
-      "publicPath": "static/chunks/1.js"
-    },
-    {
-      "id": "./node_modules/@babel/runtime-corejs2/core-js/parse-int.js",
-      "name": "./node_modules/@babel/runtime-corejs2/core-js/parse-int.js",
-      "file": "static/chunks/1.js",
-      "publicPath": "static/chunks/1.js"
-    },
-    {
-      "id": "./node_modules/core-js/library/fn/parse-int.js",
-      "name": "./node_modules/core-js/library/fn/parse-int.js",
-      "file": "static/chunks/1.js",
-      "publicPath": "static/chunks/1.js"
-    },
-    {
-      "id": "./node_modules/core-js/library/modules/_parse-int.js",
-      "name": "./node_modules/core-js/library/modules/_parse-int.js",
-      "file": "static/chunks/1.js",
-      "publicPath": "static/chunks/1.js"
-    },
-    {
-      "id": "./node_modules/core-js/library/modules/_string-trim.js",
-      "name": "./node_modules/core-js/library/modules/_string-trim.js",
-      "file": "static/chunks/1.js",
-      "publicPath": "static/chunks/1.js"
-    },
-    {
-      "id": "./node_modules/core-js/library/modules/_string-ws.js",
-      "name": "./node_modules/core-js/library/modules/_string-ws.js",
-      "file": "static/chunks/1.js",
-      "publicPath": "static/chunks/1.js"
-    },
-    {
-      "id": "./node_modules/core-js/library/modules/es6.parse-int.js",
-      "name": "./node_modules/core-js/library/modules/es6.parse-int.js",
-      "file": "static/chunks/1.js",
-      "publicPath": "static/chunks/1.js"
+      "file": "static/chunks/2.js"
     }
   ],
   "./block-news1": [
     {
       "id": "./components/block-adv.js",
-      "name": "./components/block-adv.js",
-      "file": "static/chunks/2.js",
-      "publicPath": "static/chunks/2.js"
+      "file": "static/chunks/3.js"
     },
     {
       "id": "./components/block-news1.js",
-      "name": "./components/block-news1.js",
-      "file": "static/chunks/2.js",
-      "publicPath": "static/chunks/2.js"
-    },
-    {
-      "id": "./node_modules/@babel/runtime-corejs2/core-js/parse-int.js",
-      "name": "./node_modules/@babel/runtime-corejs2/core-js/parse-int.js",
-      "file": "static/chunks/2.js",
-      "publicPath": "static/chunks/2.js"
-    },
-    {
-      "id": "./node_modules/core-js/library/fn/parse-int.js",
-      "name": "./node_modules/core-js/library/fn/parse-int.js",
-      "file": "static/chunks/2.js",
-      "publicPath": "static/chunks/2.js"
-    },
-    {
-      "id": "./node_modules/core-js/library/modules/_parse-int.js",
-      "name": "./node_modules/core-js/library/modules/_parse-int.js",
-      "file": "static/chunks/2.js",
-      "publicPath": "static/chunks/2.js"
-    },
-    {
-      "id": "./node_modules/core-js/library/modules/_string-trim.js",
-      "name": "./node_modules/core-js/library/modules/_string-trim.js",
-      "file": "static/chunks/2.js",
-      "publicPath": "static/chunks/2.js"
-    },
-    {
-      "id": "./node_modules/core-js/library/modules/_string-ws.js",
-      "name": "./node_modules/core-js/library/modules/_string-ws.js",
-      "file": "static/chunks/2.js",
-      "publicPath": "static/chunks/2.js"
-    },
-    {
-      "id": "./node_modules/core-js/library/modules/es6.parse-int.js",
-      "name": "./node_modules/core-js/library/modules/es6.parse-int.js",
-      "file": "static/chunks/2.js",
-      "publicPath": "static/chunks/2.js"
+      "file": "static/chunks/3.js"
     }
   ],
   "./block-news1.js": [
     {
       "id": "./components/block-adv.js",
-      "name": "./components/block-adv.js",
-      "file": "static/chunks/2.js",
-      "publicPath": "static/chunks/2.js"
+      "file": "static/chunks/3.js"
     },
     {
       "id": "./components/block-news1.js",
-      "name": "./components/block-news1.js",
-      "file": "static/chunks/2.js",
-      "publicPath": "static/chunks/2.js"
-    },
-    {
-      "id": "./node_modules/@babel/runtime-corejs2/core-js/parse-int.js",
-      "name": "./node_modules/@babel/runtime-corejs2/core-js/parse-int.js",
-      "file": "static/chunks/2.js",
-      "publicPath": "static/chunks/2.js"
-    },
-    {
-      "id": "./node_modules/core-js/library/fn/parse-int.js",
-      "name": "./node_modules/core-js/library/fn/parse-int.js",
-      "file": "static/chunks/2.js",
-      "publicPath": "static/chunks/2.js"
-    },
-    {
-      "id": "./node_modules/core-js/library/modules/_parse-int.js",
-      "name": "./node_modules/core-js/library/modules/_parse-int.js",
-      "file": "static/chunks/2.js",
-      "publicPath": "static/chunks/2.js"
-    },
-    {
-      "id": "./node_modules/core-js/library/modules/_string-trim.js",
-      "name": "./node_modules/core-js/library/modules/_string-trim.js",
-      "file": "static/chunks/2.js",
-      "publicPath": "static/chunks/2.js"
-    },
-    {
-      "id": "./node_modules/core-js/library/modules/_string-ws.js",
-      "name": "./node_modules/core-js/library/modules/_string-ws.js",
-      "file": "static/chunks/2.js",
-      "publicPath": "static/chunks/2.js"
-    },
-    {
-      "id": "./node_modules/core-js/library/modules/es6.parse-int.js",
-      "name": "./node_modules/core-js/library/modules/es6.parse-int.js",
-      "file": "static/chunks/2.js",
-      "publicPath": "static/chunks/2.js"
+      "file": "static/chunks/3.js"
     }
   ],
   "./block-news2": [
     {
       "id": "./components/block-adv.js",
-      "name": "./components/block-adv.js",
-      "file": "static/chunks/3.js",
-      "publicPath": "static/chunks/3.js"
+      "file": "static/chunks/4.js"
     },
     {
       "id": "./components/block-news2.js",
-      "name": "./components/block-news2.js",
-      "file": "static/chunks/3.js",
-      "publicPath": "static/chunks/3.js"
-    },
-    {
-      "id": "./node_modules/@babel/runtime-corejs2/core-js/parse-int.js",
-      "name": "./node_modules/@babel/runtime-corejs2/core-js/parse-int.js",
-      "file": "static/chunks/3.js",
-      "publicPath": "static/chunks/3.js"
-    },
-    {
-      "id": "./node_modules/core-js/library/fn/parse-int.js",
-      "name": "./node_modules/core-js/library/fn/parse-int.js",
-      "file": "static/chunks/3.js",
-      "publicPath": "static/chunks/3.js"
-    },
-    {
-      "id": "./node_modules/core-js/library/modules/_parse-int.js",
-      "name": "./node_modules/core-js/library/modules/_parse-int.js",
-      "file": "static/chunks/3.js",
-      "publicPath": "static/chunks/3.js"
-    },
-    {
-      "id": "./node_modules/core-js/library/modules/_string-trim.js",
-      "name": "./node_modules/core-js/library/modules/_string-trim.js",
-      "file": "static/chunks/3.js",
-      "publicPath": "static/chunks/3.js"
-    },
-    {
-      "id": "./node_modules/core-js/library/modules/_string-ws.js",
-      "name": "./node_modules/core-js/library/modules/_string-ws.js",
-      "file": "static/chunks/3.js",
-      "publicPath": "static/chunks/3.js"
-    },
-    {
-      "id": "./node_modules/core-js/library/modules/es6.parse-int.js",
-      "name": "./node_modules/core-js/library/modules/es6.parse-int.js",
-      "file": "static/chunks/3.js",
-      "publicPath": "static/chunks/3.js"
+      "file": "static/chunks/4.js"
     }
   ],
   "./block-news2.js": [
     {
       "id": "./components/block-adv.js",
-      "name": "./components/block-adv.js",
-      "file": "static/chunks/3.js",
-      "publicPath": "static/chunks/3.js"
+      "file": "static/chunks/4.js"
     },
     {
       "id": "./components/block-news2.js",
-      "name": "./components/block-news2.js",
-      "file": "static/chunks/3.js",
-      "publicPath": "static/chunks/3.js"
-    },
-    {
-      "id": "./node_modules/@babel/runtime-corejs2/core-js/parse-int.js",
-      "name": "./node_modules/@babel/runtime-corejs2/core-js/parse-int.js",
-      "file": "static/chunks/3.js",
-      "publicPath": "static/chunks/3.js"
-    },
-    {
-      "id": "./node_modules/core-js/library/fn/parse-int.js",
-      "name": "./node_modules/core-js/library/fn/parse-int.js",
-      "file": "static/chunks/3.js",
-      "publicPath": "static/chunks/3.js"
-    },
-    {
-      "id": "./node_modules/core-js/library/modules/_parse-int.js",
-      "name": "./node_modules/core-js/library/modules/_parse-int.js",
-      "file": "static/chunks/3.js",
-      "publicPath": "static/chunks/3.js"
-    },
-    {
-      "id": "./node_modules/core-js/library/modules/_string-trim.js",
-      "name": "./node_modules/core-js/library/modules/_string-trim.js",
-      "file": "static/chunks/3.js",
-      "publicPath": "static/chunks/3.js"
-    },
-    {
-      "id": "./node_modules/core-js/library/modules/_string-ws.js",
-      "name": "./node_modules/core-js/library/modules/_string-ws.js",
-      "file": "static/chunks/3.js",
-      "publicPath": "static/chunks/3.js"
-    },
-    {
-      "id": "./node_modules/core-js/library/modules/es6.parse-int.js",
-      "name": "./node_modules/core-js/library/modules/es6.parse-int.js",
-      "file": "static/chunks/3.js",
-      "publicPath": "static/chunks/3.js"
+      "file": "static/chunks/4.js"
     }
   ],
   "./block-opinion1": [
     {
       "id": "./components/block-opinion1.js",
-      "name": "./components/block-opinion1.js",
-      "file": "static/chunks/20.js",
-      "publicPath": "static/chunks/20.js"
+      "file": "static/chunks/20.js"
     }
   ],
   "./block-opinion1.js": [
     {
       "id": "./components/block-opinion1.js",
-      "name": "./components/block-opinion1.js",
-      "file": "static/chunks/20.js",
-      "publicPath": "static/chunks/20.js"
+      "file": "static/chunks/20.js"
     }
   ],
   "./block-other-news1": [
     {
       "id": "./components/block-other-news1.js",
-      "name": "./components/block-other-news1.js",
-      "file": "static/chunks/21.js",
-      "publicPath": "static/chunks/21.js"
+      "file": "static/chunks/21.js"
     }
   ],
   "./block-other-news1.js": [
     {
       "id": "./components/block-other-news1.js",
-      "name": "./components/block-other-news1.js",
-      "file": "static/chunks/21.js",
-      "publicPath": "static/chunks/21.js"
+      "file": "static/chunks/21.js"
     }
   ],
   "./block-related-news1": [
     {
       "id": "./components/block-related-news1.js",
-      "name": "./components/block-related-news1.js",
-      "file": "static/chunks/22.js",
-      "publicPath": "static/chunks/22.js"
+      "file": "static/chunks/22.js"
     }
   ],
   "./block-related-news1.js": [
     {
       "id": "./components/block-related-news1.js",
-      "name": "./components/block-related-news1.js",
-      "file": "static/chunks/22.js",
-      "publicPath": "static/chunks/22.js"
+      "file": "static/chunks/22.js"
     }
   ],
   "./block-sections1": [
     {
       "id": "./components/block-sections1.js",
-      "name": "./components/block-sections1.js",
-      "file": "static/chunks/13.js",
-      "publicPath": "static/chunks/13.js"
+      "file": "static/chunks/13.js"
     },
     {
       "id": "./components/newsBlock.js",
-      "name": "./components/newsBlock.js",
-      "file": "static/chunks/13.js",
-      "publicPath": "static/chunks/13.js"
+      "file": "static/chunks/13.js"
     }
   ],
   "./block-sections1.js": [
     {
       "id": "./components/block-sections1.js",
-      "name": "./components/block-sections1.js",
-      "file": "static/chunks/13.js",
-      "publicPath": "static/chunks/13.js"
+      "file": "static/chunks/13.js"
     },
     {
       "id": "./components/newsBlock.js",
-      "name": "./components/newsBlock.js",
-      "file": "static/chunks/13.js",
-      "publicPath": "static/chunks/13.js"
+      "file": "static/chunks/13.js"
     }
   ],
   "./block-weather1": [
     {
       "id": "./components/block-weather1.js",
-      "name": "./components/block-weather1.js",
-      "file": "static/chunks/23.js",
-      "publicPath": "static/chunks/23.js"
+      "file": "static/chunks/23.js"
     }
   ],
   "./block-weather1.js": [
     {
       "id": "./components/block-weather1.js",
-      "name": "./components/block-weather1.js",
-      "file": "static/chunks/23.js",
-      "publicPath": "static/chunks/23.js"
+      "file": "static/chunks/23.js"
     }
   ],
   "./dev/noop": [
     {
       "id": "./node_modules/next/dist/client/dev/noop.js",
-      "name": "./node_modules/next/dist/client/dev/noop.js",
-      "file": "static/chunks/0.js",
-      "publicPath": "static/chunks/0.js"
+      "file": "static/chunks/0.js"
     }
   ],
   "./newsBlock": [
     {
       "id": "./components/newsBlock.js",
-      "name": "./components/newsBlock.js",
-      "file": "static/chunks/24.js",
-      "publicPath": "static/chunks/24.js"
+      "file": "static/chunks/24.js"
     }
   ],
   "./newsBlock.js": [
     {
       "id": "./components/newsBlock.js",
-      "name": "./components/newsBlock.js",
-      "file": "static/chunks/24.js",
-      "publicPath": "static/chunks/24.js"
+      "file": "static/chunks/24.js"
     }
   ]
 }
